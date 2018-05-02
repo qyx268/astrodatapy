@@ -100,8 +100,10 @@ scripts = [fname for fname in glob.glob(os.path.join('scripts', '*'))
 package_info = get_package_info()
 
 # Add the project-global data
-package_info['package_data'].setdefault(PACKAGENAME, [])
-package_info['package_data'][PACKAGENAME].append('data/*')
+os.chdir("astrodatapy")
+package_info['package_data'].setdefault(PACKAGENAME,\
+        glob.glob('data/**/*',recursive=True))
+os.chdir("..")
 
 # Define entry points for command-line scripts
 entry_points = {'console_scripts': []}
