@@ -15,4 +15,4 @@ def available_redshifts(feature):
         results    = [filename_to_redshift(fname) for fname in set(all_fnames)]
         return np.array(results)
     else:
-        return None
+        return np.array([])
