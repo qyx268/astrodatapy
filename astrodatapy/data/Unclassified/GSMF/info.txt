@@ -1,0 +1,44 @@
+# The data format follows 
+# Log(M/Msol)  Phi/Mpc^-3dex^-1 Errors/Mpc^-3dex^-1
+
+# Errors can be ULLimits (meaning upper and lower limits)
+# Errors can be LULimits (meaning lower and upper limits)
+# Errors can be ULDeltas (meaning upper and lower 1sigma range)
+# Errors can be LUDeltas (meaning lower and upper 1sigma range)
+# Errors can be Delta    (meaning 1sigma range)
+
+# If Log==1, Phi is in logarithm
+# If HinPhi==1, the unit of Phi is h^3Mpc**-1dex**-1
+# If Function==data, *.dat contains data
+# If Function==Schechter, *.dat contains parameters of Schechter function
+# Schechter parameters: xmin, xmax, logM_star, alpha1, phi_star1, alpha2, phi_star2
+
+# Outdated data
+#Baldry2008		DietSalpeter		1.0		1.0		LULimits		0		0		data
+
+#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
+Bell2003		DietSalpeter		1.0		1.0		LULimits		0		0		data
+Cole2001		Salpeter		1.0		1.0		Delta		0		0		data
+Drory2009		Chabrier		0.7		1.0		Delta		1		0		data
+Marchesini2009		Kroupa		0.7		1.0		ULDeltas		1		0		data
+Mortlock2011		Salpeter		0.7		1.0		Delta		1		0		data
+Stefanon2016		Chabrier		0.7		1e-5		ULDeltas		0		0		data
+Thanjavur2015		Chabrier		0.7		1.0		ULDeltas		1		0		data
+Grazian2015		Salpeter		0.7		1.0		ULLimits		0		0		data
+Gonzalez2011		Salpeter		1.0		1.0		LUDeltas		1		0		data
+Duncan2014		Chabrier		0.7		1.0		LUDeltas		0		0		data
+Katsianis2014		Salpeter		0.702		1.0		Delta		1		0		data
+Song2015		Salpeter		0.7		1.0		ULDeltas		1		0		data
+Davidzon2017		Chabrier		0.7		1.0		None		0		0		Schechter
+Santini2012		Salpeter		0.7		1.0		None		0		0		Schechter
+Ilbert2013		Chabrier		0.7		1.0		None		0		0		Schechter
+Muzzin2013		Kroupa		0.7		1.0		None		0		0		Schechter
+Huertas-Company2016		Chabrier		0.7		1.0		None		0		0		Schechter
+Tomczak2014		Chabrier		0.7		1.0		ULDeltas		1		0		data
+Pozzetti2007		Chabrier		0.7		1.0		None		0		0		Schechter
+Baldry2012		Chabrier		0.678		1.0		ULDeltas		1		0		data
+Caputi2011		Chabrier		0.678		1.0		ULDeltas		1		0		data
+Kajisawa2009		Chabrier		0.678		1.0		ULDeltas		1		0		data
+Perez-Gonzalez2008		Chabrier		0.678		1.0		ULDeltas		1		0		data
+Pozzetti2010		Chabrier		0.678		1.0		ULDeltas		1		0		data
+Yang2009		Chabrier		0.678		1.0		ULDeltas		1		0		data

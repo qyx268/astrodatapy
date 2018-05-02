@@ -1,0 +1,13 @@
+# Data from:
+#   Duncan, K. et al.
+#   The mass evolution of the first galaxies: stellar mass functions and star
+#   formation rates at $4 < z < 7$ in the CANDELS GOODS-South field.
+#   eprint arXiv:1408.2527 (2014).
+# Chabrier IMF, real units, h=0.7
+#
+# log(SFR) N          Nerr_l68   Nerr_u68   
+-0.223     0.00901    0.009      0.013      
+0.271      0.00309    0.00259    0.00259    
+0.765      0.000648   0.000311   0.000311   
+1.259      0.000487   0.000303   0.000303   
+1.753      2.75e-05   2.75e-05   2.76e-05   

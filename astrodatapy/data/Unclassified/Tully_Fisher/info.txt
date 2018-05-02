@@ -1,0 +1,16 @@
+# The data format follows 
+# x Erros y Errors
+
+# Errors can be ULLimits (meaning upper and lower limits)
+# Errors can be LULimits (meaning lower and upper limits)
+# Errors can be ULDeltas (meaning upper and lower 1sigma range)
+# Errors can be LUDeltas (meaning lower and upper 1sigma range)
+# Errors can be Delta    (meaning 1sigma range)
+
+# If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
+
+#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy
+Gurovich2010_HI		xy		xy		1		1
+Gurovich2010_Sakai		xy		xy		1		1
+Hall2011		xy		xy		1		1
+McGaugh2011		xy		xy		1		1

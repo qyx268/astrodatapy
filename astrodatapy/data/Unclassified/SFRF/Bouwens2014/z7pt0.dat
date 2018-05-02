@@ -1,0 +1,12 @@
+# Katsianis et al. 2014 star formation rate function converted from Bouwens et al. 2014
+# Dust corrections follow Smit et al. 2012
+# h = 0.7, Salpeter IMF
+# logSFR       log(phi)    er
+1.68933       -4.22330     0.133538
+1.43761       -4.22330     0.200308
+1.18588       -3.67448     0.113217
+0.934152      -3.28034     0.0913684
+0.682424      -2.96249     0.0842363
+0.480092      -2.68791     0.0817399
+0.180092      -2.32864     0.114882
+-0.319908      -1.86889     0.128429  
