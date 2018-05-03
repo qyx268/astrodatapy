@@ -12,4 +12,4 @@ Reference/API
 .. toctree::
   :maxdepth: 2
 
-  ../astrodatapy/utils/plots.ipynb
+  plot
