@@ -7,10 +7,10 @@
 # Errors can be LUDeltas (meaning lower and upper 1sigma range)
 # Errors can be Delta    (meaning 1sigma range)
 
-#Name		Type
-Shen2007		PowerLaw
-Shen2009		PowerLaw
-He2017		PowerLaw_2COMPONENTS
-Eftekharzadeh2015		PowerLaw
-Chehade2016		PowerLaw
-Retana-Montenegro2016		PowerLaw
+#Name		Type		Bibliographic
+Shen2007		PowerLaw		2007AJ....133.2222S
+Shen2009		PowerLaw		2009ApJ...697.1656S
+He2018		PowerLaw_2COMPONENTS		2018PASJ...70S..33H
+Eftekharzadeh2015		PowerLaw		2015MNRAS.453.2779E
+Chehade2016		PowerLaw		2016MNRAS.459.1179C
+Retana-Montenegro2016		PowerLaw		2017A&A...600A..97R

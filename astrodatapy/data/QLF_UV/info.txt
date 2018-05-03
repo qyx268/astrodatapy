@@ -16,15 +16,15 @@
 
 # Outdated data
 
-#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Hunt2004		M1450		0.5			1		ULLimits		0		0		data
-Dijkstra2006		LBsol2M1450		0.7		1e-15		None		0		0		dataULimit
-Willott2010		M1450		0.7		1.0		ULLimits		0		0		data
-Gilkman2011_SDSS		M1450		0.7		1e-8		ULDeltas		0		0		data
-Gilkman2011_NDWFS_DLS		M1450		0.7		1e-8		ULDeltas		0		0		data
-Masters2012		M1450		0.7		1e-7		Delta		0		0		data
-McGreer2013		M1450		0.7		1e-9		Delta		0		0		data
-Shen2012		M1450		0.7		1e-9		Delta		0		0		data
-Jiang2016		M1450		0.7		1		None		0		0		DoubleSchechter
-Giallongo2015		M1450		0.7		1		ULLimits		1		0		data
-Richards2005		M1450		0.7		1		ULLimits		1		0		data
+#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Hunt2004		M1450		0.5			1		ULLimits		0		0		data		2004ApJ...605..625H
+Dijkstra2006		LBsol2M1450		0.7		1e-15		None		0		0		dataULimit		2006MNRAS.372.1575D
+Willott2010		M1450		0.7		1.0		ULLimits		0		0		data		2010AJ....139..906W
+Gilkman2011_SDSS		M1450		0.7		1e-8		ULDeltas		0		0		data		2011ApJ...728L..26G
+Gilkman2011_NDWFS_DLS		M1450		0.7		1e-8		ULDeltas		0		0		data		2011ApJ...728L..26G
+Masters2012		M1450		0.7		1e-7		Delta		0		0		data		2012ApJ...755..169M
+McGreer2013		M1450		0.7		1e-9		Delta		0		0		data		2013ApJ...768..105M
+Shen2012		M1450		0.7		1e-9		Delta		0		0		data		2012ApJ...746..169S
+Jiang2016		M1450		0.7		1		None		0		0		DoubleSchechter		2016ApJ...833..222J
+Giallongo2015		M1450		0.7		1		ULLimits		1		0		data		2015A&A...578A..83G
+Richards2005		M1450		0.7		1		ULLimits		1		0		data		2005MNRAS.360..839R

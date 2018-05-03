@@ -15,8 +15,8 @@
 
 # Outdated data
 
-#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Ilbert2013		Chabrier		0.7		1.0		None		0		0		Schechter
-Muzzin2013		Kroupa		0.7		1.0		None		0		0		Schechter
-Tomczak2014		Chabrier		0.7		1.0		ULDeltas		1		0		data
-Huertas-Company2016		Chabrier		0.7		1.0		None		0		0		Schechter
+#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Ilbert2013		Chabrier		0.7		1.0		None		0		0		Schechter		2013A&A...556A..55I
+Muzzin2013		Kroupa		0.7		1.0		None		0		0		Schechter		2013ApJ...777...18M
+Tomczak2014		Chabrier		0.7		1.0		ULDeltas		1		0		data		2014ApJ...783...85T
+Huertas-Company2016		Chabrier		0.7		1.0		None		0		0		Schechter		2016MNRAS.462.4495H

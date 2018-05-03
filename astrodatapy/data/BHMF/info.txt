@@ -10,10 +10,10 @@
 # If Log==1, Phi is in logarithm
 # If HinPhi==1, the unit of Phi is h^3Mpc**-1dex**-1
 
-#Name		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Davis2014		0.678		1e-4		ULDeltas		0		1		data
-Graham2007		1.0		1e-4		ULDeltas		0		1		data
-Pakdil2016		0.677		1.0		ULDeltas		1		1		data
-Shankar2009		0.7		1.0		LULimits		1		0		data
-Shen2012		0.7		1.0		ULLimits		1		0		data
-Vika2009		1.0		1e-4		ULDeltas		0		1		data
+#Name		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Davis2014		0.678		1e-4		ULDeltas		0		1		data		2014ApJ...789..124D
+Graham2007		1.0		1e-4		ULDeltas		0		1		data		2007MNRAS.378..198G
+Mutlu-Pakdil2016		0.677		1.0		ULDeltas		1		1		data		2016ApJ...830..117M
+Shankar2009		0.7		1.0		LULimits		1		0		data		2009ApJ...690...20S
+Shen2012		0.7		1.0		ULLimits		1		0		data		2012ApJ...746..169S
+Vika2009		1.0		1e-4		ULDeltas		0		1		data		2009MNRAS.400.1451V

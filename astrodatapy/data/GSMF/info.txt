@@ -14,31 +14,31 @@
 # Schechter parameters: xmin, xmax, logM_star, alpha1, phi_star1, alpha2, phi_star2
 
 # Outdated data
-#Baldry2008		DietSalpeter		1.0		1.0		LULimits		0		0		data
+#Baldry2008		DietSalpeter		1.0		1.0		LULimits		0		0		data		2008MNRAS.388..945B
 
-#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Bell2003		DietSalpeter		1.0		1.0		LULimits		0		0		data
-Cole2001		Salpeter		1.0		1.0		Delta		0		0		data
-Drory2009		Chabrier		0.7		1.0		Delta		1		0		data
-Marchesini2009		Kroupa		0.7		1.0		ULDeltas		1		0		data
-Mortlock2011		Salpeter		0.7		1.0		Delta		1		0		data
-Stefanon2016		Chabrier		0.7		1e-5		ULDeltas		0		0		data
-Thanjavur2015		Chabrier		0.7		1.0		ULDeltas		1		0		data
-Grazian2015		Salpeter		0.7		1.0		ULLimits		0		0		data
-Gonzalez2011		Salpeter		1.0		1.0		LUDeltas		1		0		data
-Duncan2014		Chabrier		0.7		1.0		LUDeltas		0		0		data
-Katsianis2014		Salpeter		0.702		1.0		Delta		1		0		data
-Song2015		Salpeter		0.7		1.0		ULDeltas		1		0		data
-Davidzon2017		Chabrier		0.7		1.0		None		0		0		Schechter
-Santini2012		Salpeter		0.7		1.0		None		0		0		Schechter
-Ilbert2013		Chabrier		0.7		1.0		None		0		0		Schechter
-Muzzin2013		Kroupa		0.7		1.0		None		0		0		Schechter
-Huertas-Company2016		Chabrier		0.7		1.0		None		0		0		Schechter
-Tomczak2014		Chabrier		0.7		1.0		ULDeltas		1		0		data
-Pozzetti2007		Chabrier		0.7		1.0		None		0		0		Schechter
-Baldry2012		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Caputi2011		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Kajisawa2009		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Perez-Gonzalez2008		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Pozzetti2010		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Yang2009		Chabrier		0.678		1.0		ULDeltas		1		0		data
+#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Bell2003		DietSalpeter		1.0		1.0		LULimits		0		0		data		2012MNRAS.421..621B
+Cole2001		Salpeter		1.0		1.0		Delta		0		0		data		2001MNRAS.326..255C
+Drory2009		Chabrier		0.7		1.0		Delta		1		0		data		2009ApJ...707.1595D
+Marchesini2009		Kroupa		0.7		1.0		ULDeltas		1		0		data		2009ApJ...701.1765M
+Mortlock2011		Salpeter		0.7		1.0		Delta		1		0		data		2011MNRAS.413.2845M
+Stefanon2017		Chabrier		0.7		1e-5		ULDeltas		0		0		data		2017ApJ...843...36S
+Thanjavur2016		Chabrier		0.7		1.0		ULDeltas		1		0		data		2016MNRAS.459...44T
+Grazian2015		Salpeter		0.7		1.0		ULLimits		0		0		data		2015A&A...575A..96G
+Gonzalez2011		Salpeter		1.0		1.0		LUDeltas		1		0		data		2011ApJ...735L..34G
+Duncan2014		Chabrier		0.7		1.0		LUDeltas		0		0		data		2014MNRAS.444.2960D
+Katsianis2015		Salpeter		0.702		1.0		Delta		1		0		data_sim		2015MNRAS.448.3001K
+Song2016		Salpeter		0.7		1.0		ULDeltas		1		0		data		2016ApJ...825....5S
+Davidzon2017		Chabrier		0.7		1.0		None		0		0		Schechter		2017A&A...605A..70D
+Santini2012		Salpeter		0.7		1.0		None		0		0		Schechter		2012A&A...538A..33S
+Ilbert2013		Chabrier		0.7		1.0		None		0		0		Schechter		2013A&A...556A..55I
+Muzzin2013		Kroupa		0.7		1.0		None		0		0		Schechter		2013ApJ...777...18M
+Huertas-Company2016		Chabrier		0.7		1.0		None		0		0		Schechter		2016MNRAS.462.4495H
+Tomczak2014		Chabrier		0.7		1.0		ULDeltas		1		0		data		2014ApJ...783...85T
+Pozzetti2007		Chabrier		0.7		1.0		None		0		0		Schechter		2007A&A...474..443P
+Baldry2012		Chabrier		0.678		1.0		ULDeltas		1		0		data		2012MNRAS.421..621B
+Caputi2011		Chabrier		0.678		1.0		ULDeltas		1		0		data		2011MNRAS.413..162C
+Kajisawa2009		Chabrier		0.678		1.0		ULDeltas		1		0		data		2009ApJ...702.1393K
+Perez-Gonzalez2008		Chabrier		0.678		1.0		ULDeltas		1		0		data		2008ApJ...675..234P
+Pozzetti2010		Chabrier		0.678		1.0		ULDeltas		1		0		data		2010A&A...523A..13P
+Yang2009		Chabrier		0.678		1.0		ULDeltas		1		0		data		2009ApJ...695..900Y

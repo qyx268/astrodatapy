@@ -9,5 +9,5 @@
 
 # If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
 
-#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy
-Reyes2012		xyULDeltas		xy		1		1
+#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy		Bibliographic
+Reyes2012		xyULDeltas		xy		1		1		TBU

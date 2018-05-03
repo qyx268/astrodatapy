@@ -9,7 +9,7 @@
 
 # If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
 
-#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy
-Elbaz2011		xy		xy		1		1
-Salim2011		xy		xy		1		1
-Santini2009		xy		xy		1		1
+#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy		Bibliographic
+Elbaz2011		xy		xy		1		1		2011A&A...533A.119E
+Salim2011		xy		xy		1		1		TBU
+Santini2009		xy		xy		1		1		2009A&A...504..751S

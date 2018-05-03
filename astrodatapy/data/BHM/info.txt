@@ -9,5 +9,5 @@
 
 # If Log==1, Mass is in logarithm
 
-#Name		h		Errors		Log
-Caramete2010		0.7		Delta		0
+#Name		h		Errors		Log		Bibliographic
+Caramete2010		0.7		Delta		0		2010A&A...521A..55C

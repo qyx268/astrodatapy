@@ -15,7 +15,7 @@
 
 # Outdated data
 
-#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Bell2003		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Yang2009		Chabrier		0.678		1.0		ULDeltas		1		0		data
-Conselice2006		Chabrier		0.678		1.0		ULDeltas		1		0		data
+#Name		IMF		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Bell2003		Chabrier		0.678		1.0		ULDeltas		1		0		data		2003ApJS..149..289B
+Yang2009		Chabrier		0.678		1.0		ULDeltas		1		0		data		2009ApJ...695..900Y
+Knebe2018		Chabrier		0.678		1.0		ULDeltas		1		0		data		2018MNRAS.475.2936K

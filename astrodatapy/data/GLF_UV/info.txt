@@ -15,13 +15,13 @@
 
 # Outdated data
 
-#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Bouwens2015a		M1600		0.7		1.0		Delta		0		0		data
-Bouwens2015a_ulimit		M1600		0.7		1.0		None		0		0		dataULimit
-Bouwens2015b		M1600		0.7		1.0		Delta		0		0		data
-Bouwens2015b_ulimit		M1600		0.7		1.0		None		0		0		dataUlimit
-Atek2015		M1600		0.7		1.0		Delta		1		0		data
-vanderBurg2010		M1600		0.7		1.0		None		0		0		Schechter
-Yoshida2006		M1600		0.7		1.0		None		0		0		Schechter
-Reddy2009		M1600		0.7		1.0		None		0		0		Schechter
-Sawicki2006		M1600		0.7		1.0		None		0		0		Schechter
+#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Bouwens2015		M1600		0.7		1.0		Delta		0		0		data		2015ApJ...803...34B
+Bouwens2015_ulimit		M1600		0.7		1.0		None		0		0		dataULimit		2015ApJ...803...34B
+Bouwens2016		M1600		0.7		1.0		Delta		0		0		data		2016ApJ...830...67B
+Bouwens2016_ulimit		M1600		0.7		1.0		None		0		0		dataUlimit		2016ApJ...830...67B
+Atek2015		M1600		0.7		1.0		Delta		1		0		data		2015ApJ...800...18A
+vanderBurg2010		M1600		0.7		1.0		None		0		0		Schechter		2010A&A...523A..74V
+Yoshida2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...653..988Y
+Reddy2009		M1600		0.7		1.0		None		0		0		Schechter		2009ApJ...692..778R
+Sawicki2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...642..653S

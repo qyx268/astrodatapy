@@ -17,5 +17,5 @@
 
 # Outdated data
 
-#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Hopkins2007		Bolometric		0.7		1		ULLimits		1		0		Hopkins2007
+#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Hopkins2007		Bolometric		0.7		1		ULLimits		1		0		Hopkins2007		2007ApJ...654..731H

@@ -9,14 +9,14 @@
 
 # If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
 
-#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy
-Scott2015		xLUDeltasyLUDeltas		None		1e10		1e8
-Thornton2008		xLUDeltasyLUDeltas		None		1e9		1e5
-Jiang2011		xy		xy		1		1
-Sanghvi2014		xy		xy		1		1
-Jiang2013		xLUDeltasyLUDeltas		None		1e9		1e5
-Yuan2014		xLUDeltasyLUDeltas		None		1e9		1e5
-Reines2013		xLUDeltasyLUDeltas		None		1e9		1e5
-Reines2013_BPT		xLUDeltasyLUDeltas		None		1e9		1e5
-Mathur2012		xLUDeltasyLUDeltas		None		1e9		1e5
-Busch2014		xLUDeltasyLUDeltas		None		1e9		1e5
+#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy		Bibliographic
+Scott2013		xLUDeltasyLUDeltas		None		1e10		1e8		2013ApJ...768...76S
+Thornton2008		xLUDeltasyLUDeltas		None		1e9		1e5		2008ApJ...686..892T
+Jiang2011		xy		xy		1		1		2011ApJ...737L..45J
+Sanghvi2014		xy		xy		1		1		2014MNRAS.445.1261S
+Jiang2013		xLUDeltasyLUDeltas		None		1e9		1e5		2013ApJ...770....3J
+Yuan2014		xLUDeltasyLUDeltas		None		1e9		1e5		2014ApJ...782...55Y
+Reines2013		xLUDeltasyLUDeltas		None		1e9		1e5		2013ApJ...775..116R
+Reines2013_BPT		xLUDeltasyLUDeltas		None		1e9		1e5		2013ApJ...775..116R
+Mathur2012		xLUDeltasyLUDeltas		None		1e9		1e5		2012ApJ...754..146M
+Busch2014		xLUDeltasyLUDeltas		None		1e9		1e5		2014A&A...561A.140B

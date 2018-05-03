@@ -9,8 +9,8 @@
 
 # If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
 
-#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy
-Bernardi2013		xyULDeltas		xy		1		1
-Bruce2014		xy		xy		1		1
-Huertas-Company		xy		xy		1		1
-Shibuya2015		xy		xy		1		1
+#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy		Bibliographic
+Bernardi2013		xyULDeltas		xy		1		1		2013MNRAS.436..697B
+Bruce2014		xy		xy		1		1		2014MNRAS.444.1660B
+Huertas-Company2015		xy		xy		1		1		2015ApJS..221....8H
+Shibuya2015		xy		xy		1		1		2015ApJS..219...15S

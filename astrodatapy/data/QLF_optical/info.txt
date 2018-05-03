@@ -16,9 +16,9 @@
 
 # Outdated data
 
-#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type
-Wolf2003		MB2MABB		0.65		1		None		1		0		data
-Bongiorno2007		MABB		0.7		1.0		ULLimits		0		0		data
-Croom2009		Mg2MB		0.7		1.0		ULDeltas		1		0		data
-Palanque-Delabrouille2013		Mg2MB		0.71		1		Delta		1		0		data
-Richards2005		M14502MB		0.7		1		ULLimits		1		0		data
+#Name		MAG		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		Bibliographic
+Wolf2003		MB2MABB		0.65		1		None		1		0		data		2003A&A...408..499W
+Bongiorno2007		MABB		0.7		1.0		ULLimits		0		0		data		2007A&A...472..443B
+Croom2009		Mg2MB		0.7		1.0		ULDeltas		1		0		data		2009MNRAS.399.1755C
+Palanque-Delabrouille2013		Mg2MB		0.71		1		Delta		1		0		data		2013A&A...551A..29P
+Richards2005		M14502MB		0.7		1		ULLimits		1		0		data		2005MNRAS.360..839R
