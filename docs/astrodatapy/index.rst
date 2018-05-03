@@ -4,7 +4,9 @@ astrodatapy Documentation
 
 This is the documentation for astrodatapy.
 
-Reference/API
+.. include:: ../../astrodatapy/data/README.rst
+
+Examples
 =============
 
 .. automodapi:: astrodatapy
@@ -12,4 +14,4 @@ Reference/API
 .. toctree::
   :maxdepth: 2
 
-  plot
+  plots
