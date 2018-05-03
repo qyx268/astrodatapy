@@ -7,8 +7,8 @@ import sys
 
 # Enforce Python version check - this is the same check as in __init__.py but
 # this one has to happen before importing ah_bootstrap.
-if sys.version_info < tuple((int(val) for val in "2.7".split('.'))):
-    sys.stderr.write("ERROR: astrodatapy requires Python {} or later\n".format(2.7))
+if sys.version_info < tuple((int(val) for val in "3.6".split('.'))):
+    sys.stderr.write("ERROR: astrodatapy requires Python {} or later\n".format(3.6))
     sys.exit(1)
 
 import ah_bootstrap
