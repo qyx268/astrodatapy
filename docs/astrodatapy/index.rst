@@ -8,3 +8,8 @@ Reference/API
 =============
 
 .. automodapi:: astrodatapy
+
+.. toctree::
+  :maxdepth: 2
+
+  ../astrodatapy/utils/plots.ipynb

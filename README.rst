@@ -10,9 +10,11 @@ Python tools to collect astronomical data.
 Features
 --------
 
-number density (:ref:`number_density`)
-correlation (:ref:`correlation`)
-clustering (:ref:`clustering`)
+* number density (:ref:`number_density`)
+
+* correlation (:ref:`correlation`)
+
+* clustering (:ref:`clustering`)
 
 License
 -------
