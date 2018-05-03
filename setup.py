@@ -4,11 +4,12 @@
 import glob
 import os
 import sys
+import fnmatch
 
 # Enforce Python version check - this is the same check as in __init__.py but
 # this one has to happen before importing ah_bootstrap.
-if sys.version_info < tuple((int(val) for val in "3.6".split('.'))):
-    sys.stderr.write("ERROR: astrodatapy requires Python {} or later\n".format(3.6))
+if sys.version_info < tuple((int(val) for val in "2.7".split('.'))):
+    sys.stderr.write("ERROR: astrodatapy requires Python {} or later\n".format(2.7))
     sys.exit(1)
 
 import ah_bootstrap
@@ -99,11 +100,16 @@ scripts = [fname for fname in glob.glob(os.path.join('scripts', '*'))
 # details.
 package_info = get_package_info()
 
-# Add the project-global data
-os.chdir("astrodatapy")
-package_info['package_data'].setdefault(PACKAGENAME,\
-        glob.glob('data/**/*',recursive=True))
-os.chdir("..")
+#Add the project-global data
+#Only work for python >=3.5
+#os.chdir("astrodatapy")
+#package_info['package_data'].setdefault(PACKAGENAME,\
+#        glob.glob('data/**/*',recursive=True))
+#os.chdir("..")
+package_info['package_data'].setdefault(PACKAGENAME, [])
+for root, dirnames, filenames in os.walk('data'):
+	for filename in fnmatch.filter(filenames, '*'):
+		package_info['package_data'][PACKAGENAME].append(os.path.join(root, filename))
 
 # Define entry points for command-line scripts
 entry_points = {'console_scripts': []}
