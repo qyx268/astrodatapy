@@ -42,7 +42,7 @@ DESCRIPTION = metadata.get('description', 'astrodatapy')
 AUTHOR = metadata.get('author', 'Yuxiang Qin')
 AUTHOR_EMAIL = metadata.get('author_email', '')
 LICENSE = metadata.get('license', 'unknown')
-URL = metadata.get('url', 'https://qyx268.github.io/astrodatapy/')
+URL = metadata.get('url', 'http://astrodatapy.readthedocs.io')
 
 # order of priority for long_description:
 #   (1) set in setup.cfg,
