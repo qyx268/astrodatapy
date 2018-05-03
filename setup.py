@@ -107,9 +107,11 @@ package_info = get_package_info()
 #        glob.glob('data/**/*',recursive=True))
 #os.chdir("..")
 package_info['package_data'].setdefault(PACKAGENAME, [])
+os.chdir("astrodatapy")
 for root, dirnames, filenames in os.walk('data'):
 	for filename in fnmatch.filter(filenames, '*'):
 		package_info['package_data'][PACKAGENAME].append(os.path.join(root, filename))
+os.chdir("..")
 
 # Define entry points for command-line scripts
 entry_points = {'console_scripts': []}
