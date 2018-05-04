@@ -10,7 +10,7 @@ Python tools to collect astronomical data.
 Features
 --------
 
-.. include:: ../../astrodatapy/data/README.rst
+.. include:: astrodatapy/data/README.rst
 
 License
 -------
