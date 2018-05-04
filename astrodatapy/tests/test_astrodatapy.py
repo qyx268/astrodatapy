@@ -21,7 +21,7 @@ def test_correlation():
             assert function(feature, z_target)
 
 def test_clustering():
-    from astrodatapy.clustering     import clustering
+    from astrodatapy.clustering import clustering as function
     features = ['QC_2PTCF',]
     for feature in features:
         for z_target in available_redshifts(feature):

@@ -25,3 +25,4 @@ vanderBurg2010		M1600		0.7		1.0		None		0		0		Schechter		2010A&A...523A..74V
 Yoshida2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...653..988Y
 Reddy2009		M1600		0.7		1.0		None		0		0		Schechter		2009ApJ...692..778R
 Sawicki2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...642..653S
+Qin2017_Tiamat		M1600		0.678		1.0		Delta		0		0		data_sim		2017MNRAS.472.2009Q
