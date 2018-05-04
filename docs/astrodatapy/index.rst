@@ -1,10 +1,10 @@
 *************************
-astrodatapy Documentation
+AstroDataPy Documentation
 *************************
 
 This is the documentation for astrodatapy.
 
-.. include:: ../../astrodatapy/data/README.rst
+.. include:: ../../README.rst
 
 Examples
 =============

@@ -1,4 +1,4 @@
-astrodatapy
+AstroDataPy
 -----------
 
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
@@ -10,11 +10,7 @@ Python tools to collect astronomical data.
 Features
 --------
 
-* number density (:ref:`number_density`)
-
-* correlation (:ref:`correlation`)
-
-* clustering (:ref:`clustering`)
+.. include:: ../../astrodatapy/data/README.rst
 
 License
 -------
