@@ -7,10 +7,16 @@ AstroDataPy
 
 Python tools to collect astronomical data.
 
+Installation
+-------
+
+pip install git+https://github.com/qyx268/astrodatapy
+
 Features
 --------
 
 .. include:: astrodatapy/data/README.rst
+
 
 License
 -------
