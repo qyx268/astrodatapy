@@ -119,7 +119,7 @@ plot galaxy stellar mass function at redshift 5 and show labels
 .. image:: docs/astrodatapy/GSMF.png
   :width: 350
 
-More examples can be found in astrodatapy/utils/plots.ipynb and Documentation.
+More examples can be found in `this jupyter notebook <astrodatapy/utils/plots.ipynb>`_.
 
 Documentation
 =============
