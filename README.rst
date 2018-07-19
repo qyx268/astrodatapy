@@ -35,26 +35,26 @@ read quasar two point correlation function at z = 4 with a redshift range of [3.
 
     >>> from astrodatapy.clustering import clustering
     >>> obs = clustering(feature = 'QC_2PTCF', z_target = 4.0, z_tol = 0.5)
-    You are requesting QC_2PTCF at z_target=4.00 with a tolerance of z_tol=0.50 and h=1.000
-    quiet=True to silent
-    available data of QC_2PTCF includes:
-    Shen2007 Shen2009 He2018 Eftekharzadeh2015 Chehade2016 Retana-Montenegro2016
-    
-    Loading observational data from He2018...
-    Filename /home/yqin/.local/lib/python3.6/site-packages/astrodatapy-0.0.dev29-py3.6.egg/astrodatapy/data//QC_2PTCF/z3pt8.dat                                                                                
-    ..done
+        You are requesting QC_2PTCF at z_target=4.00 with a tolerance of z_tol=0.50 and h=1.000
+        quiet=True to silent
+        available data of QC_2PTCF includes:
+        Shen2007 Shen2009 He2018 Eftekharzadeh2015 Chehade2016 Retana-Montenegro2016
+        
+        Loading observational data from He2018...
+        Filename /home/yqin/.local/lib/python3.6/site-packages/astrodatapy-0.0.dev29-py3.6.egg/astrodatapy/data//QC_2PTCF/z3pt8.dat                                                                                
+        ..done
     >>> # show all available data of QC_2PTCF
-    ... print(obs.available_observation)
-    ['Shen2007' 'Shen2009' 'He2018' 'Eftekharzadeh2015' 'Chehade2016'
-     'Retana-Montenegro2016']
+    >>> print(obs.available_observation)
+        ['Shen2007' 'Shen2009' 'He2018' 'Eftekharzadeh2015' 'Chehade2016'
+        'Retana-Montenegro2016']
     >>> # show redshifts of all available data of QC_2PTCF
-    ... print(obs.z_available_observation)
-    [0.6 1.5 3.8 2.5 3.2 4.5]
+    >>> print(obs.z_available_observation)
+        [0.6 1.5 3.8 2.5 3.2 4.5]
     >>> # show the target data of QC_2PTCF at z = 4
-    ... print(obs.target_observation)
-                        DataType   FileName                                               Data
-    Name                                                                                      
-    He2018  PowerLaw_2COMPONENTS  z3pt8.dat  [[0.10115794542598985, 6345.99167885821, 12459...
+    >>> print(obs.target_observation)
+                            DataType   FileName                                               Data
+        Name                                                                                      
+        He2018  PowerLaw_2COMPONENTS  z3pt8.dat  [[0.10115794542598985, 6345.99167885821, 12459...
         
 
 Example 2
