@@ -22,7 +22,7 @@ Current modelling results include DRAGONS (Meraxes).
 Installation
 ============
 
-pip install git+https://github.com/qyx268/astrodatapy
+``$ pip install git+https://github.com/qyx268/astrodatapy``
 
 Usage
 =====
@@ -33,15 +33,29 @@ read quasar two point correlation function at z = 4 with a redshift range of [3.
 
 .. code:: python
 
-    from astrodatapy.clustering import clustering
-    obs = clustering(feature = 'QC_2PTCF', z_target = 4.0, z_tol = 0.5)
-    # show all available data of QC_2PTCF
-    print(obs.available_observation)
-    # show redshifts of all available data of QC_2PTCF
-    print(obs.z_available_observation)
-    # show the target data of QC_2PTCF at z = 4
-    print(obs.target_observation)
+    >>> from astrodatapy.clustering import clustering
+    >>> obs = clustering(feature = 'QC_2PTCF', z_target = 4.0, z_tol = 0.5)
+    You are requesting QC_2PTCF at z_target=4.00 with a tolerance of z_tol=0.50 and h=1.000
+    quiet=True to silent
+    available data of QC_2PTCF includes:
+    Shen2007 Shen2009 He2018 Eftekharzadeh2015 Chehade2016 Retana-Montenegro2016
     
+    Loading observational data from He2018...
+    Filename /home/yqin/.local/lib/python3.6/site-packages/astrodatapy-0.0.dev29-py3.6.egg/astrodatapy/data//QC_2PTCF/z3pt8.dat                                                                                
+    ..done
+    >>> # show all available data of QC_2PTCF
+    ... print(obs.available_observation)
+    ['Shen2007' 'Shen2009' 'He2018' 'Eftekharzadeh2015' 'Chehade2016'
+     'Retana-Montenegro2016']
+    >>> # show redshifts of all available data of QC_2PTCF
+    ... print(obs.z_available_observation)
+    [0.6 1.5 3.8 2.5 3.2 4.5]
+    >>> # show the target data of QC_2PTCF at z = 4
+    ... print(obs.target_observation)
+                        DataType   FileName                                               Data
+    Name                                                                                      
+    He2018  PowerLaw_2COMPONENTS  z3pt8.dat  [[0.10115794542598985, 6345.99167885821, 12459...
+        
 
 Example 2
 ---------
@@ -49,8 +63,8 @@ read Magorrian Relation at redshift 0, output with h=0.678, and do not show info
 
 .. code:: python
 
-  from astrodatapy.correlation import correlation
-  obs = correlation(feature = 'Magorrian', z_target = 0, quiet = 1)
+  >>> from astrodatapy.correlation import correlation
+  >>> obs = correlation(feature = 'Magorrian', z_target = 0, quiet = 1)
 
 
 Example 3
@@ -59,19 +73,52 @@ plot galaxy stellar mass function at redshift 5 and show labels
 
 .. code:: python
 
-  import matplotlib.pyplot as plt
-  from astrodatapy.number_density import number_density
-  fig, ax = plt.subplots(1, 1)
-  obs = number_density(feature = 'GSMF', z_target = 5.0)
-  for ii in range(obs.n_target_observation):
-    data       = obs.target_observation['Data'][ii]
-    label      = obs.target_observation.index[ii]
-    # error bar plot
-    ax.errorbar(data[:,0],  data[:,1], yerr = [data[:,1]-data[:,3], data[:,2]- data[:,1]], label = label)
-
-    # uncertainty range plot
-    #ax.plot(data[:,0], data[:,1], label = label)
-    #ax.fill_between(data[:,0], data[:,2], data[:,3], alpha=0.5)
+    >>> import matplotlib.pyplot as plt
+    >>> from astrodatapy.number_density import number_density
+    >>> colors     = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#a65628','#f781bf','#999999'] * 4
+    >>> markers    = ['o','s','v','^','<','>','p','*','D','.','8'] * 4
+    >>> linestyles = ['-','--','-.',':']
+    >>> 
+    >>> z   = 5.0
+    >>> obs = number_density(feature = 'GSMF', z_target = 5.0, quiet = 1, h=0.678)
+    >>> 
+    >>> j_data = 0
+    >>> k_func = 0
+    >>> fig, ax = plt.subplots(1, 1)
+    >>> for ii in range(obs.n_target_observation):
+    >>>     data       = obs.target_observation['Data'][ii]
+    >>>     label      = obs.target_observation.index[ii]
+    >>>     datatype   = obs.target_observation['DataType'][ii]
+    >>>     color      = colors[ii]
+    >>>     marker     = markers[j_data]
+    >>>     linestyle  = linestyles[k_func]
+    >>>     data[:,1:] = np.log10(data[:,1:])
+    >>>     if datatype == 'data':
+    >>>         ax.errorbar(data[:,0],  data[:,1], yerr = [data[:,1]-data[:,3],data[:,2]- data[:,1]],\
+    >>>                     label=label,color=color,fmt=marker)
+    >>>         j_data +=1
+    >>>     elif datatype == 'dataULimit':
+    >>>         ax.errorbar(data[:,0],  data[:,1], yerr = -0.2*data[:,1], uplims=True,\
+    >>>                     label=label,color=color,fmt=marker)
+    >>>         j_data +=1
+    >>>     else:
+    >>>         ax.plot(data[:,0],data[:,1],label=label,color=color,linestyle=linestyle,lw=3)
+    >>>         ax.fill_between(data[:,0], data[:,2],data[:,3],color=color,alpha=0.5)
+    >>>         k_func +=1
+    >>> 
+    >>> ax.set_xlim(7, 13)
+    >>> ax.set_ylim(-7, -0.5)
+    >>> ax.text(0.95,0.95, "z=%.2f"%z,horizontalalignment='right',\
+    >>>       verticalalignment='top',transform=ax.transAxes)
+    >>> leg = ax.legend(loc='lower left')
+    >>> leg.get_frame().set_alpha(0.5)
+    >>> ax.set_xlabel(r"$\log_{10}[M_*/{\rm M_{\odot}}]$")
+    >>> ax.set_ylabel(r"$\log_{10}[\rm \phi/Mpc^{-3} dex^{-1}]$")
+    >>> plt.savefig('./GSMF.png',bbox_inches='tight')
+   
+.. image:: astrodatapy/docs/astrodatapy/GSMF.png
+  :width: 400
+  :alt: GSMF at z = 5 
 
 More examples can be found in astrodatapy/utils/plots.ipynb and Documentation.
 
