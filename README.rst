@@ -64,7 +64,7 @@ read Magorrian Relation at redshift 0, output with h=0.678, and do not show info
 .. code:: python
 
   >>> from astrodatapy.correlation import correlation
-  >>> obs = correlation(feature = 'Magorrian', z_target = 0, quiet = 1)
+  >>> obs = correlation(feature = 'Magorrian', z_target = 0, quiet = 1, h = 0.678)
 
 
 Example 3
