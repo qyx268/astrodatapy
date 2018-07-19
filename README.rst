@@ -116,9 +116,8 @@ plot galaxy stellar mass function at redshift 5 and show labels
     >>> ax.set_ylabel(r"$\log_{10}[\rm \phi/Mpc^{-3} dex^{-1}]$")
     >>> plt.savefig('./GSMF.png',bbox_inches='tight')
    
-.. image:: astrodatapy/docs/astrodatapy/GSMF.png
-  :width: 400
-  :alt: GSMF at z = 5 
+.. image:: docs/astrodatapy/GSMF.png
+  :width: 350
 
 More examples can be found in astrodatapy/utils/plots.ipynb and Documentation.
 
