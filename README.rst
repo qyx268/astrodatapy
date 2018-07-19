@@ -31,28 +31,25 @@ Example 1
 ---------
 read quasar two point correlation function at z = 4 with a redshift range of [3.5, 4.5]
 
-  from astrodatapy.clustering import clustering
+.. code:: python
 
-  obs = clustering(feature = 'QC_2PTCF', z_target = 4.0, z_tol = 0.5)
-
-  # show all available data of QC_2PTCF
-
-  print(obs.available_observation)
-
-  # show redshifts of all available data of QC_2PTCF
-
-  print(obs.z_available_observation)
-
-  # show the target data of QC_2PTCF at z = 4
-
-  print(obs.target_observation)
+    from astrodatapy.clustering import clustering
+    obs = clustering(feature = 'QC_2PTCF', z_target = 4.0, z_tol = 0.5)
+    # show all available data of QC_2PTCF
+    print(obs.available_observation)
+    # show redshifts of all available data of QC_2PTCF
+    print(obs.z_available_observation)
+    # show the target data of QC_2PTCF at z = 4
+    print(obs.target_observation)
+    
 
 Example 2
 ---------
 read Magorrian Relation at redshift 0, output with h=0.678, and do not show information
 
-  from astrodatapy.correlation import correlation
+.. code:: python
 
+  from astrodatapy.correlation import correlation
   obs = correlation(feature = 'Magorrian', z_target = 0, quiet = 1)
 
 
@@ -60,28 +57,20 @@ Example 3
 ---------
 plot galaxy stellar mass function at redshift 5 and show labels
 
+.. code:: python
+
   import matplotlib.pyplot as plt
-
   from astrodatapy.number_density import number_density
-
   fig, ax = plt.subplots(1, 1)
-
   obs = number_density(feature = 'GSMF', z_target = 5.0)
-
   for ii in range(obs.n_target_observation):
-
     data       = obs.target_observation['Data'][ii]
-
     label      = obs.target_observation.index[ii]
-
     # error bar plot
-
     ax.errorbar(data[:,0],  data[:,1], yerr = [data[:,1]-data[:,3], data[:,2]- data[:,1]], label = label)
 
     # uncertainty range plot
-
     #ax.plot(data[:,0], data[:,1], label = label)
-
     #ax.fill_between(data[:,0], data[:,2], data[:,3], alpha=0.5)
 
 More examples can be found in astrodatapy/utils/plots.ipynb and Documentation.
