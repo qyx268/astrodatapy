@@ -4,6 +4,8 @@ AstroDataPy
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org
     :alt: Powered by Astropy Badge
+.. image:: https://travis-ci.com/qyx268/astrodatapy.svg?branch=master
+    :target: https://travis-ci.com/qyx268/astrodatapy
 
 Python tools to collect astronomical data.
 
