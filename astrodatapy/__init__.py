@@ -4,7 +4,6 @@
 # should keep this content at the top.
 # ----------------------------------------------------------------------------
 from ._astropy_init import *
-from . import magnitudes
 from . import misc_tools
 from . import number_density
 from . import correlation
