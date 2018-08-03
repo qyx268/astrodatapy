@@ -38,6 +38,7 @@ install:
   - source activate test
   - python setup.py build
   - python setup.py install
+  - python setup.py test
  
 before_script:
 
