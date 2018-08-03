@@ -1,26 +1,19 @@
-# %ECSV 0.9
-# ---
-# datatype:
-# - {name: logM, unit: solMass, datatype: float64}
-# - {name: logphi, unit: 1 / (dex Mpc3), datatype: float64}
-# - {name: perr, unit: 1 / (dex Mpc3), datatype: float64}
-# - {name: merr, unit: 1 / (dex Mpc3), datatype: float64}
-# meta: !!omap
-# - {author: 'Song, M. et al.'}
-# - {redshift: 5}
-# - {h: 0.7}
-# - {IMF: Salpeter}
-# - {year: '2015'}
-# - {title: 'The Evolution of the Galaxy Stellar Mass Function at z= 4-8: A Steepening
-#     Low-mass-end Slope with Increasing Redshift'}
-# - {identifier: 'arXiv:1507.05636'}
+# Table 2 of Song+ 2016
+# The Astrophysical Journal, Volume 825, Issue 1, article id. 5, 25 pp. (2016).
+# Salpeter IMF
+# h = 0.7
+# Units:
+# logM : log10(M*/Msun)
+# logphi : log10(phi / dex / Mpc-3)
+# perr : log10(phi / dex / Mpc-3)
+# merr : log10(phi / dex / Mpc-3)
 #logM logphi perr merr
 7.25 -1.47 0.24 0.21
 7.75 -1.72 0.2 0.2
 8.25 -2.01 0.16 0.16
-8.75 -2.33 0.15 0.1
+8.75 -2.33 0.15 0.10
 9.25 -2.68 0.07 0.14
 9.75 -3.12 0.09 0.11
-10.25 -3.63 0.13 0.11
-10.75 -4.4 0.15 0.35
-11.25 -5.96 0.98 1.98
+10.25 -3.47 0.16 0.14
+10.75 -4.12 0.25 0.38
+11.25 -4.88 0.4 0.61
