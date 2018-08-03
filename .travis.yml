@@ -39,6 +39,7 @@ install:
   - python setup.py build
   - python setup.py install
   - pip install pytest
+  - pip install pytest-astropy
   - python setup.py test
  
 before_script:
