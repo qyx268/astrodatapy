@@ -38,7 +38,7 @@ install:
   - source activate test
   - python setup.py build
   - python setup.py install
-  - conda install pytest
+  - pip install pytest
   - python setup.py test
  
 before_script:
