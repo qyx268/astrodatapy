@@ -36,6 +36,8 @@ install:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda create -q --yes -n test python=$PYTHON_VERSION 
   - source activate test
+  - python setup.py build
+  - python setup.py install
  
 before_script:
 
