@@ -8,3 +8,10 @@ dependencies:
     - Cython
     - matplotlib
     - numpy
+    - sphinx>=1.4
+    - pandoc
+    - nbconvert
+    - ipykernel
+    - pip:
+       - nbsphinx
+#       - dependency_from_pip
