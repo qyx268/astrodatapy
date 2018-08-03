@@ -1,4 +1,4 @@
-from ..misc_tools import available_redshifts
+from astrodatapy.misc_tools import available_redshifts
 
 def test_number_density():
     from astrodatapy.number_density import number_density as function
