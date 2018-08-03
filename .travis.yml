@@ -43,4 +43,4 @@ before_script:
 
 script:
     - cd astrodatapy/tests/
-    - python tests.py
+    - python test_astrodatapy.py
