@@ -51,4 +51,5 @@ before_script:
 
 script:
     - cd astrodatapy/tests/
+    - pip install astropy
     - python test_astrodatapy.py
