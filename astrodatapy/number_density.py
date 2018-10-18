@@ -278,7 +278,7 @@ class number_density:
             if not self.quiet:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of -5 because it is %s"%(h_obs,self.h, self.feature))
             data[:,0] -= 5 * np.log10(self.h/h_obs)
-        elif self.feature in ['SFRF',]:
+        elif self.feature in ['SFRF','BHMF']:
             if not self.quiet:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of 0 because it is %s"%(h_obs,self.h, self.feature))
         else:
