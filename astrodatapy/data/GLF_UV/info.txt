@@ -31,4 +31,4 @@ Livermore2017		M1600		0.7		1.0		ULDeltas		0		0		data		2017ApJ...835..113L
 Bhatawdekar2019		M1600		0.7		1.0		ULDeltas		0		0		data		2019MNRAS.tmp..843B
 Atek2018		M1600		0.71		1.0		Delta		1		0		data		2018MNRAS.479.5184A
 Finkelstein2015		M1600		0.702		1.0		ULDeltas		0		0		data		2015ApJ...810...71F
-Gillet2020		M1600		0.7		1.0		ULDeltas		0		0		data_sim		2020MNRAS.491.1980G
+Gillet2020		M1600		0.7		1.0		ULDeltas		1		0		data_sim		2020MNRAS.491.1980G
