@@ -1,0 +1,16 @@
+# Table 2 of Song+ 2016
+# The Astrophysical Journal, Volume 825, Issue 1, article id. 5, 25 pp. (2016).
+# Salpeter IMF
+# h = 0.7
+# Units:
+# logM : log10(M*/Msun)
+# logphi : log10(phi / dex / Mpc-3)
+# perr : log10(phi / dex / Mpc-3)
+# merr : log10(phi / dex / Mpc-3)
+#logM logphi perr merr
+7.25 -1.73 1.01 0.84
+7.75 -2.28 0.84 0.64
+8.25 -2.88 0.75 0.57
+8.75 -3.45 0.57 0.60
+9.25 -4.21 0.63 0.78
+9.75 -5.31 1.01 1.64
