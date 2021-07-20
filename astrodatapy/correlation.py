@@ -28,7 +28,7 @@ class correlation:
         z_tol:    tolerance for the target redshift, default = 0.25
         h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
         quiet:    if True, no warning or processing is give, default = False
-        folder:   where observational data is, default = /fred/oz025/yqin/data/observations/
+        folder:   where observational data is, default = ./data/
         '''
         self.feature                  = feature
         self.folder                   = folder+'/'
