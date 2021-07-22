@@ -14,7 +14,7 @@
 # Schechter parameters: xmin, xmax, logM_star, alpha1, phi_star1, alpha2, phi_star2
 
 # Outdated data
-#Baldry2008		DietSalpeter		1.0		1.0		LULimits		0		0		data		2008MNRAS.388..945B
+#Baldry2008		DietSalpeter	1.0		1.0		LULimits	0		0		data		2008MNRAS.388..945B
 
 #Name		           IMF		h	NormalizationOfPhi	Errors		Log		HinPhi		Type		Bibliographic
 Bell+2003		DietSalpeter	1.0		1.0		LULimits	0		0		data		2012MNRAS.421..621B
@@ -33,7 +33,7 @@ Davidzon+2017		Chabrier	0.7		1.0	        None		0		0		Schechter	2017A&A...605A..7
 Santini+2012		Salpeter	0.7		1.0		None		0		0		Schechter	2012A&A...538A..33S
 Ilbert+2013		Chabrier	0.7		1.0	        None		0		0		Schechter	2013A&A...556A..55I
 Muzzin+2013		Kroupa		0.7		1.0	        None		0		0		Schechter	2013ApJ...777...18M
-Huertas-Company+2016 Chabrier		0.7		1.0	        None		0		0		Schechter	2016MNRAS.462.4495H
+Huertas-Company+2016	Chabrier	0.7		1.0	        None		0		0		Schechter	2016MNRAS.462.4495H
 Tomczak+2014		Chabrier	0.7		1.0	        ULDeltas	1		0		data		2014ApJ...783...85T
 Pozzetti+2007		Chabrier	0.7		1.0	        None		0		0		Schechter	2007A&A...474..443P
 Baldry+2012		Chabrier	0.678		1.0	        ULDeltas	1		0		data		2012MNRAS.421..621B
