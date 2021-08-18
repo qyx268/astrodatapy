@@ -29,7 +29,7 @@ list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None']
 class number_density:
     
     def __init__(self, feature=None, z_target=None, quiet=False, \
-                 h = 1, z_tol=0.25, folder=fileDir+'/data/'):
+                 h = 1, z_tol=0.25, folder=fileDir+'/data/', IMF_out="Kroupa"):
         
         '''
         feature:  GSMF, GSMF_Blue, GSMF_Red, GSMF_Bulge, GSMF_Disk, GSMF_Quiescent
@@ -39,7 +39,8 @@ class number_density:
         z_tol:    tolerance for the target redshift, default = 0.25
         h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
         quiet:    if True, no warning or processing is give, default = False
-        folder:   where observational data is, default = /fred/oz025/yqin/data/observations/
+        folder:   where observational data is, default = ./data/
+        IMF_out:  the IMF to use to convert data, default = Kroupa
         '''
         self.feature                  = feature
         self.folder                   = folder+'/'
@@ -55,7 +56,7 @@ class number_density:
         self.available_observation    = None
         self.n_target_observation     = 0
         self.target_observation       = None
-        
+        self.IMF_out                  = IMF_out
         if self.feature is not None and self.z_target is not None:
             if not self.quiet:
                 print("You are requesting %s at z_target=%.2f with a tolerance of z_tol=%.2f and h=%.3f"%(self.feature, self.z_target, self.z_tol,self.h))
@@ -73,7 +74,7 @@ class number_density:
     
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt',\
-                         sep='\t\t', skiprows=self.info_skiprows, engine='python')
+                         delim_whitespace=True, skiprows=self.info_skiprows, engine='python')
         info.set_index('#Name', inplace=True)
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
@@ -157,7 +158,7 @@ class number_density:
         # convert to Salpeter IMF
         if 'IMF' in info.index:
             if info.IMF in list_IMF:
-                data = self._convert_IMF(data, info.IMF)
+                data = self._convert_IMF(data, info.IMF, self.IMF_out)
             else:
                 print('Error! Unrecognized IMF (%s)! quit'%info.IMF)
                 return -1
@@ -210,7 +211,7 @@ class number_density:
         
         return data
     
-    def _convert_IMF(self, data, IMF):
+    def _convert_IMF(self, data, IMF, IMF_out):
         if IMF != 'Salpeter':
             if not self.quiet:
                 print("Converting IMF from %s to Salpeter"%IMF)
@@ -220,6 +221,10 @@ class number_density:
                 data[:,0] += Kro2Sal
             if IMF == 'Chabrier':
                 data[:,0] += Cha2Sal
+            if IMF_out == 'Kroupa':
+                if not self.quiet:
+                    print("Converting IMF from Salpeter to Kroupa")
+                data[:,0] -= Kro2Sal
         return data
         
     def _convert_MAG(self, data, MAG):
