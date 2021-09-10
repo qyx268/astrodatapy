@@ -221,10 +221,10 @@ class number_density:
                 data[:,0] += Kro2Sal
             if IMF == 'Chabrier':
                 data[:,0] += Cha2Sal
-            if IMF_out == 'Kroupa':
-                if not self.quiet:
-                    print("Converting IMF from Salpeter to Kroupa")
-                data[:,0] -= Kro2Sal
+        if IMF_out == 'Kroupa':
+            if not self.quiet:
+                print("Converting IMF from Salpeter to Kroupa")
+            data[:,0] -= Kro2Sal
         return data
         
     def _convert_MAG(self, data, MAG):
