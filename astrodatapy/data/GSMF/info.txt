@@ -46,4 +46,4 @@ Qin+2017_Tiamat		Salpeter	0.678		1.0	        Delta		0		0		data_sim	2017MNRAS.472
 Qin+2017_Tiamat125_HR	Salpeter	0.678		1.0	        Delta		0		0		data_sim	2017MNRAS.472.2009Q
 Bhatawdekar+2019	Chabrier	0.7		1.0		None		0		0		Schechter	2019MNRAS.486.3805B 
 Kikuchihara+2020	Chabrier        0.7		1.0		None		0		0		Schechter	2020ApJ...893...60K
-Stefanon+2021		Chabrier        0.7		1e-4		ULDeltas	0		0		data		2021arXiv210316571S
+Stefanon+2021		Salpeter        0.7		1e-4		ULDeltas	0		0		data		2021arXiv210316571S
