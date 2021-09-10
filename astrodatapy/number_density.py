@@ -212,6 +212,8 @@ class number_density:
         return data
     
     def _convert_IMF(self, data, IMF, IMF_out):
+        if IMF == IMF_out:
+            return data
         if IMF != 'Salpeter':
             if not self.quiet:
                 print("Converting IMF from %s to Salpeter"%IMF)
@@ -221,10 +223,15 @@ class number_density:
                 data[:,0] += Kro2Sal
             if IMF == 'Chabrier':
                 data[:,0] += Cha2Sal
-        if IMF_out == 'Kroupa':
+        if IMF_out != 'Salpeter':
             if not self.quiet:
-                print("Converting IMF from Salpeter to Kroupa")
-            data[:,0] -= Kro2Sal
+                print("Converting IMF from Salpeter to %s"%IMF_out)
+            if IMF_out == 'DietSalpeter':
+                data[:,0] -= DietSal2Sal
+            if IMF_out == 'Kroupa':
+                data[:,0] -= Kro2Sal
+            if IMF_out == 'Chabrier':
+                data[:,0] -= Cha2Sal
         return data
         
     def _convert_MAG(self, data, MAG):
