@@ -26,7 +26,7 @@ Yoshida2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...653..988Y
 Reddy2009		M1600		0.7		1.0		None		0		0		Schechter		2009ApJ...692..778R
 Sawicki2006		M1600		0.7		1.0		None		0		0		Schechter		2006ApJ...642..653S
 Qin2017_Tiamat		M1600		0.678		1.0		Delta		0		0		data_sim		2017MNRAS.472.2009Q
-Ishigaki2018		M1600		0.7		1.0		ULDeltas		0		0		data		2018ApJ...854...73I
+Ishigaki2018		M1600		0.7		1.0		ULLimits		0		0		data		2018ApJ...854...73I
 Livermore2017		M1600		0.7		1.0		ULDeltas		0		0		data		2017ApJ...835..113L
 Bhatawdekar2019		M1600		0.7		1.0		ULDeltas		0		0		data		2019MNRAS.tmp..843B
 Atek2018		M1600		0.71		1.0		Delta		1		0		data		2018MNRAS.479.5184A
