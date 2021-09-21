@@ -75,6 +75,7 @@ class number_density:
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt',\
                          delim_whitespace=True, skiprows=self.info_skiprows, engine='python')
+        print(info)
         info.set_index('#Name', inplace=True)
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
