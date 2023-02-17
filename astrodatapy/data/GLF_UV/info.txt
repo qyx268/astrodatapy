@@ -38,10 +38,11 @@ Oesch2018_ulimt		M1600		0.7		1e-4		None		0		0		dataULimit		2018ApJ...855..105O
 Bouwens2021		M1600		0.7		1.0 		Delta		0		0		data		2021AJ....162...47B
 Leethochawalit2022		M1600		0.6731		1.0		ULDeltas		1		0		data		2022arXiv220515388L
 Leethochawalit2022_ulimit		M1600		0.6731		1.0		None		1		0		dataULimit		2022arXiv220515388L
-Naidu2022		M1600		0.678		1.0		ULDeltas		1		0		data		2022arXiv220709434N
+Naidu2022		M1600		0.678		1.0		ULDeltas		1		0		data		2022ApJ...940L..14N
 Oesch2016		M1600		0.7		1.0		ULLimits		1		0		data		2016ApJ...819..129O
-Donnan2022		M1600		0.7		1e-6		Delta		0		0		data		2022arXiv220712356D
-Kauffmann2022		M1600		0.7		1e-6		Delta		0		0		data		2022arXiv220711740K
-Kauffmann2022_ulimit		M1600		0.7		1e-6		None		0		0		dataULimit		2022arXiv220711740K
+Donnan2023		M1600		0.7		1e-6		ULDeltas		0		0		data		2023MNRAS.518.6011D
+Kauffmann2022		M1600		0.7		1e-6		Delta		0		0		data		2022A&A...667A..65K
+Kauffmann2022_ulimit		M1600		0.7		1e-6		None		0		0		dataULimit		2022A&A...667A..65K
 Harikane2022		M1600		0.6766		1.0		ULDeltas		0		0		data		2022arXiv220801612H
 Harikane2022_ulimit		M1600		0.6766		1.0		None		0		0		dataULimit		2022arXiv220801612H
+Perez-Gonzalez2023		M1600		0.7		1.0		ULDeltas		1		0		data		2023arXiv230202429P
