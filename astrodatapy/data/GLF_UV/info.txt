@@ -48,3 +48,4 @@ Harikane2023_ulimit		M1600		0.6766		1.0		None		0		0		dataULimit		2022arXiv220801
 Perez-Gonzalez2023		M1600		0.7		1.0		ULDeltas		1		0		data		2023arXiv230202429P
 Bouwens2022		M1600		0.7		1.0 		Delta		0		0		data		2022arXiv221102607B
 Harikane2022		M1600		0.6774		1.0		ULDeltas		0		0		data		2022ApJ...929....1H
+Finkelstein2022		M1600		0.6736		1e-5		ULDeltas		0		0		data		2022ApJ...940L..55F
