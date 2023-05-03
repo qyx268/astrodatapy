@@ -89,7 +89,7 @@ class number_density:
             self._target_observations()
             
     def _target_observations(self):
-        flags = np.zeros(self.n_available_observation, dtype=np.bool)
+        flags = np.zeros(self.n_available_observation, dtype=bool)
         names = np.zeros(self.n_available_observation, dtype=object)
         for ii, observation in enumerate(self.available_observation):
             list_redshift = glob.glob1(self.folder + self.feature + '/' +\
