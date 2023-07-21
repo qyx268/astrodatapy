@@ -24,7 +24,7 @@ _MB_to_MABB  = -_MABB_to_MB
 list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB','M1600', 'Bolometric']
 
 # For y Error Format of number density
-list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None']
+list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None', np.NaN]
 
 class number_density:
     
