@@ -253,7 +253,7 @@ class number_density:
 
     def _convert_Errors(self, data, Errors):
         if Errors == 'None' and data.shape[1]==2:
-            data = np.concatenate((data, data[:,-1][:,None], data[:,-1][:,None]*2), axis=1)
+            data = np.concatenate((data, data[:,-1][:,None], data[:,-1][:,None]), axis=1)
             #data = np.concatenate((data, -data[:,-1][:,None], -data[:,-1][:,None]*2), axis=1) why did i do this?
         if Errors != 'ULLimits' and Errors != 'None':
             if not self.quiet:
