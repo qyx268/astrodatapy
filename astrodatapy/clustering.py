@@ -126,7 +126,7 @@ class clustering:
         return data
 
     def _PowerLaw(self, xmin, xmax, r_0, delta_r_0, gamma, delta_gamma):
-        bins       = np.linspace(xmin, xmax, (xmax - xmin) * 100 + 1)
+        bins          = np.linspace(xmin, xmax, int((xmax - xmin) * 100) + 1)
         width      = (bins[1] - bins[0]) / 2.
         middles    = bins[:-1] + width
         bins       = 10**bins
