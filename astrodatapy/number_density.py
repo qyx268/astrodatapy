@@ -262,7 +262,7 @@ class number_density:
             if Errors == 'LULimits' or Errors == 'LUDeltas':
                 data[:,2:4] = data[:,3:1:-1]
             if Errors == 'ULDeltas' or Errors == 'LUDeltas' or Errors == 'Delta':
-                if data[0,3]  > 0:
+                if np.sum(data[:,3])  > 0:
                     data[:,3] = -data[:,3]
                 data[:,2:4] += data[:,1][:,None]
         return data            
