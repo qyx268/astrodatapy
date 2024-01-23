@@ -146,7 +146,7 @@ class clustering:
 
     def _PowerLaw_2COMPONENTS(self, xmin, xmax, r_0_GG, delta_r_0_GG, gamma_GG, delta_gamma_GG,\
                                                 r_0_QG, delta_r_0_QG, gamma_QG, delta_gamma_QG):
-        bins          = np.linspace(xmin, xmax, (xmax - xmin) * 100 + 1)
+        bins          = np.linspace(xmin, xmax, int((xmax - xmin) * 100) + 1)
         width         = (bins[1] - bins[0]) / 2.
         middles       = bins[:-1] + width
         bins          = 10**bins
