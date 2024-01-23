@@ -16,7 +16,7 @@ Graham2007		1.0		1e-4		ULDeltas		0		1		data		2007MNRAS.378..198G
 Mutlu-Pakdil2016		0.677		1.0		ULDeltas		1		1		data		2016ApJ...830..117M
 Shankar2009		0.7		1.0		LULimits		1		0		data		2009ApJ...690...20S
 Shen2012		0.7		1.0		ULLimits		1		0		data		2012ApJ...746..169S
-Vika2009		1.0		1e-4		ULDeltas		0		1		data		2009MNRAS.400.1451V
+Vika2009		1.0		1e-4		ULDeltas		0		0		data		2009MNRAS.400.1451V
 Qin2017_Tiamat		0.678		1.0		Delta		0		0		data_sim		2017MNRAS.472.2009Q
 Qin2017_Tiamat125_HR		0.678		1.0		Delta		0		0		data_sim		2017MNRAS.472.2009Q
 Matthee2023		0.7		1.0		ULLimits		1		0		data		preliminary
