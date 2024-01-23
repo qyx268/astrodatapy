@@ -176,7 +176,7 @@ class correlation:
             data_new[:,1] = data[:,1]
             data_new[:,2] = data[:,2]
             data_new[:,3] = data[:,3]
-            if data[0,5]  > 0:
+            if np.sum(data[:,5])  > 0:
                 data[:,5] = -data[:,5]
             data_new[:,4] = data[:,3] + data[:,4]
             data_new[:,5] = data[:,3] + data[:,5]
@@ -185,7 +185,7 @@ class correlation:
             data_new[:,1] = data[:,1]
             data_new[:,2] = data[:,2]
             data_new[:,3] = data[:,3]
-            if data[0,4]  > 0:
+            if np.sum(data[:,4])  > 0:
                 data[:,4] = -data[:,4]
             data_new[:,4] = data[:,3] + data[:,5]
             data_new[:,5] = data[:,3] + data[:,4]
@@ -223,7 +223,7 @@ class correlation:
             data_new[:,1] = data[:,2]
             data_new[:,2] = data[:,1]
             data_new[:,3] = data[:,3]
-            if data[0,5]  > 0:
+            if np.sum(data[:,5])  > 0:
                 data[:,5] = -data[:,5]
             data_new[:,4] = data[:,3] + data[:,4]
             data_new[:,5] = data[:,3] + data[:,5]
@@ -232,7 +232,7 @@ class correlation:
             data_new[:,1] = data[:,2]
             data_new[:,2] = data[:,1]
             data_new[:,3] = data[:,3]
-            if data[0,4]  > 0:
+            if np.sum(data[:,4])  > 0:
                 data[:,4] = -data[:,4]
             data_new[:,4] = data[:,3] + data[:,5]
             data_new[:,5] = data[:,3] + data[:,4]
@@ -254,7 +254,7 @@ class correlation:
         if DataFormat == 'xULDeltasyULLimits':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
@@ -263,7 +263,7 @@ class correlation:
         if DataFormat == 'xULDeltasyLULimits':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
@@ -272,29 +272,29 @@ class correlation:
         if DataFormat == 'xULDeltasyULDeltas':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
-            if data[0,5]  > 0:
+            if np.sum(data[:,5])  > 0:
                 data[:,5] = -data[:,5]
             data_new[:,4] = data[:,3] + data[:,4]
             data_new[:,5] = data[:,3] + data[:,5]
         if DataFormat == 'xULDeltasyLUDeltas':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
-            if data[0,4]  > 0:
+            if np.sum(data[:,4])  > 0:
                 data[:,4] = -data[:,4]
             data_new[:,4] = data[:,3] + data[:,5]
             data_new[:,5] = data[:,3] + data[:,4]
         if DataFormat == 'xULDeltasyDelta':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
@@ -303,7 +303,7 @@ class correlation:
         if DataFormat == 'xULDeltasy':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,1]
-            if data[0,2] > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = - data[:,2]
             data_new[:,2] = data[:,0] + data[:,2]
             data_new[:,3] = data[:,3]
@@ -313,7 +313,7 @@ class correlation:
         if DataFormat == 'xLUDeltasyULLimits':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
@@ -322,7 +322,7 @@ class correlation:
         if DataFormat == 'xLUDeltasyLULimits':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
@@ -331,29 +331,29 @@ class correlation:
         if DataFormat == 'xLUDeltasyULDeltas':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
-            if data[0,5]  > 0:
+            if np.sum(data[:,5])  > 0:
                 data[:,5] = -data[:,5]
             data_new[:,4] = data[:,3] + data[:,4]
             data_new[:,5] = data[:,3] + data[:,5]
         if DataFormat == 'xLUDeltasyLUDeltas':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
-            if data[0,4]  > 0:
+            if np.sum(data[:,4])  > 0:
                 data[:,4] = -data[:,4]
             data_new[:,4] = data[:,3] + data[:,5]
             data_new[:,5] = data[:,3] + data[:,4]
         if DataFormat == 'xLUDeltasyDelta':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
@@ -362,7 +362,7 @@ class correlation:
         if DataFormat == 'xLUDeltasy':
             data_new[:,0] = data[:,0]
             data_new[:,1] = data[:,0] + data[:,2]
-            if data[0,1] > 0:
+            if np.sum(data[:,1])  > 0:
                 data[:,1] = - data[:,1]
             data_new[:,2] = data[:,0] + data[:,1]
             data_new[:,3] = data[:,3]
@@ -388,7 +388,7 @@ class correlation:
             data_new[:,1] = data[:,0] + data[:,1]
             data_new[:,2] = data[:,0] - data[:,1]
             data_new[:,3] = data[:,2]
-            if data[0,4]  > 0:
+            if np.sum(data[:,4])  > 0:
                 data[:,4] = -data[:,4]
             data_new[:,4] = data[:,2] + data[:,3]
             data_new[:,5] = data[:,2] + data[:,4]
@@ -397,7 +397,7 @@ class correlation:
             data_new[:,1] = data[:,0] + data[:,1]
             data_new[:,2] = data[:,0] - data[:,1]
             data_new[:,3] = data[:,2]
-            if data[0,3]  > 0:
+            if np.sum(data[:,3])  > 0:
                 data[:,3] = -data[:,3]
             data_new[:,4] = data[:,2] + data[:,4]
             data_new[:,5] = data[:,2] + data[:,3]
@@ -435,7 +435,7 @@ class correlation:
             data_new[:,1] = data[:,0]
             data_new[:,2] = data[:,0]
             data_new[:,3] = data[:,1]
-            if data[0,3]  > 0:
+            if np.sum(data[:,3])  > 0:
                 data[:,3] = -data[:,3]
             data_new[:,4] = data[:,1] + data[:,2]
             data_new[:,5] = data[:,1] + data[:,3]
@@ -444,7 +444,7 @@ class correlation:
             data_new[:,1] = data[:,0]
             data_new[:,2] = data[:,0]
             data_new[:,3] = data[:,1]
-            if data[0,2]  > 0:
+            if np.sum(data[:,2])  > 0:
                 data[:,2] = -data[:,2]
             data_new[:,4] = data[:,1] + data[:,3]
             data_new[:,5] = data[:,1] + data[:,2]
