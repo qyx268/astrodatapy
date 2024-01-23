@@ -49,7 +49,7 @@ class clustering:
             return
     
     def _load_info(self):
-        info = pd.read_csv(self.folder + self.feature + '/info.txt',\
+        info = pd.read_csv(self.folder + self.feature + '/info.txt', keep_default_na=False,\
                          sep='\t\t', skiprows=self.info_skiprows, engine='python')
         info.set_index('#Name', inplace=True)
         self.n_available_observation = len(info.index.values)
