@@ -21,7 +21,7 @@ _MB_to_Mg    = -2.5*(1.+alpha_q_op)*np.log10(3)-0.14+0.209
 _Mg_to_MB    = -_MB_to_Mg
 _MABB_to_MB  = 0.09
 _MB_to_MABB  = -_MABB_to_MB
-list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB','M1600', 'Bolometric']
+list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB', 'M1500', 'M1600', 'Bolometric']
 
 # For y Error Format of number density
 list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None', np.NaN]
