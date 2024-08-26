@@ -88,9 +88,9 @@ plot galaxy stellar mass function at redshift 5 and show labels
     >>> k_func = 0
     >>> fig, ax = plt.subplots(1, 1)
     >>> for ii in range(obs.n_target_observation):
-    >>>     data       = obs.target_observation['Data'][ii]
+    >>>     data       = obs.target_observation['Data'].iloc[ii]
     >>>     label      = obs.target_observation.index[ii]
-    >>>     datatype   = obs.target_observation['DataType'][ii]
+    >>>     datatype   = obs.target_observation['DataType'].iloc[ii]
     >>>     color      = colors[ii]
     >>>     marker     = markers[j_data]
     >>>     linestyle  = linestyles[k_func]
