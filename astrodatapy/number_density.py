@@ -74,7 +74,7 @@ class number_density:
     
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt', keep_default_na=False,\
-                         delim_whitespace=True, skiprows=self.info_skiprows, engine='python')
+                        sep='\s+', skiprows=self.info_skiprows, engine='python')
         info.set_index('#Name', inplace=True)
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
@@ -128,9 +128,9 @@ class number_density:
                 data = data.reshape([1,-1])
             
             if 'Type' in info.index:
-                self.target_observation['DataType'][ii] = info.Type
+                self.target_observation.loc[ii, 'DataType'] = info.Type
             else:
-                self.target_observation['DataType'][ii] = 'Unknown'
+                self.target_observation.loc[ii, 'DataType'] = 'Unknown'
             results[ii] = self._convert_observational_data(data, info)
             if not self.quiet:
                 print("..done")
