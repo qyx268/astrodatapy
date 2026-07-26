@@ -1,0 +1,12 @@
+# Juodzbalis et al. (2025), Figure 19, vector-digitized
+# Redshift: 4 < z < 7
+# Magnitude definition: MUV
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), with asymmetric errors in dex
+# Note: These values are digitized from the vector objects in Figure 19 and are not from a numerical table.
+# Note: The LF is for Type-1 AGN hosts and uses total host plus AGN MUV, not nuclear M1450.
+# Note: The paper states that only about 30 percent of its sample has LRD-like spectra.
+#
+# MUV  LogPhi  UpperDeltaDex  LowerDeltaDex
+ -18.375  -3.71523  0.139171  0.206218
+ -18.975  -3.73451  0.12487  0.176166
+ -19.800  -4.69513  0.176062  0.301036

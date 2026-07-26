@@ -1,0 +1,14 @@
+# Shin et al. (2022), Table 4: this work
+# Redshift: z ~ 5
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
+# Note: The paper tabulates log10(Phi) and linear delta_Phi in units of 1e-9.
+# Note: The central Phi values were exponentiated; the tabulated errors are retained.
+# Note: The two bins at M1450 = -21.75 and -21.25 are excluded because the paper flags them as highly contaminated by high-redshift galaxies.
+# Note: Rebinned Yang et al. and Kim et al. points in the same table are not duplicated here.
+#
+# M1450  Phi  Delta
+ -25.500  19.8609  11.463
+ -24.500  52.6017  19.889
+ -23.500  151.356  37.83
+ -22.500  194.984  64.999

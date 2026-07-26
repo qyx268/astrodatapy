@@ -1,0 +1,16 @@
+# Kim et al. (2020), Table 5: Case2
+# Redshift: 4.7 < z < 5.4
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
+# Note: Case 1 and Case 2 are alternative sample/completeness definitions and should not be used as independent data.
+# Note: The rebinned Yang et al. bright points in Table 5 are excluded because Yang et al. (2016) is provided separately.
+#
+# M1450  Phi  Delta
+ -26.750  7.1  7.1
+ -26.250  19.6  11.3
+ -25.750  19.2  11.1
+ -25.250  28.8  14.4
+ -24.750  51.3  20.9
+ -24.250  55  22.5
+ -23.750  69.5  28.4
+ -23.250  68.1  39.3

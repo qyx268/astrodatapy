@@ -1,0 +1,13 @@
+# Schindler et al. (2023), Table 3: PS1 distant-quasar survey
+# Redshift: 5.7 <= z <= 6.2
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (equivalent to Gpc^-3 mag^-1)
+# Note: Magnitude-bin centers, rather than the median object magnitudes, are used in the first column.
+# Note: The listed Phi values include the paper's completeness correction.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -27.500  0.149  0.089  0.059
+ -27.000  0.381  0.126  0.097
+ -26.500  0.843  0.18  0.151
+ -26.000  1.7  0.328  0.278
+ -25.380  3.433  0.721  0.604

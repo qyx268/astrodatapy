@@ -1,0 +1,9 @@
+# Grazian et al. (2020), CANDELS faint-AGN space density
+# Redshift: 5.0 < z < 6.1; sources at z_spec ~ 5.5
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-6 cMpc^-3 mag^-1
+# Note: The paper states that this estimate has no incompleteness correction and therefore represents a lower limit.
+# Note: The format has no dedicated lower-limit type, so the measured estimate and Poisson errors are retained as a data row with this warning.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -22.300  1.29  1.72  0.85

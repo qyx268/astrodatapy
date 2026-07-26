@@ -1,0 +1,26 @@
+# McGreer et al. (2018), Table 1: all merged
+# Redshift: z ~ 5
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
+# Note: The paper tabulates log10(Phi) but gives sigma_Phi in linear units of 1e-9.
+# Note: The central Phi values were exponentiated; the tabulated linear errors are retained.
+# Note: The three survey components are kept in separate files.
+#
+# M1450  Phi  Delta
+ -28.550  0.125893  0.12
+ -28.050  0.199526  0.14
+ -27.550  1.28825  0.37
+ -27.050  3.89045  0.72
+ -27.000  8.70964  5.57
+ -26.550  7.94328  1.08
+ -26.450  17.7828  6.97
+ -26.350  7.58578  4.34
+ -26.050  9.33254  1.74
+ -25.900  5.88844  3.38
+ -25.350  33.8844  10.39
+ -25.250  27.5423  12.7
+ -24.800  57.544  13.12
+ -24.350  56.2341  18.05
+ -24.250  60.256  21.91
+ -23.650  47.863  23.77
+ -22.900  47.863  28.24

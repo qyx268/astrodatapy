@@ -1,0 +1,16 @@
+# Taylor et al. (2025), Table 4: BLAGN plus host UV LF
+# Redshift: 3.5 < z < 6 for the LF
+# Magnitude definition: M1500
+# Phi convention: linear Phi in units of 1e-6 cMpc^-3 mag^-1
+# Note: This is M1500, not M1450.
+# Note: It combines the BLAGN and host-galaxy UV emission.
+# Note: The LF redshift interval extends below z=5, so it is supplied as an optional comparison rather than a strict z>=5 file.
+# Note: Ten BLAGN in the full sample are classified as LRDs, but this LF is for the full BLAGN sample, not an LRD-only LF.
+#
+# M1500  Phi  UpperDelta  LowerDelta
+ -22.000  3.01  3.97  1.95
+ -21.000  36.2  19.5  13.4
+ -20.000  58.5  22.2  16.6
+ -19.000  53.3  20.2  15.2
+ -18.000  148  50.9  38.9
+ -17.000  39  15.7  11.6

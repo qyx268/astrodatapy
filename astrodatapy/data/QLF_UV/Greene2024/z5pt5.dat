@@ -1,0 +1,11 @@
+# Greene et al. (2024), UNCOVER red broad-line AGN
+# Redshift: z > 5; representative z ~ 5.5 in the Grazian et al. compilation
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-5 cMpc^-3 mag^-1
+# Note: Values are reproduced from Table 1 of Grazian et al. (2024), which compiles the Greene et al. measurement.
+# Note: These red sources are not equivalent to a classical UV-color-selected unobscured-quasar sample.
+#
+# M1450  Phi  Delta
+ -19.500  3  0.6
+ -19.000  2.1  0.7
+ -18.500  2.1  0.8

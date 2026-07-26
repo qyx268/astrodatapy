@@ -1,0 +1,17 @@
+# Matsuoka et al. (2023), Table 2
+# Redshift: 6.55 < z < 7.15
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (equivalent to Gpc^-3 mag^-1)
+# Note: This combined sample includes SHELLQs quasars and brighter quasars from the literature.
+# Note: It should not be combined as an independent constraint with the Wang et al. (2019) bright sample.
+#
+# M1450  Phi  Delta
+ -23.250  2.5  1.8
+ -23.750  3  1.5
+ -24.250  3.5  1.4
+ -24.750  3.2  1.3
+ -25.250  1.58  0.91
+ -25.750  0.75  0.53
+ -26.250  0.63  0.26
+ -26.750  0.18  0.1
+ -27.500  0.082  0.047

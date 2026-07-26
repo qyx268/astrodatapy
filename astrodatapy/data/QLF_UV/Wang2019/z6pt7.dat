@@ -1,0 +1,11 @@
+# Wang et al. (2019), Figure 9, vector-digitized
+# Redshift: 6.45 < z < 7.05; representative z ~ 6.7
+# Magnitude definition: M1450
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), with asymmetric errors in dex
+# Note: These values are digitized from the vector objects in Figure 9; they are not copied from a printed numerical table.
+# Note: The three magnitude bins have nominal width DeltaM1450 = 0.7 mag.
+#
+# M1450  LogPhi  UpperDeltaDex  LowerDeltaDex
+ -27.185  -9.82447  0.119982  0.16639
+ -26.440  -9.44662  0.0834825  0.103426
+ -25.831  -9.0824  0.141907  0.212158

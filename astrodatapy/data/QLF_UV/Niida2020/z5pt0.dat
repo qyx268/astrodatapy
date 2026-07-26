@@ -1,0 +1,28 @@
+# Niida et al. (2020), Table 3: merged
+# Redshift: z ~ 5
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-8 cMpc^-3 mag^-1
+# Note: The first two faint bins, M1450 = -22.57 and -23.07, are flagged by the paper as potentially contaminated by point-like galaxies and were excluded from its QLF fit.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -22.570  68.9  6.9  6.9
+ -23.070  23.1  4.4  3.7
+ -23.570  12.5  3.4  2.7
+ -24.070  10.7  3.2  2.5
+ -24.570  5.39  2.46  1.76
+ -25.070  7.78  2.81  2.13
+ -25.570  2.98  2.01  1.29
+ -26.070  1.8  1.75  0.98
+ -26.130  0.639  0.171
+ -26.380  0.772  0.087
+ -26.570  0.6  1.39  0.5
+ -26.630  0.628  0.076
+ -26.880  0.499  0.068
+ -27.070  1.2  1.58  0.78
+ -27.130  0.277  0.051
+ -27.380  0.212  0.044
+ -27.630  0.083  0.028
+ -27.880  0.055  0.023
+ -28.130  0.0092  0.0092
+ -28.380  0.018  0.013
+ -28.630  0.018  0.013

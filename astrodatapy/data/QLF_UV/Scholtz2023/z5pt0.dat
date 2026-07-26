@@ -1,0 +1,11 @@
+# Scholtz et al. (2023/2025), JADES narrow-line Type-2 AGN
+# Redshift: 4 < z < 6 for the UVLF estimate; plotted near z ~ 5.5
+# Magnitude definition: M1450
+# Note: Values are reproduced from Table 1 of Grazian et al. (2024).
+# Note: This is a narrow-line Type-2 AGN-host UVLF, not an LRD or classical Type-1 quasar LF.
+# Note: Host-galaxy UV light is important; keep this separate when modelling ionizing emission.
+#
+# M_UV       log10(Phi / cMpc^-3 mag^-1)    Delta_dex
+-20.150      -3.423067                       0.217147
+-18.800      -3.115602                       0.194222
+-17.600      -2.670729                       0.164148

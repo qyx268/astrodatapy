@@ -1,0 +1,9 @@
+# Maiolino et al. (2023), JADES broad-line AGN
+# Redshift: 4 < z < 6 for the number-density estimate; plotted near z ~ 5
+# Magnitude definition: M1450
+# Phi convention: log Phi in units of cMpc^-3 mag^-1
+# Note: The UV magnitudes include AGN plus host-galaxy light and should not be treated as a pure nuclear QLF without forward modelling.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -19.500 -3.06 0.18 0.26 
+ -18.000 -3.83 0.23 0.44

@@ -1,0 +1,13 @@
+# Yang et al. (2016), Table 2
+# Redshift: 4.7 <= z < 5.4; effective z = 5.05
+# Magnitude definition: M1450
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
+# Note: The published central values are log10(Phi), whereas the published errors are linear DeltaPhi in units of 1e-9.
+# Note: Only the central Phi values were exponentiated; the tabulated linear errors are retained directly.
+#
+# M1450  Phi  Delta
+ -28.990  0.331131  0.33
+ -28.550  0.138038  0.08
+ -28.050  0.436516  0.15
+ -27.550  0.812831  0.19
+ -27.050  1.99526  0.32
