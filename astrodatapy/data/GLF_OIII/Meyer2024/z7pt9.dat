@@ -1,0 +1,22 @@
+# Meyer2024_FRESCO_z7p9
+# Redshift: 7.50 < z < 9.00; representative z = 7.9
+# Line: [O III] lambda5008
+# Source: Table 4, combined GOODS-North + GOODS-South LF
+# Luminosity-bin width: 0.2 dex
+#
+# Columns:
+# Log10(L / erg s^-1)
+# Log10(Phi / cMpc^-3 dex^-1)
+# Lower 1-sigma delta in dex
+# Upper 1-sigma delta in dex
+# Note: All tabulated combined-field points are retained.
+# Note: Average completeness is below 25 percent at logL = 41.8 and 42.0.
+#
+41.8   -3.02   0.34   0.19
+42.0   -2.39   0.47   0.22
+42.2   -2.72   0.14   0.11
+42.4   -3.14   0.08   0.07
+42.6   -3.85   0.15   0.15
+42.8   -3.95   0.16   0.17
+43.0   -4.27   0.28   0.27
+43.2   -4.45   0.38   0.34
