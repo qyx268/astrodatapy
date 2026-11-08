@@ -1,0 +1,21 @@
+# Barlow-Hall et al. (2023), MNRAS 519, 6055  [arXiv:2201.11139]
+# Constraints on the X-ray luminosity function of AGN at z = 5.7-6.4
+# with the Extragalactic Serendipitous Swift Survey (ExSeSS).
+#
+# Redshift bin: 5.7 < z < 6.4, tabulated at the bin centre z = 6.05.
+# Band: rest-frame 2-10 keV.  Luminosity bins are 1 dex wide, tabulated
+#     at the bin centre.
+# Cosmology: flat LCDM, H0 = 70, Om = 0.3, OL = 0.7.
+# Phi convention: linear dPhi/dlogLX in Mpc^-3 dex^-1.
+#
+# Source: their Table 2 (published values, NOT digitised): Phi = 2.98
+#     (+6.86, -2.47) x 10^-9. The +/- are the 1-sigma Poisson ERRORS for
+#     one detected source (Gehrels 1986: its 1-sigma limits for N = 1 are
+#     3.30 and 0.173 times Phi, i.e. +2.30 and -0.83 Phi), so the interval
+#     is 0.51e-9 to 9.84e-9; hence Errors = ULDeltas for this dataset.
+#
+# The authors note these are formally lower limits, since they assume
+# no other z > 5.7 sources in ExSeSS.
+#
+# logLX  Phi  +dPhi  -dPhi
+45.30 2.98e-9 6.86e-9 2.47e-9

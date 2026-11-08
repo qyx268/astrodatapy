@@ -1,0 +1,25 @@
+# Roster et al. (2026)  [arXiv:2607.27887]
+# The eROSITA X-ray luminosity function of active galactic nuclei.
+#
+# Binned Vmax estimates from their Fig. 5, one file per redshift panel.
+# Estimator: Page & Carrera (2000) Vmax, corrected for the selection
+#     function.  Survey: DR2 Vmax.
+# Band: rest-frame 2-10 keV. The sample is selected in the observed
+#     0.2-2.3 keV band; their Sec. 3.4 converts the luminosities to
+#     2-10 keV "to be consistent with most works from literature", and
+#     the x-axis of their Fig. 5 is rest-frame log L_2-10keV.
+#     The fit is not corrected for intrinsic absorption.
+# Cosmology: H0 = 70, Om = 0.3, OL = 0.7.
+# Bins: 1 dex wide (45.0-46.0), tabulated at the bin centre.
+# Phi convention: log10(dPhi/dlogLX / Mpc^-3 dex^-1).
+#
+# PROVENANCE: Roster et al. publish these points only as a figure (no
+#     table, and no data files in the arXiv source). The values were
+#     recovered from the vector coordinates of Fig. 5 in the arXiv
+#     source package -- exact marker and error-bar-cap positions, not
+#     pixel digitisation. Cross-check: the recovered x error bars land
+#     on exactly round 1 dex bin edges and log Phi = -5 falls exactly
+#     on their labelled tick.
+#
+# logLX  log_Phi  +dlog_Phi  -dlog_Phi
+45.5 -8.102 0.037 0.041

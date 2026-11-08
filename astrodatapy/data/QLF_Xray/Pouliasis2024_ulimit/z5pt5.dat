@@ -1,0 +1,23 @@
+# Pouliasis et al. (2024), A&A 685, A97  [arXiv:2401.13515]
+# AGN X-ray luminosity function and absorption function in the Early
+# Universe (3 <= z <= 6).
+#
+# Redshift bin: 5.0 <= z <= 6.0  (their highest-redshift binned data;
+#     the 5.70-6.40 panel of their Fig. 10 shows only the model band).
+# Band: rest-frame 2-10 keV, intrinsic (absorption-corrected).
+# Column density range: 20 <= log NH <= 24.
+# Cosmology: H0 = 70, Om = 0.3, OL = 0.7.
+# Bins: 0.5 dex wide, tabulated at the bin centre.
+# Phi convention: log10(dPhi/dlogLX / Mpc^-3 dex^-1).
+#
+# PROVENANCE: the paper plots these points in Fig. 10 but does not
+#     tabulate them. The values below were recovered from the vector
+#     coordinates of that figure in the arXiv source package (exact
+#     marker and error-bar-cap positions), not by pixel digitisation.
+#
+# These two bins are 1-sigma UPPER LIMITS (downward arrows in
+# their Fig. 10), so no errors are given.
+#
+# logLX  log_Phi
+43.25 -5.251
+43.75 -5.429
