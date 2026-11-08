@@ -1,0 +1,25 @@
+# Wolf et al. (2021), A&A 647, A5  [arXiv:2101.05585]
+# First constraints on the AGN X-ray luminosity function at z ~ 6 from
+# an eROSITA-detected quasar.
+#
+# Redshift bin: 5.7 < z < 6.4, tabulated at the bin centre z = 6.05.
+# Luminosity bin: 45.5 < log(L_2-10keV / erg s^-1) < 46.0, at the centre.
+# Band: rest-frame 2-10 keV.  Column density range: 20 <= log NH <= 26.
+# Cosmology: H0 = 68, Om = 0.31, OL = 0.69.
+# Phi convention: log10(dPhi/dlogLX / Mpc^-3 dex^-1).
+#
+# The bin contains the single detection SDSS J083643.85+005453.3
+# (z = 5.81). eFEDS is only ~30% spectroscopically complete, so the
+# authors regard this space density as a LOWER LIMIT. It is stored here
+# as a normal measurement with its Poisson errors, which is how the
+# point is plotted in the source figure; treat it accordingly.
+#
+# PROVENANCE: Wolf et al. give this constraint only graphically. The
+#     values below were recovered from the vector coordinates of
+#     Pouliasis et al. (2024) Fig. 10, where the point is reproduced.
+#     Pouliasis et al. plot it on an h = 0.70 axis without converting;
+#     the h = 0.70 -> 0.68 difference is 0.025 dex in logLX and 0.038
+#     dex in log Phi, far below the quoted uncertainties.
+#
+# logLX  log_Phi  +dlog_Phi  -dlog_Phi
+45.75 -8.500 1.10 0.25

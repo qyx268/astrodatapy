@@ -24,6 +24,7 @@ GSMF_Red                   Galaxy Stellar Mass Function -- red
 QLF_bolometric             Quasar Luminosity Function -- bolometric
 QLF_optical                Quasar Luminosity Function -- optical
 QLF_UV                     Quasar Luminosity Function -- UV
+QLF_Xray                   Quasar Luminosity Function -- X-ray
 SFRF                       Star Formation Rate Function
 ==============             ==========================================
 

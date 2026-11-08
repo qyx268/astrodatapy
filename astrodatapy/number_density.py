@@ -21,7 +21,7 @@ _MB_to_Mg    = -2.5*(1.+alpha_q_op)*np.log10(3)-0.14+0.209
 _Mg_to_MB    = -_MB_to_Mg
 _MABB_to_MB  = 0.09
 _MB_to_MABB  = -_MABB_to_MB
-list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB', 'M1500', 'M1600', 'Bolometric', 'OIII']
+list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB', 'M1500', 'M1600', 'Bolometric', 'OIII', 'LX_2_10keV']
 
 # For y Error Format of number density
 list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None', np.NaN]
@@ -33,7 +33,7 @@ class number_density:
         
         '''
         feature:  GSMF, GSMF_Blue, GSMF_Red, GSMF_Bulge, GSMF_Disk, GSMF_Quiescent
-                  BHM, BHMF, QLF_bolometric, QLF_optical, QLF_UV
+                  BHM, BHMF, QLF_bolometric, QLF_optical, QLF_UV, QLF_Xray
                   SFRF, GLF_UV, GLF_OIII
         z_target: target redshift
         z_tol:    tolerance for the target redshift, default = 0.25
@@ -48,7 +48,7 @@ class number_density:
         self.z_tol                    = z_tol
         self.h                        = h
         self.quiet                    = quiet
-        self.info_header              = np.zeros(20, dtype=object)
+        self.info_header              = []
         self.info_skiprows            = None
         self.info                     = None
         self.n_available_observation  = 0
@@ -63,7 +63,7 @@ class number_density:
                 print("quiet=True to silent")
             with open(self.folder + self.feature + '/info.txt','r') as f:
                 for num, line in enumerate(f):
-                    self.info_header[num] = line
+                    self.info_header.append(line)
                     if '#Name' in line:
                         self.info_skiprows = num
                         break
@@ -239,7 +239,9 @@ class number_density:
         return data
         
     def _convert_MAG(self, data, MAG):
-        if MAG not in ['M1450', 'MABB']:
+        # LX_2_10keV is a luminosity, not a magnitude, and every QLF_Xray dataset is
+        # already in the rest-frame 2-10 keV band, so it is a no-op.
+        if MAG not in ['M1450', 'MABB', 'LX_2_10keV']:
             if not self.quiet:
                 print("Converting Magnituedes according to %s"%MAG)
             if MAG == 'MB2MABB':
@@ -290,7 +292,7 @@ class number_density:
         # Luminosities are inferred as L = 4 pi d_L^2 F with d_L ∝ 1/h (at fixed Omega_m), so L ∝ h^-2,
         # and so is everything derived from a luminosity (stellar mass, SFR, L_bol, L[OIII]).
         if self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'QLF_bolometric', 'GSMF_Quiescent',\
-                            'GLF_OIII', 'SFRF']:
+                            'GLF_OIII', 'SFRF', 'QLF_Xray']:
             if not self.quiet:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of -2 because it is %s"%(h_obs,self.h, self.feature))
             data[:,0] -= 2 * np.log10(self.h/h_obs)
@@ -322,7 +324,8 @@ class number_density:
                 print("Converting y axis (black hole mass) from h=%.3f to h=%.3f with a power of %g"%(h_obs,self.h, power))
             data[:,1:4] *= (self.h/h_obs)**power
         elif self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'GSMF_Quiescent',\
-                            'BHMF', 'QLF_bolometric', 'QLF_optical', 'QLF_UV','SFRF', 'GLF_UV', 'GLF_OIII']:
+                            'BHMF', 'QLF_bolometric', 'QLF_optical', 'QLF_UV','SFRF', 'GLF_UV', 'GLF_OIII',\
+                            'QLF_Xray']:
             if HinPhi == 1:
                 if not self.quiet:
                     print("Converting y axis from h=1.000 to h=%.3f with a power of 3"%(self.h))
