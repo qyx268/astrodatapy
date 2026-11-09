@@ -14,7 +14,8 @@ data from both observational and modelling campaigns, with a focus on
 galaxy properties. Current package includes 1) statistical properties 
 such as the number densities of galaxies (as functions of stellar mass, 
 UV magnitude, star formation rate) and AGN (as functions of black hole 
-mass, quasar UV/optical/bolometric luminosities); 2) correlations between 
+mass, quasar UV/optical/bolometric/X-ray luminosities); 2) correlations 
+between 
 galaxies properties such as the Magorrian relation, Tully Fisher relation, 
 Disk size - stellar mass relation, and halo - stellar mass relation, etc; 
 and 3) clustering of quasars such as the two point correlation function.
@@ -152,6 +153,37 @@ QLF_UV                     Quasar Luminosity Function -- UV
 QLF_Xray                   Quasar Luminosity Function -- X-ray
 SFRF                       Star Formation Rate Function
 ==============             ==========================================
+
+QLF_Xray data
+~~~~~~~~~~~~~
+
+The X-ray luminosity function is tabulated against ``log10(LX/erg s^-1)`` in
+the rest-frame 2-10 keV band, with ``Phi = dPhi/dlogLX`` in
+``Mpc^-3 dex^-1``. Because the abscissa is a luminosity rather than a
+magnitude, it is rescaled as ``h^-2``, as for QLF_bolometric.
+
+=====================  ============  =======================================================
+**Dataset**            **Redshift**  **Reference**
+---------------------  ------------  -------------------------------------------------------
+BarlowHall2022         6.05          Barlow-Hall et al. 2023, MNRAS 519, 6055 (Swift/ExSeSS)
+BarlowHall2022_ulimit  6.05          as above, 1 sigma upper limit
+Pouliasis2024          5.5           Pouliasis et al. 2024, A&A 685, A97 (Chandra + XMM)
+Pouliasis2024_ulimit   5.5           as above, 1 sigma upper limits
+Roster2026_DR2         0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSITA DR2)
+Roster2026_eFEDS       0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSITA eFEDS)
+Wolf2021               6.05          Wolf et al. 2021, A&A 647, A5 (eROSITA/eFEDS)
+=====================  ============  =======================================================
+
+The redshift column gives the value to pass as ``z_target``. Each file is
+tabulated at the centre of its redshift bin: 5.0-6.0 for Pouliasis2024 and
+5.7-6.4 for Wolf2021 and BarlowHall2022. Roster2026 provides nine redshifts,
+0.1, 0.4, 0.7, 1.0, 1.5, 2.0, 3.0, 4.0 and 4.9, one file each, so use a small
+``z_tol`` to select a single one.
+
+The ``h`` of each source paper is used when rescaling: 0.68 for Wolf2021 and
+0.70 for the others. Every data file carries a header giving the figure or
+table its values came from, the energy band, the column-density range and the
+cosmology of that paper.
 
 Correlation
 -----------
