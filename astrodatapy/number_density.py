@@ -34,7 +34,7 @@ class number_density:
         '''
         feature:  GSMF, GSMF_Blue, GSMF_Red, GSMF_Bulge, GSMF_Disk, GSMF_Quiescent
                   BHM, BHMF, QLF_bolometric, QLF_optical, QLF_UV
-                  SFRF, GLF_UV
+                  SFRF, GLF_UV, GLF_OIII
         z_target: target redshift
         z_tol:    tolerance for the target redshift, default = 0.25
         h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
@@ -283,7 +283,8 @@ class number_density:
         return data
         
     def _convert_h_x(self, data, h_obs):
-        if self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'QLF_bolometric', 'GSMF_Quiescent']:
+        if self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'QLF_bolometric', 'GSMF_Quiescent',\
+                            'GLF_OIII']:
             if not self.quiet:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of -2 because it is %s"%(h_obs,self.h, self.feature))
             data[:,0] -= 2 * np.log10(self.h/h_obs)
@@ -301,7 +302,7 @@ class number_density:
 
     def _convert_h_y(self, data, h_obs, HinPhi):
         if self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'GSMF_Quiescent',\
-                            'BHMF', 'QLF_bolometric', 'QLF_optical', 'QLF_UV','SFRF', 'GLF_UV']:
+                            'BHMF', 'QLF_bolometric', 'QLF_optical', 'QLF_UV','SFRF', 'GLF_UV', 'GLF_OIII']:
             if HinPhi == 1:
                 if not self.quiet:
                     print("Converting y axis from h=1.000 to h=%.3f with a power of 3"%(self.h))
