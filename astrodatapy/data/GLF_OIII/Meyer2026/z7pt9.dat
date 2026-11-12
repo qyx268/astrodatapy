@@ -1,7 +1,10 @@
 # Meyer2026_COSMOS3D_z7p9
 # Redshift: 7.50 < z < 9.05; median z = 7.78, mean z = 7.90
 # Line: [O III] lambda5008
-# Source: Appendix C, Table 3
+# Paper: Meyer et al. 2026, A&A 712, A16 (COSMOS-3D), doi:10.1051/0004-6361/202557671; arXiv:2510.11373 (v3 checked;
+#   v2 = v3 numbers; v1 had a different, superseded table)
+# Source: Appendix C, Table 3 (arXiv v3)
+# Cosmology: H0 = 70, Om = 0.3
 # Luminosity-bin width: 0.2 dex
 #
 # Columns:
@@ -10,9 +13,11 @@
 # Lower 1-sigma delta in dex
 # Upper 1-sigma delta in dex
 # Note: Errors include cosmic variance.
-# Note: The logL = 42.2 bin is a 2-sigma upper limit, logPhi < 2.54, with average completeness 0.01; it is recorded below as a comment rather than mixed into the LUDeltas rows.
+# Note: The logL = 42.2 bin (N=1, average completeness 0.01) is printed in Table 3 as "< 2.54 (2 sigma)". The missing
+#   minus sign is a typo (also in v2): the LF figure (fig_O3_LF) plots this bin at logPhi = -3.66 with +0.56 dex upper
+#   error, and -3.66 + 2x0.56 = -2.55, i.e. logPhi < -2.54 (2 sigma). Stored in Meyer2026_ulimit/z7pt9.dat, not here.
 # Note: Average completeness is below 25 percent at logL = 42.4 and 42.6.
-# UPPER_LIMIT_2SIGMA  42.2  <2.54  average_completeness=0.01
+# UPPER_LIMIT_2SIGMA  42.2  < -2.54  average_completeness=0.01  (see Meyer2026_ulimit)
 #
 42.4   -3.94   0.31   0.24
 42.6   -3.46   0.16   0.13

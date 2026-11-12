@@ -1,7 +1,10 @@
 # Meyer2024_FRESCO_z7p9
 # Redshift: 7.50 < z < 9.00; representative z = 7.9
 # Line: [O III] lambda5008
-# Source: Table 4, combined GOODS-North + GOODS-South LF
+# Paper: Meyer et al. 2024, MNRAS 535, 1067 (FRESCO), doi:10.1093/mnras/stae2353; arXiv:2405.05111 (v3 = accepted version, checked)
+# Source: Table 4, combined GOODS-North + GOODS-South LF (column log Phi_corr)
+# Cosmology: H0 = 70, Om = 0.3
+# Note: errors do not include cosmic variance (the paper argues field-to-field variance is >~0.45 dex at z=7.1).
 # Luminosity-bin width: 0.2 dex
 #
 # Columns:

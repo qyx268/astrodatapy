@@ -19,6 +19,6 @@
 Matthee2023          OIII   0.674   1                   LUDeltas   1    0       data        2023ApJ...950...67M
 Sun2023              OIII   0.700   1                   LUDeltas   1    0       data        2023ApJ...953...53S
 Meyer2024            OIII   0.700   1                   LUDeltas   1    0       data        2024MNRAS.535.1067M
-Meyer2026            OIII   0.700   1                   LUDeltas   1    0       data        2025arXiv251011373M
-Meyer2026_ulimit     OIII   0.700   1                   None       1    0       dataULimit  2025arXiv251011373M
-Wold2025             OIII   0.700   1                   LUDeltas   1    0       data        2024arXiv240719023W
+Meyer2026            OIII   0.700   1                   LUDeltas   1    0       data        2026A&A...712A..16M
+Meyer2026_ulimit     OIII   0.700   1                   None       1    0       dataULimit  2026A&A...712A..16M
+Wold2025             OIII   0.700   1                   LUDeltas   1    0       data        2025ApJ...980..200W

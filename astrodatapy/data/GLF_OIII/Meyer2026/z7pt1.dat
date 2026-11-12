@@ -1,7 +1,10 @@
 # Meyer2026_COSMOS3D_z7p1
 # Redshift: 6.75 < z < 7.50; median z = 7.07, mean z = 7.09
 # Line: [O III] lambda5008
-# Source: Appendix C, Table 3
+# Paper: Meyer et al. 2026, A&A 712, A16 (COSMOS-3D), doi:10.1051/0004-6361/202557671; arXiv:2510.11373 (v3 checked;
+#   v2 = v3 numbers; v1 had a different, superseded table)
+# Source: Appendix C, Table 3 (arXiv v3)
+# Cosmology: H0 = 70, Om = 0.3
 # Luminosity-bin width: 0.2 dex
 #
 # Columns:

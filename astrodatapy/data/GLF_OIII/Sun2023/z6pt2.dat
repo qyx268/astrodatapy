@@ -1,7 +1,10 @@
 # Sun2023_z6p2
 # Redshift: z ~ 6.2; LF volume evaluated over 6.0 < z < 6.6
 # Line: [O III] lambda5007
-# Source: Table 2, completeness-corrected LF
+# Paper: Sun et al. 2023, ApJ 953, 53, doi:10.3847/1538-4357/acd53c; arXiv:2209.03374 (v2 = accepted version, checked)
+# Source: Table 2, completeness-corrected LF (column log Phi_corr)
+# Cosmology: H0 = 70, Om = 0.3
+# Note: JWST commissioning NIRCam/WFSS data (PID 1076, P330-E calibrator field, 12-14 arcmin^2); only 4 emitters at z=6.11-6.35.
 # Luminosity-bin width: 0.4 dex
 #
 # Columns:
