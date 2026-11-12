@@ -1,0 +1,22 @@
+# Guo et al. (2025), ApJ 991, 74: "A Search for z=5 Halpha and Hbeta+[OIII] Dual-line Emitting Galaxies in the JWST CEERS Field:
+#   Implications for the AGN Abundance"
+# arXiv:2409.19205v1 (only arXiv version, submitted), Table 2, "AGN candidates" columns of the UV LF;
+#   the AGN-candidate column was checked against Table 2 of the published article and is identical
+# Redshift: 5.03 <= z <= 5.26 (set by the F277W+F410M double excess; file at z = 5.1)
+# Magnitude definition: M1450 = absolute magnitude at rest-frame 1450 A from a power-law continuum fit to F115W/F150W/F200W/F356W;
+#   observed total UV light, no dust correction, no host/AGN decomposition
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), 0.5-mag bins, Poisson errors in dex; H0=70, Om=0.3
+# Note: "AGN candidates" = the 58 compact (unresolved) Halpha+[OIII] dual-line emitters, ASSUMED to be AGN-dominated; mostly
+#   not spectroscopically confirmed (CEERS 2782 is a known broad-line AGN). The "dual-line emitter" columns (mostly star-forming
+#   galaxies) are not included.
+# Note: Single survey volume (59,340 cMpc^3 over 97 arcmin^2); NO completeness correction applied in the paper.
+# Note: The M_UV=-20.5 bin (N=1) is tabulated as an upper limit (<-4.17) and is stored in Guo2025_ulimit.
+#
+# M1450  LogPhi  UpperDeltaDex  LowerDeltaDex
+ -20.0  -4.00  0.20  0.37
+ -19.5  -3.87  0.18  0.30
+ -19.0  -3.39  0.11  0.15
+ -18.5  -3.33  0.10  0.14
+ -18.0  -3.39  0.11  0.15
+ -17.5  -3.52  0.12  0.18
+ -17.0  -4.00  0.20  0.37

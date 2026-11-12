@@ -1,0 +1,15 @@
+# Kocevski et al. (2025), ApJ 986, 126: "The Rise of Faint, Red AGN at z>4: A Sample of Little Red Dots in the JWST Extragalactic Legacy Fields"
+# arXiv:2404.03576v3 (accepted version), Table 4 (rest-frame UV LF of LRDs); identical to Table 4 of the published article
+# Redshift: 4.5 < z < 6.5 (file at the bin centre z = 5.5)
+# Magnitude definition: M1450 = blue (rest-UV) power-law continuum fit extrapolated to rest-frame 1450 A; observed total UV light,
+#   no dust correction and no host/AGN decomposition (the paper argues the rest-UV of LRDs is host-dominated)
+# Phi convention: log10(Phi / Mpc^-3 mag^-1), 1-mag bins, asymmetric errors in dex (Gehrels 1986 Poisson); H0=70, Om=0.3, OL=0.7
+# Note: Photometrically selected LRDs (CEERS, PRIMER-COSMOS, PRIMER-UDS, JADES, NGDEEP); UNCOVER sources excluded from the LF.
+# Note: 1/Vmax estimator; symmetric errors (+/-) are repeated in both columns. The variant LF that keeps line-boosted sources (Appendix) is not used.
+#
+# M1450  LogPhi  UpperDeltaDex  LowerDeltaDex
+ -17.0  -4.59  0.10  0.10
+ -18.0  -4.53  0.06  0.06
+ -19.0  -4.69  0.06  0.06
+ -20.0  -5.10  0.10  0.10
+ -21.0  -5.96  0.29  0.34

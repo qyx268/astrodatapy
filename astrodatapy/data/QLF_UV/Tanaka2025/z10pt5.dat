@@ -1,0 +1,12 @@
+# Tanaka et al. (2025), ApJ 995, 21: "Discovery of a Little Red Dot Candidate at z>~10 in COSMOS-Web Based on MIRI-NIRCam Selection"
+# arXiv:2508.00057v2 (accepted version), Table 3 (estimated UV LF of z~10 LRDs)
+# Redshift: 9 < z < 12 (file at z = 10.5; the single candidate CW-LRD-z10 has z_phot = 10.5 +0.7/-0.6)
+# Magnitude definition: M1450 (the paper's M_UV is defined at rest-frame 1450 A, from the best-fit LRD model SED);
+#   observed total UV, no dust correction, no host/AGN decomposition
+# Phi convention: linear Phi in Mpc^-3 mag^-1 (1-mag bin [-20.5,-19.5]), 1-sigma Gehrels (1986) Poisson errors; H0=70, Om=0.3, OL=0.7
+# Note: Based on ONE photometric LRD candidate in 0.20 deg^2 of joint NIRCam+MIRI COSMOS-Web coverage; completeness-corrected effective volume.
+# Note: The M_UV=-21 bin (no detection) is an upper limit, stored in Tanaka2025_ulimit.
+# Note: Tanaka et al. (2026, arXiv:2611.00195, EMBER, preprint) report z_spec = 10.36 for this source; the LF value above was not revised there.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -20.0  1.2e-6  2.7e-6  1.0e-6
