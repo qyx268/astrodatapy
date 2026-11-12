@@ -9,5 +9,9 @@
 
 # If Log==1, Mass is in logarithm
 
-#Name		h		Errors		Log		Bibliographic
-Caramete2010		0.7		Delta		0		2010A&A...521A..55C
+# hPowerM: the black hole mass scales as h^hPowerM, which depends on the mass estimator:
+#   0 = pitch angle, Sersic index or velocity dispersion (distance independent);
+#  -1 = virial (R_BLR ∝ L^0.5) or dynamical; -2 = bulge/spheroid luminosity
+#   (Shankar2009 mixes sigma- and luminosity/accretion-based masses: -1)
+#Name		h		Errors		Log		hPowerM		Bibliographic
+Caramete2010		0.7		Delta		0		-2		2010A&A...521A..55C
