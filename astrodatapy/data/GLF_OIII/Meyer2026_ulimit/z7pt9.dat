@@ -1,1 +1,14 @@
-42.2 -2.54
+# Meyer2026_COSMOS3D_z7p9 upper limit
+# Paper: Meyer et al. 2026, A&A 712, A16 (COSMOS-3D), doi:10.1051/0004-6361/202557671; arXiv:2510.11373 (v3 checked)
+# Source: Appendix C, Table 3 (arXiv v3), z=7.9 block, logL = 42.2 row: N=1, <c>=0.01, "< 2.54 (2 sigma)".
+# Redshift: 7.50 < z < 9.05; median z = 7.78, mean z = 7.90
+# Line: [O III] lambda5008; bin width 0.2 dex
+# Note: 2-sigma upper limit ("limits are at the 2 sigma level", Table 3 footnote). The table omits the minus sign
+#   (typo, also in v2); the LF figure (fig_O3_LF) plots this bin at logPhi = -3.66 with a +0.56 dex upper error,
+#   and -3.66 + 2x0.56 = -2.55, consistent with logPhi < -2.54. Average completeness is only 1%.
+#
+# Columns:
+# Log10(L / erg s^-1)
+# Log10(Phi_upper_limit / cMpc^-3 dex^-1)
+#
+42.2  -2.54
