@@ -1,0 +1,20 @@
+# Rinaldi et al. (2026), arXiv:2604.07138v2 (PREPRINT, submitted to ApJ, not yet accepted): "The Way We Tally Becomes the Tale:
+#   the Impact of Selection Strategies on the Inferred Evolution of Little Red Dots Across Cosmic Time"
+# Table 1 (UV LF of the LRD sample, primary selection criteria)
+# Redshift: 4.5 < z < 6.5 (file at the bin centre z = 5.5)
+# Magnitude definition: M1500 = M_UV measured at rest-frame 1500 A; observed total UV light (host+AGN), no dust correction,
+#   no host/AGN decomposition
+# Phi convention: log10(Phi / Mpc^-3 mag^-1), 1-mag bins, asymmetric errors in dex; H0=70, Om=0.3, OL=0.7
+# Note: The 2.0 < z < 4.5 bin of Table 1 is not included (below the z >~ 4 focus of this compilation).
+# Note: Photometrically selected LRDs in JADES GOODS-N + GOODS-S (~350 arcmin^2), broad optical-redness selection with compactness
+#   cut and visual inspection; photometric redshifts. Effective-volume (selection-function) Vmax estimator, NO magnitude-completeness
+#   correction; errors include Gehrels Poisson, photo-z (Monte Carlo) and cosmic variance.
+# Note: The M_UV=-21 row is tabulated as -5.85 +0.53 / "->0" (lower bound of Phi consistent with zero); the lower delta is written
+#   as inf so that the loader gives phi_lower = 0. Drop that row if your code cannot handle inf.
+#
+# M1500  LogPhi  UpperDeltaDex  LowerDeltaDex
+ -21.0  -5.85  0.53  inf
+ -20.0  -4.48  0.18  0.28
+ -19.0  -4.09  0.15  0.20
+ -18.0  -4.18  0.14  0.23
+ -17.0  -4.88  0.25  0.43

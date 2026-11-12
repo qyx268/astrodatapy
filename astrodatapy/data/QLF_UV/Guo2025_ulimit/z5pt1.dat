@@ -1,0 +1,8 @@
+# Guo et al. (2025), ApJ 991, 74 (arXiv:2409.19205v1), Table 2, "AGN candidates" UV LF: row tabulated as an upper limit
+# Redshift: 5.03 <= z <= 5.26 (file at z = 5.1)
+# Magnitude definition: M1450 (rest-frame 1450 A from continuum fit; observed total UV)
+# Phi convention: log10(Phi / cMpc^-3 mag^-1) upper limit, 0.5-mag bin; H0=70
+# Note: This bin contains one AGN candidate (N=1); the paper lists it as "<-4.17" (the one-object, single-volume density).
+#
+# M1450  LogPhi_upper_limit
+ -20.5  -4.17

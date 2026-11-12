@@ -1,0 +1,8 @@
+# Tanaka et al. (2025), ApJ 995, 21: "Discovery of a Little Red Dot Candidate at z>~10 in COSMOS-Web Based on MIRI-NIRCam Selection"
+# arXiv:2508.00057v2 (accepted version), Table 3: upper limit for the empty M_UV = -21 bin ([-21.5,-20.5])
+# Redshift: 9 < z < 12 (file at z = 10.5)
+# Magnitude definition: M1450 (rest-frame 1450 A, observed total UV)
+# Phi convention: linear Phi upper limit in Mpc^-3 mag^-1, 1-sigma (84%) Gehrels (1986) limit on zero detections; H0=70
+#
+# M1450  Phi_upper_limit
+ -21.0  5.2e-7
