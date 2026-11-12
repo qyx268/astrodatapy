@@ -1,0 +1,26 @@
+# Korber2026_GLIMPSE_z8p3
+# Paper: Korber et al. 2026, A&A 708, A43 (GLIMPSE, Abell S1063), doi:10.1051/0004-6361/202556868;
+#   arXiv:2510.04771 (v2 = A&A proof-corrected version, checked)
+# Source: Appendix C, Table C.4 ("[OIII]5008 LF", label tab:O35007LF), <z> ~ 8.33 block.
+# Redshift: 8 < z < 9 (photometric, F090W-dropout Lyman-break sample); mean z = 8.33 -> file labelled z = 8.3
+# Line: [O III] lambda5008. CAVEAT: this is NOT a direct line measurement. The paper measures the combined
+#   Hbeta+[OIII]4960,5008 luminosity from SED fitting (CIGALE) of broad/medium-band photometry (Table C.1 is that
+#   primary Hbeta+[OIII] LF, NOT used here), then splits off [OIII]5008 with an assumed M_UV-dependent R3 =
+#   [OIII]5008/Hbeta relation (their Eq. for R3(M_UV), R3 = 1.49-6.34). The [OIII]5008 LF is therefore model dependent.
+# Luminosities are de-lensed (intrinsic); effective volumes include lensing. Bins of 0.5 dex (centres listed).
+# Cosmology: H0 = 70, Om = 0.3
+# Errors: symmetric 1-sigma in dex (mean +- std over SED/magnification/completeness realisations; Poisson and
+#   volume/completeness errors combined). S/N < 2 at logL = 38.75-40.25 (S/N and <C> from the table given as
+#   trailing comments).
+#
+# Columns:
+# Log10(L_[OIII]5008 / erg s^-1)
+# Log10(Phi / cMpc^-3 dex^-1)
+# 1-sigma delta in dex (symmetric)
+#
+38.75  -1.52  0.81   # N=3.25  <C>=0.24  S/N=1.04
+39.25  -1.60  0.53   # N=5.19  <C>=0.24  S/N=1.77
+39.75  -1.63  0.55   # N=7.57  <C>=0.31  S/N=1.70
+40.25  -2.13  0.53   # N=6.13  <C>=0.38  S/N=1.74
+40.75  -2.27  0.30   # N=10.37 <C>=0.48  S/N=3.27
+41.25  -2.55  0.33   # N=7.41  <C>=0.61  S/N=2.90

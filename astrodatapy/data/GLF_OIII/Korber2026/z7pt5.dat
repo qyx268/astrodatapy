@@ -1,0 +1,29 @@
+# Korber2026_GLIMPSE_z7p5
+# Paper: Korber et al. 2026, A&A 708, A43 (GLIMPSE, Abell S1063), doi:10.1051/0004-6361/202556868;
+#   arXiv:2510.04771 (v2 = A&A proof-corrected version, checked)
+# Source: Appendix C, Table C.4 ("[OIII]5008 LF", label tab:O35007LF), <z> ~ 7.48 block.
+# Redshift: 7 < z < 8 (photometric, F090W-dropout Lyman-break sample); mean z = 7.48 -> file labelled z = 7.5
+# Line: [O III] lambda5008. CAVEAT: this is NOT a direct line measurement. The paper measures the combined
+#   Hbeta+[OIII]4960,5008 luminosity from SED fitting (CIGALE) of broad/medium-band photometry (Table C.1 is that
+#   primary Hbeta+[OIII] LF, NOT used here), then splits off [OIII]5008 with an assumed M_UV-dependent R3 =
+#   [OIII]5008/Hbeta relation (their Eq. for R3(M_UV), R3 = 1.49-6.34). The [OIII]5008 LF is therefore model dependent.
+# Luminosities are de-lensed (intrinsic); effective volumes include lensing. Bins of 0.5 dex (centres listed).
+# Cosmology: H0 = 70, Om = 0.3
+# Errors: symmetric 1-sigma in dex (mean +- std over SED/magnification/completeness realisations; Poisson and
+#   volume/completeness errors combined). The faintest bins have very low completeness (<C> ~ 0.13-0.25)
+#   and S/N < 2 at logL = 38.25 and 42.25 (S/N and <C> from the table given as trailing comments).
+#
+# Columns:
+# Log10(L_[OIII]5008 / erg s^-1)
+# Log10(Phi / cMpc^-3 dex^-1)
+# 1-sigma delta in dex (symmetric)
+#
+38.25  -0.33  0.62   # N=4.33  <C>=0.13  S/N=1.45
+38.75  -0.48  0.35   # N=9.87  <C>=0.19  S/N=2.76
+39.25  -0.75  0.34   # N=14.66 <C>=0.25  S/N=2.90
+39.75  -1.24  0.32   # N=23.37 <C>=0.41  S/N=3.07
+40.25  -1.65  0.20   # N=26.98 <C>=0.47  S/N=4.85
+40.75  -1.90  0.19   # N=25.24 <C>=0.51  S/N=5.16
+41.25  -2.44  0.28   # N=10.68 <C>=0.63  S/N=3.53
+41.75  -2.86  0.42   # N=4.77  <C>=0.71  S/N=2.28
+42.25  -3.37  0.78   # N=1.34  <C>=0.72  S/N=1.10
