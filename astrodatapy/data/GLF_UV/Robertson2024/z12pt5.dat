@@ -1,3 +1,7 @@
--18.5 1.21 0.92
--18.0 3.02 2.31
--17.7 1.35 1.03
+# Robertson et al. 2024, ApJ 970, 31 (arXiv:2312.10033v2), Table 6 (step-wise LF), 11.5<z<13.5 (JADES Origins Field).
+# v2 (published) values; v1 had different numbers (1.21/3.02/1.35 at -18.5/-18.0/-17.7) and H0=67.4, v2 uses H0=70, Om=0.3.
+# x = bin M_UV (bins have asymmetric widths, see table); phi in 1e-4 Mpc^-3 mag^-1, symmetric errors.
+# M_UV(1500A)  phi  sigma
+-18.5 1.22 0.94
+-18.0 3.20 2.46
+-17.6 1.54 1.18

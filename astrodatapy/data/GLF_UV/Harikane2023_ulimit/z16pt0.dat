@@ -1,2 +1,6 @@
+# Harikane et al. 2023, ApJS 265, 5 (arXiv:2208.01612v3), z~16 (F200W-dropouts) 1-sigma upper limits.
+# -23.59: Table 7. -17.59: NOT in Table 7, only shown in their Fig. 14 (z~16 UV LF); value read from the vector
+# coordinates of fig_UVLF_f200wDrop_paper_wfit.pdf in the arXiv source (log10 phi = -3.8375).
+# M_UV  phi_limit   [Mpc^-3 mag^-1]
 -23.59 2.42e-6
--17.60 0.00014
+-17.59 1.45e-4

@@ -1,3 +1,5 @@
+# Willott et al. 2024, ApJ 966, 74 (arXiv:2311.12234v2), Table 3, 9.5<z<11 (label = median z_phot ~10.0). H0=70, Om=0.3.
+# x = median M_UV of the galaxies in each bin; phi in 1e-5 Mpc^-3 mag^-1. Upper limits are in Willott2024_ulimit.
 #Muv(this is their median) phi sigma_upper sigma_lower
 -19.28 12.4 4.9 4.9
 -18.92 10.0  9.9 5.7

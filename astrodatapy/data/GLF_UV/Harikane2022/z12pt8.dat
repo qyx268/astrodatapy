@@ -1,0 +1,5 @@
+# Harikane et al. 2022, ApJ 929, 1 (arXiv:2112.09141v4), Sec. 5.3 text: number density of the two H-dropout
+# candidates (HD1, HD2) = (3.7 +8.4 -3.0)e-8 Mpc^-3 mag^-1 at M_UV=-23.5. Redshift: the paper adopts z=12.8
+# ("z~13", mean of the nominal redshifts of HD1/HD2) as the sample mean redshift. Planck: h=0.6774.
+# M_UV  phi  +err  -err   [Mpc^-3 mag^-1]
+-23.5 3.7e-8 8.4e-8 3.0e-8

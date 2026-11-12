@@ -1,2 +1,5 @@
+# Kauffmann et al. 2022, A&A 667, A65 (arXiv:2207.11740v2), Table 4, z=9 (COSMOS2020). H0=70, Om=0.3.
+# x = bin centre M_UV. Upper-limit rows (N=0) are in Kauffmann2022_ulimit.
+# M_UV  phi  sigma   [phi in 1e-6 Mpc^-3 mag^-1]
 -22.50 0.82 0.50
 -21.75 3.58 2.55

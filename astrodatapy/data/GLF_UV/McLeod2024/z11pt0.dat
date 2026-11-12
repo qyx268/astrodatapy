@@ -1,3 +1,6 @@
+# McLeod et al. 2024, MNRAS 527, 5004 (arXiv:2304.14469v2), Table 4, z=11.0 (9.5<z<12.5). H0=70, Om=0.3.
+# Only this work's 4 bins; the Donnan et al. 2023 bins marked * in the table (-22.57, -18.85, -18.23) are omitted.
+# M1500  phi  sigma   [phi in 1e-5 Mpc^-3 mag^-1]
 -21.80 0.129  0.128
 -20.80 1.254  0.428
 -20.05 3.974  1.340
