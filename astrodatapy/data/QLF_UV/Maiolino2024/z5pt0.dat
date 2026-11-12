@@ -1,9 +1,12 @@
-# Maiolino et al. (2023), JADES broad-line AGN
-# Redshift: 4 < z < 6 for the number-density estimate; plotted near z ~ 5
-# Magnitude definition: M1450
-# Phi convention: log Phi in units of cMpc^-3 mag^-1
-# Note: The UV magnitudes include AGN plus host-galaxy light and should not be treated as a pure nuclear QLF without forward modelling.
+# Maiolino et al. (2024), A&A 691, A145 (arXiv:2308.01230v4, post-acceptance), Table 4: density of broad-line (type-1) AGN hosts in JADES
+# Redshift: 4 < z < 6 (Bouwens et al. 2021 z~5 galaxy LF used as the reference)
+# Magnitude definition: total (AGN+host) absolute UV magnitude M_UV (not M1450) -> M1500
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), asymmetric errors in dex (upper, lower); bins of +-0.75 mag
+# Note: Phi = f_AGN(M_UV) x Bouwens+21 galaxy UV LF, for AGN with L_bol > 1e44 erg/s; errors combine Poisson, cosmic
+#       variance and the inclusion/exclusion of three AGN targeted for their NIRCam appearance.
+# Note: the paper also lists conservative lower limits log Phi_min > -5.73 (M_UV = -18.0) and > -5.98 (-19.5); not included.
+# Note: the two rows were previously swapped between the magnitude bins (fixed; same values in arXiv v1 and v4).
 #
-# M1450  Phi  UpperDelta  LowerDelta
- -19.500 -3.06 0.18 0.26 
- -18.000 -3.83 0.23 0.44
+# M_UV  LogPhi  UpperDelta  LowerDelta
+-18.0  -3.06  0.18  0.26
+-19.5  -3.83  0.23  0.44

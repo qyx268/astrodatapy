@@ -1,2 +1,10 @@
+# Harikane et al. (2023), ApJ 959, 39 (arXiv:2303.11946v3), Table 4: number densities of broad-line AGN (CEERS + GLASS NIRSpec)
+# Redshift: z~6 bin, z_ave = 5.763
+# Magnitude definition: M_UV = total (AGN+host) UV magnitude from Nakajima et al. (2023), not decomposed -> M1500
+# Phi convention: linear Phi in cMpc^-3 mag^-1 (Planck18, h=0.6766); 1-sigma errors (upper, lower), Poisson + cosmic variance
+# Note: Phi_AGN = f_AGN x galaxy UV LF (Harikane et al. 2022 DPL); f_AGN = 0.07 (-21.5), 0.04 (-18.5).
+# Note: the paper gives 1.5^{+3.5}_{-1.5}e-4 at -18.5; the lower delta is set to 1.49e-4 so that Phi - sigma stays > 0.
+#
+# M_UV  Phi  UpperDelta  LowerDelta
 -21.5 3.5e-6 8.2e-6 3.3e-6
 -18.5 1.5e-4 3.5e-4 1.49e-4

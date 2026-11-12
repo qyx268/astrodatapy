@@ -1,0 +1,15 @@
+# Scholtz et al. (2025), A&A 697, A175 (arXiv:2311.18731v4), Sect. 4.5 + Fig. 10 (arXiv v4 numbering, fig:uv_lum): UV LF of type-2 (narrow-line) AGN hosts, JADES HST-Deep
+# Redshift: 4 < z < 6, median z ~ 5.5 (14 AGN)
+# Magnitude definition: total M_UV of the AGN host (BEAGLE), not M1450 -> M1500
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), symmetric errors in dex
+# Note: the paper has no table. Values are the plotted points of Fig. 10, taken from the vector coordinates of the
+#       arXiv v4 figure (they agree with the Grazian et al. 2024 Table 1 values to < 1e-4 dex). The plotted errors are
+#       0.4343/sqrt(N) dex with N = 4, 5, 7.
+# Note: the text gives host fractions of the Bouwens+21 galaxy LF: 33+-4, 18+-4, 20+-4 per cent at M_UV = -20.15, -18.8, -17.6.
+#       Bin edges from the plotted x-error bars: [-21.0,-19.3], [-19.3,-18.3], [-18.3,-16.9].
+# Note: narrow-line type-2 AGN hosts (UV dominated by the host), not a type-1/LRD or quasar LF.
+#
+# M_UV    LogPhi   Delta
+-20.15   -3.423   0.217
+-18.80   -3.116   0.194
+-17.60   -2.671   0.164

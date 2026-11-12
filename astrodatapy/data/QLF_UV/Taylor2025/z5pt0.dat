@@ -1,16 +1,16 @@
-# Taylor et al. (2025), Table 4: BLAGN plus host UV LF
-# Redshift: 3.5 < z < 6 for the LF
-# Magnitude definition: M1500
-# Phi convention: linear Phi in units of 1e-6 cMpc^-3 mag^-1
-# Note: This is M1500, not M1450.
-# Note: It combines the BLAGN and host-galaxy UV emission.
-# Note: The LF redshift interval extends below z=5, so it is supplied as an optional comparison rather than a strict z>=5 file.
-# Note: Ten BLAGN in the full sample are classified as LRDs, but this LF is for the full BLAGN sample, not an LRD-only LF.
+# Taylor et al. (2025), ApJ 986, 165 (arXiv:2409.06772v2), Table 4: BLAGN+host UV LF (CEERS + RUBIES NIRSpec)
+# Redshift: 3.5 < z < 6; mean z_spec of the 58 BLAGN in the LF = 4.42 (median 4.19; bin midpoint 4.75)
+# File label: z5pt0 kept as the nominal z~5 of the 3.5<z<6 bin (maintainer convention for wide JWST-AGN bins); mean z is given above
+# Magnitude definition: M1500 (EAZY SED, 1450-1550 A top hat), BLAGN and host emission combined
+# Phi convention: linear Phi in units of 1e-6 cMpc^-3 mag^-1 (H0=70), Poisson (Gehrels 1986) errors (upper, lower), completeness corrected
+# Note: the paper flags the M1500 >= -17 point as having large systematic uncertainties (open symbol in Fig. 14 of arXiv v2);
+#       errors do not include the systematic uncertainty of the completeness correction.
+# Note: 21 of the 62 BLAGN in the full sample are LRDs; this LF is for the full BLAGN sample, not an LRD-only LF.
 #
 # M1500  Phi  UpperDelta  LowerDelta
- -22.000  3.01  3.97  1.95
- -21.000  36.2  19.5  13.4
- -20.000  58.5  22.2  16.6
- -19.000  53.3  20.2  15.2
- -18.000  148  50.9  38.9
- -17.000  39  15.7  11.6
+-22.0   3.01   3.97   1.95
+-21.0   36.2   19.5   13.4
+-20.0   58.5   22.2   16.6
+-19.0   53.3   20.2   15.2
+-18.0   148    50.9   38.9
+-17.0   39     15.7   11.6

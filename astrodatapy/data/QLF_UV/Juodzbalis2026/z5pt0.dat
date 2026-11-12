@@ -1,12 +1,16 @@
-# Juodzbalis et al. (2025), Figure 19, vector-digitized
-# Redshift: 4 < z < 7
-# Magnitude definition: MUV
-# Phi convention: log10(Phi / cMpc^-3 mag^-1), with asymmetric errors in dex
-# Note: These values are digitized from the vector objects in Figure 19 and are not from a numerical table.
-# Note: The LF is for Type-1 AGN hosts and uses total host plus AGN MUV, not nuclear M1450.
-# Note: The paper states that only about 30 percent of its sample has LRD-like spectra.
+# Juodzbalis et al. (2026), MNRAS 546, stag086 (arXiv:2504.03551v2), published Fig. 19 (= arXiv v2 Fig. 20, fig:UVLF): UV LF of type-1 AGN hosts, JADES
+# Redshift: 4 < z < 7; mean z of the 4<z<7 AGN listed in the paper (arXiv v2) = 5.3
+# File label: z5pt0 kept as the nominal z~5 of the 4<z<7 bin (maintainer convention for wide JWST-AGN bins); mean z is given above
+# Magnitude definition: total (AGN+host) M_UV (not nuclear M1450) -> M1500
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), asymmetric errors in dex (upper, lower); H0=70 inherited from the Bouwens+21 LF (paper itself uses Planck18)
+# Note: no numerical table exists (none in the arXiv source either). Values are the vector coordinates of the green
+#       points (whole sample) in the arXiv v2 figure; they agree with the earlier digitisation of the published Fig. 19
+#       to < 1e-4 dex. Errors are Poisson, Phi*(1 +- 1/sqrt(N)) with N = 7, 9, 4.
+# Note: Phi = f_AGN x Bouwens+21 galaxy UV LF with f_AGN = 5, 9, 2 per cent (likely lower limits);
+#       bin edges from the plotted x-error bars: [-18.0,-18.75], [-18.75,-19.2], [-19.2,-20.4].
+# Note: the paper shows large GOODS-N/GOODS-S cosmic variance and an L_bol dependence of this LF.
 #
-# MUV  LogPhi  UpperDeltaDex  LowerDeltaDex
- -18.375  -3.71523  0.139171  0.206218
- -18.975  -3.73451  0.12487  0.176166
- -19.800  -4.69513  0.176062  0.301036
+# M_UV    LogPhi  UpperDelta  LowerDelta
+-18.375  -3.715  0.139  0.206
+-18.975  -3.735  0.125  0.176
+-19.800  -4.695  0.176  0.301

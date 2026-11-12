@@ -1,4 +1,13 @@
+# Matthee et al. (2024), ApJ 963, 129 (arXiv:2306.05448v3), Table 4: UV LF of broad-Halpha emitters (EIGER + FRESCO NIRCam grism)
+# Redshift: z = 4-6 survey volume; 20 objects at z = 4.16-5.54 (mean 4.93); the paper calls it z~5
+# Magnitude definition: M_UV,AGN+host = total observed UV magnitude at rest-frame 1500 A (power-law fit to the photometry),
+#                       AGN and host not decomposed -> M1500
+# Phi convention: log10(Phi / cMpc^-3 mag^-1) (H0=70), asymmetric Poisson errors in dex (upper, lower); 1-mag bins
+# Note: assumes full completeness (no completeness correction).
+# Note: Fig. 17 also shows a one-sided 1-sigma (Gehrels) upper limit at M_UV = -21 (log Phi < -5.21, read from the vector
+#       figure); it is not in Table 4 and not included here.
+#
+# M_UV  LogPhi  UpperDelta  LowerDelta
 -20.0 -5.06 0.16 0.26
 -19.0 -4.78 0.13 0.18
 -18.0 -4.98 0.15 0.23
-
