@@ -1,10 +1,12 @@
-# Greene et al. (2024), UNCOVER red broad-line AGN
-# Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-5 cMpc^-3 mag^-1
-# Note: Values are reproduced from Table 1 of Grazian et al. (2024), which compiles the Greene et al. measurement.
-# Note: These red sources are not equivalent to a classical UV-color-selected unobscured-quasar sample.
+# Greene et al. (2024), ApJ 964, 39 (arXiv:2309.05714v1), Table 4 (published numbering; identical in arXiv v1): UV LF of UNCOVER red broad-line AGN
+# Redshift: 6.5 < z < 8.5 ("z~7-8 sample")
+# Magnitude definition: M_UV measured at rest-frame 1450 A (Fig. 7 caption) -> M1450; lensing-corrected
+# Phi convention: linear Phi in units of 1e-5 cMpc^-3 mag^-1 (H0=70), symmetric 1-sigma errors
+# Note: checked against the primary paper (same values as the Grazian et al. 2024 Table 1 compilation).
+# Note: the table note says 0.5-mag bins, but this sample is listed at 1-mag spacing (-19, -18, -17); 1, 2 and 2 objects.
+# Note: the UV is a small, reddened fraction of the AGN light; not a classical unobscured-quasar UV LF.
 #
 # M1450  Phi  Delta
- -19.00  1.3  0.5
- -18.00  2.6  0.7
- -17.00  4.0  1.0
+-19.0  1.3  0.5
+-18.0  2.6  0.7
+-17.0  4.0  1.0

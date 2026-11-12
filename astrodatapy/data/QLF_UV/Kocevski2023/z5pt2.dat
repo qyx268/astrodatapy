@@ -1,0 +1,10 @@
+# Kocevski et al. (2023), ApJL 954, L4 (arXiv:2302.00012v1), Sect. 5.3 text + Figure 10: CEERS broad-line AGN
+# Redshift: single AGN (CEERS 2782 in the published paper, CEERS 1670 on arXiv) at z_spec = 5.24; volume for z = 5.24 +- 0.5
+# Magnitude definition: M1450 = -19.4 +- 0.05 (as stated in the paper; observed total UV magnitude)
+# Phi convention: linear Phi in units of 1e-5 cMpc^-3 mag^-1 (H0=70); columns 3-4 are the absolute 1-sigma upper and lower Phi values (ULLimits)
+# Note: Phi = 1.07e-5 is from the text. The paper quotes no numerical error; the 1-sigma bounds (Gehrels 1986, N=1)
+#       are the vector coordinates of the error bar in the figure (arXiv EPS): upper 3.52e-5, lower 0.146e-5.
+# Note: one object; the paper quantifies the serendipity of the detection rather than a complete LF.
+#
+# M1450  Phi  PhiUpper  PhiLower
+-19.4  1.07  3.5  0.15

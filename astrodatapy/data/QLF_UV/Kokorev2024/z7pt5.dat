@@ -1,3 +1,11 @@
+# Kokorev et al. (2024), ApJ 968, 38 (arXiv:2401.09981v4), Table 2: UV LF of photometrically selected little red dots (blank JWST fields)
+# Redshift: 6.5 < z_phot < 8.5 (labelled <z> = 7 in the paper; mean z_phot of the LRDs in this bin = 7.3 from the Zenodo catalogue)
+# Magnitude definition: observed (not dust-corrected) M_UV at rest-frame 1450 A, AGN and host not decomposed -> M1450
+# Phi convention: log10(Phi / cMpc^-3 mag^-1) (H0=70), symmetric errors in dex
+# Note: 5-sigma completeness limit M_UV ~ -19.0; the paper's Schechter fit uses only brighter bins (-17 and -18 are incomplete).
+# Note: the M_UV = -22 bin (N=1) is quoted as an upper limit (log Phi < -6.42) and is in Kokorev2024_ulimit.
+#
+# M1450  LogPhi  Delta
 -17 -4.58 0.75
 -18 -4.95 0.28
 -19 -5.02 0.30

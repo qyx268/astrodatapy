@@ -1,1 +1,6 @@
+# Harikane et al. (2023), ApJ 959, 39 (arXiv:2303.11946v3), Table 4: upper limit, z~7 bin (z_ave = 6.936)
+# Magnitude definition: total (AGN+host) M_UV -> M1500
+# Phi convention: linear Phi in cMpc^-3 mag^-1 (h=0.6766); 2-sigma upper limit (f_AGN < 0.19)
+#
+# M_UV  PhiLimit
 -18.5 5.1e-4

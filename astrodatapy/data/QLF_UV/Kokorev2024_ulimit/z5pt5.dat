@@ -1,1 +1,6 @@
+# Kokorev et al. (2024), ApJ 968, 38 (arXiv:2401.09981v4), Table 2: upper limit, 4.5 < z_phot < 6.5 (N=1 in the bin)
+# Magnitude definition: observed M_UV at rest-frame 1450 A -> M1450
+# Phi convention: log10(Phi / cMpc^-3 mag^-1) upper limit (H0=70)
+#
+# M1450  LogPhiLimit
 -22.0 -6.52
