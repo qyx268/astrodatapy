@@ -1,0 +1,6 @@
+# Harikane et al. (2025), ApJ 980, 138; arXiv:2406.18352v2, Table 2 -- UPPER LIMITS (1 sigma, per tablecomments)
+# x: M_UV (AB) ; phi upper limit: linear, Mpc^-3 mag^-1 ; cosmology h = 0.6766
+# Limits from bright z~10-12 candidates (XMM3-3085, HD1, HD2) spectroscopically shown to be low-z interlopers
+# Redshift bin: z = 11.0-13.5 (z~12)
+# M_UV   phi_upper_limit
+-23.5  1.1e-7

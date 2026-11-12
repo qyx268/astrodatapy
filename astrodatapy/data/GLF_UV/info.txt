@@ -54,3 +54,13 @@ Harikane2022				M1600	0.6774	1.0					ULDeltas	0		0		data		2022ApJ...929....1H
 Finkelstein2022				M1600	0.6736	1e-5				ULDeltas	0		0		data		2022ApJ...940L..55F
 McLeod2024					M1500	0.7		1e-5				Delta		0		0		data		2024MNRAS.527.5004M
 Robertson2024				M1600	0.7		1e-4				Delta		0		0		data		2024ApJ...970...31R
+Atek2026					M1500	0.6766	1.0					Delta		1		0		data		2026arXiv260423823A
+Chemerynska2026				M1500	0.7		1.0					ULDeltas	1		0		data		2026MNRAS.546f2267C
+Harikane2025				M1600	0.6766	1.0					ULDeltas	0		0		data		2025ApJ...980..138H
+Harikane2025_ulimit			M1600	0.6766	1.0					None		0		0		dataULimit	2025ApJ...980..138H
+Perez-Gonzalez2025			M1500	0.7		1.0					ULDeltas	1		0		data		2025ApJ...991..179P
+Perez-Gonzalez2025_ulimit	M1500	0.7		1.0					None		1		0		dataULimit	2025ApJ...991..179P
+Whitler2025					M1500	0.7		1e-5				ULDeltas	0		0		data		2025ApJ...992...63W
+Whitler2025_ulimit			M1500	0.7		1e-5				None		0		0		dataULimit	2025ApJ...992...63W
+Varadaraj2026				M1500	0.7		1.0					Delta		0		0		data		2026A&A...707A.239V
+Varadaraj2026_ulimit		M1500	0.7		1.0					None		0		0		dataULimit	2026A&A...707A.239V

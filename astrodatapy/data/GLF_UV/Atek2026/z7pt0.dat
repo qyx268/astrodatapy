@@ -1,0 +1,22 @@
+# Atek et al. (2026), "A GLIMPSE of the 99%: a census of the faintest galaxies during the epoch of
+#   reionization and its implications for galaxy formation models", OJAp 9 (2026), doi:10.33232/001c.166816
+# arXiv:2604.23823v2 (published version), Table 1 ("binned UVLF data points"), GLIMPSE rows only
+# Survey: JWST/NIRCam GLIMPSE, lensing cluster Abell S1063 (source-plane completeness, 3 lens models)
+# Redshift: 6 < z < 9 (paper's "z~7" UVLF); representative z = 7.0
+# x: M_UV (intrinsic, de-lensed, AB); bin width 1 mag. Wavelength not stated in the paper
+#    (GLIMPSE companion papers use rest-frame ~1500 A) -> listed as M1500 in info.txt
+# Phi: log10(phi / Mpc^-3 mag^-1); symmetric 1-sigma error in dex (Poisson [Gehrels86] + cosmic variance
+#      + Monte Carlo magnification/photometry/photo-z errors + lens-model systematics)
+# Cosmology: Planck18, H0 = 67.66, Om = 0.31
+# Notes: Table 1 also lists Bouwens et al. (2021) z~7 points (rows with N_obj = '--', M = -22.19 ... -16.94)
+#        that were used in the fit; they are EXCLUDED here (already in the database as Bouwens2021; also
+#        the -17.94/-16.94 values in Table 1 [-2.08, -2.20] disagree with Table A1 and Bouwens+21 [-2.24, -2.08]).
+#        Per-lens-model LFs are in Table A1 (not used). N_obj per bin: 26, 80, 177, 51, 32, 13, 6.
+# M_UV   log10(phi)   sigma(dex)
+-18.50  -2.84  0.20
+-17.50  -2.24  0.11
+-16.50  -1.62  0.12
+-15.50  -1.63  0.29
+-14.50  -0.87  0.27
+-13.50  -0.35  0.34
+-12.50   0.03  0.67

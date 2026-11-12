@@ -1,0 +1,22 @@
+# Varadaraj et al. (2026), "Euclid: Discovery of bright z~7 Lyman-break galaxies in UltraVISTA and Euclid COSMOS",
+#   A&A 707, A239 (2026), doi:10.1051/0004-6361/202557508
+# arXiv:2510.00945v2 (accepted version), Table 4 (tab:LF values), "UltraVISTA+Euclid" (U+E) columns
+# Survey: UltraVISTA DR6 + Euclid COSMOS PV imaging (0.65 deg^2 for U+E); ground-based bright end
+# Redshift: 6.5 <= z <= 7.5; representative z = 7.0
+# x: M_UV from a 100 A top-hat at rest-frame 1500 A on the best-fit SED (= M1500); bins: 0.4 mag wide at
+#    -22.6 and -22.2, 0.2 mag wide otherwise; phi is per mag
+# Phi: linear, Mpc^-3 mag^-1 (written exactly as tabulated, in e-notation); symmetric 1-sigma error
+# Cosmology: H0 = 70, Om = 0.3, OL = 0.7
+# The U+E sample is the one the paper fits (cleaner vs. brown dwarfs); its brightest bin (-22.6, 0 galaxies)
+#   is a 1-sigma upper limit -> Varadaraj2026_ulimit/. n_gal (U+E): 3, 4, 6, 10, 19, 25, 27
+# For reference, the UltraVISTA-only (1.72 deg^2) column of the same table (NOT loaded):
+#   M: -22.6 1.31(0.60)e-6; -22.2 3.33(1.03)e-6; -21.9 7.34(2.18)e-6; -21.7 6.28(2.02)e-6;
+#      -21.5 1.57(0.35)e-5; -21.3 2.74(0.50)e-5; -21.1 4.13(0.68)e-5; -20.9 3.83(0.68)e-5
+# M_UV   phi   sigma
+-22.2  2.13e-6  1.28e-6
+-21.9  6.03e-6  3.19e-6
+-21.7  9.12e-6  4.01e-6
+-21.5  1.59e-5  0.56e-5
+-21.3  3.23e-5  0.88e-5
+-21.1  4.42e-5  1.09e-5
+-20.9  5.84e-5  1.42e-5

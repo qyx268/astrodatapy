@@ -1,0 +1,5 @@
+# Perez-Gonzalez et al. (2025), ApJ 991, 179; arXiv:2503.15594v4, Table 3 -- UPPER LIMITS
+# (confidence level not stated in the paper) ; x: M1500 (AB) ; log10(phi_limit / Mpc^-3 mag^-1) ; H0=70
+# Redshift: z~25 (F277W dropouts); effective volume 5.5e4 Mpc^3
+# M_UV   log10(phi_upper_limit)
+-18.99  -4.6

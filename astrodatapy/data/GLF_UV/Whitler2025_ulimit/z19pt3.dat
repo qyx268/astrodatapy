@@ -1,0 +1,9 @@
+# Whitler et al. (2025), ApJ 992, 63; arXiv:2501.00984v3, Table 5 -- UPPER LIMITS
+# F200W dropouts, z ~ 16-22.5 (no candidates found); these are 2-SIGMA upper limits (not 1 sigma)
+# Representative z = 19.3 is simply the midpoint of 16-22.5 (no median redshift is given)
+# x: M1500 (AB), bins 1 mag wide ; phi limit: linear, units of 1e-5 Mpc^-3 mag^-1 ; h = 0.7
+# M_UV   phi_upper_limit[1e-5]
+-20.5    1.1
+-19.5    2.1
+-18.5   10
+-17.5  250

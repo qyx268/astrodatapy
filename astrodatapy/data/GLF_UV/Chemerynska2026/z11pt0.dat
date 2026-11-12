@@ -1,0 +1,17 @@
+# Chemerynska et al. (2026), "The first GLIMPSE of the faint galaxy population at Cosmic Dawn with JWST:
+#   The evolution of the ultraviolet luminosity function across z~9-15", MNRAS 546, staf2267 (2026),
+#   doi:10.1093/mnras/staf2267
+# arXiv:2509.24881v1 (only arXiv version), Table 1; values checked identical to the published MNRAS Table 1
+#   (the published table adds a completeness column C, quoted per file below)
+# Survey: JWST/NIRCam GLIMPSE, lensing cluster Abell S1063 (source-plane completeness simulations)
+# x: M_UV (intrinsic, de-lensed, AB); bin width 1 mag. Wavelength not stated in the paper
+#    (GLIMPSE companion papers use rest-frame ~1500 A) -> listed as M1500 in info.txt
+# Phi: log10(phi / Mpc^-3 mag^-1); asymmetric 1-sigma errors in dex (Poisson [Gehrels86] + cosmic variance
+#      [CV = 34-50%] + magnification/photometry/photo-z Monte Carlo)
+# Cosmology: H0 = 70, Om = 0.3, OL = 0.7
+# Redshift bin: 10.5 < z < 11.5 (centred on z = 11); N_obj per bin: 4, 6, 2
+# Completeness C (published Table 1): 0.69, 0.61, 0.45
+# M_UV   log10(phi)   sigma_upper(dex)   sigma_lower(dex)
+-17.5  -3.06  0.29  0.40
+-16.5  -2.58  0.25  0.32
+-15.5  -1.93  0.24  0.29
