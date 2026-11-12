@@ -241,13 +241,13 @@ class number_density:
             if MAG == 'MB2MABB':
                 data[:,0] += _MB_to_MABB
             if MAG == 'LBsol2M1450':
-                from magnitudes import _MBvega2M1450
+                from .magnitudes import _MBvega2M1450
                 data[:,1] *= 0.4*data[:,0]*np.log(10)
                 data[:,0]  = _MBvega2M1450(5.48-2.5*np.log10(data[:,0]))
             if MAG == 'Mg2MB':
                 data[:,0] += _Mg_to_MB
             if MAG == 'M14502MB':
-                from magnitudes import _M14502MB
+                from .magnitudes import _M14502MB
                 data[:,0] = _M14502MB(data[:,0])
         return data
 
