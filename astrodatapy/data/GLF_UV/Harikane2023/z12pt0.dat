@@ -1,3 +1,6 @@
+# Harikane et al. 2023, ApJS 265, 5 (arXiv:2208.01612v3), Table 7, z~12 (F150W-dropouts). Planck: h=0.6766.
+# Upper-limit rows are in Harikane2023_ulimit.
+# M_UV  phi  +err  -err   [Mpc^-3 mag^-1]
 -21.21 5.00e-6 11.56e-6 4.27e-6
 -20.21 1.31e-5 1.75e-5 0.89e-5
 -19.21 2.40e-5 2.38e-5 1.40e-5

@@ -1,1 +1,6 @@
+# Naidu et al. 2022, ApJL 940, L14 (arXiv:2207.09434v2), Sec. 5.2 text (no LF table):
+# log10 phi = -5.05 +0.37 -0.45 [Mpc^-3 mag^-1] from 2 galaxies over 10<z<13 (V=2.2e5 Mpc^3, 1-mag bin).
+# x = -20.9 = mean M_UV of GL-z10 (-21.0) and GL-z12 (-20.7) (properties table, Table 3); the paper quotes M_UV~-21.
+# Planck 2015 cosmology.
+# M_UV  log10(phi)  +err  -err
 -20.9 -5.05 0.37 0.45

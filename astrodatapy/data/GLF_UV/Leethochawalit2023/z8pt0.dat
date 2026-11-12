@@ -1,0 +1,10 @@
+# Leethochawalit et al. 2023, MNRAS 524, 5454 (arXiv:2205.15388v2), z~8 sample (SuperBoRG, HST).
+# No table in the paper: nominal binned LF ("navy diamonds", Appendix A method 1) shown only in Fig. 6.
+# Values read from the vector coordinates of Bouwens_schechter_plot_z8.pdf in the v2 arXiv source (exact to ~1e-4 dex).
+# (Previous values in this file matched the v1 figure; v2 = published version changed them.)
+# Bins with no detection (-23.0, -20.5) are in Leethochawalit2023_ulimit. Planck15: h=0.6731.
+# M_UV  log10(phi)  +err  -err   [Mpc^-3 mag^-1]
+-22.5 -5.6801 0.1165 0.1597
+-22.0 -5.2124 0.1029 0.1352
+-21.5 -4.5458 0.0461 0.0516
+-21.0 -4.7762 0.1603 0.2570

@@ -1,1 +1,5 @@
+# Finkelstein et al. 2022, ApJL 940, L55 (arXiv:2207.12474v2), Sec. 5.4 text (no table):
+# one galaxy (Maisie's Galaxy), top-hat selection over 11.5<z<12.5, V_max=5.0e4 Mpc^3, no completeness correction;
+# number density 2.0 +4.6 -1.7 x1e-5 Mpc^-3 at M_UV=-20.3 (plotted per mag in their Fig. 6). Planck 2018 (H0=67.36).
+# M_UV  phi  +err  -err   [phi in 1e-5 Mpc^-3 mag^-1]
 -20.3 2.0 4.6 1.7

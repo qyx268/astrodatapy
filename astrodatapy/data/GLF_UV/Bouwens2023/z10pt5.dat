@@ -1,0 +1,5 @@
+# Bouwens et al. 2023, MNRAS 523, 1036 (arXiv:2211.02607v3, HUDF/XDF NIRCam medium bands), Table 3 (binned LF), z~10-11 galaxies, mean z=10.5.
+# H0=70, Om=0.3. Symmetric errors as tabulated.
+# M_UV  phi  sigma   [Mpc^-3 mag^-1]
+-18.90  0.000086   0.000120
+-17.90  0.000746   0.000738
