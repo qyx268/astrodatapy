@@ -1,0 +1,17 @@
+# McGreer et al. (2018, AJ 155, 131), Table 1 ("Binned QLF"), "CFHTLS Wide" block; checked against arXiv:1710.09390v1
+# Sample: CFHTLS Wide quasars (MMT/LBT/Gemini spectroscopy of i < 23.2 targets, Gemini spectroscopy of 23.2 < i < 23.7 targets)
+# Redshift: 4.7 < z < 5.4 (mean z ~ 4.9; file labelled z ~ 5 as in the paper)
+# Magnitude definition: M1450 (non-uniform bin spacing)
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.272, OL = 0.728)
+# Note: The paper tabulates log10(Phi / Mpc^-3 mag^-1) but gives sigma_Phi in linear units of 1e-9 Mpc^-3 mag^-1.
+# Note: The central values were exponentiated (10**(logPhi + 9)); the tabulated linear sigma_Phi (Gehrels 1986 approximation) is kept unchanged.
+# Note: The faintest bin (M1450 = -22.90) comes from the W1 Gemini spectroscopy; the paper notes it lies well below its best-fit QLF models.
+# Note: The paper determines the binned QLF separately for SDSS Main, SDSS Stripe 82 and CFHTLS Wide (see McGreer2018_SDSS, McGreer2018_S82);
+#       it gives no combined binned QLF.
+#
+# M1450  Phi  Delta
+ -26.350  7.58578  4.34
+ -25.250  27.5423  12.70
+ -24.350  56.2341  18.05
+ -23.650  47.863  23.77
+ -22.900  47.863  28.24

@@ -1,19 +1,23 @@
-# Matsuoka et al. (2018), Table 4
-# Redshift: 5.7 < z < 6.5
-# Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (equivalent to Gpc^-3 mag^-1)
-# Note: The final two alternate rows in Table 4, obtained after excluding narrow-Lyalpha objects, are merged into the main file.
+# Matsuoka et al. (2018, ApJ 869, 150), Table 4 ("Binned luminosity function"), standard rows; checked against arXiv:1811.01963v1
+# Sample: combined SDSS + CFHQS + SHELLQs complete quasar samples (one binned LF derived from all three)
+# Redshift: 5.7 <= z <= 6.5 (parametric LF quoted at z = 6.0)
+# Magnitude definition: M1450; bin width 0.5 mag except -22.00 (1.0 mag), -27.50 (1.0 mag) and -29.00 (2.0 mag)
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (table in Gpc^-3 mag^-1); H0 = 70, Om = 0.3, OL = 0.7
+# Note: These are the paper's standard values, which include the five SHELLQs objects with narrow Lyalpha (FWHM < 500 km/s) and are
+#       used for its standard parametric fit. The last two rows of Table 4 ("for reference") exclude those objects:
+#       M1450 = -22.75: 14.4 +- 6.4; M1450 = -23.25: 8.5 +- 3.2. They are NOT used here.
+# Note: The -22.00 and -29.00 bins contain one quasar each (Phi - Delta = 0).
 #
 # M1450  Phi  Delta
  -22.000  16.2  16.2
- -22.750  14.4  6.4
- -23.250  8.5  3.2
+ -22.750  23.0  8.1
+ -23.250  10.9  3.6
  -23.750  8.3  2.6
- -24.250  6.6  2
- -24.750  7  1.7
+ -24.250  6.6  2.0
+ -24.750  7.0  1.7
  -25.250  4.6  1.2
- -25.750  1.33  0.6
- -26.250  0.9  0.32
+ -25.750  1.33  0.60
+ -26.250  0.90  0.32
  -26.750  0.58  0.17
  -27.500  0.242  0.061
  -29.000  0.0079  0.0079

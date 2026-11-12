@@ -1,16 +1,20 @@
-# Kim et al. (2020), Table 5: Case2
+# Kim et al. (2020, ApJ 904, 111), Table 5 ("Binned QLFs"), Case 1 columns; checked against arXiv:2010.05859v1
+# Sample: IMS z ~ 5 quasars; Case 1 = broad-band colour selection only (43 quasars), which the paper adopts as its representative result.
+#         (Case 2 = broad-band + medium-band selection, 32-quasar subset; same sample, not independent of Case 1.)
 # Redshift: 4.7 < z < 5.4
-# Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
-# Note: Case 1 and Case 2 are alternative sample/completeness definitions and should not be used as independent data.
-# Note: The rebinned Yang et al. bright points in Table 5 are excluded because Yang et al. (2016) is provided separately.
+# Magnitude definition: M1450; bin width 0.5 mag
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.3, OL = 0.7); errors are root-sum-square 1/Va errors
+# Note: The faintest Case 1 bin (-23.25) is boosted by one serendipitously found quasar in a low-completeness region (IMS J085028-050607);
+#       the paper says it is still consistent with its best fit within 1 sigma. Case 2 gives 68.1 +- 39.3 there.
+# Note: The re-binned Yang et al. (2016) bright points (M1450 < -27) in Table 5 are excluded; Yang et al. (2016) is a separate entry.
 #
 # M1450  Phi  Delta
- -26.750  7.1  7.1
- -26.250  19.6  11.3
- -25.750  19.2  11.1
- -25.250  28.8  14.4
- -24.750  51.3  20.9
- -24.250  55  22.5
- -23.750  69.5  28.4
- -23.250  68.1  39.3
+ -27.250  4.7  4.7
+ -26.750  4.7  4.7
+ -26.250  15.1  8.7
+ -25.750  16.5  9.5
+ -25.250  30.8  13.8
+ -24.750  48.1  18.2
+ -24.250  70.7  22.4
+ -23.750  59.0  22.3
+ -23.250  104.1  42.5

@@ -1,0 +1,21 @@
+# Niida et al. (2020, ApJ 904, 89), Table 3, "SDSS DR7" block; checked against arXiv:2010.00481v1
+# Sample: spectroscopically confirmed quasars from the SDSS DR7 quasar catalogue (Schneider et al. 2010), selected by Niida et al.
+#         following Akiyama et al. (2018, Sect. 4.3): SCIENCEPRIMARY = 1, final-quasar-algorithm targets, 6248 deg^2, 100%-complete
+#         region of Richards et al. (2006). The number densities are Niida et al.'s own calculation, not copied from another paper.
+# Redshift: 4.5 < z < 5.2 (mean z = 4.75 +- 0.18); file labelled z ~ 5 as in the paper
+# Magnitude definition: M1450 (from M_i(z=2) + 1.486); bin centres spaced by 0.25 mag
+# Phi convention: linear Phi in units of 1e-8 cMpc^-3 mag^-1 (H0 = 70, Om = 0.3, OL = 0.7), symmetric errors
+# Note: Used together with the HSC points (entry Niida2020_HSC) in the paper's QLF fit.
+#
+# M1450  Phi  Delta
+ -26.130  0.639  0.171
+ -26.380  0.772  0.087
+ -26.630  0.628  0.076
+ -26.880  0.499  0.068
+ -27.130  0.277  0.051
+ -27.380  0.212  0.044
+ -27.630  0.083  0.028
+ -27.880  0.055  0.023
+ -28.130  0.0092  0.0092
+ -28.380  0.018  0.013
+ -28.630  0.018  0.013

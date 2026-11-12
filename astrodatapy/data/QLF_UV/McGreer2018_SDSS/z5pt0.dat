@@ -1,0 +1,17 @@
+# McGreer et al. (2018, AJ 155, 131), Table 1 ("Binned QLF"), "SDSS Main" block; checked against arXiv:1710.09390v1
+# Sample: SDSS DR7 main-survey quasars (same objects as McGreer et al. 2013), re-analysed with updated K-corrections and completeness
+# Redshift: 4.7 < z < 5.1 (mean z ~ 4.9; file labelled z ~ 5 as in the paper)
+# Magnitude definition: M1450 (bin centres spaced by 0.5 mag)
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.272, OL = 0.728)
+# Note: The paper tabulates log10(Phi / Mpc^-3 mag^-1) but gives sigma_Phi in linear units of 1e-9 Mpc^-3 mag^-1.
+# Note: The central values were exponentiated (10**(logPhi + 9)); the tabulated linear sigma_Phi (Gehrels 1986 approximation) is kept unchanged.
+# Note: The paper determines the binned QLF separately for SDSS Main, SDSS Stripe 82 and CFHTLS Wide (see McGreer2018_S82, McGreer2018_CFHTLS);
+#       it gives no combined binned QLF.
+#
+# M1450  Phi  Delta
+ -28.550  0.125893  0.12
+ -28.050  0.199526  0.14
+ -27.550  1.28825  0.37
+ -27.050  3.89045  0.72
+ -26.550  7.94328  1.08
+ -26.050  9.33254  1.74
