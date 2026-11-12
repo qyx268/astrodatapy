@@ -1,0 +1,14 @@
+# Yang et al. (2016, ApJ 829, 33), Table 2 ("Binned QLF"); checked against arXiv:1607.04415v1
+# Sample: luminous SDSS+WISE-selected quasars plus known SDSS DR7/DR12 quasars over the SDSS footprint
+# Redshift: 4.7 <= z < 5.4; effective z = 5.05
+# Magnitude definition: M1450; bin width 0.5 mag (the brightest bin holds one quasar and is placed at its M1450 = -28.99)
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.272, OL = 0.728)
+# Note: The published central values are log10(Phi / Mpc^-3 mag^-1), whereas the published errors are linear DeltaPhi in units of 1e-9.
+# Note: Only the central Phi values were exponentiated (10**(logPhi + 9)); the tabulated linear errors are kept unchanged.
+#
+# M1450  Phi  Delta
+ -28.990  0.331131  0.33
+ -28.550  0.138038  0.08
+ -28.050  0.436516  0.15
+ -27.550  0.812831  0.19
+ -27.050  1.99526  0.32

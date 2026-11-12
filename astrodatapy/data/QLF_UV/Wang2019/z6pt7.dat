@@ -1,9 +1,12 @@
-# Wang et al. (2019), Figure 9, vector-digitized
+# Wang et al. (2019, ApJ 884, 30), Figure 9 (binned QLF), extracted from the vector paths of binqlf.pdf in arXiv:1810.11926v1
+# Sample: 17 quasars from DELS/PS1 + UHS + WISE (y_ps1 < 21.0 main sample)
 # Redshift: 6.45 < z < 7.05; representative z ~ 6.7
-# Magnitude definition: M1450
-# Phi convention: log10(Phi / cMpc^-3 mag^-1), with asymmetric errors in dex
-# Note: These values are digitized from the vector objects in Figure 9; they are not copied from a printed numerical table.
-# Note: The three magnitude bins have nominal width DeltaM1450 = 0.7 mag.
+# Magnitude definition: M1450 (x = plotted symbol position, not the bin centre); three bins of width 0.7 mag over -27.6 < M1450 < -25.5
+# Phi convention: log10(Phi / cMpc^-3 mag^-1), with asymmetric errors in dex (upper, lower); H0 = 70, Om = 0.3, OL = 0.7
+# Note: The arXiv version (v1, the only one) has no numerical binned-QLF table; the published version could not be checked.
+#       These values are therefore figure-extracted, not copied from a table. Axis calibration: decade ticks of Phi and 0.5-mag
+#       ticks of M1450 in the PDF; they agree within 0.004 dex/mag with the independent digitisation of Shen et al. (2020)
+#       (quasarlf repository, new_load_wang18_lf_data.py).
 #
 # M1450  LogPhi  UpperDeltaDex  LowerDeltaDex
  -27.185  -9.82447  0.119982  0.16639

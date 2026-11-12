@@ -1,14 +1,17 @@
-# Shin et al. (2022), Table 4: this work
-# Redshift: z ~ 5
-# Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1
-# Note: The paper tabulates log10(Phi) and linear delta_Phi in units of 1e-9.
-# Note: The central Phi values were exponentiated; the tabulated errors are retained.
-# Note: The two bins at M1450 = -21.75 and -21.25 are excluded because the paper flags them as highly contaminated by high-redshift galaxies.
-# Note: Rebinned Yang et al. and Kim et al. points in the same table are not duplicated here.
+# Shin et al. (2022, ApJ 937, 32), Table 4 ("Quasar binned LF"), "This work" block; checked against arXiv:2208.00570v1
+# Sample: 49 visually inspected z ~ 5 quasar candidates (deep learning + BIC selection) in the HSC-SSP PDR2 Deep layer; mostly not
+#         spectroscopically confirmed
+# Redshift: 4.4 < z < 5.8 (single redshift bin, "z ~ 5.0" in the paper)
+# Magnitude definition: M1450; bin width 1.0 mag for the rows used here
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.3, OL = 0.7)
+# Note: The paper tabulates log10(Phi / Mpc^-3 mag^-1) and linear delta_Phi (= Phi/sqrt(N)) in units of 1e-9 Mpc^-3 mag^-1.
+# Note: The central values were exponentiated (10**(logPhi + 9)); the tabulated linear errors are kept unchanged.
+# Note: The two bins at M1450 = -21.75 and -21.25 (0.5-mag bins) are excluded because the paper flags them as highly contaminated
+#       by high-redshift galaxies.
+# Note: The re-binned Yang et al. (2016) and Kim et al. (2020, Case 1 sample) points in the same table are not duplicated here.
 #
 # M1450  Phi  Delta
  -25.500  19.8609  11.463
  -24.500  52.6017  19.889
- -23.500  151.356  37.83
+ -23.500  151.356  37.830
  -22.500  194.984  64.999

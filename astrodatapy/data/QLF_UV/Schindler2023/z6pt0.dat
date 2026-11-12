@@ -1,13 +1,15 @@
-# Schindler et al. (2023), Table 3: PS1 distant-quasar survey
-# Redshift: 5.7 <= z <= 6.2
-# Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (equivalent to Gpc^-3 mag^-1)
-# Note: Magnitude-bin centers, rather than the median object magnitudes, are used in the first column.
-# Note: The listed Phi values include the paper's completeness correction.
+# Schindler et al. (2023, ApJ 943, 67), Table 3 ("The binned PS1 distant quasar survey QLF"), corrected Phi column; checked against arXiv:2212.04179v2
+# Sample: 121 quasars of the Pan-STARRS1 distant quasar survey (PS1 only; the SHELLQs points in their Fig. are not tabulated)
+# Redshift: 5.7 <= z <= 6.2 (text: 5.65 <~ z <~ 6.25); median z ~ 5.85
+# Magnitude definition: M1450 bin centres (0.5-mag bins; the faintest bin is -25.38 +- 0.38). The median M1450 per bin
+#       (-27.32, -27.06, -26.44, -25.98, -25.52) is not used.
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (table in Gpc^-3 mag^-1); H0 = 70, Om = 0.3, OL = 0.7
+# Note: Phi includes the completeness correction (the table's uncorrected column is not used). Errors are Gehrels-type 1-sigma
+#       Poisson deltas (upper, lower).
 #
 # M1450  Phi  UpperDelta  LowerDelta
  -27.500  0.149  0.089  0.059
  -27.000  0.381  0.126  0.097
- -26.500  0.843  0.18  0.151
- -26.000  1.7  0.328  0.278
+ -26.500  0.843  0.180  0.151
+ -26.000  1.700  0.328  0.278
  -25.380  3.433  0.721  0.604

@@ -1,0 +1,23 @@
+# Niida et al. (2020, ApJ 904, 89), Table 3, "HSC S16A-Wide2" block; checked against arXiv:2010.00481v1
+# Sample: photometric z ~ 5 quasar candidates in 81.8 deg^2 of HSC-SSP S16A Wide (19.1 < i < 24.1); N_corr = number after subtracting
+#         the estimated Galactic-star contamination. Most objects have no spectroscopic redshift.
+# Redshift: z ~ 5; M1450 computed assuming z = 4.9 (peak of the HSC completeness). File labelled z ~ 5 as in the paper.
+# Magnitude definition: M1450; bins of Delta m_i = 0.5 mag
+# Phi convention: linear Phi in units of 1e-8 cMpc^-3 mag^-1 (H0 = 70, Om = 0.3, OL = 0.7), asymmetric errors (upper, lower)
+# Note: Errors are Poisson; Gehrels (1986) intervals for bins with N_corr < 50 (the -22.57 bin has symmetric errors in the paper).
+# Note: The two faintest bins (M1450 = -22.57 and -23.07, i > 23.1) may be contaminated by point-like galaxies and were excluded
+#       from the paper's QLF fit (which uses M1450 < -23.32 only).
+# Note: The SDSS DR7 bright-end points of the same table (the paper's own measurement from the SDSS DR7 quasar catalogue,
+#       z = 4.5-5.2, 0.25-mag bins) are in the separate entry Niida2020_SDSS.
+#
+# M1450  Phi  UpperDelta  LowerDelta
+ -22.570  68.9  6.9  6.9
+ -23.070  23.1  4.4  3.7
+ -23.570  12.5  3.4  2.7
+ -24.070  10.7  3.2  2.5
+ -24.570  5.39  2.46  1.76
+ -25.070  7.78  2.81  2.13
+ -25.570  2.98  2.01  1.29
+ -26.070  1.80  1.75  0.98
+ -26.570  0.60  1.39  0.50
+ -27.070  1.20  1.58  0.78

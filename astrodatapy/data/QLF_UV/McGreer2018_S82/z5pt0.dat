@@ -1,0 +1,18 @@
+# McGreer et al. (2018, AJ 155, 131), Table 1 ("Binned QLF"), "SDSS Stripe 82" block; checked against arXiv:1710.09390v1
+# Sample: SDSS Stripe 82 quasars of McGreer et al. (2013) plus five additional spectroscopically confirmed quasars, re-analysed
+# Redshift: 4.7 < z < 5.1 (mean z ~ 4.9; file labelled z ~ 5 as in the paper)
+# Magnitude definition: M1450 (bin centres spaced by 0.55 mag)
+# Phi convention: linear Phi in units of 1e-9 cMpc^-3 mag^-1 (H0 = 70, Om = 0.272, OL = 0.728)
+# Note: The paper tabulates log10(Phi / Mpc^-3 mag^-1) but gives sigma_Phi in linear units of 1e-9 Mpc^-3 mag^-1.
+# Note: The central values were exponentiated (10**(logPhi + 9)); the tabulated linear sigma_Phi (Gehrels 1986 approximation) is kept unchanged.
+# Note: This supersedes the Stripe 82 points of McGreer et al. (2013) (entry McGreer2013); do not use both as independent data.
+# Note: The paper determines the binned QLF separately for SDSS Main, SDSS Stripe 82 and CFHTLS Wide (see McGreer2018_SDSS, McGreer2018_CFHTLS);
+#       it gives no combined binned QLF.
+#
+# M1450  Phi  Delta
+ -27.000  8.70964  5.57
+ -26.450  17.7828  6.97
+ -25.900  5.88844  3.38
+ -25.350  33.8844  10.39
+ -24.800  57.544  13.12
+ -24.250  60.256  21.91

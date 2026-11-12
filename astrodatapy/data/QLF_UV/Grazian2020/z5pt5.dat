@@ -1,9 +1,14 @@
-# Grazian et al. (2020), CANDELS faint-AGN space density
-# Redshift: 5.0 < z < 6.1; sources at z_spec ~ 5.5
+# Grazian et al. (2020, ApJ 897, 94), Table 2 (space density of z ~ 5.5 AGNs in CANDELS); checked against arXiv:2006.02451v1
+# Sample: two spectroscopically confirmed AGNs (GDN3333, z = 5.186, M1450 = -22.56; GDS3073, z = 5.563, M1450 = -22.10)
+#         in 551.5 arcmin^2 of CANDELS GOODS-N, GOODS-S and EGS
+# Redshift: 5.0 < z < 6.1; z ~ 5.5
 # Magnitude definition: M1450
-# Phi convention: linear Phi in units of 1e-6 cMpc^-3 mag^-1
-# Note: The paper states that this estimate has no incompleteness correction and therefore represents a lower limit.
-# Note: The format has no dedicated lower-limit type, so the measured estimate and Poisson errors are retained as a data row with this warning.
+# Phi convention: linear Phi in units of 1e-6 cMpc^-3 (H0 = 70, Om = 0.3, OL = 0.7). The paper computes Phi = N / V (2 objects over
+#       the comoving volume of 5.0 < z < 6.1, 1/Vmax without any magnitude-bin division) and plots it with mag^-1 luminosity functions,
+#       i.e. it is effectively per 1-mag bin.
+# Note: Errors are Gehrels (1986) 1-sigma deltas for N = 2 (upper, lower), not limit values.
+# Note: No incompleteness correction is applied, so the paper calls this a lower limit. The format has no lower-limit type, so it is
+#       kept as a data row with this warning. If the (poorly searched) EGS area were excluded, Phi would increase by ~1.6.
 #
 # M1450  Phi  UpperDelta  LowerDelta
- -22.300  1.29  1.72  0.85
+ -22.330  1.291  1.717  0.854
