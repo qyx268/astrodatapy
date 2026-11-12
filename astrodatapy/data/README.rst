@@ -14,6 +14,7 @@ Number density
 BHM                        Black Hole Mass
 BHMF                       Black Hole Mass Function
 GLF_UV                     Galaxy Luminosity Function -- UV
+GLF_OIII                   Galaxy Luminosity Function -- [OIII] 5008
 GSMF                       Galaxy Stellar Mass Function -- all
 GSMF_Blue                  Galaxy Stellar Mass Function -- blue
 GSMF_Bulge                 Galaxy Stellar Mass Function -- bulge
