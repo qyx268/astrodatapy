@@ -1,0 +1,21 @@
+# Harikane et al. (2025), "JWST, ALMA, and Keck Spectroscopic Constraints on the UV Luminosity Functions at
+#   z~7-14: Clumpiness and Compactness of the Brightest Galaxies in the Early Universe", ApJ 980, 138 (2025),
+#   doi:10.3847/1538-4357/ad9b2c
+# arXiv:2406.18352v2 (accepted version), Table 2 ("Spectroscopic Constraints on the Luminosity Function")
+# SPECTROSCOPY-ONLY number densities (only spectroscopically confirmed galaxies are counted)
+# x: M_UV (AB; wavelength not stated in paper, compiled from literature photometry) -> M1600 in info.txt,
+#    as for the existing Harikane2022/Harikane2023 entries
+# Phi: linear, Mpc^-3 mag^-1 (written exactly as tabulated, in e-notation); asymmetric 1-sigma errors
+#      (Poisson [Gehrels86] + cosmic variance)
+# Cosmology: Planck18 (h = 0.6766, Om = 0.3111)
+# Rows marked (dagger) in the paper are taken from Harikane et al. 2024, ApJ 960, 56 (arXiv:2304.06658).
+# LOWER LIMITS in Table 2 cannot be represented by the loader and are EXCLUDED from the data columns;
+#   they are listed as comments below. Upper limits are in Harikane2025_ulimit/.
+# Redshift bin: z_spec = 6.5-7.5 (z~7)
+# Excluded lower limits: M=-23.7 >2.3e-9; -22.2 >1.1e-6; -21.7 >2.4e-5; -21.2 >1.2e-5
+# Excluded alternative row "z~7 individual" (clumps split into separate galaxies): -22.4 5.2(+6.9,-3.4)e-7
+#   (and lower limits -21.9 >1.8e-6, -21.4 >3.6e-5)
+# The two rows below assume 100% spectroscopic completeness of the Bowler+17 COSMOS candidates
+# M_UV   phi   sigma_upper   sigma_lower
+-23.2  1.6e-7  3.7e-7  1.3e-7
+-22.7  4.8e-7  4.6e-7  2.6e-7

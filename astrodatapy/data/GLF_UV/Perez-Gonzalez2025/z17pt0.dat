@@ -1,0 +1,17 @@
+# Perez-Gonzalez et al. (2025), "The Rise of the Galactic Empire: Ultraviolet Luminosity Functions at z~17 and
+#   z~25 Estimated with the MIDIS+NGDEEP Ultra-deep JWST/NIRCam Dataset", ApJ 991, 179 (2025),
+#   doi:10.3847/1538-4357/adf8c9
+# arXiv:2503.15594v4 (published version), Table 3 (tab:lf, "Luminosity function data points")
+# Survey: MIDIS NIRCam parallel + NGDEEP (5-sigma depth ~31.5 mag); F200W / F277W dropouts; Vmax method
+# x: M_UV = absolute magnitude averaged in a 0.01 um window around 0.15 um (= M1500), no dust correction;
+#    0.75 mag bins
+# Phi: log10(phi / Mpc^-3 mag^-1); asymmetric 1-sigma errors in dex (Monte Carlo M_UV/photo-z + cosmic
+#      variance in quadrature)
+# Cosmology: H0 = 70, Om = 0.3, OL = 0.7
+# Redshift: z~17 (F200W dropouts, roughly 16 < z < 21); bins typically contain ~2 objects
+# Excluded: brightest bin M=-19.79 is an upper limit (log phi < -4.8) -> Perez-Gonzalez2025_ulimit/
+# Effective volumes [1e4 Mpc^3]: 7.8, 3.1, 1.3
+# M_UV   log10(phi)   sigma_upper(dex)   sigma_lower(dex)
+-19.04  -4.93  0.34  1.38
+-18.29  -4.26  0.28  0.63
+-17.54  -3.96  0.28  0.58

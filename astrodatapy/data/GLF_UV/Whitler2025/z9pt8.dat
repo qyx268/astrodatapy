@@ -1,0 +1,15 @@
+# Whitler et al. (2025), "The z>~9 Galaxy UV Luminosity Function from the JWST Advanced Deep Extragalactic
+#   Survey: Insights into Early Galaxy Evolution and Reionization", ApJ 992, 63 (2025), doi:10.3847/1538-4357/adfddc
+# arXiv:2501.00984v3 (latest; v2 = accepted version), Table 5 (tab:binned_lf, binned_lf_table.tex)
+# Survey: JADES GOODS-S NIRCam (~160 arcmin^2 for M_UV<~-20, ~12 arcmin^2 deepest for M_UV~-17); dropout samples
+# x: M_UV at rest-frame 1500 A (AB) = M1500
+# Phi: linear, in units of 1e-5 Mpc^-3 mag^-1 (NormalizationOfPhi = 1e-5); asymmetric errors = 16th/84th
+#      percentiles of the marginalized posterior in each bin
+# Cosmology: h = 0.7, Om = 0.3, OL = 0.7
+# Sample: F115W dropouts (z ~ 8.5-12), z_median = 9.8, N = 309; bins 1 mag wide (M +/- 0.5)
+# M_UV   phi[1e-5]   sigma_upper   sigma_lower
+-21.4    0.40   0.45   0.27
+-20.4    3.6    1.4    1.2
+-19.4   17      4      4
+-18.4   78     16     16
+-17.4  330     80     80

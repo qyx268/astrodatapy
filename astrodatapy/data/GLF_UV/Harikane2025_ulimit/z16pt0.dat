@@ -1,0 +1,5 @@
+# Harikane et al. (2025), ApJ 980, 138; arXiv:2406.18352v2, Table 2 -- UPPER LIMIT (1 sigma, per tablecomments)
+# x: M_UV (AB) ; phi upper limit: linear, Mpc^-3 mag^-1 ; cosmology h = 0.6766
+# Redshift bin: z~16; this row is taken from Harikane et al. 2024, ApJ 960, 56 (dagger in Table 2)
+# M_UV   phi_upper_limit
+-21.9  9.8e-6
