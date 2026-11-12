@@ -4,7 +4,7 @@ def test_number_density():
     from astrodatapy.number_density import number_density as function
     features = ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk',\
                 'GSMF_Quiescent', 'BHM', 'BHMF', 'QLF_bolometric',\
-                'QLF_optical', 'QLF_UV', 'SFRF', 'GLF_UV']
+                'QLF_optical', 'QLF_UV', 'SFRF', 'GLF_UV', 'GLF_OIII']
 
     for feature in features:
         for z_target in available_redshifts(feature):
