@@ -167,6 +167,7 @@ magnitude, it is rescaled as ``h^-2``, as for QLF_bolometric.
 ---------------------  ------------  -------------------------------------------------------
 BarlowHall2022         6.05          Barlow-Hall et al. 2023, MNRAS 519, 6055 (Swift/ExSeSS)
 BarlowHall2022_ulimit  6.05          as above, 1 sigma upper limit
+Meraxes_obscured       5.007, 6.088  Meraxes (DRAGONS) model line, after obscuration
 Pouliasis2024          5.5           Pouliasis et al. 2024, A&A 685, A97 (Chandra + XMM)
 Pouliasis2024_ulimit   5.5           as above, 1 sigma upper limits
 Roster2026_DR2         0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSITA DR2)
@@ -174,20 +175,27 @@ Roster2026_eFEDS       0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSI
 Wolf2021               6.05          Wolf et al. 2021, A&A 647, A5 (eROSITA/eFEDS)
 =====================  ============  =======================================================
 
-The redshift column gives the value to pass as ``z_target``. Each file is
-tabulated at the centre of its redshift bin: 5.0-6.0 for Pouliasis2024 and
+The redshift column gives the value to pass as ``z_target``. Each observational
+file is tabulated at the centre of its redshift bin: 5.0-6.0 for Pouliasis2024 and
 5.7-6.4 for Wolf2021 and BarlowHall2022. Roster2026 provides nine redshifts,
 0.1, 0.4, 0.7, 1.0, 1.5, 2.0, 3.0, 4.0 and 4.9, one file each, so use a small
 ``z_tol`` to select a single one.
 
 ``info.txt`` also gives the width of each dataset's luminosity bins in dex
-(column ``BinWidth``: 0.5 for Pouliasis2024 and Wolf2021, 1.0 for the others), so that
-a point can be drawn with an x error bar of half that width.
+(column ``BinWidth``: 0.5 for Pouliasis2024 and Wolf2021, 1.0 for Barlow-Hall and Roster, 0.2 for
+the model line), so that a point can be drawn with an x error bar of half that width.
 
-The ``h`` of each source paper is used when rescaling: 0.68 for Wolf2021 and
+``Meraxes_obscured`` is a model line, not data (type ``data_sim``, drawn as a line with a band, like
+``Qin2017_Tiamat`` in the other quasar luminosity functions). It is the X-ray luminosity function of the
+Meraxes (DRAGONS) semi-analytic model after obscuration, i.e. the observed 2-10 keV luminosity, not absorption
+corrected, in 0.2 dex bins at z = 5.007 and 6.088 (the Genesis trees end at z = 5). Its band is the
+Bernoulli duty-cycle uncertainty that Meraxes saves, which does not include Poisson noise or cosmic
+variance, and only bins expected to hold at least 10 AGN are listed. Its ``h`` is the model's, 0.6751.
+
+The ``h`` of each source paper is used when rescaling: 0.68 for Wolf2021, 0.6751 for Meraxes_obscured and
 0.70 for the others. Every data file carries a header giving the figure or
-table its values came from, the energy band, the column-density range and the
-cosmology of that paper.
+table its values came from (or, for the model line, how it was made), the energy band,
+the column-density range and the cosmology.
 
 Correlation
 -----------

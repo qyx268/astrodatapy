@@ -1,0 +1,42 @@
+# Meraxes (DRAGONS) AGN X-ray luminosity function after obscuration, z = 6.088 (snapshot 107).
+# A MODEL line, not an observation: Type data_sim, drawn as a line with a band like Qin2017_Tiamat in QLF_UV.
+#
+# Quantity: the model's OBSERVED rest-frame 2-10 keV luminosity function. Each AGN is binned at its intrinsic
+#     hard X-ray luminosity multiplied by the 2-10 keV transmission of the column density N_H drawn for it
+#     (Ueda et al. 2014 N_H distribution, log N_H = 20-26, Compton-thick AGN included). It is NOT absorption
+#     corrected, so compare it with observed luminosities, not with absorption-corrected ones.
+# phi = dPhi/dlogLX in Mpc^-3 dex^-1 and LX in erg s^-1. The bins are 0.2 dex wide and tabulated at the bin centre.
+# Every AGN is weighted by its duty cycle. The band is +-1 sigma of the Bernoulli variance of those weights,
+#     sqrt(sum w(1-w)) / (V dlogLX), as saved by Meraxes. It reflects only which AGN are 'on'. It does NOT include
+#     Poisson noise in the number of AGN in the box or cosmic variance, so it is narrower than 1/sqrt(N) by a factor
+#     of 0.3-1 (the brighter the bin, the narrower, because bright AGN are nearly always on).
+# Only bins that are expected to hold at least 10 active AGN are listed (phi V dlogLX >= 10); beyond that the
+#     box is too small to constrain the model (one AGN per bin would be log phi = -6.78).
+# Below log LX ~ 41 the line turns over because the model has no black holes below its seed mass.
+#
+# Model: Meraxes, Genesis L210 N4320 trees (box 210 Mpc/h, augmented trees), h = 0.6751, Omega_m = 0.3121.
+#     Black hole growth rate 0.5 (not evolving with redshift), Eddington ratio 1, Shen et al. 2020
+#     bolometric corrections. The Meraxes quasar model is described in Qin et al. 2017 (2017MNRAS.472.2009Q).
+#     Run: the paper fiducial run X6_XAGN_Xstar_fid, snapshot 107. h in info.txt is the h of the model.
+#
+# logLX  phi  phi_upper  phi_lower
+39.90 1.91039e-04 1.96441e-04 1.85636e-04
+40.10 5.88558e-04 5.95654e-04 5.81461e-04
+40.30 5.59080e-04 5.65391e-04 5.52769e-04
+40.50 9.63699e-04 9.72258e-04 9.55141e-04
+40.70 1.20857e-03 1.21739e-03 1.19975e-03
+40.90 1.10668e-03 1.11487e-03 1.09849e-03
+41.10 1.04766e-03 1.05528e-03 1.04005e-03
+41.30 9.19605e-04 9.26344e-04 9.12866e-04
+41.50 7.05955e-04 7.11605e-04 7.00306e-04
+41.70 4.82928e-04 4.87525e-04 4.78332e-04
+41.90 3.23924e-04 3.27495e-04 3.20353e-04
+42.10 1.95680e-04 1.98340e-04 1.93020e-04
+42.30 1.16809e-04 1.18801e-04 1.14818e-04
+42.50 7.28539e-05 7.43024e-05 7.14054e-05
+42.70 4.41238e-05 4.51847e-05 4.30630e-05
+42.90 2.37497e-05 2.45350e-05 2.29645e-05
+43.10 1.24365e-05 1.30550e-05 1.18179e-05
+43.30 8.43893e-06 8.83239e-06 8.04546e-06
+43.50 4.75110e-06 5.01854e-06 4.48367e-06
+43.70 3.27303e-06 3.57893e-06 2.96712e-06
