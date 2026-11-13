@@ -11,17 +11,17 @@
 # If Log==1, Phi is in logarithm
 # If HinPhi==1, the unit of Phi is h^3Mpc**-1dex**-1
 # If Function==data, *.dat contains data
-# LX is rest-frame 2-10 keV: x is a luminosity, not a magnitude, and it
-# scales as h^-2 like QLF_bolometric. Each *.dat header names the figure
-# or table its values came from, and flags the z~6 lower-limit caveat.
+# LX is rest-frame 2-10 keV: x is a luminosity, not a magnitude, and it scales as h^-2 like QLF_bolometric.
+# BinWidth is the width of the luminosity bins in dex (plot a point with an x error bar of +-BinWidth/2).
+# Each *.dat header names the figure or table its values came from, and flags the z~6 lower-limit caveat.
 
 # Outdated data
 
-#Name                         MAG          h        NormalizationOfPhi   Errors       Log     HinPhi   Type               Bibliographic
-Pouliasis2024                 LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2024A&A...685A..97P
-Pouliasis2024_ulimit          LX_2_10keV   0.700    1                    None         1       0        dataULimit         2024A&A...685A..97P
-Wolf2021                      LX_2_10keV   0.680    1                    ULDeltas     1       0        data               2021A&A...647A...5W
-BarlowHall2022                LX_2_10keV   0.700    1                    ULDeltas     0       0        data               2023MNRAS.519.6055B
-BarlowHall2022_ulimit         LX_2_10keV   0.700    1                    None         0       0        dataULimit         2023MNRAS.519.6055B
-Roster2026_DR2                LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R
-Roster2026_eFEDS              LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R
+#Name                         MAG          h        NormalizationOfPhi   Errors       Log     HinPhi   Type               Bibliographic   BinWidth
+Pouliasis2024                 LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2024A&A...685A..97P   0.5
+Pouliasis2024_ulimit          LX_2_10keV   0.700    1                    None         1       0        dataULimit         2024A&A...685A..97P   0.5
+Wolf2021                      LX_2_10keV   0.680    1                    ULDeltas     1       0        data               2021A&A...647A...5W   0.5
+BarlowHall2022                LX_2_10keV   0.700    1                    ULDeltas     0       0        data               2023MNRAS.519.6055B   1.0
+BarlowHall2022_ulimit         LX_2_10keV   0.700    1                    None         0       0        dataULimit         2023MNRAS.519.6055B   1.0
+Roster2026_DR2                LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R   1.0
+Roster2026_eFEDS              LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R   1.0

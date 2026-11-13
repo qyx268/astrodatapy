@@ -180,6 +180,10 @@ tabulated at the centre of its redshift bin: 5.0-6.0 for Pouliasis2024 and
 0.1, 0.4, 0.7, 1.0, 1.5, 2.0, 3.0, 4.0 and 4.9, one file each, so use a small
 ``z_tol`` to select a single one.
 
+``info.txt`` also gives the width of each dataset's luminosity bins in dex
+(column ``BinWidth``: 0.5 for Pouliasis2024 and Wolf2021, 1.0 for the others), so that
+a point can be drawn with an x error bar of half that width.
+
 The ``h`` of each source paper is used when rescaling: 0.68 for Wolf2021 and
 0.70 for the others. Every data file carries a header giving the figure or
 table its values came from, the energy band, the column-density range and the
