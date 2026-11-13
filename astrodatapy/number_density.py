@@ -48,7 +48,7 @@ class number_density:
         self.z_tol                    = z_tol
         self.h                        = h
         self.quiet                    = quiet
-        self.info_header              = []
+        self.info_header              = np.zeros(20, dtype=object)
         self.info_skiprows            = None
         self.info                     = None
         self.n_available_observation  = 0
@@ -63,7 +63,7 @@ class number_density:
                 print("quiet=True to silent")
             with open(self.folder + self.feature + '/info.txt','r') as f:
                 for num, line in enumerate(f):
-                    self.info_header.append(line)
+                    self.info_header[num] = line
                     if '#Name' in line:
                         self.info_skiprows = num
                         break
