@@ -1,0 +1,22 @@
+# Bouwens et al. (2022), ApJ 940, 55 (arXiv:2205.11526), Table 4: binned rest-frame UV LF of lensed galaxies behind the six HFF clusters
+# Lensing companion of Bouwens et al. (2021) (blank fields + HUDF + HFF parallels; entry Bouwens2021)
+# Redshift: z~8 dropout sample (HFF cluster fields)
+# x: M_1600,AB (intrinsic, de-lensed)
+# Phi: linear Phi in Mpc^-3 mag^-1 (H0=70, Om=0.3); asymmetric 1-sigma errors (upper, lower)
+# Note: binned values = N_m / V_m with the median magnification maps; each bin is independent, but magnification-model
+#       uncertainties are NOT included (paper's Table 4 footnote a). The forward-modelled 68% intervals (their Table 3)
+#       account for them and are the paper's fiducial constraint on the LF shape.
+# Note: bins with only 1-sigma upper limits are in Bouwens2022_ulimit.
+#
+# M1600   Phi   UpperDelta   LowerDelta
+  -18.75    0.0018    0.0006    0.0006
+  -18.25    0.0016    0.0007    0.0007
+  -17.75    0.0037    0.0012    0.0012
+  -17.25    0.0058    0.0023    0.0020
+  -16.75    0.0063    0.0040    0.0030
+  -16.25     0.019     0.013     0.008
+  -15.75     0.016     0.018     0.011
+  -15.25     0.014     0.026     0.011
+  -14.25      0.11      0.23      0.09
+  -13.75      0.53      1.03      0.39
+  -13.25      0.20      0.99      0.16

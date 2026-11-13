@@ -64,3 +64,5 @@ Whitler2025					M1500	0.7		1e-5				ULDeltas	0		0		data		2025ApJ...992...63W
 Whitler2025_ulimit			M1500	0.7		1e-5				None		0		0		dataULimit	2025ApJ...992...63W
 Varadaraj2026				M1500	0.7		1.0					Delta		0		0		data		2026A&A...707A.239V
 Varadaraj2026_ulimit		M1500	0.7		1.0					None		0		0		dataULimit	2026A&A...707A.239V
+Bouwens2022					M1600	0.7		1.0					ULDeltas	0		0		data		2022ApJ...940...55B
+Bouwens2022_ulimit			M1600	0.7		1.0					None		0		0		dataULimit	2022ApJ...940...55B
