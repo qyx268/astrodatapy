@@ -13,7 +13,7 @@
 # If Function==data, *.dat contains data
 # LX is rest-frame 2-10 keV: x is a luminosity, not a magnitude, and it scales as h^-2 like QLF_bolometric.
 # BinWidth is the width of the luminosity bins in dex (plot a point with an x error bar of +-BinWidth/2).
-# Each *.dat header names the figure or table its values came from, and flags the z~6 lower-limit caveat.
+# Each *.dat header names the figure or table its values came from, and flags the z~6 lower-limit caveat. Meraxes_obscured is a model line (data_sim), not data.
 
 # Outdated data
 
@@ -25,3 +25,4 @@ BarlowHall2022                LX_2_10keV   0.700    1                    ULDelta
 BarlowHall2022_ulimit         LX_2_10keV   0.700    1                    None         0       0        dataULimit         2023MNRAS.519.6055B   1.0
 Roster2026_DR2                LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R   1.0
 Roster2026_eFEDS              LX_2_10keV   0.700    1                    ULDeltas     1       0        data               2026arXiv260727887R   1.0
+Meraxes_obscured              LX_2_10keV   0.6751   1                    ULLimits     0       0        data_sim           -                     0.2
