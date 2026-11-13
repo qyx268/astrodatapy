@@ -1,3 +1,5 @@
+# Bouwens et al. (2021), AJ 162, 47 (arXiv:2102.07775), Table 4 (SWML; HUDF, HFF parallels, blank fields); M1600, Phi in Mpc^-3 mag^-1, symmetric 1-sigma.
+# Updates Bouwens et al. (2015). Lensed (HFF cluster) faint-end points: companion paper Bouwens et al. (2022), entry Bouwens2022.
 #M1600     phi		sigma
 -22.19	0.000001	0.000002
 -21.69	0.000041	0.000011

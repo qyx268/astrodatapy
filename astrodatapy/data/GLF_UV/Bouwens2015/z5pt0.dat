@@ -1,7 +1,9 @@
+# Bouwens et al. (2015), ApJ 803, 34 (arXiv:1403.4295v4), Table 5 (SWML, blank fields + HUDF); M1600, Phi in Mpc^-3 mag^-1, symmetric 1-sigma.
+# Superseded at z~4-8 by Bouwens et al. (2021) (entry Bouwens2021, "updates to those derived in Bouwens et al. 2015"); do not use both as independent data.
 #M,1600     phi      sigma
--23.11  0.000002  0.000001999
+-23.11  0.000002  0.000002
 -22.61  0.000006  0.000003
--22.11  0.000036  0.000008
+-22.11  0.000034  0.000008
 -21.61  0.000101  0.000014
 -21.11  0.000265  0.000025
 -20.61  0.000676  0.000046
