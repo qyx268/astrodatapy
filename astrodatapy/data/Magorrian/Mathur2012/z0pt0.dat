@@ -2,6 +2,7 @@
 # x = bulge stellar mass [1e9 Msun] (M/L_r = 3.5 +- 1.5, Worthey 1994, x L_r of the HST bulge); y = virial M_BH [1e5 Msun]
 #   (Hbeta and L5100, Kaspi+00 R ~ L^0.7, from Grupe+10); H0 = 73 (from Mathur's kpc/arcsec), IMF = Salpeter
 # Fixed against GS15: RX J2216.8-4451 x = 60.8 (was 608); removed a row pairing MS 23409-1511's x with MS 2254's y
+# y (H0 = 75) is put on the h = 0.73 of x by NormalizationOfy = 1e5 (0.75/0.73)^1.4 = 1.0386e5 in info.txt (M_BH ~ h^-1.4)
 24.2  10.4  10.4  71  0  0
 16.8  7.2  7.1  210  0  0
 18.4  7.9  7.8  54  0  0
