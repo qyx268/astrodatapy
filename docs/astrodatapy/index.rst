@@ -1,17 +1,13 @@
-*************************
-AstroDataPy Documentation
-*************************
+:orphan:
 
-.. include:: ../../README.rst
+.. This page used to be the start of the documentation; it now sends readers to the
+   front page, so that old links keep working.
 
-Contents
-========
+Moved
+=====
 
-.. toctree::
-  :maxdepth: 2
+.. raw:: html
 
-  datasets
-  data_format
-  plots
-  combine
-  api
+   <meta http-equiv="refresh" content="0; url=../index.html">
+
+The documentation has moved to the `front page <../index.html>`_.
