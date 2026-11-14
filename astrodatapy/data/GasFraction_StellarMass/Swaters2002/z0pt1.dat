@@ -1,4 +1,6 @@
-# SNGBData>	col 0: Stellar Mass	col 1: Gas Fraction	col 2: Error in +y	col 3: Error in -y	Between redshifts 0.0 and 0.2
+# Baldry et al. (2008), MNRAS 388, 945, Fig. 11, "Swaters & Balcells 02" points (WHISP late-type dwarfs: Swaters & Balcells 2002, A&A 390, 863)
+# x = log10(M*/Msun) (Bell+03 B-R M/L); y = log10(1.4 M_HI/M*) (+0.022 dex on Fig. 11); errors: +y, -y
+# H0 = 75 (Hubble-flow, group and brightest-star distances); IMF = DietSalpeter
 7.2010E+00 7.7960E-01 1.2155E-01 1.6938E-01
 7.4330E+00 8.3399E-01 1.2566E-01 1.7753E-01
 7.7860E+00 4.3001E-01 7.9973E-02 9.8101E-02

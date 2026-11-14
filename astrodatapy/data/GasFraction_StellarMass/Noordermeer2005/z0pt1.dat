@@ -1,4 +1,6 @@
-# SNGBData>	col 0: Stellar Mass	col 1: Gas Fraction	col 2: Error in +y	col 3: Error in -y	Between redshifts 0.0 and 0.2
+# Baldry et al. (2008), MNRAS 388, 945, Fig. 11, "Noordermeer et al. 05" points (WHISP early-type disks: Noordermeer et al. 2005, A&A 442, 137)
+# x = log10(M*/Msun) (fixed log M*/L_B = 0.3); y = log10(1.4 M_HI/M*) (+0.022 dex on Fig. 11); errors: +y, -y
+# H0 = 75; IMF ~ DietSalpeter (fixed M/L on the Bell+03 scale)
 9.4210E+00 -4.7530E-01 1.7700E-01 3.0377E-01
 9.7590E+00 -4.4497E-01 1.6273E-01 2.6324E-01
 1.0082E+01 -6.8992E-01 1.9076E-01 3.4828E-01

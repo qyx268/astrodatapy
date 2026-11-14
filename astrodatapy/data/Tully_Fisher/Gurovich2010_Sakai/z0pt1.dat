@@ -1,4 +1,6 @@
-# GurovichData>	col 0: Speed	col 1: Stellar Mass	Between redshifts 0.0 and 0.2
+# Gurovich et al. (2010), AJ 140, 663 (arXiv:1004.4365), Table 5 (spirals of Sakai et al. 2000 with Cepheid distances)
+# x = log10(W20/[km/s]) - 0.2541 (inclination-corrected W20 times 0.557, a scaling made by the 2018 compilation, origin unknown)
+# y = log10(M_bar/Msun), BARYONIC mass M* + 1.4 M_HI (not stellar); Cepheid distances (independent of H0); stellar part: Chabrier IMF
 2.1659E+00 1.0212E+01
 2.4259E+00 1.1267E+01
 2.3659E+00 1.0782E+01

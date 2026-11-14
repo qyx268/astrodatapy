@@ -1,4 +1,6 @@
-# SNGBData>	col 0: Stellar Mass	col 1: Gas Fraction	col 2: Error in +y	col 3: Error in -y	Between redshifts 0.0 and 0.2
+# Baldry, Glazebrook & Driver (2008), MNRAS 388, 945, Fig. 11, "Garnett 02 compilation" points (data: Garnett 2002, ApJ 581, 1019, Tables 1-3)
+# x = log10(M*/Msun) (Bell+03 B-V M/L); y = log10(1.4 M_HI/M*) (+0.022 dex on Fig. 11; the bins above log M* = 9.5 look ~0.12 dex low,
+#   i.e. without the 1.33 helium factor in Baldry+08); errors: +y, -y; distances mostly Cepheid/TRGB (about 1/3 at H0 = 75); IMF = DietSalpeter
 7.6680E+00 3.0194E-01 1.1810E-01 1.6273E-01
 8.0450E+00 3.2720E-01 1.2660E-01 1.7944E-01
 9.1850E+00 -6.8168E-02 1.4044E-01 2.0885E-01

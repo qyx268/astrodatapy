@@ -1,4 +1,6 @@
-# McGaughData>	col 0: Speed	col 1: Stellar Mass	Between redshifts 0.0 and 0.2
+# McGaugh (2012), AJ 143, 40 (arXiv:1107.2934), Table 1 / Fig. 3: 47 gas-rich galaxies (Stark+09, Begum+08, Trachternach+09), digitised (~0.01 dex)
+# x = log10(V_f/[km/s]) (flat rotation velocity); y = log10(M_bar/Msun), BARYONIC mass M* + 1.33 M_HI (not stellar)
+# distances mostly TRGB or Cepheid (about 12 of 47 Hubble flow, H0 = 72-75); stellar part: Kroupa IMF (Portinari+04)
 1.2330E+00 6.6950E+00
 1.3010E+00 7.4830E+00
 1.5780E+00 7.8790E+00

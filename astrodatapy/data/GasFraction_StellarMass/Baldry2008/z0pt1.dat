@@ -1,4 +1,6 @@
-# SNGBData>	col 0: Stellar Mass	col 1: Gas Fraction	col 2: Error in +y	col 3: Error in -y	Between redshifts 0.0 and 0.2
+# Baldry, Glazebrook & Driver (2008), MNRAS 388, 945 (arXiv:0804.2892), Fig. 11, HIPASS x NYU-VAGC points (HI-selected: upper limits per the paper)
+# x = log10(M*/Msun); y = log10(M_gas/M*) with M_gas = 1.4 M_HI (Fig. 11 plots 1.33 M_HI; the 2018 compilation added 0.022 dex); errors: +y, -y (std. errors)
+# H0 = 70; IMF = Kroupa (mean of Kroupa and Chabrier SDSS estimates)
 7.3930E+00 1.6093E+00 1.5415E-01 2.4117E-01
 7.6860E+00 1.6407E+00 1.4417E-01 2.1732E-01
 7.9390E+00 1.4049E+00 9.0113E-02 1.1384E-01
