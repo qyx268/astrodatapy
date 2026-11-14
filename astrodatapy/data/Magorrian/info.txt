@@ -13,14 +13,16 @@
 #   -1 sizes in kpc and halo masses, 0 velocities and ratios; black hole masses as hPowerM in BHMF)
 # IMF: IMF of the stellar masses (Salpeter, DietSalpeter, Kroupa, Chabrier), or None
 
-#Name         	DataFormat        	Log 	NormalizationOfx	NormalizationOfy	h   	hPowerx	hPowery	IMF         	Bibliographic
-Scott2013     	xLUDeltasyLUDeltas	None	1e10            	1e8             	0.73	-2     	-1     	DietSalpeter	2013ApJ...768...76S
-Thornton2008  	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Chabrier    	2015ApJ...798...54G
-Jiang2011     	xy                	xy  	1               	1               	0.7 	-2     	-1     	Chabrier    	2015ApJ...798...54G
-Sanghvi2014   	xy                	xy  	1               	1               	0.7 	-2     	-1     	Salpeter    	2014MNRAS.445.1261S
-Jiang2013     	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Salpeter    	2015ApJ...798...54G
-Yuan2014      	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Salpeter    	2015ApJ...798...54G
-Reines2013    	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.73	-2     	-1     	Chabrier    	2013ApJ...775..116R
-Reines2013_BPT	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.73	-2     	-1     	Chabrier    	2013ApJ...775..116R
-Mathur2012    	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.73	-2     	-1.4   	Salpeter    	2015ApJ...798...54G
-Busch2014     	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	DietSalpeter	2015ApJ...798...54G
+#Name               	DataFormat        	Log 	NormalizationOfx	NormalizationOfy	h   	hPowerx	hPowery	IMF         	Bibliographic
+Scott2013           	xLUDeltasyLUDeltas	None	1e10            	1e8             	0.73	0      	0      	DietSalpeter	2013ApJ...768...76S
+Scott2013_HubbleFlow	xLUDeltasyLUDeltas	None	1e10            	1e8             	0.73	-2     	-1     	DietSalpeter	2013ApJ...768...76S
+Graham2015_MilkyWay 	xLUDeltasyLUDeltas	None	1e10            	1e8             	0.7 	0      	0      	Kroupa      	2015ApJ...798...54G
+Thornton2008        	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Chabrier    	2015ApJ...798...54G
+Jiang2011           	xy                	xy  	1               	1.0142857       	0.7 	-2     	-1     	Chabrier    	2015ApJ...798...54G
+Sanghvi2014         	xy                	xy  	1               	1               	0.7 	-2     	-1     	Salpeter    	2014MNRAS.445.1261S
+Jiang2013           	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Salpeter    	2015ApJ...798...54G
+Yuan2014            	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	Salpeter    	2015ApJ...798...54G
+Reines2013          	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.73	-2     	-1     	Chabrier    	2013ApJ...775..116R
+Reines2013_BPT      	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.73	-2     	-1     	Chabrier    	2013ApJ...775..116R
+Mathur2012          	xLUDeltasyLUDeltas	None	1e9             	1.0386e5        	0.73	-2     	-1.4   	Salpeter    	2015ApJ...798...54G
+Busch2014           	xLUDeltasyLUDeltas	None	1e9             	1e5             	0.7 	-2     	-1     	DietSalpeter	2015ApJ...798...54G

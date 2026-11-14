@@ -1,0 +1,4 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 1: the Milky Way
+# x = bulge stellar mass [1e10 Msun] (Licquia & Newman 2014, Kroupa IMF); y = M_BH [1e8 Msun]; errors: lower, upper
+# Galactic masses do not depend on H0 (no h scaling); IMF = Kroupa
+0.91  0.07  0.07  0.0426  0.0014  0.0014

@@ -2,6 +2,7 @@
 #   Jiang et al. (2011b), ApJ 742, 68 (arXiv:1107.4105), Table 1
 # x = log bulge stellar mass [Msun] (HST F814W bulge, M/L of Taylor+11, H0 = 70); y = log virial M_BH [Msun] (broad Halpha, f = 0.75, H0 = 71)
 # IMF = Chabrier
+# y (H0 = 71) is put on the h = 0.7 of x by NormalizationOfy = 0.71/0.70 in info.txt (M_BH ~ h^-1)
 9.25  5.7
 9.73  6.2
 10.09  5.8
