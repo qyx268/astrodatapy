@@ -1,13 +1,11 @@
 include README.rst
-include CHANGES.rst
-
 include pyproject.toml
 include setup.cfg
-include astrodatapy/tests/coveragerc
 
-recursive-include astrodatapy *.pyx *.c *.pxd
-recursive-include docs *
 recursive-include licenses *
+recursive-include astrodatapy/data *
+recursive-include astrodatapy/utils *.ipynb
+recursive-include docs *
 
 prune build
 prune docs/_build

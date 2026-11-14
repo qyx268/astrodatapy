@@ -1,2 +1,5 @@
 [build-system]
-requires = ["setuptools>=60.0.0", "setuptools_scm", "wheel"]
+# setuptools>=45 / setuptools_scm>=6.2 are the oldest versions that still install on Python 3.6;
+# pip picks the newest versions available for the running Python.
+requires = ["setuptools>=45", "setuptools_scm>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"

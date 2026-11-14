@@ -58,3 +58,15 @@ distribute-*.tar.gz
 
 # Mac OSX
 .DS_Store
+
+# pytest
+.pytest_cache
+
+# output of astrodatapy/utils/combine.ipynb when run in place
+combined_constraints/
+
+# notebooks copied into the docs at build time (docs/conf.py)
+docs/astrodatapy/*.ipynb
+
+# old astropy_helpers submodule checkout (no longer used)
+astropy_helpers/

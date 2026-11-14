@@ -1,21 +1,23 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
-
-# Packages may add whatever they like to this file, but
-# should keep this content at the top.
-# ----------------------------------------------------------------------------
 from . import misc_tools
 from . import number_density
 from . import correlation
 from . import clustering
 
-# ----------------------------------------------------------------------------
 
-# Enforce Python version check during package import.
-# This is the same check as the one at the top of setup.py
-import sys
+def _installed_version():
+    try:
+        from importlib.metadata import version  # Python >= 3.8
+        return version("astrodatapy")
+    except ImportError:
+        pass
+    except Exception:
+        return ""
+    try:
+        from pkg_resources import get_distribution  # Python < 3.8
+        return get_distribution("astrodatapy").version
+    except Exception:
+        return ""
 
-class UnsupportedPythonError(Exception):
-    pass
 
-if sys.version_info < tuple((int(val) for val in "2.7".split('.'))):
-    raise UnsupportedPythonError("astrodatapy does not support Python < {}".format(2.7))
+__version__ = _installed_version()
