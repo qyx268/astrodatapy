@@ -12,7 +12,7 @@
 
 # hPowerM: the black hole mass scales as h^hPowerM, which depends on the mass estimator:
 #   0 = pitch angle, Sersic index or velocity dispersion (distance independent);
-#  -1 = virial (R_BLR ∝ L^0.5) or dynamical; -2 = bulge/spheroid luminosity
+#  -1 = virial (R_BLR ~ L^0.5) or dynamical; -2 = bulge/spheroid luminosity
 #   (Shankar2009 mixes sigma- and luminosity/accretion-based masses: -1)
 #Name		h		NormalizationOfPhi		Errors		Log		HinPhi		Type		hPowerM		Bibliographic
 Davis2014		0.678		1e-4		ULDeltas		0		1		data		0		2014ApJ...789..124D

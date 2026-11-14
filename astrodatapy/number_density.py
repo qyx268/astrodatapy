@@ -66,8 +66,8 @@ class number_density:
         (``data``, ``dataULimit``, ``data_sim``, ``Schechter``, ...), ``FileName`` and
         ``Data``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi;
         for upper limits (``dataULimit``) all three phi columns hold the limit. For
-        BHM it holds the redshift, the black hole mass (linear, in the units of the
-        data file) and its upper and lower bound.
+        BHM it holds the redshift, the black hole mass in Msun (linear) and its upper
+        and lower bound.
     """
 
     def __init__(self, feature=None, z_target=None, quiet=False, \
