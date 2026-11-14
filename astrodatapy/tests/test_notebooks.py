@@ -52,6 +52,13 @@ def _n_figures(nb):
                for cell in nb.cells if cell.cell_type == "code" for out in cell.outputs)
 
 
+@pytest.fixture(autouse=True)
+def _clean_kernel_env(monkeypatch):
+    # IPython kernels run $PYTHONSTARTUP; a personal startup file (e.g. one importing
+    # numpy as np) would hide missing imports in the notebooks.
+    monkeypatch.delenv("PYTHONSTARTUP", raising=False)
+
+
 def test_plots_notebook(tmp_path):
     nb = _execute("plots.ipynb", tmp_path)
     assert _n_figures(nb) >= 10
