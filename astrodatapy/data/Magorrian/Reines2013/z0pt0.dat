@@ -1,3 +1,7 @@
+# Reines, Greene & Geha (2013), ApJ 775, 116 (arXiv:1308.0328), Tables 1 and 6: BPT AGNs with broad Halpha (IDs 1, 9, 11, 20, 21, 32)
+#   as listed in Graham & Scott (2015), Table 2
+# x = total galaxy stellar mass [1e9 Msun] (NSA, kcorrect); y = virial M_BH [1e5 Msun] (broad Halpha, epsilon = 1)
+# h = 0.73 (masses given in h^-2 Msun with h = 0.73); IMF = Chabrier (kcorrect)
 2.57  0  0  5.0  0  0
 2.29  0  0  2.5  0  0
 1.32  0  0  0.8  0  0

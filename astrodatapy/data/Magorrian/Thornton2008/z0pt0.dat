@@ -1,1 +1,4 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 2: POX 52 from Thornton et al. (2008), ApJ 686, 892 (arXiv:0807.1535)
+# x = host (dwarf elliptical) stellar mass [1e9 Msun] (kcorrect); y = virial M_BH [1e5 Msun] (Hbeta, Bentz+06 R-L),
+#   Thornton's (3.1-4.2)e5 rescaled by GS15 from f = 1.4 to 0.75; H0 = 70, IMF = Chabrier
 1.2  0  0  2.0  0.3  0.3

@@ -1,3 +1,7 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 3 (only the 5 rows printed there, of 139); M_BH from
+#   Jiang et al. (2011b), ApJ 742, 68 (arXiv:1107.4105), Table 1
+# x = log bulge stellar mass [Msun] (HST F814W bulge, M/L of Taylor+11, H0 = 70); y = log virial M_BH [Msun] (broad Halpha, f = 0.75, H0 = 71)
+# IMF = Chabrier
 9.25  5.7
 9.73  6.2
 10.09  5.8

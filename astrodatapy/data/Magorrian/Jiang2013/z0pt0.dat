@@ -1,1 +1,4 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 2: UM 625 from Jiang et al. (2013), ApJ 770, 3 (arXiv:1304.5807)
+# x = pseudobulge stellar mass [1e9 Msun] (M/L_V = 1.6, BC03, x L_V); y = virial M_BH [1e5 Msun] (broad Halpha, Xiao+11)
+# H0 = 70; IMF = Salpeter (inferred from the M/L, not stated)
 5.4  0  0  16  0  0
