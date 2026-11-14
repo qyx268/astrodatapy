@@ -1,11 +1,15 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 2, from Busch et al. (2014), A&A 561, A140 (arXiv:1310.0272), Table 7
+# x = bulge or elliptical stellar mass [1e9 Msun] (M/L_K = 0.8 x L_K); y = virial M_BH [1e5 Msun] (Hbeta, Bentz+09),
+#   Busch's f = 3.85 rescaled by GS15 to 3; H0 = 70, IMF = DietSalpeter (Bell+03 M/L)
+# Fixed against GS15: HE0103-5842 x = 53.3 (was 53.5), HE0224-2834 y = 331 (was 311), HE2128-0221 x = 36.2 (was 26.2)
 15.2  0  0  6  0  0
-53.5  0  0  39.8  0  0
-102  0  0  311  0  0
+53.3  0  0  39.8  0  0
+102  0  0  331  0  0
 11.7  0  0  39.8  0  0
 32.7  0  0  166  0  0
 63.5  0  0  155  0  0
 10.3  0  0  15.5  0  0
 27.2  0  0  135  0  0
-26.2  0  0  195  0  0
+36.2  0  0  195  0  0
 32.1  0  0  490  0  0
 164  0  0  1000  0  0

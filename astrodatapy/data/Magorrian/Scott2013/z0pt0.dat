@@ -1,6 +1,11 @@
+# Scott, Graham & Schombert (2013), ApJ 768, 76 (arXiv:1303.5490), Table 1, with the updates of Graham & Scott (2015),
+#   ApJ 798, 54 (arXiv:1412.3091), Table 1 (new M_sph of NGC 2974, 4388, 5845; the last two rows are NGC 1316 and the Milky Way)
+# x = spheroid stellar mass [1e10 Msun] (2MASS Ks, M/L of Bell & de Jong 2001); y = dynamical M_BH [1e8 Msun]; errors: lower, upper
+# distances: SBF (Cepheid scale) or NED Hubble flow (H0 = 73); IMF = DietSalpeter (Milky Way bulge: Kroupa)
+# Fixed against Scott+13: Cen A y lower error 0.10 (was 0.01); NGC 3414 y = 2.4 +- 0.3 (was NGC 3393's 0.34 +- 0.02)
 69  32  59  39  5  4
 37  17  32  11  2  2
-1.4  0.8  2.0  0.45  0.01  0.17
+1.4  0.8  2.0  0.45  0.10  0.17
 55  33  80  25  7  7
 27  12  23  24  10  10
 2.4  1.4  3.5  0.044  0.022  0.044
@@ -32,7 +37,7 @@
 5.4  2.5  4.7  4.0  1.0  1.0
 1.2  0.7  1.7  0.17  0.02  0.01
 4.9  2.9  7.1  0.34  0.02  0.02
-2.0  1.2  2.9  0.34  0.02  0.02
+2.0  1.2  2.9  2.4  0.3  0.3
 0.66  0.4  0.97  0.058  0.008  0.008
 5.1  3.0  7.4  3.1  0.6  1.4
 2.6  1.5  3.8  1.3  0.5  0.5

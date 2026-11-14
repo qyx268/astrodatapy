@@ -1,2 +1,6 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 2: SDSS J0040-1109 and J0743+4808 from Yuan et al. (2014),
+#   ApJ 782, 55 (arXiv:1401.5331), Table 1
+# x = host (assumed elliptical) stellar mass [1e9 Msun] (M/L_B = 6 +- 2.5, Worthey 1994); y = virial M_BH [1e5 Msun]
+#   (broad Halpha, Greene & Ho 2007; J0743 = mean of SDSS and MMT); H0 = 70, IMF = Salpeter
 8.4  3.5  3.6  12.2  0  0
 14.7  6.2  6.1  5.85  0.75  0.75

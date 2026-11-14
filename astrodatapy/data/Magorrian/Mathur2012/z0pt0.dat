@@ -1,11 +1,14 @@
+# Graham & Scott (2015), ApJ 798, 54 (arXiv:1412.3091), Table 2, from Mathur et al. (2012), ApJ 754, 146 (arXiv:1102.0537), Tables 1 and 3
+# x = bulge stellar mass [1e9 Msun] (M/L_r = 3.5 +- 1.5, Worthey 1994, x L_r of the HST bulge); y = virial M_BH [1e5 Msun]
+#   (Hbeta and L5100, Kaspi+00 R ~ L^0.7, from Grupe+10); H0 = 73 (from Mathur's kpc/arcsec), IMF = Salpeter
+# Fixed against GS15: RX J2216.8-4451 x = 60.8 (was 608); removed a row pairing MS 23409-1511's x with MS 2254's y
 24.2  10.4  10.4  71  0  0
 16.8  7.2  7.1  210  0  0
 18.4  7.9  7.8  54  0  0
 26.6  11.4  11.3  45  0  0
 66.7  28.6  28.6  269  0  0
 18.4  7.9  7.8  217  0  0
-608  26  26.1  167  0  0
+60.8  26  26.1  167  0  0
 15.3  6.6  6.5  124  0  0
 9.64  4.1  4.2  39  0  0
-42.1  18.1  18  39  0  0
 42.1  18.1  18.0  100  0  0
