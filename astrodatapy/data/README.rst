@@ -125,7 +125,7 @@ Correlations
 ------------
 
 The features read by ``astrodatapy.correlation`` (Magorrian, Tully_Fisher, ...) have
-these ``info.txt`` columns, separated by two tabs:
+these ``info.txt`` columns, separated by whitespace:
 
 ``DataFormat``
     The x and y columns and their errors, e.g. ``xy`` (no errors), ``xyULDeltas``
@@ -135,11 +135,25 @@ these ``info.txt`` columns, separated by two tabs:
     Which of the two is in log10: ``x``, ``y``, ``xy`` or ``None``.
 ``NormalizationOfx``, ``NormalizationOfy``
     Factors x and y are multiplied by, e.g. ``1e9``.
+``h``
+    H0/(100 km/s/Mpc) that the tabulated values assume; 1 if they are tabulated in
+    h-scaled units such as h^-1 Msun.
+``hPowerx``, ``hPowery``
+    Powers of h that x and y scale with: -2 for stellar, gas or bulge masses derived
+    from luminosities or fluxes, -1 for sizes in kpc and for halo masses, 0 for
+    velocities and for ratios such as gas fractions and sSFR; for black hole masses,
+    as ``hPowerM`` above.
+``IMF``
+    IMF of the stellar masses (``Salpeter``, ``DietSalpeter``, ``Kroupa`` or
+    ``Chabrier``), or ``None`` to leave them as they are. The stellar-mass axis
+    (x, or y for Tully_Fisher) is converted to the ``IMF_out`` requested by the user,
+    and the gas fraction of GasFraction_StellarMass, M_gas/M*, the other way.
 ``Bibliographic``
     ADS bibcode, as above.
 
-These data are returned in the units of the papers; ``h`` is not applied to them yet
-(issue #7).
+x and y are converted to linear values (``Log``) and multiplied by their
+normalisations, then by (h/h_obs)^hPowerx and (h/h_obs)^hPowery, where h_obs is the
+``h`` of the dataset. A dataset without ``h`` or ``IMF`` is returned as tabulated.
 
 Clustering
 ----------

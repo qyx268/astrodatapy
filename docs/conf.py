@@ -114,7 +114,7 @@ def write_dataset_catalogue(path):
             n_total += len(rows)
             heading = feature + (": " + description if description else "")
             columns = ["Dataset", "Redshifts"]
-            columns += [c for c in ("Type", "h") if any(c in r for r in rows)]
+            columns += [c for c in ("Type", "h", "IMF") if any(c in r for r in rows)]
             columns += ["Reference"]
             body += [heading, "~" * len(heading), "",
                      ".. list-table::", "   :header-rows: 1", ""]
