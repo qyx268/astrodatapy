@@ -1,4 +1,7 @@
-# ShibuyaData>	col 0: Mass	col 1: Size	Between redshifts 0.0 and 0.2
+# Shibuya, Ouchi & Harikane (2015), ApJS 219, 15 (arXiv:1503.07481) size catalogue matched to 3D-HST (Skelton et al. 2014) masses;
+#   individual galaxies
+# x = log10 M* [Msun] (3D-HST FAST + 0.003, Chabrier: the paper uses Salpeter = 1.8 x Chabrier, this file does not);
+# y = log10 circularised r_e = r_e,major sqrt(q) [kpc]; H0 = 70, IMF = Chabrier (this file: 0.0 < z < 0.2)
 7.3630E+00 -1.0621E-01
 6.1830E+00 -6.8354E-01
 8.9930E+00 2.5374E-01

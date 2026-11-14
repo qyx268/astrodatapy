@@ -1,4 +1,6 @@
-# SantiniData>	col 0: Mass	col 1: Specific Star Formation Rate	Between redshifts 0.0 and 0.2
+# Santini et al. (2009), A&A 504, 751 (arXiv:0905.0683), individual GOODS-MUSIC galaxies as in Fig. 7 (the paper analyses 0.3 < z < 2.5)
+# x = log10 M* [Msun], Chabrier (Salpeter / 1.78) and converted by the 2018 compilation from H0 = 70 to h = 0.678 (+0.0277);
+# y = log10 sSFR [yr^-1] (Salpeter SFR / Salpeter M*); IMF = Chabrier (this file: 0.0 < z < 0.2)
 7.3042E+00 -9.2092E+00
 7.4096E+00 -9.0182E+00
 7.4790E+00 -9.1629E+00

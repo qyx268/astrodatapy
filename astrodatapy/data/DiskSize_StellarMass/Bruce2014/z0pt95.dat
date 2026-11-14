@@ -1,4 +1,7 @@
-# BruceData>	col 0: Mass	col 1: Size	Between redshifts 0.8 and 1.1
+# Bruce et al. (2014), MNRAS 444, 1660 (arXiv:1405.5221), Fig. 4: disk components (SED-decomposed masses) of individual
+#   CANDELS UDS and COSMOS galaxies with total M* > 1e11 Msun at 1 < z < 3
+# x = log10 disk stellar mass [Msun]; y = log10 disk effective radius [kpc] (H160, semi-major axis)
+# H0 = 70, IMF = Chabrier (BC03, as Bruce et al. 2012); values as published (this file: 0.8 < z < 1.1)
 1.0525E+01 9.7082E-01
 1.0897E+01 3.7933E-01
 1.0661E+01 9.5887E-01

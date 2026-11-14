@@ -1,4 +1,7 @@
-# BernardiData>	col 0: Mass	col 1: Size	col 2: Error in +y	col 3: Error in -y	Between redshifts 0.0 and 0.2
+# Bernardi et al. (2014), MNRAS 443, 874 (arXiv:1211.6122), Fig. 21 (late-type disks; SerExp fit in Table 4); SDSS DR7, z ~ 0.1
+# x = log10 disk stellar mass [Msun]; y = log10 disk half-light radius [kpc] (r-band PyMorph SerExp, circularised (a+b)/2);
+#   medians with errors to the 84th and 16th percentiles; the first row (log M = 9.554) is not in the published figure
+# H0 = 70, IMF = Chabrier; values as published (this file: 0.0 < z < 0.2)
 9.5544E+00 5.1559E-01 1.5141E-01 1.6254E-01
 9.6519E+00 5.7037E-01 1.4915E-01 1.9704E-01
 9.7481E+00 5.7320E-01 1.7127E-01 1.7857E-01

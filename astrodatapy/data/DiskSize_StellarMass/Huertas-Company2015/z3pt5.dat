@@ -1,4 +1,7 @@
-# CANDELSData>	col 0: Mass	col 1: Size	Between redshifts 3.0 and 4.0
+# Huertas-Company et al. (2015), ApJS 221, 8 (arXiv:1509.05429) CANDELS ConvNet morphologies, with CANDELS stellar masses and
+#   van der Wel et al. (2012) GALFIT sizes as in Huertas-Company et al. (2016), MNRAS 462, 4495; individual disk-dominated galaxies
+# x = log10 M* [Msun]; y = log10 R_e [kpc] (H band, probably semi-major axis); selection and radius inferred, not documented
+# H0 = 70, IMF = Chabrier (as Huertas-Company et al. 2016) (this file: 3.0 < z < 4.0)
 1.0661E+01 3.8396E-01
 1.0085E+01 1.3455E-01
 9.7210E+00 2.1443E-01
