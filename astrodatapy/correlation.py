@@ -1,3 +1,4 @@
+"""Scaling relations between galaxy and black hole properties."""
 from __future__ import print_function
 import os
 import pandas as pd
@@ -15,20 +16,42 @@ List_DataFormat = ['xULLimitsyULLimits', 'xULLimitsyLULimits', 'xULLimitsyULDelt
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 class correlation:
+    """Load every dataset of a scaling relation near a target redshift.
+
+    Parameters
+    ----------
+    feature : str
+        Magorrian, Tully_Fisher, DiskSize_StellarMass, GasFraction_StellarMass,
+        sSFR_StellarMass_Blue, HaloMass_StellarMass, HaloMass_StellarMass_Blue or
+        HaloMass_StellarMass_Red.
+    z_target : float
+        Target redshift.
+    quiet : bool, optional
+        If True, do not print what is loaded and converted. Default False.
+    h : float, optional
+        Hubble parameter, H0 / (100 km/s/Mpc). It is not applied to these data yet:
+        they are returned in the units of the source papers (issue #7).
+    z_tol : float, optional
+        Load data files whose redshift is within ``z_tol`` of ``z_target``. Default 0.25.
+    folder : str, optional
+        Directory holding the data. Default: the data shipped with the package.
+
+    Attributes
+    ----------
+    available_observation : array of str
+        Names of all datasets of ``feature``.
+    z_available_observation : numpy.ndarray
+        Redshifts of all data files of ``feature``.
+    n_target_observation : int
+        Number of datasets found near ``z_target``.
+    target_observation : pandas.DataFrame
+        One row per dataset found, indexed by dataset name, with columns ``DataType``,
+        ``FileName`` and ``Data``. ``Data`` is an (N, 6) array of x, upper and lower
+        bound of x, y, upper and lower bound of y, all linear.
+    """
+
     def __init__(self, feature=None, z_target=None, quiet=False, \
                  h = 1, z_tol=0.25, folder=fileDir+'/data/'):
-        
-        '''
-        feature:  Magorrian, Tully_Fisher, DiskSize_StellarMass,
-                  GasFraction_StellarMass, sSFR_StellarMass_Blue,
-                  HaloMass_StellarMass, HaloMass_StellarMass_Blue,
-                  HaloMass_StellarMass_Red
-        z_target: target redshift
-        z_tol:    tolerance for the target redshift, default = 0.25
-        h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
-        quiet:    if True, no warning or processing is give, default = False
-        folder:   where observational data is, default = ./data/
-        '''
         self.feature                  = feature
         self.folder                   = folder+'/'
         self.z_target                 = z_target

@@ -1,8 +1,10 @@
-#!/usr/bin/env python               
-# -*- coding: utf-8 -*-             
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""Helpers for the data files."""
 import numpy as np
 
 def filename_to_redshift(fname):
+    """Redshift encoded in a data file name, e.g. ``z5pt0.dat`` -> 5.0, ``z10pt25.dat`` -> 10.25."""
     interger = fname[fname.rfind('z')+1:fname.rfind('pt')]    
     decimal  = fname[fname.rfind('pt')+2:fname.rfind('.dat')] 
     return float(interger) + float(decimal) / 10**len(decimal)
@@ -19,6 +21,7 @@ def redshift_filenames(directory):
         return []
 
 def available_redshifts(feature):
+    """Redshifts of all data files of ``feature`` (e.g. ``'GLF_UV'``), as a numpy array."""
     import os
     import fnmatch
     fileDir = os.path.dirname(os.path.abspath(__file__))

@@ -1,3 +1,4 @@
+"""Number densities of galaxies and quasars: mass, luminosity and star formation rate functions."""
 from __future__ import print_function
 import os
 import pandas as pd
@@ -26,21 +27,49 @@ list_MAG     = ['MB2MABB', 'M1450', 'LBsol2M1450', 'MABB', 'Mg2MB', 'M14502MB', 
 list_Errors  = ['ULLimits', 'LULimits', 'ULDeltas', 'LUDeltas', 'Delta', 'None', np.nan]
 
 class number_density:
-    
+    """Load every dataset of a number density feature near a target redshift.
+
+    Each dataset with a data file within ``z_tol`` of ``z_target`` is loaded and converted
+    to common units: linear phi in Mpc^-3 dex^-1 (Mpc^-3 mag^-1 for magnitudes), the
+    Hubble parameter ``h`` and, for stellar masses and star formation rates, the IMF
+    ``IMF_out``. Parametric fits (e.g. Schechter functions) are evaluated on a grid.
+
+    Parameters
+    ----------
+    feature : str
+        GSMF, GSMF_Blue, GSMF_Red, GSMF_Bulge, GSMF_Disk, GSMF_Quiescent, BHM, BHMF,
+        QLF_bolometric, QLF_optical, QLF_UV, QLF_Xray, SFRF, GLF_UV or GLF_OIII.
+    z_target : float
+        Target redshift.
+    quiet : bool, optional
+        If True, do not print what is loaded and converted. Default False.
+    h : float, optional
+        Hubble parameter, H0 / (100 km/s/Mpc), to convert the data to. Default 1.
+    z_tol : float, optional
+        Load data files whose redshift is within ``z_tol`` of ``z_target``. Default 0.25.
+    folder : str, optional
+        Directory holding the data. Default: the data shipped with the package.
+    IMF_out : str, optional
+        IMF to convert stellar masses and star formation rates to: Salpeter,
+        DietSalpeter, Kroupa or Chabrier. Default Kroupa.
+
+    Attributes
+    ----------
+    available_observation : array of str
+        Names of all datasets of ``feature``.
+    z_available_observation : numpy.ndarray
+        Redshifts of all data files of ``feature``.
+    n_target_observation : int
+        Number of datasets found near ``z_target``.
+    target_observation : pandas.DataFrame
+        One row per dataset found, indexed by dataset name, with columns ``DataType``
+        (``data``, ``dataULimit``, ``data_sim``, ``Schechter``, ...), ``FileName`` and
+        ``Data``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi;
+        for upper limits (``dataULimit``) all three phi columns hold the limit.
+    """
+
     def __init__(self, feature=None, z_target=None, quiet=False, \
                  h = 1, z_tol=0.25, folder=fileDir+'/data/', IMF_out="Kroupa"):
-        
-        '''
-        feature:  GSMF, GSMF_Blue, GSMF_Red, GSMF_Bulge, GSMF_Disk, GSMF_Quiescent
-                  BHM, BHMF, QLF_bolometric, QLF_optical, QLF_UV, QLF_Xray
-                  SFRF, GLF_UV, GLF_OIII
-        z_target: target redshift
-        z_tol:    tolerance for the target redshift, default = 0.25
-        h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
-        quiet:    if True, no warning or processing is give, default = False
-        folder:   where observational data is, default = ./data/
-        IMF_out:  the IMF to use to convert data, default = Kroupa
-        '''
         self.feature                  = feature
         self.folder                   = folder+'/'
         self.z_target                 = z_target
