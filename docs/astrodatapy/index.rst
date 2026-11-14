@@ -4,12 +4,14 @@ AstroDataPy Documentation
 
 .. include:: ../../README.rst
 
-Examples and API
-================
+Contents
+========
 
 .. toctree::
   :maxdepth: 2
 
+  datasets
+  data_format
   plots
   combine
   api
