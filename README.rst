@@ -277,7 +277,7 @@ License
 Contributors
 ============
 
-* Yuxiang Qin (The University of Melbourne)
+* Yuxiang Qin (The Australian National University)
 
 with contributions from Balu Sreedhar, Fatma Shaban, Varun Nikam, Madeline
 Marshall and Simon Mutch.
