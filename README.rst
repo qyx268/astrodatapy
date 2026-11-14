@@ -23,7 +23,13 @@ mass relation; and 3) clustering of quasars such as the two point
 correlation function. Every dataset is converted to common units and to the
 Hubble parameter you ask for.
 
-Current modelling results include DRAGONS (Meraxes).
+.. image:: https://raw.githubusercontent.com/qyx268/astrodatapy/master/docs/astrodatapy/LF_combined.png
+  :width: 100%
+  :alt: UV luminosity functions of galaxies (blue) and AGN (red) at z = 5-15
+
+UV luminosity functions of galaxies (blue) and AGN (red) at z = 5-15 in
+astrodatapy, with the combined constraints made by
+`combine.ipynb <https://github.com/qyx268/astrodatapy/blob/master/astrodatapy/utils/combine.ipynb>`__.
 
 Installation
 ============
@@ -32,7 +38,7 @@ astrodatapy needs Python 3.6 or later, with numpy and pandas.
 
 .. code-block:: console
 
-    $ pip install git+https://github.com/qyx268/astrodatapy
+    $ pip install astrodatapy
 
 On Python 3.6 and 3.7, upgrade pip first (``pip install --upgrade pip``).
 To also get what the example notebooks need (matplotlib, scipy, astropy
@@ -40,7 +46,13 @@ and Jupyter):
 
 .. code-block:: console
 
-    $ pip install "astrodatapy[notebooks] @ git+https://github.com/qyx268/astrodatapy"
+    $ pip install "astrodatapy[notebooks]"
+
+For the latest version on GitHub, which may have data not yet released:
+
+.. code-block:: console
+
+    $ pip install git+https://github.com/qyx268/astrodatapy
 
 Tests
 -----
@@ -49,7 +61,7 @@ The tests load every dataset and execute the example notebooks:
 
 .. code-block:: console
 
-    $ pip install "astrodatapy[test,notebooks] @ git+https://github.com/qyx268/astrodatapy"
+    $ pip install "astrodatapy[test,notebooks]"
     $ pytest --pyargs astrodatapy
 
 Without the ``notebooks`` extra, the notebook tests are skipped.
