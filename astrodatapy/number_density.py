@@ -1,6 +1,5 @@
 from __future__ import print_function
 import os
-import glob
 import pandas as pd
 import numpy  as np
 from .misc_tools import *
@@ -74,8 +73,8 @@ class number_density:
     
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt', keep_default_na=False,\
-                        sep='\s+', skiprows=self.info_skiprows, engine='python')
-        info.set_index('#Name', inplace=True)
+                        sep=r'\s+', skiprows=self.info_skiprows, engine='python')
+        info = info.set_index('#Name')
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
             print("No available data of %s"%(self.feature))
@@ -92,8 +91,7 @@ class number_density:
         flags = np.zeros(self.n_available_observation, dtype=bool)
         names = np.zeros(self.n_available_observation, dtype=object)
         for ii, observation in enumerate(self.available_observation):
-            list_redshift = glob.glob1(self.folder + self.feature + '/' +\
-                                       observation,'z*.dat')
+            list_redshift = redshift_filenames(self.folder + self.feature + '/' + observation)
             for fname in list_redshift:
                 if np.abs(filename_to_redshift(fname) - self.z_target) < self.z_tol:
                     flags[ii] = True
@@ -135,7 +133,7 @@ class number_density:
             if not self.quiet:
                 print("..done")
         self.target_observation = self.target_observation.assign(Data=pd.Series(results).values)
-        self.target_observation.set_index('Name', inplace=True)
+        self.target_observation = self.target_observation.set_index('Name')
 
     def _convert_observational_data(self, data, info):
         # check if this is data or function

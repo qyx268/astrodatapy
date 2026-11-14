@@ -7,6 +7,17 @@ def filename_to_redshift(fname):
     decimal  = fname[fname.rfind('pt')+2:fname.rfind('.dat')] 
     return float(interger) + float(decimal) / 10**len(decimal)
 
+def redshift_filenames(directory):
+    """Names of the z*.dat files in directory, in os.listdir order (empty if it does not exist).
+
+    Replaces glob.glob1, which is deprecated since Python 3.13."""
+    import os
+    import fnmatch
+    try:
+        return fnmatch.filter(os.listdir(directory), 'z*.dat')
+    except OSError:
+        return []
+
 def available_redshifts(feature):
     import os
     import fnmatch

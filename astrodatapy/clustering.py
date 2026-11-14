@@ -1,6 +1,5 @@
 from __future__ import print_function
 import os
-import glob
 import pandas as pd
 import numpy  as np
 from .misc_tools import *
@@ -51,7 +50,7 @@ class clustering:
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt', keep_default_na=False,\
                          sep='\t\t', skiprows=self.info_skiprows, engine='python')
-        info.set_index('#Name', inplace=True)
+        info = info.set_index('#Name')
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
             print("No available data of %s"%(self.feature))
@@ -68,8 +67,7 @@ class clustering:
         flags = np.zeros(self.n_available_observation, dtype=bool)
         names = np.zeros(self.n_available_observation, dtype=object)
         for ii, observation in enumerate(self.available_observation):
-            list_redshift = glob.glob1(self.folder + self.feature + '/' +\
-                                       observation,'z*.dat')
+            list_redshift = redshift_filenames(self.folder + self.feature + '/' + observation)
             for fname in list_redshift:
                 if np.abs(filename_to_redshift(fname) - self.z_target) < self.z_tol:
                     flags[ii] = True
@@ -104,14 +102,14 @@ class clustering:
                 data = data.reshape([1,-1])
             
             if 'Type' in info.index:
-                self.target_observation['DataType'][ii] = info.Type
+                self.target_observation.loc[ii, 'DataType'] = info.Type
             else:
-                self.target_observation['DataType'][ii] = 'Unknown'
+                self.target_observation.loc[ii, 'DataType'] = 'Unknown'
             results[ii] = self._convert_observational_data(data, info)
             if not self.quiet:
                 print("..done")
         self.target_observation = self.target_observation.assign(Data=pd.Series(results).values)
-        self.target_observation.set_index('Name', inplace=True)
+        self.target_observation = self.target_observation.set_index('Name')
 
     def _convert_observational_data(self, data, info):
         if 'Type' in info.index:
