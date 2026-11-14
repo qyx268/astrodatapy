@@ -2,16 +2,14 @@
 AstroDataPy Documentation
 *************************
 
-This is the documentation for astrodatapy.
-
 .. include:: ../../README.rst
 
-Examples
-=============
-
-.. automodapi:: astrodatapy
+Examples and API
+================
 
 .. toctree::
   :maxdepth: 2
 
   plots
+  combine
+  api
