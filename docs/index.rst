@@ -1,10 +1,17 @@
-Documentation
-=============
+*************************
+AstroDataPy Documentation
+*************************
 
-This is the documentation for astrodatapy,
-a collective framework of astronomical data.
+.. include:: ../README.rst
+
+Contents
+========
 
 .. toctree::
   :maxdepth: 2
 
-  astrodatapy/index.rst
+  astrodatapy/datasets
+  astrodatapy/data_format
+  astrodatapy/plots
+  astrodatapy/combine
+  astrodatapy/api
