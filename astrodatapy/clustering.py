@@ -1,3 +1,4 @@
+"""Clustering of quasars."""
 from __future__ import print_function
 import os
 import pandas as pd
@@ -6,17 +7,41 @@ from .misc_tools import *
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 class clustering:
+    """Load every quasar clustering dataset near a target redshift.
+
+    Power-law fits of the correlation function are evaluated on a grid of separations,
+    with the correlation length converted to the requested ``h``.
+
+    Parameters
+    ----------
+    feature : str
+        QC_2PTCF (quasar two-point correlation function).
+    z_target : float
+        Target redshift.
+    quiet : bool, optional
+        If True, do not print what is loaded and converted. Default False.
+    h : float, optional
+        Hubble parameter, H0 / (100 km/s/Mpc), to convert the data to. Default 1.
+    z_tol : float, optional
+        Load data files whose redshift is within ``z_tol`` of ``z_target``. Default 0.25.
+    folder : str, optional
+        Directory holding the data. Default: the data shipped with the package.
+
+    Attributes
+    ----------
+    available_observation : array of str
+        Names of all datasets of ``feature``.
+    z_available_observation : numpy.ndarray
+        Redshifts of all data files of ``feature``.
+    n_target_observation : int
+        Number of datasets found near ``z_target``.
+    target_observation : pandas.DataFrame
+        One row per dataset found, indexed by dataset name, with columns ``DataType``
+        (``PowerLaw`` or ``PowerLaw_2COMPONENTS``), ``FileName`` and ``Data``.
+    """
+
     def __init__(self, feature=None, z_target=None, quiet=False, \
                  h = 1, z_tol=0.25, folder=fileDir+'/data/'):
-        
-        '''
-        feature:  QC_2PTCF
-        z_target: target redshift
-        z_tol:    tolerance for the target redshift, default = 0.25
-        h:        Hubble constant in units of 100 km/s/Mpc, default = 1.0
-        quiet:    if True, no warning or processing is give, default = False
-        folder:   where observational data is, default = ./data/
-        '''
         self.feature                  = feature
         self.folder                   = folder+'/'
         self.z_target                 = z_target
