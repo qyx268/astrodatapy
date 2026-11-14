@@ -1,14 +1,17 @@
 name: publish
 
-# Builds the sdist and wheel, and uploads them to PyPI when a GitHub release is published.
+# Builds the sdist and wheel, and uploads them to PyPI when a version tag is pushed:
+#     git tag -a v0.3 -m "astrodatapy 0.3" && git push origin v0.3
+# (setuptools_scm takes the version, 0.3, from the tag). A GitHub release page can be made for
+# the tag afterwards; it does not upload anything again.
 # The upload uses PyPI trusted publishing, so no API token is stored in the repository:
 # on pypi.org, the astrodatapy project must list this repository, this workflow (publish.yml)
 # and the environment "pypi" as a trusted publisher.
 # Run it by hand (workflow_dispatch) to check the build without uploading.
 
 on:
-  release:
-    types: [published]
+  push:
+    tags: ["v*"]
   workflow_dispatch:
 
 jobs:
@@ -32,7 +35,7 @@ jobs:
           path: dist/
 
   pypi:
-    if: github.event_name == 'release'
+    if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
     environment:
