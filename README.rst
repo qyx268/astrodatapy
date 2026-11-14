@@ -81,9 +81,9 @@ and loads every dataset of that feature with a data file within ``z_tol``
 
 The other arguments are ``h``, the Hubble parameter H0/(100 km/s/Mpc) to
 convert the data to (default 1); ``quiet``, to stop it printing what it loads
-and converts; and, for ``number_density`` only, ``IMF_out``, the IMF to convert
-stellar masses and star formation rates to (``Salpeter``, ``DietSalpeter``,
-``Kroupa`` or ``Chabrier``; default ``Kroupa``).
+and converts; and, for ``number_density`` and ``correlation``, ``IMF_out``, the
+IMF to convert stellar masses and star formation rates to (``Salpeter``,
+``DietSalpeter``, ``Kroupa`` or ``Chabrier``; default ``Kroupa``).
 
 The datasets found are in ``obs.target_observation``, a pandas DataFrame indexed
 by dataset name, with columns:
@@ -100,8 +100,10 @@ by dataset name, with columns:
 
 ``number_density`` rescales phi as h^3, stellar masses, star formation rates
 and luminosities as h^-2, magnitudes by 5 log10(h/h_obs), and black hole masses
-according to how they were measured. ``clustering`` rescales the correlation
-length; ``correlation`` does not apply ``h`` yet (issue #7). See the
+according to how they were measured. ``correlation`` rescales each quantity
+with the power of h given for its dataset (e.g. h^-2 for stellar masses, h^-1
+for sizes and halo masses, none for velocities and ratios), and ``clustering``
+the correlation length. See the
 `data format <https://github.com/qyx268/astrodatapy/blob/master/astrodatapy/data/README.rst>`__
 for details.
 

@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import numpy  as np
 from .misc_tools import *
+from .number_density import list_IMF, Cha2Sal, Kro2Sal, DietSal2Sal
 
 # For DataFormat of correlation
 List_DataFormat = ['xULLimitsyULLimits', 'xULLimitsyLULimits', 'xULLimitsyULDeltas', 'xULLimitsyLUDeltas', 'xULLimitsyDelta', 'xULLimitsy',\
@@ -13,10 +14,24 @@ List_DataFormat = ['xULLimitsyULLimits', 'xULLimitsyLULimits', 'xULLimitsyULDelt
                    'xDeltayULLimits'   , 'xDeltayLULimits'   , 'xDeltayULDeltas'   , 'xDeltayLUDeltas'   , 'xDeltayDelta'   , 'xDeltay',\
                    'xyULLimits'        , 'xyLULimits'        , 'xyULDeltas'        , 'xyLUDeltas'        , 'xyDelta'        , 'xy']
 
+# For the IMF conversion: dex to add to log10(M*) to go from each IMF to Salpeter (as in number_density)
+_IMF_to_Salpeter = {'Salpeter': 0., 'DietSalpeter': DietSal2Sal, 'Kroupa': Kro2Sal, 'Chabrier': Cha2Sal}
+# The axis holding a stellar mass in each feature, converted to IMF_out. The gas fraction of
+# GasFraction_StellarMass (M_gas/M*) is divided by the stellar mass, so it moves the other way.
+_stellar_mass_axis = {'Magorrian': 'x', 'Tully_Fisher': 'y', 'DiskSize_StellarMass': 'x',
+                      'GasFraction_StellarMass': 'x', 'sSFR_StellarMass_Blue': 'x',
+                      'HaloMass_StellarMass': 'x', 'HaloMass_StellarMass_Blue': 'x',
+                      'HaloMass_StellarMass_Red': 'x'}
+_inverse_stellar_mass_axis = {'GasFraction_StellarMass': 'y'}
+_axis_columns = {'x': slice(0, 3), 'y': slice(3, 6)}
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 class correlation:
     """Load every dataset of a scaling relation near a target redshift.
+
+    Each dataset is converted to the Hubble parameter ``h`` and its stellar masses to the
+    IMF ``IMF_out``, using the ``h``, ``hPowerx``, ``hPowery`` and ``IMF`` of the dataset
+    in ``info.txt``.
 
     Parameters
     ----------
@@ -29,12 +44,14 @@ class correlation:
     quiet : bool, optional
         If True, do not print what is loaded and converted. Default False.
     h : float, optional
-        Hubble parameter, H0 / (100 km/s/Mpc). It is not applied to these data yet:
-        they are returned in the units of the source papers (issue #7).
+        Hubble parameter, H0 / (100 km/s/Mpc), to convert the data to. Default 1.
     z_tol : float, optional
         Load data files whose redshift is within ``z_tol`` of ``z_target``. Default 0.25.
     folder : str, optional
         Directory holding the data. Default: the data shipped with the package.
+    IMF_out : str, optional
+        IMF to convert stellar masses to: Salpeter, DietSalpeter, Kroupa or Chabrier.
+        Default Kroupa.
 
     Attributes
     ----------
@@ -51,7 +68,7 @@ class correlation:
     """
 
     def __init__(self, feature=None, z_target=None, quiet=False, \
-                 h = 1, z_tol=0.25, folder=fileDir+'/data/'):
+                 h = 1, z_tol=0.25, folder=fileDir+'/data/', IMF_out="Kroupa"):
         self.feature                  = feature
         self.folder                   = folder+'/'
         self.z_target                 = z_target
@@ -66,6 +83,7 @@ class correlation:
         self.available_observation    = None
         self.n_target_observation     = 0
         self.target_observation       = None
+        self.IMF_out                  = IMF_out
         
         if self.feature is not None and self.z_target is not None:
             if not self.quiet:
@@ -84,7 +102,7 @@ class correlation:
     
     def _load_info(self):
         info = pd.read_csv(self.folder + self.feature + '/info.txt', keep_default_na=False, \
-                         sep='\t\t', skiprows=self.info_skiprows, engine='python')
+                         sep=r'\s+', skiprows=self.info_skiprows, engine='python')
         info = info.set_index('#Name')
         self.n_available_observation = len(info.index.values)
         if self.n_available_observation == 0:
@@ -172,6 +190,44 @@ class correlation:
         elif not self.quiet:
             print("WARNING! No Infomation about NormalizationOfy, dafault is 1")
 
+        # convert the stellar masses to IMF_out
+        if 'IMF' in info.index:
+            data = self._convert_IMF(data, info.IMF)
+            if isinstance(data, int):
+                return data
+        elif not self.quiet:
+            print("WARNING! No Infomation about IMF, the stellar masses are not converted")
+
+        # convert x and y to the requested h
+        if 'h' in info.index and info.h != 'None':
+            data = self._convert_h(data, float(info.h), float(info.hPowerx), float(info.hPowery))
+        elif not self.quiet:
+            print("WARNING! No Infomation about h, x and y are not converted")
+
+        return data
+
+    def _convert_IMF(self, data, IMF):
+        if IMF == 'None' or IMF == self.IMF_out:
+            return data
+        for imf in (IMF, self.IMF_out):
+            if imf not in list_IMF:
+                print('Error! Unrecognized IMF (%s)! quit'%imf)
+                return -1
+        if not self.quiet:
+            print("Converting the stellar masses from the %s IMF to %s"%(IMF, self.IMF_out))
+        factor = 10**(_IMF_to_Salpeter[IMF] - _IMF_to_Salpeter[self.IMF_out])
+        data[:,_axis_columns[_stellar_mass_axis[self.feature]]] *= factor
+        if self.feature in _inverse_stellar_mass_axis:
+            data[:,_axis_columns[_inverse_stellar_mass_axis[self.feature]]] /= factor
+        return data
+
+    def _convert_h(self, data, h_obs, h_power_x, h_power_y):
+        # x and y scale as h^hPowerx and h^hPowery (e.g. -2 for masses from luminosities,
+        # -1 for sizes and halo masses, 0 for velocities and ratios); see data/README.rst
+        if not self.quiet:
+            print("Converting x and y from h=%.3f to h=%.3f with powers of %g and %g"%(h_obs, self.h, h_power_x, h_power_y))
+        data[:,0:3] *= (self.h/h_obs)**h_power_x
+        data[:,3:6] *= (self.h/h_obs)**h_power_y
         return data
         
     def _convert_DataFormat(self, data, DataFormat):
