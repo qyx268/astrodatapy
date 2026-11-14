@@ -65,7 +65,9 @@ class number_density:
         One row per dataset found, indexed by dataset name, with columns ``DataType``
         (``data``, ``dataULimit``, ``data_sim``, ``Schechter``, ...), ``FileName`` and
         ``Data``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi;
-        for upper limits (``dataULimit``) all three phi columns hold the limit.
+        for upper limits (``dataULimit``) all three phi columns hold the limit. For
+        BHM it holds the redshift, the black hole mass (linear, in the units of the
+        data file) and its upper and lower bound.
     """
 
     def __init__(self, feature=None, z_target=None, quiet=False, \

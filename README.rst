@@ -81,9 +81,11 @@ by dataset name, with columns:
 * ``FileName``: the data file loaded;
 * ``Data``: a numpy array. For ``number_density`` its columns are x, phi, and the
   upper and lower bound of phi, with phi linear in Mpc^-3 dex^-1 (Mpc^-3 mag^-1
-  for magnitudes); for upper limits all three phi columns hold the limit. For
-  ``correlation`` they are x, the upper and lower bound of x, y, and the upper
-  and lower bound of y.
+  for magnitudes); for upper limits all three phi columns hold the limit. BHM is
+  the exception: its columns are the redshift, the black hole mass (linear, in the
+  units of the data file, 10^6 Msun for Caramete2010) and its upper and lower
+  bound. For ``correlation`` the columns are x,
+  the upper and lower bound of x, y, and the upper and lower bound of y.
 
 ``number_density`` rescales phi as h^3, stellar masses, star formation rates
 and luminosities as h^-2, magnitudes by 5 log10(h/h_obs), and black hole masses
