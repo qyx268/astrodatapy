@@ -1,0 +1,48 @@
+name: publish
+
+# Builds the sdist and wheel, and uploads them to PyPI when a GitHub release is published.
+# The upload uses PyPI trusted publishing, so no API token is stored in the repository:
+# on pypi.org, the astrodatapy project must list this repository, this workflow (publish.yml)
+# and the environment "pypi" as a trusted publisher.
+# Run it by hand (workflow_dispatch) to check the build without uploading.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # setuptools_scm reads the version from the git tags
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build
+        run: |
+          python -m pip install --upgrade pip build twine
+          python -m build
+          python -m twine check --strict dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  pypi:
+    if: github.event_name == 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/astrodatapy
+    permissions:
+      id-token: write  # for trusted publishing
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1
