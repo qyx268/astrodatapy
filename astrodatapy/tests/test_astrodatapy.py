@@ -10,6 +10,14 @@ def test_number_density():
         for z_target in available_redshifts(feature):
             assert function(feature, z_target)
 
+def test_bhm_masses_in_msun():
+    # Supermassive black holes; Caramete2010 is tabulated in 10^6 Msun and must be rescaled
+    import numpy as np
+    from astrodatapy.number_density import number_density
+    obs = number_density('BHM', 0.0, quiet=True, h=0.7)
+    mass = obs.target_observation.loc['Caramete2010', 'Data'][:, 1]
+    assert 1e7 < np.median(mass) < 1e9
+
 def test_correlation():
     from astrodatapy.correlation import correlation as function
     features = ['Magorrian', 'Tully_Fisher', 'DiskSize_StellarMass',

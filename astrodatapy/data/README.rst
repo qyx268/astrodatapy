@@ -43,7 +43,8 @@ whitespace:
     H0/(100 km/s/Mpc) of the cosmology the paper used.
 ``NormalizationOfPhi``
     Factor the tabulated phi is multiplied by, e.g. ``1e-5`` for a table in units of
-    10^-5 Mpc^-3 mag^-1. It must be 1 when ``Log`` is 1.
+    10^-5 Mpc^-3 mag^-1 (for BHM, the factor that gives the black hole masses in
+    Msun, e.g. ``1e6`` for a table in 10^6 Msun). It must be 1 when ``Log`` is 1.
 ``Errors``
     Layout of the error columns, see below.
 ``Log``
@@ -80,9 +81,8 @@ Each line of a data file holds x, phi and then the errors, as given by ``Errors`
 
 x is a log10 mass, luminosity or star formation rate, or an AB magnitude (see the
 feature table in the main README). For BHM, x is the redshift and the second column
-is the black hole mass, returned in the units of the file (no normalisation is
-applied; Caramete2010 is in 10^6 Msun). phi is per dex, or per magnitude for
-magnitudes.
+is the black hole mass, which ``NormalizationOfPhi`` converts to Msun. phi is per
+dex, or per magnitude for magnitudes.
 
 Upper limits (``dataULimit``) and models (``data_sim``) are tabulated like ``data``.
 A parametric fit (``Type`` ``Schechter``, ``DoubleSchechter`` or ``Hopkins2007``) has
