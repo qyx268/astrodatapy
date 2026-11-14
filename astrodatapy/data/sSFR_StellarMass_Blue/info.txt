@@ -8,8 +8,12 @@
 # Errors can be Delta    (meaning 1sigma range)
 
 # If Log=x, y, xy or None meaning x, y, xy or none is in logarithm
+# h: H0/(100 km/s/Mpc) that the values assume (1 if tabulated in h-scaled units, e.g. h^-1 Msun)
+# hPowerx, hPowery: powers of h that x and y scale with (-2 masses from luminosities,
+#   -1 sizes in kpc and halo masses, 0 velocities and ratios; black hole masses as hPowerM in BHMF)
+# IMF: IMF of the stellar masses (Salpeter, DietSalpeter, Kroupa, Chabrier), or None
 
-#Name		DataFormat		Log		NormalizationOfx		NormalizationOfy		Bibliographic
-Elbaz2011		xy		xy		1		1		2011A&A...533A.119E
-Salim2011		xy		xy		1		1		TBU
-Santini2009		xy		xy		1		1		2009A&A...504..751S
+#Name      	DataFormat	Log	NormalizationOfx	NormalizationOfy	h    	hPowerx	hPowery	IMF     	Bibliographic
+Elbaz2011  	xy        	xy 	1               	1               	0.7  	-2     	0      	Salpeter	2011A&A...533A.119E
+Salim2011  	xy        	xy 	1               	1               	0.678	-2     	0      	Kroupa  	2007ApJS..173..267S
+Santini2009	xy        	xy 	1               	1               	0.678	-2     	0      	Chabrier	2009A&A...504..751S
