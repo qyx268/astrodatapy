@@ -14,10 +14,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Python 3.6 is no longer available on GitHub runners (tested locally instead)
+          # Python 3.6 is no longer available on GitHub runners (tested locally instead);
+          # setup-python has no 3.7 build after Ubuntu 22.04 and no 3.8/3.9 builds after 24.04
           - {python: "3.7", os: ubuntu-22.04}
-          - {python: "3.8", os: ubuntu-latest}
-          - {python: "3.9", os: ubuntu-latest}
+          - {python: "3.8", os: ubuntu-24.04}
+          - {python: "3.9", os: ubuntu-24.04}
           - {python: "3.10", os: ubuntu-latest}
           - {python: "3.11", os: ubuntu-latest}
           - {python: "3.12", os: ubuntu-latest}
