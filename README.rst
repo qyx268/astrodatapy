@@ -1,11 +1,9 @@
 AstroDataPy
 ===========
 
-.. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
-    :target: http://www.astropy.org
-    :alt: Powered by Astropy Badge
-.. image:: https://travis-ci.com/qyx268/astrodatapy.svg?branch=master
-    :target: https://travis-ci.com/qyx268/astrodatapy
+.. image:: https://github.com/qyx268/astrodatapy/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/qyx268/astrodatapy/actions/workflows/tests.yml
+    :alt: Tests
 
 Python tools to collect astronomical data.
 
@@ -25,7 +23,31 @@ Current modelling results include DRAGONS (Meraxes).
 Installation
 ============
 
-``$ pip install git+https://github.com/qyx268/astrodatapy``
+astrodatapy needs Python 3.6 or later, with numpy and pandas.
+
+.. code-block:: console
+
+    $ pip install git+https://github.com/qyx268/astrodatapy
+
+On Python 3.6 and 3.7, upgrade pip first (``pip install --upgrade pip``).
+To also get what the example notebooks need (matplotlib, scipy, astropy
+and Jupyter):
+
+.. code-block:: console
+
+    $ pip install "astrodatapy[notebooks] @ git+https://github.com/qyx268/astrodatapy"
+
+Tests
+-----
+
+The tests load every dataset and execute the example notebooks:
+
+.. code-block:: console
+
+    $ pip install "astrodatapy[test,notebooks] @ git+https://github.com/qyx268/astrodatapy"
+    $ pytest --pyargs astrodatapy
+
+Without the ``notebooks`` extra, the notebook tests are skipped.
 
 Usage
 =====
@@ -119,10 +141,13 @@ plot galaxy stellar mass function at redshift 5 and show labels
     >>> ax.set_ylabel(r"$\log_{10}[\rm \phi/Mpc^{-3} dex^{-1}]$")
     >>> plt.savefig('./GSMF.png',bbox_inches='tight')
    
-.. image:: docs/astrodatapy/GSMF.png
+.. image:: https://raw.githubusercontent.com/qyx268/astrodatapy/master/docs/astrodatapy/GSMF.png
   :width: 350
 
-More examples can be found in `this jupyter notebook <astrodatapy/utils/plots.ipynb>`_.
+More examples can be found in `this jupyter notebook <https://github.com/qyx268/astrodatapy/blob/master/astrodatapy/utils/plots.ipynb>`_.
+`combine.ipynb <https://github.com/qyx268/astrodatapy/blob/master/astrodatapy/utils/combine.ipynb>`_
+shows how different datasets are combined into one empirical constraint
+(for GLF_UV, QLF_UV and GLF_OIII).
 
 Documentation
 =============
