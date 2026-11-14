@@ -195,7 +195,7 @@ class number_density:
         elif not self.quiet:
             print("WARNING! No Infomation about NormalizationOfPhi, dafault is 1")
         
-        # optional per-dataset h scaling of black hole masses, M_BH ∝ h^hPowerM (BHMF, BHM)
+        # optional per-dataset h scaling of black hole masses, M_BH ~ h^hPowerM (BHMF, BHM)
         h_power_M = float(info.hPowerM) if 'hPowerM' in info.index else None
 
         # convert M to Msol with input h
@@ -287,7 +287,7 @@ class number_density:
         return data
         
     def _convert_h_x(self, data, h_obs, h_power_M=None):
-        # Luminosities are inferred as L = 4 pi d_L^2 F with d_L ∝ 1/h (at fixed Omega_m), so L ∝ h^-2,
+        # Luminosities are inferred as L = 4 pi d_L^2 F with d_L ~ 1/h (at fixed Omega_m), so L ~ h^-2,
         # and so is everything derived from a luminosity (stellar mass, SFR, L_bol, L[OIII]).
         if self.feature in ['GSMF', 'GSMF_Blue', 'GSMF_Red', 'GSMF_Bulge', 'GSMF_Disk', 'QLF_bolometric', 'GSMF_Quiescent',\
                             'GLF_OIII', 'SFRF', 'QLF_Xray']:
@@ -295,13 +295,13 @@ class number_density:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of -2 because it is %s"%(h_obs,self.h, self.feature))
             data[:,0] -= 2 * np.log10(self.h/h_obs)
         elif self.feature in ['QLF_optical','QLF_UV', 'GLF_UV']:
-            # M = -2.5 log10(L) + const and L ∝ h^-2, so M(h) = M(h_obs) + 5 log10(h/h_obs)
+            # M = -2.5 log10(L) + const and L ~ h^-2, so M(h) = M(h_obs) + 5 log10(h/h_obs)
             if not self.quiet:
-                print("Converting x axis from h=%.3f to h=%.3f as M + 5log10(h/h_obs) (L ∝ h^-2) because it is %s"%(h_obs,self.h, self.feature))
+                print("Converting x axis from h=%.3f to h=%.3f as M + 5log10(h/h_obs) (L ~ h^-2) because it is %s"%(h_obs,self.h, self.feature))
             data[:,0] += 5 * np.log10(self.h/h_obs)
         elif self.feature == 'BHMF':
             # The h scaling of BH masses depends on the estimator, given per dataset by hPowerM in info.txt:
-            # 0 (pitch angle, Sersic index, sigma), -1 (virial, R_BLR ∝ L^0.5), -2 (bulge luminosity).
+            # 0 (pitch angle, Sersic index, sigma), -1 (virial, R_BLR ~ L^0.5), -2 (bulge luminosity).
             power = -1. if h_power_M is None else h_power_M
             if not self.quiet:
                 print("Converting x axis from h=%.3f to h=%.3f with a power of %g because it is %s"%(h_obs,self.h, power, self.feature))
@@ -316,7 +316,7 @@ class number_density:
 
     def _convert_h_y(self, data, h_obs, HinPhi, h_power_M=None):
         if self.feature == 'BHM':
-            # y is a black hole mass, not a number density; M_BH ∝ h^hPowerM (see _convert_h_x)
+            # y is a black hole mass, not a number density; M_BH ~ h^hPowerM (see _convert_h_x)
             power = -1. if h_power_M is None else h_power_M
             if not self.quiet:
                 print("Converting y axis (black hole mass) from h=%.3f to h=%.3f with a power of %g"%(h_obs,self.h, power))
