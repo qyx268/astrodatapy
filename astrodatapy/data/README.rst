@@ -80,10 +80,14 @@ Each line of a data file holds x, phi and then the errors, as given by ``Errors`
 
 x is a log10 mass, luminosity or star formation rate, or an AB magnitude (see the
 feature table in the main README). For BHM, x is the redshift and the second column
-is the black hole mass. phi is per dex, or per magnitude for magnitudes.
+is the black hole mass, returned in the units of the file (no normalisation is
+applied; Caramete2010 is in 10^6 Msun). phi is per dex, or per magnitude for
+magnitudes.
 
-A parametric fit (``Type`` other than ``data``) has a single line with its
-parameters, in the order of the matching method in ``number_density.py``. For example
+Upper limits (``dataULimit``) and models (``data_sim``) are tabulated like ``data``.
+A parametric fit (``Type`` ``Schechter``, ``DoubleSchechter`` or ``Hopkins2007``) has
+instead a single line with its parameters, in the order of the matching method in
+``number_density.py``. For example
 a ``Schechter`` fit in magnitudes is ``xmin xmax M_star phi_star alpha``, and one in
 stellar mass is ``xmin xmax log10M_star alpha phi_star``. The function is evaluated
 between xmin and xmax.
@@ -91,22 +95,28 @@ between xmin and xmax.
 Units and h
 ~~~~~~~~~~~
 
-The loader converts every dataset to linear phi in Mpc^-3 dex^-1 (Mpc^-3 mag^-1 for
-magnitudes) and to the ``h`` requested by the user, using the ``h`` of the dataset:
+The loader converts phi (or, for BHM, the black hole mass) to linear values in
+Mpc^-3 dex^-1 (Mpc^-3 mag^-1 for magnitudes), and then converts every dataset from its
+own ``h``, h_obs, to the ``h`` requested by the user. x stays as it is stored, a log10
+value or a magnitude, and is shifted:
 
-+---------------------------------------------+------------------------------------------------+
-| Quantity                                    | Conversion from h_obs to h                     |
-+=============================================+================================================+
-| phi                                         | ``* (h/h_obs)^3``, or ``* h^3`` if ``HinPhi``  |
-|                                             | is 1                                           |
-+---------------------------------------------+------------------------------------------------+
-| stellar mass, SFR or luminosity (``GSMF*``, | ``log10 x - 2 log10(h/h_obs)``, as L ~ h^-2    |
-| SFRF, GLF_OIII, QLF_bolometric, QLF_Xray)   |                                                |
-+---------------------------------------------+------------------------------------------------+
-| magnitude (GLF_UV, QLF_UV, QLF_optical)     | ``M + 5 log10(h/h_obs)``                       |
-+---------------------------------------------+------------------------------------------------+
-| black hole mass (BHMF, BHM)                 | ``* (h/h_obs)^hPowerM``                        |
-+---------------------------------------------+------------------------------------------------+
++-----------------------------------------------+----------------------------------------------+
+| Column                                        | Conversion from h_obs to h                   |
++===============================================+==============================================+
+| phi (linear)                                  | ``phi * (h/h_obs)^3``, or ``phi * h^3`` if   |
+|                                               | ``HinPhi`` is 1                              |
++-----------------------------------------------+----------------------------------------------+
+| x = log10 of a stellar mass, SFR or           | ``x - 2 log10(h/h_obs)``, as L ~ h^-2        |
+| luminosity (``GSMF*``, SFRF, GLF_OIII,        |                                              |
+| QLF_bolometric, QLF_Xray)                     |                                              |
++-----------------------------------------------+----------------------------------------------+
+| x = magnitude (GLF_UV, QLF_UV, QLF_optical)   | ``x + 5 log10(h/h_obs)``                     |
++-----------------------------------------------+----------------------------------------------+
+| x = log10 M_BH (BHMF)                         | ``x + hPowerM log10(h/h_obs)``               |
++-----------------------------------------------+----------------------------------------------+
+| black hole mass, linear (BHM, second to       | ``M_BH * (h/h_obs)^hPowerM``                 |
+| fourth columns; x is the redshift)            |                                              |
++-----------------------------------------------+----------------------------------------------+
 
 Only h is rescaled; differences in the other cosmological parameters are ignored.
 With the default ``h=1`` the results are in h = 1 units, e.g. phi in h^3 Mpc^-3.
