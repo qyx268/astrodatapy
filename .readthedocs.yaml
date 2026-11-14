@@ -5,6 +5,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+  jobs:
+    # Read the Docs clones without tags; setuptools_scm needs them for the version number.
+    post_checkout:
+      - git fetch --unshallow --tags || true
 
 sphinx:
   configuration: docs/conf.py
