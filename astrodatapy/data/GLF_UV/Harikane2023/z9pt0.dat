@@ -5,3 +5,8 @@
 -20.03 4.08e-5 9.60e-5 3.92e-5
 -19.03 2.24e-4 1.87e-4 1.46e-4
 -18.03 1.12e-3 1.03e-3 0.90e-3
+# Upper limits (errors = nan), formerly the dataset Harikane2023_ulimit:
+# Harikane et al. 2023, ApJS 265, 5 (arXiv:2208.01612v3), Table 7, z~9 1-sigma upper limits.
+# M_UV  phi_limit   [Mpc^-3 mag^-1]
+-23.03	6.95e-5	nan	nan
+-22.03	7.67e-5	nan	nan

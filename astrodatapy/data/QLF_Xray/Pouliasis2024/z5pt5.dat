@@ -20,3 +20,9 @@
 44.75 -6.332 0.23 0.22
 45.25 -6.790 0.15 0.15
 45.75 -7.441 0.17 0.25
+# Upper limits (errors = nan), formerly the dataset Pouliasis2024_ulimit:
+# These two bins are 1-sigma UPPER LIMITS (downward arrows in
+# their Fig. 10), so no errors are given.
+# logLX  log_Phi
+43.25	-5.251	nan	nan
+43.75	-5.429	nan	nan

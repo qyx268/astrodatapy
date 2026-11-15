@@ -20,3 +20,9 @@
 -21.3  3.23e-5  0.88e-5
 -21.1  4.42e-5  1.09e-5
 -20.9  5.84e-5  1.42e-5
+# Upper limits (errors = nan), formerly the dataset Varadaraj2026_ulimit:
+# Varadaraj et al. (2026), A&A 707, A239; arXiv:2510.00945v2, Table 4, UltraVISTA+Euclid column -- UPPER LIMIT
+# 1-sigma upper limit (Gehrels 1986) for the bin with 0 galaxies (bin width 0.4 mag)
+# Redshift 6.5-7.5 ; x: M1500 (AB) ; phi limit: linear, Mpc^-3 mag^-1 ; H0 = 70
+# M_UV   phi_upper_limit
+-22.6	1.83e-6	nan

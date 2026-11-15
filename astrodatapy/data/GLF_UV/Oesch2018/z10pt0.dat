@@ -4,3 +4,5 @@
 -19.25 0.34 0.45 0.22
 -18.25 1.9 2.5 1.2
 -17.25 6.3 14.9 5.2
+# Upper limits (errors = nan), formerly the dataset Oesch2018_ulimt:
+-22.25	0.017	nan	nan

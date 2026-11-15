@@ -11,3 +11,9 @@
 -19 -5.02 0.30
 -20 -5.58 0.44
 -21 -6.12 0.92
+# Upper limits (errors = nan), formerly the dataset Kokorev2024_ulimit:
+# Kokorev et al. (2024), ApJ 968, 38 (arXiv:2401.09981v4), Table 2: upper limit, 6.5 < z_phot < 8.5 (N=1 in the bin)
+# Magnitude definition: observed M_UV at rest-frame 1450 A -> M1450
+# Phi convention: log10(Phi / cMpc^-3 mag^-1) upper limit (H0=70)
+# M1450  LogPhiLimit
+-22.0	-6.42	nan

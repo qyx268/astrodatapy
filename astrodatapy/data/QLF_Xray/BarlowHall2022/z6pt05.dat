@@ -19,3 +19,8 @@
 #
 # logLX  Phi  +dPhi  -dPhi
 45.30 2.98e-9 6.86e-9 2.47e-9
+# Upper limits (errors = nan), formerly the dataset BarlowHall2022_ulimit:
+# The 45.8 < logLX < 46.8 bin contains no detections; the
+# value below is their 1-sigma UPPER LIMIT on Phi.
+# logLX  Phi
+46.30	2.22e-10	nan	nan
