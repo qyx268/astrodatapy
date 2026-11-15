@@ -63,11 +63,12 @@ class number_density:
         Number of datasets found near ``z_target``.
     target_observation : pandas.DataFrame
         One row per dataset found, indexed by dataset name, with columns ``DataType``
-        (``data``, ``dataULimit``, ``data_sim``, ``Schechter``, ...), ``FileName`` and
-        ``Data``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi;
-        for upper limits (``dataULimit``) all three phi columns hold the limit. For
-        BHM it holds the redshift, the black hole mass in Msun (linear) and its upper
-        and lower bound.
+        (``data``, ``data_sim``, ``Schechter``, ...), ``FileName``, ``Data`` and
+        ``ULimit``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi.
+        ``ULimit`` is a boolean array of length N that marks the rows that are upper
+        limits; in those rows all three phi columns hold the limit. For BHM, ``Data``
+        holds the redshift, the black hole mass in Msun (linear) and its upper and
+        lower bound.
     """
 
     def __init__(self, feature=None, z_target=None, quiet=False, \
@@ -144,6 +145,7 @@ class number_density:
         # phi in linear and errors in upper, lower limits
              
         results = [[],] * self.n_target_observation
+        ulimits = [None] * self.n_target_observation
         for ii in range(self.n_target_observation):
             if not self.quiet:
                 print("\nLoading observational data from %s..."%self.target_observation['Name'][ii])
@@ -161,10 +163,25 @@ class number_density:
             else:
                 self.target_observation.loc[ii, 'DataType'] = 'Unknown'
             results[ii] = self._convert_observational_data(data, info)
+            ulimits[ii] = self._flag_upper_limits(results[ii], info)
             if not self.quiet:
                 print("..done")
-        self.target_observation = self.target_observation.assign(Data=pd.Series(results).values)
+        self.target_observation = self.target_observation.assign(Data=pd.Series(results).values,
+                                                                 ULimit=pd.Series(ulimits).values)
         self.target_observation = self.target_observation.set_index('Name')
+
+    def _flag_upper_limits(self, data, info):
+        # Upper limits are the rows whose error columns are nan in the data file (still nan after
+        # the conversions); their upper and lower bounds are set to the limit, as phi is.
+        # Datasets of the old Type dataULimit (a separate dataset of upper limits) are all limits.
+        if isinstance(data, int):  # the conversion failed
+            return None
+        if 'Type' in info.index and info.Type == 'dataULimit':
+            ulimit = np.ones(len(data), dtype=bool)
+        else:
+            ulimit = np.isnan(data[:,2]) & np.isnan(data[:,3])
+        data[ulimit,2:4] = data[ulimit,1][:,None]
+        return ulimit
 
     def _convert_observational_data(self, data, info):
         # check if this is data or function
@@ -298,7 +315,7 @@ class number_density:
             if Errors == 'LULimits' or Errors == 'LUDeltas':
                 data[:,2:4] = data[:,3:1:-1]
             if Errors == 'ULDeltas' or Errors == 'LUDeltas' or Errors == 'Delta':
-                if np.sum(data[:,3])  > 0:
+                if np.nansum(data[:,3])  > 0:  # nansum: upper limits have nan errors
                     data[:,3] = -data[:,3]
                 data[:,2:4] += data[:,1][:,None]
         return data            
