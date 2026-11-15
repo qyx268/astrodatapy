@@ -1,6 +1,7 @@
 # Zhang, Li, Kauffmann, Zou, Catinella & Shen (2009), MNRAS 397, 1243 (arXiv:0902.2392), not tabulated: mean and 1-sigma scatter of
 #   log(M_HI/M*) in 0.5 dex bins of M* (Sample II, SDSS DR4 x HyperLeda; cf. Fig. 8a)
-# x = log10(M*/Msun); y = log10(M_HI/M*) (HI only, no helium: 0.146 dex below the 1.4 M_HI of the other datasets); errors: +y, -y (scatter)
+# x = log10(M*/Msun); y = log10(M_HI/M*) (HI only, no helium); errors: +y, -y (scatter)
+# NormalizationOfy = 1.4 in info.txt turns y into M_gas/M* with M_gas = 1.4 M_HI, as in the other datasets (+0.146 dex)
 # H0 = 70; IMF = DietSalpeter (Bell+03 i-band and g-r)
 7.7500E+00 3.8360E-01 4.0599E-01 4.0599E-01
 8.2500E+00 3.8870E-01 3.2384E-01 3.2384E-01
