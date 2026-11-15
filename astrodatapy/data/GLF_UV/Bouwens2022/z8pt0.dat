@@ -20,3 +20,8 @@
   -14.25      0.11      0.23      0.09
   -13.75      0.53      1.03      0.39
   -13.25      0.20      0.99      0.16
+# Upper limits (errors = nan), formerly the dataset Bouwens2022_ulimit:
+# Phi: linear Phi in Mpc^-3 mag^-1 (H0=70, Om=0.3); 1-sigma upper limits
+# Note: upper limits adopt the Bouwens et al. (2022a) size-luminosity scalings (Table 4 footnote c).
+# M1600   Phi_upper_limit
+-14.75	0.068	nan	nan

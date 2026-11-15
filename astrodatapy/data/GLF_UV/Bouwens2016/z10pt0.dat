@@ -1,3 +1,7 @@
 #M, 1600   phi      sigma
 -21.14  0.0000009  0.0000007
 -20.34  0.0000180  0.0000098
+# Upper limits (errors = nan), formerly the dataset Bouwens2016_ulimit:
+#M,1600     phi
+-22.05	0.0000017	nan
+-22.05	0.0000017	nan

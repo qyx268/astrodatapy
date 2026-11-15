@@ -1,2 +1,3 @@
-20e9  1.6
-14e9  3.9
+# upper limits only (errors = nan)
+20e9	1.6	nan
+14e9	3.9	nan

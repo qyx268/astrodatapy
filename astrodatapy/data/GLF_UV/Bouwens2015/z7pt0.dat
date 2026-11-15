@@ -11,3 +11,7 @@
 -18.66  0.001717  0.000478
 -17.91  0.005840  0.001460
 -16.91  0.008500  0.002940
+# Upper limits (errors = nan), formerly the dataset Bouwens2015_ulimit:
+# Bouwens et al. (2015), ApJ 803, 34 (arXiv:1403.4295v4), Table 5: 1-sigma upper limits (Mpc^-3 mag^-1).
+#M,1600     phi
+-22.66	0.000002	nan

@@ -18,3 +18,10 @@
 -21.6  1.0e-6  2.3e-6  0.9e-6
 -18.6  1.9e-4  4.7e-4  1.9e-4
 -17.6  6.3e-4  15.8e-4  6.3e-4
+# Upper limits (errors = nan), formerly the dataset Harikane2025_ulimit:
+# Harikane et al. (2025), ApJ 980, 138; arXiv:2406.18352v2, Table 2 -- UPPER LIMITS (1 sigma, per tablecomments)
+# x: M_UV (AB) ; phi upper limit: linear, Mpc^-3 mag^-1 ; cosmology h = 0.6766
+# Limits from bright z~10-12 candidates (XMM3-3085, HD1, HD2) spectroscopically shown to be low-z interlopers
+# Redshift bin: z = 9.5-11.0 (z~10)
+# M_UV   phi_upper_limit
+-23.5	6.8e-8	nan	nan
