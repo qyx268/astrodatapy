@@ -18,4 +18,4 @@ Baldry2008     	xyULDeltas	xy 	1               	1               	0.7 	-2     	0 
 Garnett2002    	xyULDeltas	xy 	1               	1               	0.75	0      	0      	DietSalpeter	2008MNRAS.388..945B
 Noordermeer2005	xyULDeltas	xy 	1               	1               	0.75	-2     	0      	DietSalpeter	2008MNRAS.388..945B
 Swaters2002    	xyULDeltas	xy 	1               	1               	0.75	-2     	0      	DietSalpeter	2008MNRAS.388..945B
-Zhang2009      	xyULDeltas	xy 	1               	1               	0.7 	-2     	0      	DietSalpeter	2009MNRAS.397.1243Z
+Zhang2009      	xyULDeltas	xy 	1               	1.4             	0.7 	-2     	0      	DietSalpeter	2009MNRAS.397.1243Z
