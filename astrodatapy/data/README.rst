@@ -6,7 +6,6 @@ This directory holds the data that astrodatapy loads. Each feature (``GLF_UV``,
 
     <feature>/info.txt                  one line per dataset
     <feature>/<dataset>/z5pt0.dat       one file per redshift
-    <feature>/<dataset>_ulimit/z5pt0.dat  upper limits from the same paper, if any
 
 Only the datasets listed in ``info.txt`` are loaded. The redshift is read from the
 file name (``z5pt0.dat`` is z = 5.0, ``z10pt5.dat`` is z = 10.5), so name each file
@@ -52,9 +51,10 @@ whitespace:
 ``HinPhi``
     1 if phi is in h^3 Mpc^-3, 0 if it is in Mpc^-3.
 ``Type``
-    ``data``, ``dataULimit`` (upper limits), ``data_sim`` (a model, drawn as a line
-    with a band), or a parametric fit: ``Schechter``, ``DoubleSchechter`` or
-    ``Hopkins2007``.
+    ``data``, ``data_sim`` (a model, drawn as a line with a band), or a parametric
+    fit: ``Schechter``, ``DoubleSchechter`` or ``Hopkins2007``. (Older versions kept
+    upper limits as separate datasets of Type ``dataULimit``; these are still read,
+    with every row an upper limit.)
 ``hPowerM``
     (BHM and BHMF) Power of h that the black hole mass scales with, which depends on
     how the masses were estimated: 0 for pitch angles, Sersic indices or velocity
@@ -76,7 +76,7 @@ Each line of a data file holds x, phi and then the errors, as given by ``Errors`
 ``LUDeltas``  sigma_lower, sigma_upper (both positive)
 ``ULLimits``  phi_upper, phi_lower (values, not offsets)
 ``LULimits``  phi_lower, phi_upper (values, not offsets)
-``None``      none; used for upper limits, whose file holds x and the limit
+``None``      none (parametric fits)
 ============  ====================================================
 
 x is a log10 mass, luminosity or star formation rate, or an AB magnitude (see the
@@ -84,7 +84,13 @@ feature table in the main README). For BHM, x is the redshift and the second col
 is the black hole mass, which ``NormalizationOfPhi`` converts to Msun. phi is per
 dex, or per magnitude for magnitudes.
 
-Upper limits (``dataULimit``) and models (``data_sim``) are tabulated like ``data``.
+Upper limits go in the same file as the other points of the paper at that redshift,
+as rows whose error columns are ``nan``: ``x  limit  nan`` for ``Delta``, ``x  limit
+nan  nan`` for the other formats. The loader marks them in the ``ULimit`` column of
+``target_observation`` and sets their upper and lower bounds to the limit. A redshift
+with only upper limits gets a file of such rows.
+
+Models (``data_sim``) are tabulated like ``data``.
 A parametric fit (``Type`` ``Schechter``, ``DoubleSchechter`` or ``Hopkins2007``) has
 instead a single line with its parameters, in the order of the matching method in
 ``number_density.py``. For example
@@ -167,7 +173,7 @@ Adding a dataset
 ----------------
 
 #. Put the files in ``<feature>/<dataset>/``, with the comment header described
-   above, and any upper limits in ``<feature>/<dataset>_ulimit/``.
+   above; upper limits are rows with ``nan`` errors in the same files.
 #. Add a line for each to ``<feature>/info.txt``.
 #. Add the paper's BibTeX entry to ``bibliography.bib``.
 #. Run the tests, which load every dataset of every feature::
@@ -190,11 +196,11 @@ magnitude, it is rescaled as ``h^-2``, as for QLF_bolometric.
 =====================  ============  =======================================================
 **Dataset**            **Redshift**  **Reference**
 ---------------------  ------------  -------------------------------------------------------
-BarlowHall2022         6.05          Barlow-Hall et al. 2023, MNRAS 519, 6055 (Swift/ExSeSS)
-BarlowHall2022_ulimit  6.05          as above, 1 sigma upper limit
+BarlowHall2022         6.05          Barlow-Hall et al. 2023, MNRAS 519, 6055 (Swift/ExSeSS);
+                                     with a 1 sigma upper limit
 Meraxes_obscured       5.007, 6.088  Meraxes (DRAGONS) model line, after obscuration
-Pouliasis2024          5.5           Pouliasis et al. 2024, A&A 685, A97 (Chandra + XMM)
-Pouliasis2024_ulimit   5.5           as above, 1 sigma upper limits
+Pouliasis2024          5.5           Pouliasis et al. 2024, A&A 685, A97 (Chandra + XMM);
+                                     with 1 sigma upper limits
 Roster2026_DR2         0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSITA DR2)
 Roster2026_eFEDS       0.1 - 4.9     Roster et al. 2026, arXiv:2607.27887 (eROSITA eFEDS)
 Wolf2021               6.05          Wolf et al. 2021, A&A 647, A5 (eROSITA/eFEDS)
