@@ -27,7 +27,9 @@ except ImportError:
 version = release.split("+")[0]
 
 # The example notebooks in docs/astrodatapy are symlinks to astrodatapy/utils/*.ipynb
-# (shipped with the package and executed by the test suite).
+# (shipped with the package and executed by the test suite). They are executed again
+# at every docs build, so the docs always show the current code and data, whether or
+# not the outputs stored in the notebooks are up to date.
 
 # -- Dataset catalogue -----------------------------------------------------------
 # docs/astrodatapy/datasets.rst is written here, at every build, from the info.txt
@@ -147,7 +149,10 @@ extensions = [
     "sphinx_automodapi.automodapi",
     "myst_nb",
 ]
-nb_execution_mode = "off"  # show the stored outputs; the notebooks are executed by the tests
+nb_execution_mode = "force"  # run the notebooks at every build (needs the notebooks' packages)
+nb_execution_timeout = 900  # seconds per cell
+nb_execution_raise_on_error = True  # a failing notebook fails the build
+nb_execution_in_temp = True  # do not write the notebooks' output files into docs/
 napoleon_use_ivar = True  # Attributes sections as fields, not as separate entries
 autodoc_preserve_defaults = True  # show folder=fileDir+"/data/", not the path of the build machine
 automodapi_toctreedirnm = "api"
