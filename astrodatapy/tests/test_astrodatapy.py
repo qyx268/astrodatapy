@@ -18,6 +18,26 @@ def test_bhm_masses_in_msun():
     mass = obs.target_observation.loc['Caramete2010', 'Data'][:, 1]
     assert 1e7 < np.median(mass) < 1e9
 
+def test_upper_limits_are_flagged_rows():
+    # upper limits are rows of their dataset (nan errors in the file), marked in ULimit,
+    # with all three phi columns holding the limit; there are no separate _ulimit datasets
+    import numpy as np
+    from astrodatapy.number_density import number_density
+    for feature in ['GLF_UV', 'GLF_OIII', 'QLF_UV', 'QLF_Xray']:
+        for z_target in set(available_redshifts(feature)):
+            obs = number_density(feature, z_target, quiet=True, z_tol=0.001)
+            assert (obs.info['Type'] != 'dataULimit').all(), feature
+            for name in obs.target_observation.index:
+                assert 'ulim' not in name.lower(), (feature, name)
+                data = obs.target_observation.loc[name, 'Data']
+                ul = obs.target_observation.loc[name, 'ULimit']
+                assert ul.dtype == bool and len(ul) == len(data), (feature, name)
+                assert np.array_equal(data[ul, 2], data[ul, 1]), (feature, name)
+                assert np.array_equal(data[ul, 3], data[ul, 1]), (feature, name)
+                assert not np.isnan(data[~ul]).any(), (feature, name)
+    obs = number_density('GLF_UV', 8.0, quiet=True, z_tol=0.01)
+    assert obs.target_observation.loc['Bouwens2015', 'ULimit'].sum() == 2
+
 CORRELATION_FEATURES = ['Magorrian', 'Tully_Fisher', 'DiskSize_StellarMass',
                         'GasFraction_StellarMass', 'sSFR_StellarMass_Blue',
                         'HaloMass_StellarMass', 'HaloMass_StellarMass_Blue',

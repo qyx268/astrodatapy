@@ -88,15 +88,18 @@ IMF to convert stellar masses and star formation rates to (``Salpeter``,
 The datasets found are in ``obs.target_observation``, a pandas DataFrame indexed
 by dataset name, with columns:
 
-* ``DataType``: ``data``, ``dataULimit`` (upper limits), ``data_sim`` (a model),
-  or the parametric fit it was evaluated from (e.g. ``Schechter``);
+* ``DataType``: ``data``, ``data_sim`` (a model), or the parametric fit it was
+  evaluated from (e.g. ``Schechter``);
 * ``FileName``: the data file loaded;
 * ``Data``: a numpy array. For ``number_density`` its columns are x, phi, and the
   upper and lower bound of phi, with phi linear in Mpc^-3 dex^-1 (Mpc^-3 mag^-1
-  for magnitudes); for upper limits all three phi columns hold the limit. BHM is
+  for magnitudes); in the rows that are upper limits all three phi columns hold
+  the limit. BHM is
   the exception: its columns are the redshift, the black hole mass in Msun
   (linear) and its upper and lower bound. For ``correlation`` the columns are x,
-  the upper and lower bound of x, y, and the upper and lower bound of y.
+  the upper and lower bound of x, y, and the upper and lower bound of y;
+* ``ULimit`` (``number_density``): a boolean array marking the rows of ``Data``
+  that are upper limits.
 
 ``number_density`` rescales phi as h^3, stellar masses, star formation rates
 and luminosities as h^-2, magnitudes by 5 log10(h/h_obs), and black hole masses
@@ -183,12 +186,12 @@ plot the galaxy stellar mass function at redshift 5 and show labels
         linestyle = linestyles[k_func]
         data[:,1:] = np.log10(data[:,1:])
         if datatype == 'data':
-            ax.errorbar(data[:,0], data[:,1], yerr=[data[:,1]-data[:,3], data[:,2]-data[:,1]],
+            ul = obs.target_observation['ULimit'].iloc[ii]  # rows that are upper limits
+            ax.errorbar(data[~ul,0], data[~ul,1], yerr=[data[~ul,1]-data[~ul,3], data[~ul,2]-data[~ul,1]],
                         label=label, color=color, fmt=marker)
-            j_data += 1
-        elif datatype == 'dataULimit':
-            ax.errorbar(data[:,0], data[:,1], yerr=0.2*np.abs(data[:,1]), uplims=True,
-                        label=label, color=color, fmt=marker)
+            if ul.any():
+                ax.errorbar(data[ul,0], data[ul,1], yerr=0.2*np.abs(data[ul,1]), uplims=True,
+                            color=color, fmt=marker)
             j_data += 1
         else:
             ax.plot(data[:,0], data[:,1], label=label, color=color, linestyle=linestyle, lw=3)
