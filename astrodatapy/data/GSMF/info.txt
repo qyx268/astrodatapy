@@ -16,7 +16,7 @@
 
 # BinWidth: width of the mass bins in dex (a number), column (last column of the data files) or None (unknown)
 #Name		           IMF		h	NormalizationOfPhi	Errors		Log		HinPhi		Type		Bibliographic	BinWidth
-Bell+2003		DietSalpeter	1.0		1.0		LULimits	0		0		data		2012MNRAS.421..621B	None
+Bell+2003		DietSalpeter	1.0		1.0		LULimits	0		0		data		2003ApJS..149..289B	None
 Cole+2001		Salpeter	1.0		1.0		Delta		0		0		data		2001MNRAS.326..255C	None
 Drory+2009		Chabrier	0.7		1.0		Delta		1		0		data		2009ApJ...707.1595D	None
 Marchesini+2009		Kroupa		0.7		1.0		ULDeltas	1		0		data		2009ApJ...701.1765M	None
