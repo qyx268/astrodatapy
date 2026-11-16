@@ -64,9 +64,11 @@ class number_density:
     target_observation : pandas.DataFrame
         One row per dataset found, indexed by dataset name, with columns ``DataType``
         (``data``, ``data_sim``, ``Schechter``, ...), ``FileName``, ``Data`` and
-        ``ULimit``. ``Data`` is an (N, 4) array of x, phi, upper and lower bound of phi.
-        ``ULimit`` is a boolean array of length N that marks the rows that are upper
-        limits; in those rows all three phi columns hold the limit. For BHM, ``Data``
+        ``ULimit`` and ``BinWidth``. ``Data`` is an (N, 4) array of x, phi, upper and lower
+        bound of phi. ``ULimit`` is a boolean array of length N that marks the rows that
+        are upper limits; in those rows all three phi columns hold the limit. ``BinWidth``
+        is an array of length N with the width of each row's bin in the units of x (dex
+        or mag), nan where the dataset does not give it (most existing datasets). For BHM, ``Data``
         holds the redshift, the black hole mass in Msun (linear) and its upper and
         lower bound.
     """
@@ -146,6 +148,7 @@ class number_density:
              
         results = [[],] * self.n_target_observation
         ulimits = [None] * self.n_target_observation
+        binwidths = [None] * self.n_target_observation
         for ii in range(self.n_target_observation):
             if not self.quiet:
                 print("\nLoading observational data from %s..."%self.target_observation['Name'][ii])
@@ -157,6 +160,7 @@ class number_density:
                               self.target_observation['FileName'][ii])
             if data.ndim == 1:
                 data = data.reshape([1,-1])
+            data, binwidth = self._read_bin_widths(data, info)
             
             if 'Type' in info.index:
                 self.target_observation.loc[ii, 'DataType'] = info.Type
@@ -164,11 +168,28 @@ class number_density:
                 self.target_observation.loc[ii, 'DataType'] = 'Unknown'
             results[ii] = self._convert_observational_data(data, info)
             ulimits[ii] = self._flag_upper_limits(results[ii], info)
+            if not isinstance(results[ii], int):
+                # a parametric fit is evaluated on its own grid, where the widths do not apply
+                binwidths[ii] = binwidth if len(binwidth) == len(results[ii]) else np.full(len(results[ii]), np.nan)
             if not self.quiet:
                 print("..done")
         self.target_observation = self.target_observation.assign(Data=pd.Series(results).values,
-                                                                 ULimit=pd.Series(ulimits).values)
+                                                                 ULimit=pd.Series(ulimits).values,
+                                                                 BinWidth=pd.Series(binwidths).values)
         self.target_observation = self.target_observation.set_index('Name')
+
+    def _read_bin_widths(self, data, info):
+        # BinWidth in info.txt: a number (every row has that bin width, in the units of x,
+        # e.g. dex or mag), 'column' (the last column of the data file holds each row's
+        # width), or absent / None (unknown, nan). Returns the data without a width column.
+        value = info.BinWidth if 'BinWidth' in info.index else 'None'
+        if value == 'column':
+            return data[:,:-1], data[:,-1].copy()
+        try:
+            width = float(value)
+        except (TypeError, ValueError):
+            width = np.nan
+        return data, np.full(len(data), width)
 
     def _flag_upper_limits(self, data, info):
         # Upper limits are the rows whose error columns are nan in the data file (still nan after

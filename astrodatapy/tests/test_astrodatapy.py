@@ -38,6 +38,34 @@ def test_upper_limits_are_flagged_rows():
     obs = number_density('GLF_UV', 8.0, quiet=True, z_tol=0.01)
     assert obs.target_observation.loc['Bouwens2015', 'ULimit'].sum() == 2
 
+def test_bin_widths(tmp_path):
+    # BinWidth in info.txt: a number for every row, 'column' for a last column of widths in
+    # the data file, or None; target_observation['BinWidth'] returns them (nan if unknown)
+    import numpy as np
+    from astrodatapy.number_density import number_density
+    feature = tmp_path / 'GLF_UV'
+    feature.mkdir()
+    (feature / 'info.txt').write_text(
+        '#Name\tMAG\th\tNormalizationOfPhi\tErrors\tLog\tHinPhi\tType\tBibliographic\tBinWidth\n'
+        'Const\tM1600\t0.7\t1e-5\tDelta\t0\t0\tdata\t-\t0.5\n'
+        'PerRow\tM1600\t0.7\t1e-5\tDelta\t0\t0\tdata\t-\tcolumn\n'
+        'NoWidth\tM1600\t0.7\t1e-5\tDelta\t0\t0\tdata\t-\tNone\n')
+    rows = ['-21 1.0 0.3', '-20 2.0 0.4', '-19 3.0 nan']   # the last row is an upper limit
+    for name, extra in (('Const', ['', '', '']), ('PerRow', [' 0.5', ' 0.25', ' 1.0']), ('NoWidth', ['', '', ''])):
+        (feature / name).mkdir()
+        (feature / name / 'z7pt0.dat').write_text('\n'.join(r + e for r, e in zip(rows, extra)) + '\n')
+    obs = number_density('GLF_UV', 7.0, quiet=True, h=0.7, folder=str(tmp_path)).target_observation
+    assert np.array_equal(obs.loc['Const', 'BinWidth'], [0.5, 0.5, 0.5])
+    assert np.array_equal(obs.loc['PerRow', 'BinWidth'], [0.5, 0.25, 1.0])
+    assert np.isnan(obs.loc['NoWidth', 'BinWidth']).all()
+    assert np.array_equal(obs.loc['PerRow', 'Data'], obs.loc['Const', 'Data'])  # the width column is removed
+    assert np.array_equal(obs.loc['PerRow', 'ULimit'], [False, False, True])
+    # existing data: QLF_Xray records its bin widths, other features do not (yet)
+    xray = number_density('QLF_Xray', 5.5, quiet=True, z_tol=0.01).target_observation
+    assert np.array_equal(xray.loc['Pouliasis2024', 'BinWidth'], np.full(len(xray.loc['Pouliasis2024', 'Data']), 0.5))
+    gsmf = number_density('GSMF', 0.0, quiet=True).target_observation
+    assert all(np.isnan(w).all() for w in gsmf['BinWidth'])
+
 CORRELATION_FEATURES = ['Magorrian', 'Tully_Fisher', 'DiskSize_StellarMass',
                         'GasFraction_StellarMass', 'sSFR_StellarMass_Blue',
                         'HaloMass_StellarMass', 'HaloMass_StellarMass_Blue',
