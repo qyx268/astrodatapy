@@ -61,11 +61,13 @@ whitespace:
     dispersions, -1 for virial or dynamical masses, -2 for bulge luminosities.
     Without this column, BHMF masses are scaled with -1.
 ``BinWidth``
-    (Optional) Width of the bins of x, in the units of x (dex or mag): a number if every
-    row has the same width, ``column`` if the data file has an extra last column with
-    each row's width (for bins of different widths), or ``None`` if unknown. The loader
-    returns the widths in the ``BinWidth`` column of ``target_observation`` (``nan`` when
-    unknown).
+    (Optional) Width of the bins of x, in the units of x as returned (dex or mag): a
+    number if every row has the same width, ``column`` if the data file has an extra last
+    column with each row's width (for bins of different widths), or ``None`` if unknown.
+    The loader returns the widths in the ``BinWidth`` column of ``target_observation``
+    (``nan`` when unknown) without converting them: the ``MAG`` band conversions and the h
+    conversion only shift x, which leaves widths unchanged, except ``LBsol2M1450``, which
+    turns luminosities into magnitudes, so give its widths in magnitudes.
 ``Bibliographic``
     ADS bibcode of the paper, e.g. ``2024ApJ...966...74W``, or
     ``2025arXiv251011373M`` while it is only on arXiv.
