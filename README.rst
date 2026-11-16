@@ -99,7 +99,11 @@ by dataset name, with columns:
   (linear) and its upper and lower bound. For ``correlation`` the columns are x,
   the upper and lower bound of x, y, and the upper and lower bound of y;
 * ``ULimit`` (``number_density``): a boolean array marking the rows of ``Data``
-  that are upper limits.
+  that are upper limits;
+* ``BinWidth`` (``number_density``): an array with the width of each row's bin in
+  the units of x (dex or mag). Most existing datasets don't record their bin widths
+  yet, so it is ``nan`` for them; new datasets should give them, and older ones can be
+  updated over time.
 
 ``number_density`` rescales phi as h^3, stellar masses, star formation rates
 and luminosities as h^-2, magnitudes by 5 log10(h/h_obs), and black hole masses
