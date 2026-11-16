@@ -67,8 +67,9 @@ class number_density:
         ``ULimit`` and ``BinWidth``. ``Data`` is an (N, 4) array of x, phi, upper and lower
         bound of phi. ``ULimit`` is a boolean array of length N that marks the rows that
         are upper limits; in those rows all three phi columns hold the limit. ``BinWidth``
-        is an array of length N with the width of each row's bin in the units of x (dex
-        or mag), nan where the dataset does not give it (most existing datasets). For BHM, ``Data``
+        is an array of length N with the width of each row's bin in the units of the
+        returned x (dex or mag), nan where the dataset does not give it (most existing
+        datasets). For BHM, ``Data``
         holds the redshift, the black hole mass in Msun (linear) and its upper and
         lower bound.
     """
@@ -179,9 +180,11 @@ class number_density:
         self.target_observation = self.target_observation.set_index('Name')
 
     def _read_bin_widths(self, data, info):
-        # BinWidth in info.txt: a number (every row has that bin width, in the units of x,
-        # e.g. dex or mag), 'column' (the last column of the data file holds each row's
-        # width), or absent / None (unknown, nan). Returns the data without a width column.
+        # BinWidth in info.txt: a number (every row has that bin width, in the units of x as
+        # returned, e.g. dex or mag), 'column' (the last column of the data file holds each
+        # row's width), or absent / None (unknown, nan). Returns the data without a width
+        # column. The widths are not converted: the h and MAG conversions only shift x,
+        # except MAG = LBsol2M1450 (luminosity -> magnitude), whose widths must be in mag.
         value = info.BinWidth if 'BinWidth' in info.index else 'None'
         if value == 'column':
             return data[:,:-1], data[:,-1].copy()
