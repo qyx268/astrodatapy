@@ -61,7 +61,11 @@ whitespace:
     dispersions, -1 for virial or dynamical masses, -2 for bulge luminosities.
     Without this column, BHMF masses are scaled with -1.
 ``BinWidth``
-    (QLF_Xray) Width of the luminosity bins in dex.
+    (Optional) Width of the bins of x, in the units of x (dex or mag): a number if every
+    row has the same width, ``column`` if the data file has an extra last column with
+    each row's width (for bins of different widths), or ``None`` if unknown. The loader
+    returns the widths in the ``BinWidth`` column of ``target_observation`` (``nan`` when
+    unknown).
 ``Bibliographic``
     ADS bibcode of the paper, e.g. ``2024ApJ...966...74W``, or
     ``2025arXiv251011373M`` while it is only on arXiv.
@@ -91,6 +95,12 @@ nan  nan`` for the other formats. The loader marks them in the ``ULimit`` column
 with only upper limits gets a file of such rows.
 
 Models (``data_sim``) are tabulated like ``data``.
+
+Bin widths are optional (``BinWidth`` above). Please give them for new datasets when the
+paper does. Most existing datasets don't record their bin widths yet (only QLF_Xray does),
+so their ``BinWidth`` is ``nan``; widths can be added to them later, checked against the
+papers (a ``BinWidth`` column in ``info.txt`` for constant widths, or a last column of
+widths in the data files), without changing anything else.
 A parametric fit (``Type`` ``Schechter``, ``DoubleSchechter`` or ``Hopkins2007``) has
 instead a single line with its parameters, in the order of the matching method in
 ``number_density.py``. For example
@@ -173,7 +183,8 @@ Adding a dataset
 ----------------
 
 #. Put the files in ``<feature>/<dataset>/``, with the comment header described
-   above; upper limits are rows with ``nan`` errors in the same files.
+   above; upper limits are rows with ``nan`` errors in the same files. Give the bin
+   widths (``BinWidth``) if the paper does.
 #. Add a line for each to ``<feature>/info.txt``.
 #. Add the paper's BibTeX entry to ``bibliography.bib``.
 #. Run the tests, which load every dataset of every feature::
