@@ -60,11 +60,13 @@ def test_bin_widths(tmp_path):
     assert np.isnan(obs.loc['NoWidth', 'BinWidth']).all()
     assert np.array_equal(obs.loc['PerRow', 'Data'], obs.loc['Const', 'Data'])  # the width column is removed
     assert np.array_equal(obs.loc['PerRow', 'ULimit'], [False, False, True])
-    # existing data: QLF_Xray records its bin widths, other features do not (yet)
+    # existing data: QLF_Xray and Baldry+2012 (GSMF, issue #17) record their bin widths
     xray = number_density('QLF_Xray', 5.5, quiet=True, z_tol=0.01).target_observation
     assert np.array_equal(xray.loc['Pouliasis2024', 'BinWidth'], np.full(len(xray.loc['Pouliasis2024', 'Data']), 0.5))
-    gsmf = number_density('GSMF', 0.0, quiet=True).target_observation
-    assert all(np.isnan(w).all() for w in gsmf['BinWidth'])
+    gsmf = number_density('GSMF', 0.1, quiet=True, z_tol=0.01).target_observation
+    assert np.array_equal(gsmf.loc['Baldry+2012', 'BinWidth'], [0.5, 0.5] + [0.2] * 25)
+    assert gsmf.loc['Baldry+2012', 'Data'].shape == (27, 4)
+    assert all(np.isnan(w).all() for name, w in gsmf['BinWidth'].items() if name != 'Baldry+2012')
 
 CORRELATION_FEATURES = ['Magorrian', 'Tully_Fisher', 'DiskSize_StellarMass',
                         'GasFraction_StellarMass', 'sSFR_StellarMass_Blue',

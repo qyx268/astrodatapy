@@ -99,7 +99,8 @@ with only upper limits gets a file of such rows.
 Models (``data_sim``) are tabulated like ``data``.
 
 Bin widths are optional (``BinWidth`` above). Please give them for new datasets when the
-paper does. Most existing datasets don't record their bin widths yet (only QLF_Xray does),
+paper does. Most existing datasets don't record their bin widths yet (QLF_Xray and
+Baldry+2012 in GSMF do),
 so their ``BinWidth`` is ``nan``; widths can be added to them later, checked against the
 papers (a ``BinWidth`` column in ``info.txt`` for constant widths, or a last column of
 widths in the data files), without changing anything else.
