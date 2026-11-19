@@ -1,0 +1,19 @@
+# H I photoionization rate versus redshift. Read with astrodatapy.evolution, which returns it in
+#   units of 1e-12 s^-1 (files tabulated in log10 Gamma/s^-1 use Log = y and NormalizationOfy = 1e12).
+# One file per dataset, <Name>.dat, with rows of z [z_lo z_hi] value [errors] as given by DataFormat:
+#   x = redshift (xLULimits: z, z_lo, z_hi; x alone: z), y errors LUDeltas (lower, upper), Delta (symmetric),
+#   ULLimits (upper value, lower value). Errors nan = upper limit, inf = lower limit.
+# Log = y: the values are log10. NormalizationOfy: factor the (linear) values are multiplied by.
+# h: H0/100 of the values (1 for h-scaled units); hPowery: power of h the value scales with (-1 for
+#   lengths tabulated in h^-1 Mpc, 0 when the paper gives physical units for its cosmology).
+# Comoving = 1: a length in comoving units, converted to proper. Type: data, or data_sim for a
+#   simulation/model curve (not an observation). Method: how the value was obtained.
+# Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
+
+#Name        	DataFormat        	Log 	NormalizationOfy	h    	hPowery	Comoving	Type	Method              	Bibliographic
+Bolton2005   	xyLUDeltas        	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2005MNRAS.357.1178B
+Bolton2007   	xLULimitsyLUDeltas	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2007MNRAS.382..325B
+Wyithe2011   	xLULimitsyLUDeltas	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2011MNRAS.412.1926W
+Calverley2011	xLULimitsyDelta   	y   	1000000000000.0 	0.72 	0      	0       	data	QSO_proximity       	2011MNRAS.412.2543C
+Gaikwad2023  	xLULimitsyLUDeltas	None	1               	0.678	0      	0       	data	Lya_forest_tau_eff  	2023MNRAS.525.4093G
+Davies2024   	xLULimitsyLUDeltas	None	1               	0.685	0      	0       	data	Lya_forest_fluct_UVB	2024ApJ...965..134D

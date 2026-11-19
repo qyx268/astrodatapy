@@ -1,0 +1,18 @@
+# Worseck et al. (2014), MNRAS 445, 1745 (arXiv:1402.4154), Table 4 (arXiv Table 2): compilation of lambda_mfp(912 A) in h70^-1 proper Mpc
+#   (H0 = 70 h70, Om = 0.3), 1-sigma bootstrap errors (a ~15% systematic is not included). Rows: z = 2.44 O'Meara+13 (2013ApJ...765..137O),
+#   z = 3.00 Fumagalli+13 non-colour selected (2013ApJ...775...78F), z = 3.73-4.22 Prochaska+09 (2009ApJ...705L.113P), all as re-analysed
+#   by Worseck+14; z = 4.56-5.16 this paper. Bins: the quasar redshift ranges (O'Meara 2.30-2.60, Fumagalli 2.72-3.11, Prochaska+09 bins,
+#   Worseck stacks 4.4-4.7-5.0-5.5). Table 4's indirect estimates (Faucher-Giguere+08, Songaila & Cowie 2010) are not included.
+# z  z_lo  z_hi  lambda_mfp[h70^-1 pMpc]  error
+2.44  2.3  2.6  235.8  40.3
+3  2.72  3.11  110  34
+3.73  3.71  3.76  52.8  5.7
+3.78  3.76  3.81  45  4.2
+3.83  3.81  3.86  44.3  4.8
+3.88  3.86  3.92  46.5  4.8
+3.96  3.92  4.02  38.9  3.7
+4.07  4.02  4.13  33  3.5
+4.22  4.13  4.34  28.1  2.9
+4.56  4.4  4.7  22.2  2.3
+4.86  4.7  5  15.1  1.8
+5.16  5  5.5  10.3  1.6

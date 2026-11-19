@@ -1,0 +1,15 @@
+# Ionizing emissivity Ndot_ion versus redshift. Read with astrodatapy.evolution, which returns it in
+#   s^-1 cMpc^-3 (ionizing photons per second per comoving Mpc^3).
+# One file per dataset, <Name>.dat, with rows of z [z_lo z_hi] value [errors] as given by DataFormat:
+#   x = redshift (xLULimits: z, z_lo, z_hi; x alone: z), y errors LUDeltas (lower, upper), Delta (symmetric),
+#   ULLimits (upper value, lower value). Errors nan = upper limit, inf = lower limit.
+# Log = y: the values are log10. NormalizationOfy: factor the (linear) values are multiplied by.
+# h: H0/100 of the values (1 for h-scaled units); hPowery: power of h the value scales with (-1 for
+#   lengths tabulated in h^-1 Mpc, 0 when the paper gives physical units for its cosmology).
+# Comoving = 1: a length in comoving units, converted to proper. Type: data, or data_sim for a
+#   simulation/model curve (not an observation). Method: how the value was obtained.
+# Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
+
+#Name      	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type	Method                  	Bibliographic
+Gaikwad2023	xLULimitsyLUDeltas	None	1e+51           	0.678 	0      	0       	data	Gamma_and_MFP           	2023MNRAS.525.4093G
+Bouwens2015	xyULLimits        	y   	1               	0.6751	0      	0       	data	reionization_history_fit	2015ApJ...811..140B

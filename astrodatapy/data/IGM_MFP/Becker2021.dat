@@ -1,0 +1,6 @@
+# Becker et al. (2021), MNRAS 508, 1853 (arXiv:2103.16610), Table 3 (fiducial, flat prior on xi in [0.33, 1]): lambda_mfp with the quasar
+#   proximity effect removed, proper Mpc (H0 = 70, Om = 0.3), 68% ranges (95%: z=5.1 6.58-12.66, z=6.0 in the paper).
+#   Bins: the quasar redshift ranges (z=5.1: GGG 5.00-5.42 + LRIS 4.93-5.24; z=6.0: 5.82-6.08).
+# z  z_lo  z_hi  lambda_mfp[pMpc]  err_lo  err_hi
+5.1  4.93  5.42  9.09  1.28  1.62
+6  5.82  6.08  0.75  0.45  0.65

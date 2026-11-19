@@ -1,0 +1,4 @@
+# Satyavolu et al. (2024), MNRAS 533, 676 (arXiv:2311.06344 v2), abstract and Sec. 5: lambda_mfp at z = 6 from a re-fit of the
+#   Becker+21 z ~ 6 composite (13 quasars, <z_qso> = 5.97), proper Mpc (h = 0.678), 1-sigma. arXiv v1 had 0.90 +0.66/-0.40.
+# z  z_lo  z_hi  lambda_mfp[pMpc]  err_lo  err_hi
+6  5.82  6.08  1.49  0.52  0.47

@@ -1,0 +1,6 @@
+# Bolton & Haehnelt (2007), MNRAS 382, 325 (arXiv:astro-ph/0703306 v2), Sec. 6.1 and Table 7: Gamma_HI in 1e-12 s^-1 from tau_eff in
+#   dz = 0.25 bins, 1-sigma (including the systematic budget of Table 6); z = 6 is an upper limit (tau_eff > 5.5; the limit excludes the
+#   +80% systematic). Superseded at z = 5-6 by Wyithe & Bolton (2011). Its z = 2-4 values are Bolton+05 (dataset Bolton2005).
+# z  z_lo  z_hi  Gamma[1e-12 s^-1]  err_lo  err_hi
+5  4.875  5.125  0.52  0.21  0.35
+6  5.875  6.125  0.19  nan  nan

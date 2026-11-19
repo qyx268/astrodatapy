@@ -1,0 +1,7 @@
+# Zhu et al. (2023), ApJ 955, 115 (arXiv:2308.04614), Table 2: lambda_mfp, proper Mpc (h = 0.7, Om = 0.3), 68% errors
+#   (95%: -2.82/+3.76, -2.39/+2.39, -2.06/+4.02, -0.68/+1.22). Includes the Becker+21 spectra.
+# z  z_lo  z_hi  lambda_mfp[pMpc]  err_lo  err_hi
+5.08  4.9  5.2  9.33  1.8  2.06
+5.31  5.2  5.5  5.4  1.4  1.47
+5.65  5.5  5.8  3.31  1.34  2.74
+5.93  5.8  6.1  0.81  0.48  0.73
