@@ -65,9 +65,9 @@ def test_plots_notebook(tmp_path):
 
 
 def test_igm_notebook(tmp_path):
-    # one figure per IGM feature (emissivity, Gamma, mean free path, T0)
+    # one figure per IGM feature (emissivity, Gamma, mean free path, T0, x_HI)
     nb = _execute("igm.ipynb", tmp_path)
-    assert _n_figures(nb) == 4
+    assert _n_figures(nb) == 5
 
 
 @pytest.mark.skipif(sys.version_info < (3, 7), reason="combine.ipynb uses dataclasses (Python >= 3.7)")
