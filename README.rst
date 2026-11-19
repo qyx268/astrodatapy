@@ -220,6 +220,26 @@ More examples can be found in `this jupyter notebook <https://github.com/qyx268/
 shows how different datasets are combined into one empirical constraint
 (for GLF_UV, QLF_UV and GLF_OIII).
 
+Example 4
+---------
+read the redshift evolution of the IGM: ``evolution`` loads quantities tabulated against
+redshift, each dataset as one series (no target redshift):
+
+.. code:: python
+
+    >>> from astrodatapy.evolution import evolution
+    >>> obs = evolution('IGM_MFP', h=0.6774, quiet=True)        # optional z_min, z_max
+    >>> z, z_hi, z_lo, mfp, mfp_hi, mfp_lo = obs.target_observation.loc['Becker2021', 'Data'].T
+
+``target_observation`` has the columns ``DataType`` (``data``, or ``data_sim`` for a
+simulation/model curve), ``Method``, ``FileName``, ``Data`` (an N x 6 array: z, upper and
+lower edge of the redshift bin, the value and its upper and lower bound), ``ULimit`` and
+``LLimit`` (upper and lower limits). The values are returned in fixed units: the ionizing
+emissivity in s^-1 cMpc^-3, the H I photoionization rate **in units of 1e-12 s^-1**, the
+mean free path in **proper** Mpc and the temperature at the mean density in K.
+`igm.ipynb <https://github.com/qyx268/astrodatapy/blob/master/astrodatapy/utils/igm.ipynb>`__
+plots all of them.
+
 Documentation
 =============
 
@@ -279,6 +299,20 @@ Clustering
 --------------             -------------------------------------------------
 QC_2PTCF                   Quasar Clustering -- 2 point correlation function
 ==============             =================================================
+
+Redshift evolution of the IGM
+-----------------------------
+
+==============  ===================================================  =================
+**Features**    **Descriptions**                                     **Returned in**
+--------------  ---------------------------------------------------  -----------------
+IGM_Emissivity  Ionizing emissivity Ndot_ion                         s^-1 cMpc^-3
+IGM_Gamma       H I photoionization rate Gamma_HI                    1e-12 s^-1
+IGM_MFP         Mean free path of ionizing photons at 912 A          proper Mpc
+IGM_T0          IGM temperature at the mean density                  K
+==============  ===================================================  =================
+
+Each includes observations and, marked as ``data_sim``, simulation curves.
 
 Adding data
 ===========

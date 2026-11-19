@@ -4,7 +4,7 @@ from __future__ import print_function
 import os
 import pandas as pd
 import numpy  as np
-from .correlation import correlation, List_DataFormat
+from .correlation import correlation as _correlation, List_DataFormat as _List_DataFormat
 
 fileDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -15,7 +15,7 @@ evolution_units = {'IGM_Emissivity': 's^-1 cMpc^-3 (ionizing photons per second 
                    'IGM_T0': 'K (IGM temperature at the mean density)'}
 
 
-class evolution(correlation):
+class evolution(_correlation):
     """Load every dataset of a quantity that is tabulated as a function of redshift.
 
     Each dataset of ``feature`` is one file of redshifts and values (with the redshift bin and
@@ -142,7 +142,7 @@ class evolution(correlation):
         return data, ulimit, llimit
 
     def _convert_observational_data(self, data, info):
-        if info.DataFormat not in List_DataFormat:
+        if info.DataFormat not in _List_DataFormat:
             print('Error! Unrecognized Format of Data (%s)! quit'%info.DataFormat)
             return -2
         data = self._convert_DataFormat(data, info.DataFormat)
