@@ -1,0 +1,37 @@
+# SIMULATION (model curve), NOT an observation. Kulkarni et al. (2019), MNRAS 485, L24 (arXiv:1809.06374), Fig. 1 middle panel, late-reionization ATON
+#   simulation (blue; the run of Kulkarni2019_Sherwood in IGM_Emissivity): x_HI = 1 - Q_HII, the volume-averaged ionized
+#   fraction; the 30 path vertices in the plotted range z = 4-12 (the figure interpolates linearly between them).
+#   Q_HII = 0.5 at z = 6.92 (the text says 7.0), 0.99 at z = 5.33 (text: complete at 5.3). Vector coordinates resolve Q_HII
+#   to 1e-8, so the post-overlap x_HI of 2e-5 - 4e-5 is as plotted. The same curve is drawn in Keating et al. (2020) Fig. 3.
+#   Read from the published vector figure (axes calibrated on the tick marks); curve: Kulkarni2019_1809.06374/extracted/Kulkarni2019_Fig1_xHI_Sherwood.csv in the papers folder.
+# z  x_HI
+4  2.058e-05
+4.089  2.1359e-05
+4.181  2.2251e-05
+4.278  2.3264e-05
+4.38  2.4459e-05
+4.486  2.587e-05
+4.598  2.7541e-05
+4.716  2.9602e-05
+4.84  3.2165e-05
+4.971  3.5662e-05
+5.11  4.142e-05
+5.257  0.0038943
+5.413  0.016765
+5.579  0.048993
+5.756  0.10088
+5.946  0.16555
+6.149  0.23872
+6.368  0.31814
+6.604  0.4007
+6.86  0.48225
+7.139  0.56063
+7.444  0.63413
+7.78  0.70171
+8.15  0.76189
+8.562  0.81427
+9.024  0.85842
+9.546  0.8954
+10.141  0.92405
+10.829  0.94624
+11.633  0.96323

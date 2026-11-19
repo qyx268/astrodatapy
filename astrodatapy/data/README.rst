@@ -186,7 +186,7 @@ Redshift evolution (IGM)
 ------------------------
 
 The features read by ``astrodatapy.evolution`` (``IGM_Emissivity``, ``IGM_Gamma``,
-``IGM_MFP``, ``IGM_T0``) have **one file per dataset**, ``<feature>/<dataset>.dat``, whose
+``IGM_MFP``, ``IGM_T0``, ``IGM_xHI``) have **one file per dataset**, ``<feature>/<dataset>.dat``, whose
 rows start with the redshift; the file name carries no redshift. Their ``info.txt`` columns
 (whitespace separated):
 

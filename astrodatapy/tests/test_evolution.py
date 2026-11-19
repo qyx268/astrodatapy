@@ -1,7 +1,7 @@
 """Tests of astrodatapy.evolution and the IGM features (quantities tabulated against redshift)."""
 import numpy as np
 
-IGM_FEATURES = ['IGM_Emissivity', 'IGM_Gamma', 'IGM_MFP', 'IGM_T0']
+IGM_FEATURES = ['IGM_Emissivity', 'IGM_Gamma', 'IGM_MFP', 'IGM_T0', 'IGM_xHI']
 # value = the MAP model, bounds = 16th/84th percentiles: the MAP may lie outside them
 MAP_WITH_PERCENTILES = {'Qin2025'}
 
@@ -35,8 +35,9 @@ def test_every_igm_dataset_loads():
 
 
 def test_igm_units():
-    # returned units: Ndot in s^-1 cMpc^-3, Gamma in 1e-12 s^-1, MFP in proper Mpc, T0 in K
-    ranges = {'IGM_Emissivity': (1e48, 1e53), 'IGM_Gamma': (1e-3, 10.), 'IGM_MFP': (1e-2, 1e3), 'IGM_T0': (1e3, 1e5)}
+    # returned units: Ndot in s^-1 cMpc^-3, Gamma in 1e-12 s^-1, MFP in proper Mpc, T0 in K, x_HI a fraction
+    ranges = {'IGM_Emissivity': (1e48, 1e53), 'IGM_Gamma': (1e-3, 10.), 'IGM_MFP': (1e-2, 1e3), 'IGM_T0': (1e3, 1e5),
+              'IGM_xHI': (0., 1.01)}
     for feature, (lo, hi) in ranges.items():
         for name, row in _obs(feature, h=0.7).iterrows():
             assert ((row['Data'][:, 3] > lo) & (row['Data'][:, 3] < hi)).all(), (feature, name)
@@ -67,6 +68,14 @@ def test_igm_conversions():
     assert np.isclose(gao07[0, 3], 65.4) and np.allclose(gao10[:, 3:6], gao07[:, 3:6] * 0.7)  # h70^-1 pMpc
     emis = _obs('IGM_Emissivity')
     assert np.allclose(emis.loc['Becker2021']['Data'][0, 3:], 1e51 * 10**np.array([0., 0.16, -0.17]))  # log Ndot/1e51
+    assert np.isclose(emis.loc['Qin2026_Fiducial']['Data'][-1, 3], 4.5926e50)  # Ndot/1e50 at z = 5.0065
+    xhi = _obs('IGM_xHI')
+    q25 = xhi.loc['Qin2025']
+    assert list(q25['ULimit'].nonzero()[0]) == [0, 1, 2, 3, 4] and np.allclose(q25['Data'][0, 3:], 0.005)  # rounds to 0.00
+    assert np.allclose(q25['Data'][19, 3:], [0.47, 0.50, 0.48])               # z = 7.60: MAP below the 16th
+    assert np.allclose(xhi.loc['Gaikwad2023']['Data'][0, 3:], [2.534e-5, 2.534e-5 + 5.85e-6, 2.534e-5 - 4.44e-6])
+    assert xhi.loc['Qin2026_Fiducial']['DataType'] == 'data_sim'
+    assert list(xhi.loc['Bolton2007']['LLimit']) == [False] * 4 + [True]   # z = 6: lower limit (Gamma upper limit)
     t0 = _obs('IGM_T0')
     assert np.isclose(t0.loc['Bolton2012']['Data'][0, 3], 10**4.21)
     assert np.isclose(t0.loc['Walther2019']['Data'][14, 3], 5330.)         # z = 5.0, 0.533e4 K
