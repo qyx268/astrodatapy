@@ -1,0 +1,7 @@
+# Gaikwad et al. (2020), MNRAS 494, 5091 (arXiv:2001.10018 v2), Table 3: T0 in K from the widths of transmission spikes in 5 quasars at
+#   z_em = 6.07-6.51, assuming an optically thin IGM with one T-rho relation; best fit, 1-sigma (statistical + continuum, mean flux and
+#   Jeans-smoothing systematics). gamma = 1.20, 1.28, 1.04 (+-0.18, 0.19, 0.22). Gaikwad+23 adopts these as its thermal model.
+# z  z_lo  z_hi  T0[K]  err_lo  err_hi
+5.4  5.3  5.5  11000  1600  1600
+5.6  5.5  5.7  10500  2100  2100
+5.8  5.7  5.9  12000  2200  2200

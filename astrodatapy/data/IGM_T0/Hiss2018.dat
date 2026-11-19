@@ -1,0 +1,12 @@
+# Hiss et al. (2018), ApJ 865, 42 (arXiv:1710.00700 v2, the accepted version; v1 differs), Table 4 (source table3.txt): T0 in K from the
+#   low-b cutoff of the b-N_HI distribution of 74 UVES/KODIAQ spectra; posterior median with 16/84% errors (statistical + calibration);
+#   bins z +- 0.1. Same spectra and group as Walther+19 at z <= 3.4, but a different method.
+# z  z_lo  z_hi  T0[K]  err_lo  err_hi
+2  1.9  2.1  13721  2152  1694
+2.2  2.1  2.3  10927  3843  1961
+2.4  2.3  2.5  13334  1530  1206
+2.6  2.5  2.7  16281  1601  1940
+2.8  2.7  2.9  20036  1507  1416
+3  2.9  3.1  18371  1388  1087
+3.2  3.1  3.3  16244  1135  1153
+3.4  3.3  3.5  13439  2318  1542

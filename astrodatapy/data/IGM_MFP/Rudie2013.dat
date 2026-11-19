@@ -1,0 +1,5 @@
+# Rudie et al. (2013), ApJ 769, 146 (arXiv:1304.6719), abstract and eq. 30: lambda_mfp at z_em = 2.4 from the H I column-density distribution
+#   of KBSS absorbers (2.02 < z < 2.84) through Monte Carlo sightlines (indirect, not a quasar stack), IGM opacity only, proper Mpc
+#   (H0 = 70, Om = 0.3), 1-sigma. Including the source galaxy's own CGM: 121 +- 15 pMpc. Bin: the absorber redshift range.
+# z  z_lo  z_hi  lambda_mfp[pMpc]  err_lo  err_hi
+2.4  2.02  2.84  147  15  15

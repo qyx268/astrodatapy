@@ -1,0 +1,11 @@
+# Becker & Bolton (2013), MNRAS 436, 1023 (arXiv:1307.2259 v2), Table 1: log10(Gamma_HI / 1e-12 s^-1), fiducial gamma = 1.4, from tau_eff with
+#   curvature temperatures; errors: the "Total error" row (1-sigma statistical + systematics, summed linearly). Statistical-only 1-sigma:
+#   0.047, 0.037, 0.036, 0.038, 0.043, 0.052, 0.070 dex; covariance in Table 2. Bins inferred from the dz = 0.4 temperature bins.
+# z  z_lo  z_hi  log10(Gamma/1e-12 s^-1)  err_lo  err_hi
+2.4  2.2  2.6  0.015  0.146  0.132
+2.8  2.6  3  -0.066  0.131  0.129
+3.2  3  3.4  -0.103  0.121  0.13
+3.6  3.4  3.8  -0.097  0.118  0.131
+4  3.8  4.2  -0.072  0.117  0.135
+4.4  4.2  4.6  -0.019  0.122  0.14
+4.75  4.6  4.9  -0.029  0.147  0.156

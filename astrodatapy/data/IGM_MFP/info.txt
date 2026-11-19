@@ -18,3 +18,5 @@ Zhu2023      	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	da
 Gaikwad2023  	xLULimitsyLUDeltas	None	1               	1    	-1     	1       	data	Lya_forest_tau_eff  	2023MNRAS.525.4093G
 Davies2024   	xLULimitsyLUDeltas	None	1               	0.685	0      	1       	data	Lya_forest_fluct_UVB	2024ApJ...965..134D
 Satyavolu2024	xLULimitsyLUDeltas	None	1               	0.678	0      	0       	data	LyC_stack           	2024MNRAS.533..676S
+Gao2025      	xLULimitsyLUDeltas	None	1               	0.7  	-1     	0       	data	LyC_stack           	2025ApJ...981L..27G
+Rudie2013    	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	fN_HI_integration   	2013ApJ...769..146R

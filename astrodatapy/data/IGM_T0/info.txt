@@ -10,8 +10,12 @@
 #   simulation/model curve (not an observation). Method: how the value was obtained.
 # Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
 
-#Name                   	DataFormat        	Log 	NormalizationOfy	h    	hPowery	Comoving	Type	Method                   	Bibliographic
-Bolton2012              	xLULimitsyDelta   	y   	1               	0.72 	0      	0       	data	QSO_near_zone_line_widths	2012MNRAS.419.2880B
-Bolton2012_HeIIcorrected	xLULimitsyDelta   	y   	1               	0.72 	0      	0       	data	QSO_near_zone_line_widths	2012MNRAS.419.2880B
-Walther2019             	xLULimitsyLUDeltas	None	10000.0         	0.67 	0      	0       	data	Lya_forest_power_spectrum	2019ApJ...872...13W
-Boera2019               	xLULimitsyLUDeltas	None	1000.0          	0.678	0      	0       	data	Lya_forest_power_spectrum	2019ApJ...872..101B
+#Name                   	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type	Method                    	Bibliographic
+Bolton2012              	xLULimitsyDelta   	y   	1               	0.72  	0      	0       	data	QSO_near_zone_line_widths 	2012MNRAS.419.2880B
+Bolton2012_HeIIcorrected	xLULimitsyDelta   	y   	1               	0.72  	0      	0       	data	QSO_near_zone_line_widths 	2012MNRAS.419.2880B
+Walther2019             	xLULimitsyLUDeltas	None	10000.0         	0.67  	0      	0       	data	Lya_forest_power_spectrum 	2019ApJ...872...13W
+Boera2019               	xLULimitsyLUDeltas	None	1000.0          	0.678 	0      	0       	data	Lya_forest_power_spectrum 	2019ApJ...872..101B
+Gaikwad2020             	xLULimitsyLUDeltas	None	1               	0.678 	0      	0       	data	transmission_spike_widths 	2020MNRAS.494.5091G
+Gaikwad2021             	xLULimitsyLUDeltas	None	1               	0.674 	0      	0       	data	Lya_forest_four_statistics	2021MNRAS.506.4389G
+Hiss2018                	xLULimitsyLUDeltas	None	1               	0.6704	0      	0       	data	b_N_cutoff                	2018ApJ...865...42H
+Becker2011              	xLULimitsyLUDeltas	None	1               	0.72  	0      	0       	data	Lya_forest_curvature      	2011MNRAS.410.1096B

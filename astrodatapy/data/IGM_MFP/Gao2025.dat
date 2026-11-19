@@ -1,0 +1,21 @@
+# Gao et al. (2025), ApJL 981, L27 (arXiv:2411.15838 v3), Table 1: lambda_mfp(912 A) (distance to tau_LyC = 1) in h70^-1 proper Mpc from stacked
+#   DESI Y1 quasar spectra; the authors' fiducial (Telfer SED, Galactic-extinction corrected, gamma_kappa = 0); 1-sigma statistical errors.
+#   z = median quasar redshift, bin = z_min-z_max. The Lusso+15 SED gives ~8% lower values; Table 2 (free gamma_kappa) is a test, not used.
+# z  z_lo  z_hi  lambda_mfp[h70^-1 pMpc]  err_lo  err_hi
+3.217  3.2  3.236  65.4  3.44  3.44
+3.255  3.236  3.275  64.6  2.87  2.87
+3.297  3.275  3.32  66.5  3.01  3.01
+3.341  3.32  3.364  60.1  2.58  2.58
+3.389  3.364  3.415  63.3  2.72  2.72
+3.443  3.415  3.474  60.6  2.41  2.41
+3.506  3.474  3.539  52  1.96  1.96
+3.577  3.539  3.613  50.4  1.77  1.77
+3.653  3.613  3.696  47.1  1.64  1.64
+3.724  3.696  3.756  43.7  2.06  2.06
+3.782  3.756  3.808  41.4  1.97  1.97
+3.837  3.808  3.866  41.3  2.11  2.11
+3.896  3.866  3.931  35.4  1.73  1.73
+3.976  3.931  4.024  35.9  1.52  1.52
+4.082  4.024  4.161  31.6  1.38  1.38
+4.27  4.161  4.434  29.5  1.15  1.15
+4.489  4.434  4.6  23.5  1.9  1.9
