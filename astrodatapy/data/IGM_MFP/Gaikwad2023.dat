@@ -1,0 +1,17 @@
+# Gaikwad et al. (2023), MNRAS 525, 4093 (arXiv:2304.02038), Table 3: lambda_mfp in h^-1 COMOVING Mpc (h = 0.678, Om = 0.308; so h = 1
+#   and hPowery = -1 here, proper = value / (h (1+z))), inferred from the Lya forest tau_eff distribution with a fluctuating-UVB model;
+#   total 1-sigma errors; bins z +- 0.05. The paper: the z < 5.2 values "should be treated as lower limits" - stored as lower limits
+#   (their tabulated errors: z=4.9 -19.919/+33.058, z=5.0 -21.104/+38.088, z=5.1 -18.909/+31.173).
+# z  z_lo  z_hi  lambda_mfp[h^-1 cMpc]  err_lo  err_hi
+4.9  4.85  4.95  50.119  inf  inf
+5  4.95  5.05  57.412  inf  inf
+5.1  5.05  5.15  46.452  inf  inf
+5.2  5.15  5.25  40.832  15.713  22.264
+5.3  5.25  5.35  34.041  12.163  18.44
+5.4  5.35  5.45  29.242  10.187  15.427
+5.5  5.45  5.55  28.907  11.124  10.904
+5.6  5.55  5.65  22.961  7.826  11.712
+5.7  5.65  5.75  16.596  7.476  9.707
+5.8  5.75  5.85  13.183  5.769  9.205
+5.9  5.85  5.95  10.471  4.976  9.027
+6  5.95  6.05  8.318  4.052  7.531

@@ -1,0 +1,15 @@
+# Bouwens et al. (2015), ApJ 811, 140 (arXiv:1503.08228): emissivity INFERRED from a fit to reionization constraints (Planck tau, QSO and
+#   Lya-emitter neutral fractions), C_HII = 3. Value: the fiducial parameterisation of Table 3, log10 Ndot = 50.67 - 0.15 (z - 8)
+#   [s^-1 cMpc^-3]; bounds: the 68% intervals of Table 2 (95%: z=6 50.72-51.11 ... z=15 48.74-50.55). z >= 11 is more sensitive to tau
+#   and the assumed functional form. Not a direct measurement.
+# z  log10(Ndot)  log10_upper68  log10_lower68
+6  50.97  51.04  50.81
+7  50.82  50.85  50.73
+8  50.67  50.71  50.6
+9  50.52  50.62  50.41
+10  50.37  50.56  50.21
+11  50.22  50.49  50
+12  50.07  50.43  49.8
+13  49.92  50.36  49.6
+14  49.77  50.29  49.39
+15  49.62  50.23  49.18

@@ -1,0 +1,6 @@
+# Boera et al. (2019), ApJ 872, 101 (arXiv:1809.06980), Table 5: T0 in 1e3 K from the Lya forest power spectrum of 15 HIRES/UVES quasars
+#   (best fit with marginalised 68% intervals), bins dz = 0.4 (mean z 4.24, 4.58, 4.95). gamma and u0 are also in the table.
+# z  z_lo  z_hi  T0[1e3 K]  err_lo  err_hi
+4.2  4  4.4  8.13  0.97  1.34
+4.6  4.4  4.8  7.31  0.88  1.35
+5  4.8  5.2  7.37  1.39  1.67

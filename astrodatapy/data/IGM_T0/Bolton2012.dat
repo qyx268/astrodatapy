@@ -1,0 +1,5 @@
+# Bolton et al. (2012), MNRAS 419, 2880 (arXiv:1110.0539), Table 3: log10(T0/K) in the NEAR-ZONES of 7 quasars at z = 5.8-6.4 (gas the
+#   quasars heated by reionizing He II), from Lya line widths; 68% (95%: +0.06/-0.07); flat prior 3.2 <= log T0 <= 4.8. For the general
+#   IGM see Bolton2012_HeIIcorrected.
+# z  z_lo  z_hi  log10(T0/K)  error
+6.08  5.75  6.41  4.21  0.03

@@ -1,0 +1,17 @@
+# Davies et al. (2024), ApJ 965, 134 (arXiv:2312.08464), Table 1: lambda_mfp in COMOVING Mpc (h = 0.685, Om = 0.31), the sub-grid
+#   mean free path of the fluctuating-UVB model fitted to the XQR-30 Lya forest; posterior medians with TOTAL errors (the stat errors
+#   and self-consistency corrections are in the paper); 95% (~2 sigma) lower limits at z = 5.0-5.2 and upper limits at z = 6.0-6.1;
+#   z = 5.3 and 5.9 are strongly influenced by the prior. Bins z +- 0.05. Same data as Gaikwad+23.
+# z  z_lo  z_hi  lambda_mfp[cMpc]  err_lo  err_hi
+5  4.95  5.05  23.3  inf  inf
+5.1  5.05  5.15  26.1  inf  inf
+5.2  5.15  5.25  33.9  inf  inf
+5.3  5.25  5.35  79.1  52.3  43.9
+5.4  5.35  5.45  29  17.5  6.9
+5.5  5.45  5.55  44.3  31.7  25
+5.6  5.55  5.65  23.5  13.9  6.9
+5.7  5.65  5.75  24  15.1  7.8
+5.8  5.75  5.85  15.9  10.1  6.5
+5.9  5.85  5.95  23.5  17.8  19
+6  5.95  6.05  22.6  nan  nan
+6.1  6.05  6.15  22.6  nan  nan

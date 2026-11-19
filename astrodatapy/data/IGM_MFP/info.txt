@@ -1,0 +1,20 @@
+# Mean free path of ionizing photons at 912 A versus redshift. Read with astrodatapy.evolution,
+#   which returns it in PROPER Mpc (comoving values are divided by 1+z; see Comoving).
+# One file per dataset, <Name>.dat, with rows of z [z_lo z_hi] value [errors] as given by DataFormat:
+#   x = redshift (xLULimits: z, z_lo, z_hi; x alone: z), y errors LUDeltas (lower, upper), Delta (symmetric),
+#   ULLimits (upper value, lower value). Errors nan = upper limit, inf = lower limit.
+# Log = y: the values are log10. NormalizationOfy: factor the (linear) values are multiplied by.
+# h: H0/100 of the values (1 for h-scaled units); hPowery: power of h the value scales with (-1 for
+#   lengths tabulated in h^-1 Mpc, 0 when the paper gives physical units for its cosmology).
+# Comoving = 1: a length in comoving units, converted to proper. Type: data, or data_sim for a
+#   simulation/model curve (not an observation). Method: how the value was obtained.
+# Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
+
+#Name        	DataFormat        	Log 	NormalizationOfy	h    	hPowery	Comoving	Type	Method              	Bibliographic
+Worseck2014  	xLULimitsyDelta   	None	1               	0.7  	-1     	0       	data	LyC_stack           	2014MNRAS.445.1745W
+Songaila2010 	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LLS_incidence       	2010ApJ...721.1448S
+Becker2021   	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LyC_stack           	2021MNRAS.508.1853B
+Zhu2023      	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LyC_stack           	2023ApJ...955..115Z
+Gaikwad2023  	xLULimitsyLUDeltas	None	1               	1    	-1     	1       	data	Lya_forest_tau_eff  	2023MNRAS.525.4093G
+Davies2024   	xLULimitsyLUDeltas	None	1               	0.685	0      	1       	data	Lya_forest_fluct_UVB	2024ApJ...965..134D
+Satyavolu2024	xLULimitsyLUDeltas	None	1               	0.678	0      	0       	data	LyC_stack           	2024MNRAS.533..676S

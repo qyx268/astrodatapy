@@ -1,0 +1,4 @@
+# Bolton et al. (2012), MNRAS 419, 2880 (arXiv:1110.0539), Table 3 "All (He II heating subtracted)": the paper's estimate of the
+#   general-IGM log10(T0/K) after removing the quasars' He II photoheating (quasar spectral index alpha_q = 1.5); 68% (95%: +0.13/-0.17).
+# z  z_lo  z_hi  log10(T0/K)  error
+6.08  5.75  6.41  3.85  0.08

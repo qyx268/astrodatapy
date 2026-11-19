@@ -1,0 +1,6 @@
+# Bolton et al. (2005), MNRAS 357, 1178 (arXiv:astro-ph/0411072), Sec. 5.1: Gamma_HI in 1e-12 s^-1 from the mean Lya forest optical
+#   depth and hydrodynamical simulations, 1-sigma. These are the z = 2-4 values listed in Bolton & Haehnelt (2007) Table 7.
+# z  Gamma[1e-12 s^-1]  err_lo  err_hi
+2  1.29  0.46  0.8
+3  0.86  0.26  0.34
+4  0.97  0.33  0.48

@@ -1,0 +1,6 @@
+# Calverley et al. (2011), MNRAS 412, 2543 (arXiv:1011.5850), abstract and Sec. 4.1: log10(Gamma_HI / s^-1) from the quasar proximity
+#   effect, 68% (+-); z = 5.04 is the mean of 8 quasars at z_q < 5.5, z = 6.09 of 7 at z_q > 5.5; bins are the quasar redshift ranges.
+#   The paper's conclusions quote -12.77 at z ~ 6, a misprint of -12.84. Not corrected for LLSs or thermal proximity effects.
+# z  z_lo  z_hi  log10(Gamma/s^-1)  error
+5.04  4.588  5.41  -12.15  0.16
+6.09  5.81  6.4189  -12.84  0.18
