@@ -182,6 +182,44 @@ one line with the parameters of the ``Type`` (``PowerLaw`` or
 ``PowerLaw_2COMPONENTS``), in the order of the matching method in ``clustering.py``.
 The correlation length is converted to the requested ``h``.
 
+Redshift evolution (IGM)
+------------------------
+
+The features read by ``astrodatapy.evolution`` (``IGM_Emissivity``, ``IGM_Gamma``,
+``IGM_MFP``, ``IGM_T0``) have **one file per dataset**, ``<feature>/<dataset>.dat``, whose
+rows start with the redshift; the file name carries no redshift. Their ``info.txt`` columns
+(whitespace separated):
+
+``DataFormat``
+    As for the correlations, with x the redshift: e.g. ``xLULimitsyLUDeltas`` (z, lower and
+    upper edge of the redshift bin, value, lower and upper error), ``xyLUDeltas`` (no bin),
+    ``xLULimitsyDelta`` (symmetric error), ``xyULLimits`` (upper and lower bound as values),
+    ``xy`` (no errors, e.g. a simulation curve).
+``Log``
+    ``y`` if the values (and bounds) are log10, else ``None``.
+``NormalizationOfy``
+    Factor the linear values are multiplied by: e.g. ``1e51`` for an emissivity in
+    1e51 s^-1 cMpc^-3, ``1e12`` for a log10 photoionization rate in s^-1 (returned in
+    1e-12 s^-1), ``1e4`` for a temperature in 1e4 K.
+``h``, ``hPowery``
+    The value scales as h^hPowery: ``-1`` for lengths tabulated in h^-1 Mpc (with ``h = 1``)
+    or h70^-1 Mpc (with ``h = 0.7``); ``0`` when the paper gives physical units for its
+    cosmology (``h`` is then for information).
+``Comoving``
+    ``1`` for a length tabulated in comoving units, which the loader divides by 1+z (the
+    mean free path is returned in proper Mpc).
+``Type``
+    ``data`` for an observation, ``data_sim`` for a simulation or model curve.
+``Method``
+    How the values were obtained, e.g. ``LyC_stack``, ``Lya_forest_tau_eff``,
+    ``QSO_proximity``, ``Lya_forest_power_spectrum``, or the name of a simulation.
+``Bibliographic``
+    ADS bibcode.
+
+Upper limits are rows whose errors are ``nan``, lower limits rows whose errors are
+``inf``; the loader flags them (``ULimit``, ``LLimit``) and gives them the value as both
+bounds. Store the values as published, with a header saying where they come from.
+
 Adding a dataset
 ----------------
 

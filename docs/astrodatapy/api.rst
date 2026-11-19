@@ -10,5 +10,8 @@ API
 .. automodapi:: astrodatapy.clustering
    :no-inheritance-diagram:
 
+.. automodapi:: astrodatapy.evolution
+   :no-inheritance-diagram:
+
 .. automodapi:: astrodatapy.misc_tools
    :no-inheritance-diagram:

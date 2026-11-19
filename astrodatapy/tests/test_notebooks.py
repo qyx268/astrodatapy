@@ -64,6 +64,12 @@ def test_plots_notebook(tmp_path):
     assert _n_figures(nb) >= 10
 
 
+def test_igm_notebook(tmp_path):
+    # one figure per IGM feature (emissivity, Gamma, mean free path, T0)
+    nb = _execute("igm.ipynb", tmp_path)
+    assert _n_figures(nb) == 4
+
+
 @pytest.mark.skipif(sys.version_info < (3, 7), reason="combine.ipynb uses dataclasses (Python >= 3.7)")
 @pytest.mark.skipif(_version_tuple(matplotlib.__version__) < (3, 4),
                     reason="combine.ipynb uses Figure.supxlabel (matplotlib >= 3.4)")

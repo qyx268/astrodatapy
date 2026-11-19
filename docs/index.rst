@@ -14,4 +14,5 @@ Contents
   astrodatapy/data_format
   astrodatapy/plots
   astrodatapy/combine
+  astrodatapy/igm
   astrodatapy/api

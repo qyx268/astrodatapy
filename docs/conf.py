@@ -66,6 +66,12 @@ FEATURE_GROUPS = [
     ("Clustering", "astrodatapy.clustering", [
         ("QC_2PTCF", "Quasar two-point correlation function"),
     ]),
+    ("Redshift evolution of the IGM", "astrodatapy.evolution", [
+        ("IGM_Emissivity", "Ionizing emissivity, returned in s^-1 cMpc^-3"),
+        ("IGM_Gamma", "H I photoionization rate, returned in units of 1e-12 s^-1"),
+        ("IGM_MFP", "Mean free path of ionizing photons at 912 A, returned in proper Mpc"),
+        ("IGM_T0", "IGM temperature at the mean density, returned in K"),
+    ]),
 ]
 
 
@@ -82,8 +88,13 @@ def _read_info(feature):
 
 
 def _redshifts(feature, name):
-    """Redshifts of the z*.dat files of a dataset, e.g. z10pt5.dat -> 10.5."""
+    """Redshifts of the z*.dat files of a dataset, e.g. z10pt5.dat -> 10.5; for a dataset of
+    evolution (one file <name>.dat of rows starting with z), its redshift range and size."""
     directory = os.path.join(DATA, feature, name)
+    single = os.path.join(DATA, feature, name + ".dat")
+    if os.path.isfile(single):
+        zs = [float(l.split()[0]) for l in open(single) if l.strip() and not l.startswith("#")]
+        return "%g-%g (%d)" % (min(zs), max(zs), len(zs)) if len(zs) > 1 else "%g" % zs[0]
     if not os.path.isdir(directory):
         return ""
     zs = []
@@ -116,7 +127,7 @@ def write_dataset_catalogue(path):
             n_total += len(rows)
             heading = feature + (": " + description if description else "")
             columns = ["Dataset", "Redshifts"]
-            columns += [c for c in ("Type", "h", "IMF", "BinWidth") if any(c in r for r in rows)]
+            columns += [c for c in ("Type", "Method", "h", "IMF", "BinWidth") if any(c in r for r in rows)]
             columns += ["Reference"]
             body += [heading, "~" * len(heading), "",
                      ".. list-table::", "   :header-rows: 1", ""]
@@ -130,7 +141,9 @@ def write_dataset_catalogue(path):
     head = ["Datasets", "========", "",
             "The %d datasets in the package, with the redshifts of their data files, the"
             % n_total,
-            "``h`` of the source paper and the ADS entry of the paper. This page is",
+            "``h`` of the source paper and the ADS entry of the paper. For the redshift",
+            "evolution of the IGM, the redshift range and the number of points are given;",
+            "``data_sim`` marks simulation (model) curves, not observations. This page is",
             "generated from the ``info.txt`` files when the documentation is built.", ""]
     text = "\n".join(head + body) + "\n"
     old = open(path).read() if os.path.exists(path) else None
