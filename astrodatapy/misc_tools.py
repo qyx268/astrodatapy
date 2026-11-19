@@ -21,14 +21,17 @@ def redshift_filenames(directory):
         return []
 
 def available_redshifts(feature):
-    """Redshifts of all data files of ``feature`` (e.g. ``'GLF_UV'``), as a numpy array."""
+    """Redshifts of all data files of ``feature`` (e.g. ``'GLF_UV'``), as a numpy array.
+
+    Only files named like z5pt0.dat count (features read by ``evolution`` have one file per
+    dataset instead, and no redshift in the file name)."""
     import os
-    import fnmatch
+    import re
     fileDir = os.path.dirname(os.path.abspath(__file__))
     all_fnames = []
     for root, dirnames, filenames in os.walk(fileDir+'/data/%s'%feature):
-        for filename in fnmatch.filter(filenames, '*'):
-            if 'dat' in filename:
+        for filename in filenames:
+            if re.match(r'^z\d+pt\d+\.dat$', filename):
                 all_fnames.append(filename)
 
     #all_fnames = glob.glob('data/%s/**/*'%feature)
