@@ -1,5 +1,5 @@
 """Quantities as a function of redshift, such as the ionizing emissivity, the H I photoionization
-rate, the mean free path of ionizing photons and the IGM temperature."""
+rate, the mean free path of ionizing photons, the IGM temperature and the neutral hydrogen fraction."""
 from __future__ import print_function
 import os
 import pandas as pd
@@ -12,7 +12,8 @@ fileDir = os.path.dirname(os.path.abspath(__file__))
 evolution_units = {'IGM_Emissivity': 's^-1 cMpc^-3 (ionizing photons per second per comoving Mpc^3)',
                    'IGM_Gamma': '1e-12 s^-1 (H I photoionization rate in units of 10^-12 s^-1)',
                    'IGM_MFP': 'proper Mpc (mean free path of ionizing photons at 912 A)',
-                   'IGM_T0': 'K (IGM temperature at the mean density)'}
+                   'IGM_T0': 'K (IGM temperature at the mean density)',
+                   'IGM_xHI': 'dimensionless (volume-averaged neutral hydrogen fraction, 0-1)'}
 
 
 class evolution(_correlation):
@@ -22,12 +23,12 @@ class evolution(_correlation):
     uncertainties when the paper gives them). The values are converted to the units of
     ``evolution_units`` and to the Hubble parameter ``h``: the ionizing emissivity in
     s^-1 cMpc^-3, the H I photoionization rate in **1e-12 s^-1**, the mean free path in
-    **proper** Mpc and the temperature in K.
+    **proper** Mpc, the temperature in K and the neutral fraction as a fraction (0-1).
 
     Parameters
     ----------
     feature : str
-        IGM_Emissivity, IGM_Gamma, IGM_MFP or IGM_T0.
+        IGM_Emissivity, IGM_Gamma, IGM_MFP, IGM_T0 or IGM_xHI.
     quiet : bool, optional
         If True, do not print what is loaded and converted. Default False.
     h : float, optional

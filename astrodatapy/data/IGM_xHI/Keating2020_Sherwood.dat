@@ -1,0 +1,36 @@
+# SIMULATION (model curve), NOT an observation. Keating et al. (2020), MNRAS 491, 1736 (arXiv:1905.12640), Fig. 3 top middle panel, ATON late-reionization
+#   simulation (blue; the run of Keating2020_Sherwood in the other IGM features): x_HI = 1 - Q_HII, the filling fraction
+#   of ionized gas; the 30 path vertices in the plotted range z = 4-12. Q_HII = 0.5 at z = 6.66 (text: 6.7), 0.999 at
+#   z = 5.17 (text: 5.2). Vector coordinates resolve Q_HII to 1e-8 (post-overlap x_HI 1.4e-5 - 3.3e-5 as plotted).
+#   Read from the published vector figure (axes calibrated on the tick marks); curve: Keating2020_1905.12640/extracted/Keating2020a_Fig3_xHI_Sherwood.csv in the papers folder.
+# z  x_HI
+4  1.3788e-05
+4.089  1.4629e-05
+4.181  1.5702e-05
+4.278  1.7017e-05
+4.38  1.8595e-05
+4.486  2.0488e-05
+4.598  2.2603e-05
+4.716  2.4875e-05
+4.84  2.7105e-05
+4.971  2.9282e-05
+5.11  3.3321e-05
+5.257  0.0023461
+5.413  0.012784
+5.579  0.044576
+5.756  0.10316
+5.946  0.18074
+6.149  0.27299
+6.368  0.37684
+6.604  0.48054
+6.86  0.57429
+7.139  0.65548
+7.444  0.7226
+7.78  0.77789
+8.15  0.82265
+8.562  0.85985
+9.024  0.89071
+9.546  0.91718
+10.141  0.93809
+10.829  0.95494
+11.633  0.96838

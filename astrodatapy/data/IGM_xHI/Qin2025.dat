@@ -1,0 +1,61 @@
+# Qin et al. (2025), PASA 42, e049 (arXiv:2412.00799; the published Table A1 equals arXiv Table 3): volume-averaged x_HI,
+#   MAP model with the [16, 84]th percentiles (both z columns of the table, 52 redshifts).
+#   Posterior of a 21cmFAST-based model forward-modelling the XQR-30+ Lya forest (tau_eff distributions at z = 5.3-6.1), with
+#   the UV LFs (z = 6-10) and the Planck CMB optical depth in the likelihood (fiducial model); model-based, so the z > 6 values are
+#   constrained mostly through the model, not measured.
+#   The MAP is the single best-fitting model and need not lie inside the 16-84% interval (7 redshifts, by 0.01).
+#   Values are rounded to 0.01: 10-50% where x_HI <= 0.05. Where the MAP rounds to 0.00 (z = 4.90-5.39) the row is an upper
+#   limit at the rounding bound of the 84th percentile (0.005; 0.015 at z = 5.39, where the 84th percentile is 0.01).
+# z  x_HI_MAP  84th  16th
+4.9  0.005  nan  nan
+5.02  0.005  nan  nan
+5.14  0.005  nan  nan
+5.26  0.005  nan  nan
+5.39  0.015  nan  nan
+5.51  0.01  0.02  0.01
+5.64  0.03  0.04  0.03
+5.78  0.05  0.07  0.05
+5.91  0.08  0.1  0.08
+6.05  0.11  0.14  0.12
+6.19  0.15  0.17  0.15
+6.34  0.19  0.21  0.19
+6.48  0.22  0.25  0.23
+6.63  0.26  0.29  0.26
+6.78  0.29  0.33  0.3
+6.94  0.33  0.36  0.34
+7.1  0.37  0.4  0.37
+7.26  0.4  0.44  0.41
+7.43  0.44  0.47  0.44
+7.6  0.47  0.5  0.48
+7.77  0.51  0.54  0.51
+7.94  0.54  0.57  0.54
+8.12  0.57  0.6  0.58
+8.3  0.61  0.63  0.61
+8.49  0.64  0.66  0.64
+8.68  0.67  0.69  0.67
+8.87  0.7  0.72  0.7
+9.07  0.72  0.75  0.72
+9.27  0.75  0.77  0.75
+9.48  0.77  0.79  0.77
+9.69  0.8  0.82  0.8
+9.9  0.82  0.84  0.82
+10.12  0.84  0.85  0.84
+10.34  0.86  0.87  0.86
+10.57  0.87  0.89  0.87
+10.8  0.89  0.9  0.89
+11.04  0.9  0.91  0.9
+11.28  0.91  0.92  0.91
+11.52  0.92  0.93  0.92
+11.77  0.93  0.94  0.93
+12.03  0.94  0.95  0.94
+12.29  0.95  0.96  0.95
+12.55  0.96  0.96  0.96
+12.82  0.96  0.97  0.96
+13.1  0.97  0.97  0.97
+13.38  0.97  0.98  0.97
+13.67  0.98  0.98  0.98
+13.96  0.98  0.98  0.98
+14.26  0.98  0.99  0.98
+14.57  0.99  0.99  0.99
+14.88  0.99  0.99  0.99
+15.2  0.99  0.99  0.99

@@ -71,6 +71,7 @@ FEATURE_GROUPS = [
         ("IGM_Gamma", "H I photoionization rate, returned in units of 1e-12 s^-1"),
         ("IGM_MFP", "Mean free path of ionizing photons at 912 A, returned in proper Mpc"),
         ("IGM_T0", "IGM temperature at the mean density, returned in K"),
+        ("IGM_xHI", "Volume-averaged neutral hydrogen fraction, returned as a fraction (0-1)"),
     ]),
 ]
 

@@ -1,0 +1,14 @@
+# Bolton & Haehnelt (2007), MNRAS 382, 325 (arXiv:astro-ph/0703306), Fig. 9 left panel and Sec. 7.3: volume-weighted
+#   neutral fraction <f_HI>_V computed from the Lya-forest Gamma_HI assuming a fully ionized IGM (Q_HII = 1), i.e. the RESIDUAL
+#   neutral fraction: ionization equilibrium averaged over the Miralda-Escude et al. (2000) density distribution up to
+#   Delta = 150 (Om = 0.26, h = 0.72). z = 5, 6 (filled triangles): from BH07's Gamma (bins of dz = 0.25); z = 2, 3, 4 (open
+#   diamonds, no bins): from the Gamma of Bolton et al. (2005), converted by BH07. Errors: the 1-sigma Gamma errors mapped
+#   through f_HI ~ 1/Gamma. z = 6: lower limit (Gamma < 0.19 is an upper limit; the plotted bar below it, the +80% systematic
+#   Gamma error, is not stored). No table: read from the vector figure (precision ~0.002 dex); curve:
+#   Bolton2007_astro-ph0703306/extracted/Bolton2007_Fig9left_xHI_fromGamma.csv in the papers folder.
+# z  z_lo  z_hi  <f_HI>_V  err_lo  err_hi
+2  2  2  1.446e-06  5.53e-07  8.01e-07
+3  3  3  5.681e-06  1.61e-06  2.46e-06
+4  4  4  1.006e-05  3.33e-06  5.19e-06
+5  4.875  5.125  3.359e-05  1.34e-05  2.28e-05
+6  5.875  6.125  0.0001473  inf  inf

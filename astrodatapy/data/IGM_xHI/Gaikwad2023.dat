@@ -1,0 +1,17 @@
+# Gaikwad et al. (2023), MNRAS 525, 4093 (arXiv:2304.02038), Table 3: spatially (volume) averaged neutral fraction <f_HI>
+#   from the XQR-30 Lya forest tau_eff distribution with a fluctuating-UVB (EX-CITE) model, total 1-sigma errors, bins z +- 0.05.
+#   f_HI from photoionization equilibrium in each cell, with cells where 1/Gamma > t_Hubble set neutral (Sec. 3.3), so the
+#   average includes neutral islands: the residual neutral fraction at z < 5.3, rising to ~0.17 at z = 6.
+# z  z_lo  z_hi  <f_HI>  err_lo  err_hi
+4.9  4.85  4.95  2.534e-05  4.44e-06  5.85e-06
+5  4.95  5.05  2.267e-05  4.49e-06  8.4e-06
+5.1  5.05  5.15  2.668e-05  5.53e-06  1.343e-05
+5.2  5.15  5.25  2.758e-05  5.55e-06  8.11e-06
+5.3  5.25  5.35  0.00051  0.0004036  0.0008044
+5.4  5.35  5.45  0.003533  0.002457  0.01508
+5.5  5.45  5.55  0.007246  0.003506  0.02731
+5.6  5.55  5.65  0.0163  0.00834  0.02544
+5.7  5.65  5.75  0.05596  0.03362  0.07141
+5.8  5.75  5.85  0.09364  0.06391  0.06182
+5.9  5.85  5.95  0.1282  0.0736  0.126
+6  5.95  6.05  0.1744  0.1089  0.0925

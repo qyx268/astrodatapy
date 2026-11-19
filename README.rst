@@ -310,6 +310,7 @@ IGM_Emissivity  Ionizing emissivity Ndot_ion                         s^-1 cMpc^-
 IGM_Gamma       H I photoionization rate Gamma_HI                    1e-12 s^-1
 IGM_MFP         Mean free path of ionizing photons at 912 A          proper Mpc
 IGM_T0          IGM temperature at the mean density                  K
+IGM_xHI         Volume-averaged neutral hydrogen fraction x_HI       fraction (0-1)
 ==============  ===================================================  =================
 
 Each includes observations and, marked as ``data_sim``, simulation curves.
