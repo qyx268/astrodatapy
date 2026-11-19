@@ -13,3 +13,5 @@
 #Name      	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type	Method                  	Bibliographic
 Gaikwad2023	xLULimitsyLUDeltas	None	1e+51           	0.678 	0      	0       	data	Gamma_and_MFP           	2023MNRAS.525.4093G
 Bouwens2015	xyULLimits        	y   	1               	0.6751	0      	0       	data	reionization_history_fit	2015ApJ...811..140B
+Becker2013 	xyLUDeltas        	y   	1e+51           	0.678 	0      	0       	data	Gamma_and_MFP           	2013MNRAS.436.1023B
+Becker2021 	xLULimitsyLUDeltas	y   	1e+51           	0.7   	0      	0       	data	Gamma_and_MFP           	2021MNRAS.508.1853B

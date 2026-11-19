@@ -1,0 +1,13 @@
+# Becker et al. (2011), MNRAS 410, 1096 (arXiv:1008.2622), Table 3: T0 in K INFERRED for an ASSUMED gamma = 1.3 from the measured temperature
+#   T(Delta-bar) at the characteristic overdensity (curvature of 61 HIRES/MIKE spectra): T0 = T(Delta-bar) / Delta-bar^(gamma-1).
+#   ERRORS ARE 2 SIGMA (as published; statistical + mean flux, no gamma uncertainty). z = path-weighted <z>, bins dz = 0.4.
+#   The table also gives T(Delta-bar) and T0 for the simulations' gamma (a minimum T0).
+# z  z_lo  z_hi  T0[K]  err_lo(2sigma)  err_hi(2sigma)
+2.05  1.8  2.2  17020  1300  1300
+2.4  2.2  2.6  16320  840  840
+2.79  2.6  3  15740  660  660
+3.16  3  3.4  13820  880  880
+3.6  3.4  3.8  11230  780  780
+3.98  3.8  4.2  9610  860  860
+4.37  4.2  4.6  8440  940  940
+4.81  4.6  5  8390  1900  1900

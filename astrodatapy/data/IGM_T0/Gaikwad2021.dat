@@ -1,0 +1,14 @@
+# Gaikwad et al. (2021), MNRAS 506, 4389 (arXiv:2009.00016 v2), Table 2: T0 in K from a joint fit of four Lya forest statistics (power spectrum,
+#   b-parameter PDF, wavelets, curvature) of 103 KODIAQ HIRES spectra; best fit, 1-sigma TOTAL errors (statistical-only in Table H1);
+#   bins z +- 0.1. gamma is in the table. Shares some HIRES spectra with Walther+19.
+# z  z_lo  z_hi  T0[K]  err_lo  err_hi
+2  1.9  2.1  9500  1393  1393
+2.2  2.1  2.3  11000  1028  1028
+2.4  2.3  2.5  12750  1132  1132
+2.6  2.5  2.7  13500  1390  1390
+2.8  2.7  2.9  14750  1341  1341
+3  2.9  3.1  14750  1322  1322
+3.2  3.1  3.3  12750  1493  1493
+3.4  3.3  3.5  11250  1125  1125
+3.6  3.5  3.7  10250  1070  1070
+3.8  3.7  3.9  9250  876  876

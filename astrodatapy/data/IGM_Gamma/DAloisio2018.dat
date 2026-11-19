@@ -1,0 +1,10 @@
+# D'Aloisio et al. (2018), MNRAS 473, 560 (arXiv:1611.02711 v2), Table 2 "Fiducial" (Worseck+14 mean free path): <Gamma_HI> in 1e-12 s^-1
+#   from the Becker+15 tau_eff with a fluctuating-UVB model; the errors "generously bracket" the uncertain thermal history (NOT 1 sigma).
+#   The "Short Mean Free Path" model gives up to 7% higher values.
+# z  z_lo  z_hi  Gamma[1e-12 s^-1]  err_lo  err_hi
+4.8  4.7  4.9  0.58  0.2  0.08
+5  4.9  5.1  0.53  0.19  0.09
+5.2  5.1  5.3  0.48  0.18  0.1
+5.4  5.3  5.5  0.47  0.18  0.12
+5.6  5.5  5.7  0.45  0.17  0.14
+5.8  5.7  5.9  0.29  0.11  0.11

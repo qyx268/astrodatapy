@@ -1,0 +1,5 @@
+# Becker et al. (2021), MNRAS 508, 1853 (arXiv:2103.16610 v2), Sec. 4.2, eq. 10: log10(Ndot_ion / 1e51 s^-1 cMpc^-3) from their mean free path
+#   (local-source approximation, alpha_s = 2.0, beta_N = 1.3), 68% (95%: z=5.1 -0.33/+0.32, z=6.0 -0.62/+1.08). Bins as for their lambda_mfp.
+# z  z_lo  z_hi  log10(Ndot/1e51 s^-1 cMpc^-3)  err_lo  err_hi
+5.1  4.93  5.42  0  0.17  0.16
+6  5.82  6.08  0.54  0.31  0.43
