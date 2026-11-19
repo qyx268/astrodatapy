@@ -1,0 +1,73 @@
+# SIMULATION (model curve), NOT an observation. Qin & Wyithe (2026), arXiv:2607.25722 (submitted to MNRAS), Fig. 8 (bottom panel, solid curve):
+#   comoving ionizing emissivity, galaxies + AGN, smoothed as plotted in the paper: savgol_filter(window_length=15,
+#   polyorder=1) over the snapshots (changes the raw snapshot values by a few per cent, up to ~30% at z > 12),
+#   z <= 13.5 (the range of the figure).
+#   Model "SF Disc" of Table 1: f_esc^gal = 0.063 (Sigma_SF/1 Msun pc^-2)^0.12 x exp[-(Sigma_CGM/Msun pc^-2)^0.2 (C/6.3)^3]; tau_e = 0.0535.
+#   Meraxes semi-analytic galaxy formation with semi-numerical (excursion-set) reionization on a (210 h^-1 cMpc)^3 N-body
+#   volume with merger trees augmented to the atomic-cooling limit; f_esc^gal of the model calibrated to the XQR-30+ Lya
+#   forest tau_eff distributions (Planck 2015 cosmology, h = 0.6751).
+# z  Ndot/1e50[s^-1 cMpc^-3]
+13.3205  0.87658
+13.1243  0.88003
+12.9309  0.88253
+12.74  0.88502
+12.5518  0.88189
+12.3661  0.88203
+12.183  0.91467
+12.0025  0.95322
+11.8245  0.99859
+11.6488  1.0481
+11.4755  1.1015
+11.3047  1.1595
+11.1362  1.2208
+10.97  1.2805
+10.806  1.339
+10.6443  1.3984
+10.4849  1.4596
+10.3275  1.523
+10.1724  1.5887
+10.0194  1.6593
+9.8684  1.7368
+9.7196  1.8172
+9.5727  1.9039
+9.428  1.9904
+9.2851  2.0788
+9.1443  2.1616
+9.0053  2.2459
+8.8683  2.3312
+8.7331  2.4241
+8.5998  2.5228
+8.4684  2.6273
+8.3386  2.73
+8.2107  2.8353
+8.0845  2.9387
+7.9602  3.05
+7.8374  3.1633
+7.7164  3.2842
+7.597  3.4084
+7.4792  3.5401
+7.3631  3.6751
+7.2486  3.8158
+7.1356  3.9558
+7.0242  4.0976
+6.9143  4.2414
+6.8059  4.388
+6.6989  4.5283
+6.5935  4.6717
+6.4895  4.8063
+6.3869  4.9479
+6.2858  5.0747
+6.186  5.1954
+6.0875  5.296
+5.9905  5.3894
+5.8947  5.4553
+5.8003  5.5222
+5.7071  5.5638
+5.6153  5.6468
+5.5247  5.6926
+5.4353  5.7384
+5.3472  5.7841
+5.2603  5.8299
+5.1745  5.8757
+5.0899  5.9215
+5.0065  5.9673
