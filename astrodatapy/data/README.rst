@@ -220,6 +220,11 @@ Upper limits are rows whose errors are ``nan``, lower limits rows whose errors a
 ``inf``; the loader flags them (``ULimit``, ``LLimit``) and gives them the value as both
 bounds. Store the values as published, with a header saying where they come from.
 
+The bounds usually bracket the value, but not always: a posterior given as its MAP
+(best-fitting) model with the 16th/84th percentiles (``Qin2025``) can have the MAP outside
+them, so ``value - lower`` or ``upper - value`` can be negative (``plt.errorbar`` refuses
+that; draw such a dataset as a band, e.g. ``fill_between``, with the value as a line).
+
 Adding a dataset
 ----------------
 

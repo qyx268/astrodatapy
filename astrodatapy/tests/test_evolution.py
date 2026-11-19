@@ -2,6 +2,8 @@
 import numpy as np
 
 IGM_FEATURES = ['IGM_Emissivity', 'IGM_Gamma', 'IGM_MFP', 'IGM_T0']
+# value = the MAP model, bounds = 16th/84th percentiles: the MAP may lie outside them
+MAP_WITH_PERCENTILES = {'Qin2025'}
 
 
 def _obs(feature, **kw):
@@ -23,7 +25,10 @@ def test_every_igm_dataset_loads():
             assert not (ul & ll).any(), (feature, name)
             lim = ul | ll
             assert np.array_equal(d[lim, 4], d[lim, 3]) and np.array_equal(d[lim, 5], d[lim, 3]), (feature, name)
-            assert (d[:, 4] >= d[:, 3]).all() and (d[:, 5] <= d[:, 3]).all(), (feature, name)
+            if name in MAP_WITH_PERCENTILES:
+                assert (d[:, 4] >= d[:, 5]).all(), (feature, name)
+            else:
+                assert (d[:, 4] >= d[:, 3]).all() and (d[:, 5] <= d[:, 3]).all(), (feature, name)
             assert (d[:, 1] >= d[:, 0]).all() and (d[:, 2] <= d[:, 0]).all(), (feature, name)
             assert (d[:, 3] > 0).all(), (feature, name)
             assert row['DataType'] in ('data', 'data_sim'), (feature, name)
@@ -55,6 +60,8 @@ def test_igm_conversions():
     assert np.allclose(gamma.loc['Calverley2011']['Data'][:, 3], 10**np.array([-0.15, -0.84]))  # log Gamma -> 1e-12 s^-1
     assert list(gamma.loc['Bolton2007']['ULimit']) == [False, True]
     assert np.allclose(gamma.loc['Becker2013']['Data'][0, 3:], 10**np.array([0.015, 0.147, -0.131]))  # log, total errors
+    assert np.allclose(gamma.loc['Qin2025']['Data'][0, 3:], [0.66, 0.70, 0.64])   # z = 4.90: MAP, 84th, 16th
+    assert np.allclose(mfp.loc['Qin2025']['Data'][6, 3:], [3.32, 3.89, 3.46])     # z = 5.64: MAP below the 16th
     gao07 = _obs('IGM_MFP', h=0.7).loc['Gao2025']['Data']
     gao10 = _obs('IGM_MFP', h=1.0).loc['Gao2025']['Data']
     assert np.isclose(gao07[0, 3], 65.4) and np.allclose(gao10[:, 3:6], gao07[:, 3:6] * 0.7)  # h70^-1 pMpc

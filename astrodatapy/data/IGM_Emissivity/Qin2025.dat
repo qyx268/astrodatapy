@@ -1,0 +1,51 @@
+# Qin et al. (2025), PASA 42, e049 (arXiv:2412.00799; the published Table A1 equals arXiv Table 3): ionizing emissivity Ndot_ion, NOT tabulated in the
+#   paper: read from the vector figures. Value = the MAP model ("w/ rec", red) of Fig. 8 (lower left); bounds = the 68% band
+#   of Fig. 6 (the inner of its two red bands; the 95% band is not stored). Checks: the Gamma and MFP MAP curves of Fig. 8 match
+#   Table A1 (Gamma to its rounding, MFP within 2.4%) and x_HI too; Kulkarni+19 as drawn in Fig. 6 matches Kulkarni+19 Fig. 1
+#   within 0.010 dex. z = the model redshift grid, z <= 12 (the range of Fig. 8).
+#   Posterior of a 21cmFAST-based model forward-modelling the XQR-30+ Lya forest (tau_eff distributions at z = 5.3-6.1), with
+#   the UV LFs (z = 6-10) and the Planck CMB optical depth in the likelihood (fiducial model); model-based, so the z > 6 values are
+#   constrained mostly through the model, not measured. Cosmology of the 21cmFAST runs not stated (values in physical units).
+#   The MAP (a single model, jagged) lies outside the 68% band at 9 of these redshifts, by up to 0.015 dex (z = 5.78).
+#   Fig. 6 and 8 vector paths: papers folder Qin2025_2412.00799/src/figs/post_emissivity{,_rec}.pdf.
+# z  log10(Ndot_MAP / s^-1 cMpc^-3)  log10 84th  log10 16th
+4.8999  50.6724  50.692  50.6724
+5.0179  50.6845  50.7038  50.6851
+5.1383  50.6878  50.706  50.6888
+5.2611  50.6915  50.7078  50.6921
+5.3863  50.6935  50.7093  50.6948
+5.514  50.7074  50.7102  50.6969
+5.6443  50.6969  50.7104  50.6983
+5.7772  50.6842  50.7101  50.6991
+5.9127  50.698  50.7095  50.6995
+6.051  50.6977  50.7084  50.6991
+6.192  50.6967  50.7065  50.6978
+6.3359  50.6888  50.6971  50.6833
+6.4826  50.676  50.6854  50.6706
+6.6322  50.6711  50.6854  50.6723
+6.7849  50.6712  50.6838  50.6713
+6.9406  50.6681  50.6769  50.6655
+7.0994  50.6632  50.6679  50.6589
+7.2614  50.66  50.6616  50.6542
+7.4266  50.6589  50.6583  50.6513
+7.5952  50.6578  50.6574  50.651
+7.7671  50.6578  50.6583  50.6527
+7.9424  50.6579  50.6589  50.6523
+8.1213  50.6544  50.6573  50.6479
+8.3037  50.6477  50.6531  50.6398
+8.4898  50.638  50.6457  50.6289
+8.6796  50.6257  50.6355  50.6152
+8.8732  50.611  50.6228  50.5992
+9.0706  50.5944  50.6076  50.5813
+9.272  50.5759  50.5909  50.5623
+9.4775  50.5566  50.5725  50.5413
+9.687  50.5358  50.552  50.5177
+9.9008  50.5132  50.5277  50.4907
+10.1188  50.487  50.5002  50.46
+10.3412  50.4567  50.4694  50.4287
+10.568  50.4248  50.4384  50.3973
+10.7994  50.3921  50.4073  50.3648
+11.0354  50.3591  50.3741  50.3299
+11.2761  50.3244  50.3391  50.2929
+11.5216  50.2877  50.3021  50.2535
+11.772  50.249  50.263  50.2111

@@ -23,3 +23,4 @@ Faucher-Giguere2008 	xLULimitsyLUDeltas	None	1               	0.7   	0      	0  
 Keating2020_Sherwood	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2020MNRAS.491.1736K
 Garaldi2022_THESAN1 	xy                	None	1               	0.6774	0      	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
 Lewis2022_CoDaIII   	xy                	None	1               	0.6777	0      	0       	data_sim	RHD_simulation               	2022MNRAS.516.3389L
+Qin2025             	xyULLimits        	None	1               	None  	0      	0       	data    	Lya_forest_LF_CMB_inference  	2025PASA...42...49Q

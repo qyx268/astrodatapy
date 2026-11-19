@@ -22,3 +22,4 @@ Cain2024_FlexRT      	xy                	y   	1e+51           	0.68  	0      	0 
 Ocvirk2021_CUDATON   	xy                	None	1e+50           	0.677 	0      	0       	data_sim	RHD_simulation               	2021MNRAS.507.6108O
 Yeh2023_THESAN1      	xy                	y   	1               	0.6774	0      	0       	data_sim	RHD_simulation               	2023MNRAS.520.2757Y
 Garaldi2022_THESAN1  	xy                	y   	1               	0.6774	0      	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
+Qin2025              	xyULLimits        	y   	1               	None  	0      	0       	data    	Lya_forest_LF_CMB_inference  	2025PASA...42...49Q
