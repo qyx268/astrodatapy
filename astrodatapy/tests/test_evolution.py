@@ -46,6 +46,8 @@ def test_igm_conversions():
     davies = mfp.loc['Davies2024']
     assert np.isclose(davies['Data'][4, 3], 29.0 / 6.4)                    # cMpc -> pMpc at z = 5.4
     assert list(davies['LLimit'].nonzero()[0]) == [0, 1, 2] and list(davies['ULimit'].nonzero()[0]) == [10, 11]
+    cain = mfp.loc['Cain2024_FlexRT']                                       # simulation curve, h^-1 cMpc
+    assert cain['DataType'] == 'data_sim' and np.isclose(cain['Data'][0, 3], 81.012 / 0.678 / 5.7998)
     w07 = _obs('IGM_MFP', h=0.7).loc['Worseck2014']['Data']
     w10 = _obs('IGM_MFP', h=1.0).loc['Worseck2014']['Data']
     assert np.isclose(w07[-1, 3], 10.3) and np.allclose(w10[:, 3:6], w07[:, 3:6] * 0.7)   # h70^-1 pMpc

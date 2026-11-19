@@ -1,0 +1,16 @@
+# SIMULATION (model curve), NOT an observation. Lewis et al. (2022), MNRAS 516, 3389 (arXiv:2202.05869), Fig. 3, "CoDa III - AT" (open circles): lambda_mfp in PROPER Mpc from an average-transmission fit
+#   (median of 1e5 draws of 13 sightlines; the 25-75% bars are not stored).
+#   Cosmic Dawn III: fully coupled RAMSES-CUDATON radiation-hydrodynamics (94.43 cMpc, 8192^3); h = 0.6777.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Lewis2022_2202.05869/extracted/Lewis2022_Fig3_MFP_AT_CoDaIII.csv in the papers folder.
+# z  lambda_mfp[pMpc]
+4.637  19.65
+4.847  15.57
+5.009  12.76
+5.191  9.781
+5.409  6.494
+5.619  3.379
+5.842  1.61
+6.088  0.8854
+6.651  0.2244
+7.33  0.0866

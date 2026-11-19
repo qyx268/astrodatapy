@@ -1,0 +1,46 @@
+# SIMULATION (model curve), NOT an observation. Cain et al. (2024), MNRAS 531, 1951 (arXiv:2311.13638), Fig. 2 (top middle), "Reference (this work)": lambda_912 in h^-1 COMOVING Mpc (all distances in the paper are comoving).
+#   Reference model: FlexRT ray-tracing radiative transfer (200 cMpc/h) with sub-grid sinks, the emissivity CALIBRATED to
+#   the Bosman+22 mean Lya transmission (an input); h = 0.68.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Cain2024_2311.13638/extracted/Cain2024_Fig2_MFP_Reference.csv in the papers folder.
+# z  lambda_mfp[h^-1 cMpc]
+4.7998  81.012
+4.8313  78.663
+4.8632  76.429
+4.8956  74.066
+4.9285  71.483
+4.9617  68.162
+4.9955  65.287
+5.0297  62.09
+5.0644  59.07
+5.0997  55.527
+5.1354  52.005
+5.1717  49.039
+5.2085  45.633
+5.2458  42.731
+5.2837  39.983
+5.3222  37.147
+5.3613  34.886
+5.401  32.675
+5.4413  30.336
+5.4822  28.407
+5.5238  26.5
+5.5661  24.56
+5.6091  23.143
+5.6527  21.609
+5.6971  20.095
+5.7423  18.889
+5.7882  17.757
+5.8349  16.518
+5.8824  15.512
+5.9307  14.542
+5.9799  13.647
+6.0299  12.765
+6.0809  12.089
+6.1328  11.288
+6.1856  10.665
+6.2394  10.008
+6.2943  9.4482
+6.3502  8.8906
+6.4072  8.4615
+6.4653  8.0347

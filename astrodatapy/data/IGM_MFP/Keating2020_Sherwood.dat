@@ -1,0 +1,36 @@
+# SIMULATION (model curve), NOT an observation. Keating et al. (2020a), MNRAS 491, 1736 (arXiv:1905.12640), Fig. 3 (bottom left, blue): lambda_mfp at 912 A in h^-1 PROPER Mpc.
+#   Late-reionization model: ATON radiative transfer on a Sherwood-type P-Gadget-3 run (160 cMpc/h, 2048^3), with the
+#   emissivity CHOSEN to match the Lya forest (an input, not a prediction); h = 0.678.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Keating2020_1905.12640/extracted/Keating2020a_Fig3_MFP.csv in the papers folder.
+# z  lambda_mfp[h^-1 pMpc]
+3.9999  32.765
+4.0885  29.949
+4.1812  26.972
+4.2781  24.031
+4.3797  21.26
+4.4863  18.675
+4.5982  16.24
+4.716  14.041
+4.8401  12.366
+4.9712  11.215
+5.1098  9.5294
+5.2567  7.4683
+5.4127  5.9743
+5.5788  4.7362
+5.756  3.0506
+5.9455  1.7205
+6.1489  1.1058
+6.3678  0.75345
+6.6043  0.51078
+6.8605  0.35143
+7.1395  0.23338
+7.4444  0.16738
+7.7796  0.12552
+8.1501  0.098329
+8.5623  0.079159
+9.0241  0.066294
+9.546  0.054112
+10.1415  0.045078
+10.8288  0.039148
+11.6328  0.0367
