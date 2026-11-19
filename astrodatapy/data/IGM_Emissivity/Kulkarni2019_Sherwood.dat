@@ -1,0 +1,56 @@
+# SIMULATION (model curve), NOT an observation. Kulkarni et al. (2019), MNRAS 485, L24 (arXiv:1809.06374), Fig. 1 (left, blue):
+#   Late-reionization model: ATON radiative transfer on a Sherwood-type P-Gadget-3 run (160 cMpc/h, 2048^3), with the
+#   emissivity CHOSEN to match the Lya forest (an input, not a prediction); h = 0.678.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Kulkarni2019_1809.06374/extracted/Kulkarni2019_Fig1_emissivity.csv in the papers folder.
+# z  log10(Ndot / s^-1 cMpc^-3)
+3.9996  50.336
+4.1612  50.353
+4.3228  50.369
+4.4844  50.384
+4.646  50.398
+4.8076  50.412
+4.9693  50.427
+5.1309  50.444
+5.2925  50.474
+5.4541  50.537
+5.6157  50.613
+5.7773  50.658
+5.9389  50.683
+6.1006  50.701
+6.2622  50.716
+6.4238  50.729
+6.5854  50.735
+6.747  50.736
+6.9086  50.735
+7.0703  50.731
+7.2319  50.725
+7.3935  50.718
+7.5551  50.709
+7.7167  50.7
+7.8783  50.689
+8.04  50.676
+8.2016  50.66
+8.3632  50.645
+8.5248  50.63
+8.6864  50.614
+8.848  50.597
+9.0097  50.577
+9.1713  50.56
+9.3329  50.543
+9.4945  50.524
+9.6561  50.505
+9.8177  50.484
+9.9794  50.458
+10.141  50.433
+10.3026  50.411
+10.4642  50.389
+10.6258  50.367
+10.7874  50.345
+10.9491  50.323
+11.1107  50.301
+11.2723  50.279
+11.4339  50.258
+11.5955  50.236
+11.7571  50.214
+11.9187  50.193

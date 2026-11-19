@@ -10,13 +10,16 @@
 #   simulation/model curve (not an observation). Method: how the value was obtained.
 # Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
 
-#Name              	DataFormat        	Log 	NormalizationOfy	h    	hPowery	Comoving	Type	Method              	Bibliographic
-Bolton2005         	xyLUDeltas        	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2005MNRAS.357.1178B
-Bolton2007         	xLULimitsyLUDeltas	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2007MNRAS.382..325B
-Wyithe2011         	xLULimitsyLUDeltas	None	1               	0.72 	0      	0       	data	Lya_forest_tau_eff  	2011MNRAS.412.1926W
-Calverley2011      	xLULimitsyDelta   	y   	1000000000000.0 	0.72 	0      	0       	data	QSO_proximity       	2011MNRAS.412.2543C
-Gaikwad2023        	xLULimitsyLUDeltas	None	1               	0.678	0      	0       	data	Lya_forest_tau_eff  	2023MNRAS.525.4093G
-Davies2024         	xLULimitsyLUDeltas	None	1               	0.685	0      	0       	data	Lya_forest_fluct_UVB	2024ApJ...965..134D
-Becker2013         	xLULimitsyLUDeltas	y   	1               	0.678	0      	0       	data	Lya_forest_tau_eff  	2013MNRAS.436.1023B
-DAloisio2018       	xLULimitsyLUDeltas	None	1               	0.68 	0      	0       	data	Lya_forest_fluct_UVB	2018MNRAS.473..560D
-Faucher-Giguere2008	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	Lya_forest_tau_eff  	2008ApJ...688...85F
+#Name               	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type    	Method                       	Bibliographic
+Bolton2005          	xyLUDeltas        	None	1               	0.72  	0      	0       	data    	Lya_forest_tau_eff           	2005MNRAS.357.1178B
+Bolton2007          	xLULimitsyLUDeltas	None	1               	0.72  	0      	0       	data    	Lya_forest_tau_eff           	2007MNRAS.382..325B
+Wyithe2011          	xLULimitsyLUDeltas	None	1               	0.72  	0      	0       	data    	Lya_forest_tau_eff           	2011MNRAS.412.1926W
+Calverley2011       	xLULimitsyDelta   	y   	1000000000000.0 	0.72  	0      	0       	data    	QSO_proximity                	2011MNRAS.412.2543C
+Gaikwad2023         	xLULimitsyLUDeltas	None	1               	0.678 	0      	0       	data    	Lya_forest_tau_eff           	2023MNRAS.525.4093G
+Davies2024          	xLULimitsyLUDeltas	None	1               	0.685 	0      	0       	data    	Lya_forest_fluct_UVB         	2024ApJ...965..134D
+Becker2013          	xLULimitsyLUDeltas	y   	1               	0.678 	0      	0       	data    	Lya_forest_tau_eff           	2013MNRAS.436.1023B
+DAloisio2018        	xLULimitsyLUDeltas	None	1               	0.68  	0      	0       	data    	Lya_forest_fluct_UVB         	2018MNRAS.473..560D
+Faucher-Giguere2008 	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	Lya_forest_tau_eff           	2008ApJ...688...85F
+Keating2020_Sherwood	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2020MNRAS.491.1736K
+Garaldi2022_THESAN1 	xy                	None	1               	0.6774	0      	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
+Lewis2022_CoDaIII   	xy                	None	1               	0.6777	0      	0       	data_sim	RHD_simulation               	2022MNRAS.516.3389L

@@ -1,0 +1,19 @@
+# SIMULATION (model curve), NOT an observation. Ocvirk et al. (2021), MNRAS 507, 6108 (arXiv:2105.01663), Fig. 4, "Fiducial, total" (blue): escaping ionizing emissivity
+#   of a RAMSES-CUDATON radiation-hydrodynamics run (8 cMpc/h; not CoDa II), a prediction; the 14 snapshot values; h = 0.677.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Ocvirk2021_2105.01663/extracted/Ocvirk2021_Fig4_emissivity_Fiducial.csv in the papers folder.
+# z  ndot_esc[1e50 s^-1 cMpc^-3]
+3.9994  2.3536
+4.4996  2.5392
+5.0018  2.4861
+5.2493  2.7009
+5.5017  2.7436
+5.7472  2.7871
+6.0023  4.2086
+6.5008  4.1526
+6.9985  3.8317
+7.9987  2.983
+8.9977  2.369
+9.9957  1.9041
+11.0021  1.2419
+12.0016  0.76273

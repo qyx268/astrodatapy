@@ -1,0 +1,21 @@
+# SIMULATION (model curve), NOT an observation. Garaldi et al. (2022), MNRAS 512, 4909 (arXiv:2110.01628), Fig. 6 (red, THESAN-1): the volume-averaged "photon emission rate
+#   from stars" (rate of injection of ionizing photons), NOT the emissivity escaping the haloes (see Yeh2023_THESAN1).
+#   THESAN-1: AREPO-RT radiation-magneto-hydrodynamics with the IllustrisTNG model (95.5 cMpc, 2x2100^3, f_esc = 0.37); h = 0.6774.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Garaldi2022_2110.01628/extracted/Garaldi2022_Fig6_emissivity_THESAN1.csv in the papers folder.
+# z  log10(Ndot_ion / s^-1 cMpc^-3)
+5.5117  51.389
+5.7284  51.324
+5.9809  51.251
+6.2725  51.177
+6.5763  51.097
+6.9252  51.011
+7.3241  50.925
+7.779  50.834
+8.2967  50.744
+8.8853  50.657
+9.5542  50.559
+10.4077  50.427
+11.4315  50.247
+12.7145  49.988
+14.3797  49.597

@@ -1,0 +1,44 @@
+# SIMULATION (model curve), NOT an observation. Garaldi et al. (2022), MNRAS 512, 4909 (arXiv:2110.01628), Fig. 5 (red, THESAN-1): Gamma_HI in ionized regions (x_HII >= 0.5).
+#   THESAN-1: AREPO-RT radiation-magneto-hydrodynamics with the IllustrisTNG model (95.5 cMpc, 2x2100^3, f_esc = 0.37); h = 0.6774.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Garaldi2022_2110.01628/extracted/Garaldi2022_Fig5_GammaHI_THESAN1.csv in the papers folder.
+# z  Gamma[1e-12 s^-1]
+5.4587  0.41228
+5.5118  0.38535
+5.5385  0.37266
+5.5922  0.34826
+5.6464  0.32038
+5.6737  0.31092
+5.7285  0.29228
+5.7838  0.26772
+5.8396  0.25409
+5.8958  0.2326
+5.9525  0.22152
+5.981  0.21106
+6.0383  0.20007
+6.0962  0.18755
+6.1545  0.17622
+6.2133  0.1634
+6.2726  0.15429
+6.3324  0.14538
+6.3926  0.1407
+6.4534  0.13393
+6.5146  0.12734
+6.5764  0.12151
+6.67  0.11374
+6.733  0.10961
+6.7966  0.10586
+6.8607  0.1015
+6.9253  0.098314
+7.0232  0.094118
+7.0891  0.091379
+7.1556  0.095328
+7.2564  0.091691
+7.3242  0.082014
+7.4271  0.078804
+7.4963  0.077658
+7.6013  0.075223
+7.672  0.082455
+7.7791  0.079352
+7.8875  0.066217
+7.9606  0.078027

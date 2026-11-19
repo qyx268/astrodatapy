@@ -10,13 +10,17 @@
 #   simulation/model curve (not an observation). Method: how the value was obtained.
 # Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
 
-#Name        	DataFormat        	Log 	NormalizationOfy	h    	hPowery	Comoving	Type	Method              	Bibliographic
-Worseck2014  	xLULimitsyDelta   	None	1               	0.7  	-1     	0       	data	LyC_stack           	2014MNRAS.445.1745W
-Songaila2010 	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LLS_incidence       	2010ApJ...721.1448S
-Becker2021   	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LyC_stack           	2021MNRAS.508.1853B
-Zhu2023      	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	LyC_stack           	2023ApJ...955..115Z
-Gaikwad2023  	xLULimitsyLUDeltas	None	1               	1    	-1     	1       	data	Lya_forest_tau_eff  	2023MNRAS.525.4093G
-Davies2024   	xLULimitsyLUDeltas	None	1               	0.685	0      	1       	data	Lya_forest_fluct_UVB	2024ApJ...965..134D
-Satyavolu2024	xLULimitsyLUDeltas	None	1               	0.678	0      	0       	data	LyC_stack           	2024MNRAS.533..676S
-Gao2025      	xLULimitsyLUDeltas	None	1               	0.7  	-1     	0       	data	LyC_stack           	2025ApJ...981L..27G
-Rudie2013    	xLULimitsyLUDeltas	None	1               	0.7  	0      	0       	data	fN_HI_integration   	2013ApJ...769..146R
+#Name               	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type    	Method                       	Bibliographic
+Worseck2014         	xLULimitsyDelta   	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2014MNRAS.445.1745W
+Songaila2010        	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LLS_incidence                	2010ApJ...721.1448S
+Becker2021          	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2021MNRAS.508.1853B
+Zhu2023             	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2023ApJ...955..115Z
+Gaikwad2023         	xLULimitsyLUDeltas	None	1               	1     	-1     	1       	data    	Lya_forest_tau_eff           	2023MNRAS.525.4093G
+Davies2024          	xLULimitsyLUDeltas	None	1               	0.685 	0      	1       	data    	Lya_forest_fluct_UVB         	2024ApJ...965..134D
+Satyavolu2024       	xLULimitsyLUDeltas	None	1               	0.678 	0      	0       	data    	LyC_stack                    	2024MNRAS.533..676S
+Gao2025             	xLULimitsyLUDeltas	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2025ApJ...981L..27G
+Rudie2013           	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	fN_HI_integration            	2013ApJ...769..146R
+Keating2020_Sherwood	xy                	None	1               	1     	-1     	0       	data_sim	RT_post-processing_calibrated	2020MNRAS.491.1736K
+Garaldi2022_THESAN1 	xy                	None	1               	1     	-1     	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
+Cain2024_FlexRT     	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2024MNRAS.531.1951C
+Lewis2022_CoDaIII   	xy                	None	1               	0.6777	0      	0       	data_sim	RHD_simulation               	2022MNRAS.516.3389L

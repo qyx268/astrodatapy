@@ -1,0 +1,29 @@
+# SIMULATION (model curve), NOT an observation. Garaldi et al. (2022), MNRAS 512, 4909 (arXiv:2110.01628), Fig. 7 (red, THESAN-1): <lambda_mfp>, the mean distance to tau_912 = 1 along random skewers, in h^-1 PROPER
+#   Mpc (the 68% band is not stored).
+#   THESAN-1: AREPO-RT radiation-magneto-hydrodynamics with the IllustrisTNG model (95.5 cMpc, 2x2100^3, f_esc = 0.37); h = 0.6774.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Garaldi2022_2110.01628/extracted/Garaldi2022_Fig7_MFP_THESAN1.csv in the papers folder.
+# z  lambda_mfp[h^-1 pMpc]
+5.5118  4.5056
+5.5385  4.2827
+5.5922  3.7862
+5.6464  3.7635
+5.6736  3.4109
+5.7285  2.9544
+5.7838  2.6212
+5.8396  2.0947
+5.8958  1.9434
+5.9524  1.5644
+5.981  1.4998
+6.0383  1.189
+6.0962  1.0004
+6.1545  0.89902
+6.2133  0.73326
+6.2726  0.59435
+6.3324  0.4622
+6.3926  0.36865
+6.4534  0.32386
+6.5146  0.24806
+6.5764  0.20118
+6.67  0.14573
+6.733  0.11366

@@ -1,0 +1,36 @@
+# SIMULATION (model curve), NOT an observation. Keating et al. (2020a), MNRAS 491, 1736 (arXiv:1905.12640), Fig. 3 (top left, blue); called "Keating+19" in Cain+24:
+#   Late-reionization model: ATON radiative transfer on a Sherwood-type P-Gadget-3 run (160 cMpc/h, 2048^3), with the
+#   emissivity CHOSEN to match the Lya forest (an input, not a prediction); h = 0.678.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Keating2020_1905.12640/extracted/Keating2020a_Fig3_emissivity.csv in the papers folder.
+# z  Ndot[1e50 s^-1 cMpc^-3]
+3.9999  4.2019
+4.0885  4.0932
+4.1812  3.9829
+4.2781  3.8747
+4.3797  3.7638
+4.4862  3.656
+4.5982  3.5468
+4.716  3.4364
+4.8401  3.3285
+4.9712  3.2197
+5.1098  3.1105
+5.2567  3.0125
+5.4127  3.3101
+5.5788  4.7239
+5.756  5.5006
+5.9455  5.993
+6.1489  6.3976
+6.3678  6.8135
+6.6042  6.8156
+6.8605  6.4317
+7.1394  5.9483
+7.4444  5.3456
+7.7796  4.8025
+8.1501  4.2529
+8.5623  3.7952
+9.0242  3.3468
+9.546  2.9606
+10.1415  2.4672
+10.8288  2.0328
+11.6328  1.6209

@@ -1,0 +1,74 @@
+# SIMULATION (model curve), NOT an observation. Yeh et al. (2023), MNRAS 520, 2757 (arXiv:2205.02238), Fig. 4 (right), "Escaped" (black solid): ionizing emissivity escaping
+#   the haloes of THESAN-1 (COLT Monte Carlo RT post-processing; smoothed), a prediction.
+#   THESAN-1: AREPO-RT radiation-magneto-hydrodynamics with the IllustrisTNG model (95.5 cMpc, 2x2100^3, f_esc = 0.37); h = 0.6774.
+#   Lower (by 0.05-0.74 dex) than the THESAN-1 stellar emission rate of Garaldi+22 (Garaldi2022_THESAN1): a different quantity.
+#   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
+#   not from a table: the paper gives no data file. Curve: Yeh2023_2205.02238/extracted/Yeh2023_Fig4_emissivity_THESAN1_escaped.csv in the papers folder.
+# z  log10(Ndot_esc / s^-1 cMpc^-3)
+5.5118  50.566
+5.5385  50.62
+5.5922  50.629
+5.6464  50.618
+5.6737  50.649
+5.7285  50.626
+5.7838  50.619
+5.8396  50.627
+5.8958  50.622
+5.9525  50.57
+5.981  50.563
+6.0384  50.497
+6.0962  50.505
+6.1545  50.498
+6.2133  50.529
+6.2726  50.534
+6.3324  50.523
+6.3927  50.49
+6.4534  50.461
+6.5147  50.444
+6.5764  50.44
+6.67  50.433
+6.7331  50.43
+6.7966  50.426
+6.8607  50.421
+6.9253  50.419
+7.0232  50.404
+7.0892  50.384
+7.1556  50.376
+7.2564  50.372
+7.3242  50.366
+7.4271  50.384
+7.4963  50.378
+7.6013  50.351
+7.672  50.352
+7.7791  50.317
+7.8876  50.378
+7.9606  50.416
+8.0713  50.411
+8.1834  50.386
+8.2968  50.372
+8.4117  50.323
+8.5279  50.358
+8.6456  50.347
+8.7648  50.309
+8.8854  50.297
+9.0076  50.314
+9.1312  50.326
+9.2984  50.32
+9.4256  50.301
+9.5544  50.261
+9.7286  50.263
+9.8611  50.276
+10.0404  50.273
+10.2226  50.262
+10.4079  50.241
+10.5962  50.208
+10.7876  50.197
+10.9821  50.177
+11.1799  50.163
+11.4317  50.146
+11.6369  50.123
+11.8981  50.096
+12.1648  50.064
+12.3821  50.02
+12.7147  49.976
+12.9983  49.94
