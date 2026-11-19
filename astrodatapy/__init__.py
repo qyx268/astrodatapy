@@ -3,6 +3,7 @@ from . import misc_tools
 from . import number_density
 from . import correlation
 from . import clustering
+from . import evolution
 
 
 def _installed_version():
