@@ -1,0 +1,97 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2025), MNRAS 542, 2968 (arXiv:2409.15453), Fig. 3 panel C (blue solid): total ionizing emissivity (galaxies + AGN), per comoving Mpc^3 (no h).
+#   The run emits in 40-Myr snapshot steps (a staircase between z = 5 and 10).
+#   "QSO-only" run: no stellar sources; AGN in 10% of the haloes (>= 1e9 Msun/h; 10 Myr lifetime, f_esc = 1,
+#   f_nu ~ nu^-1.7) from z = 17.
+#   ATON-HE radiative transfer (H and He) post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity
+#   is an INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2025_2409.15453/extracted/Asthana2025_Fig3_emissivity_QSO-only.csv in the papers folder.
+# z  Ndot[1e50 s^-1 cMpc^-3]
+4.9999  3.9106
+5.0399  3.9106
+5.0699  3.9106
+5.1099  3.9106
+5.1499  4.4292
+5.1799  4.4292
+5.2199  4.4292
+5.2599  4.4292
+5.2899  5.003
+5.3299  5.003
+5.3699  5.003
+5.4099  5.003
+5.4499  5.4678
+5.4899  5.4678
+5.5399  5.4678
+5.5799  5.4678
+5.6199  5.3747
+5.6699  5.3747
+5.7099  5.3747
+5.7599  5.3747
+5.7999  4.4659
+5.8499  4.4659
+5.8999  4.4659
+5.9499  4.4659
+5.9899  4.7969
+6.0499  4.7969
+6.0999  4.7969
+6.1499  4.7969
+6.1999  5.0392
+6.2599  5.0392
+6.3099  5.0392
+6.3699  5.0392
+6.4199  5.3436
+6.4799  5.3436
+6.5399  5.3436
+6.6  5.3436
+6.67  5.6185
+6.73  5.6185
+6.79  5.6185
+6.86  5.6185
+6.93  4.4938
+7  4.4938
+7.07  4.4938
+7.14  4.4938
+7.21  4.7186
+7.29  4.7186
+7.37  4.7186
+7.44  4.7186
+7.52  4.6519
+7.61  4.6519
+7.69  4.6519
+7.78  4.6519
+7.87  4.3027
+7.96  4.3027
+8.05  4.3027
+8.15  4.3027
+8.25  3.9057
+8.35  3.9057
+8.45  3.9057
+8.56  3.9057
+8.67  3.8173
+8.79  3.8173
+8.9  3.8173
+9.02  3.8173
+9.15  3.3514
+9.28  3.3514
+9.41  3.3514
+9.55  3.3514
+9.69  2.3426
+9.83  2.3426
+9.98  2.3426
+10.14  2.3426
+10.3  1.8559
+10.47  1.8559
+10.65  1.8559
+10.83  1.8559
+11.02  1.7723
+11.21  1.7723
+11.42  1.7723
+11.63  1.7723
+11.85  1.1124
+12.09  1.1124
+12.33  1.1124
+12.59  1.1124
+12.86  1.0254
+13.14  1.0254
+13.44  1.0254
+13.75  1.0254

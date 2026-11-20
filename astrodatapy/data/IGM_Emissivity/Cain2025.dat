@@ -1,0 +1,12 @@
+# Cain et al. (2025), PASA 42, e107 (arXiv:2503.08778), Sec. 5 (and Fig. 2, top): ionizing emissivity of the galaxy population
+#   from the measured Gamma_HI (Becker & Bolton 2013, Bosman+22, Gaikwad+23) and lambda_mfp (Fumagalli+13, O'Meara+13, Worseck+14,
+#   Zhu+23, Gaikwad+23, Gao+24), with radiative transfer instead of the local-source approximation. Fiducial maximum-likelihood
+#   measurement (without the neutral-island correction, which changes it by <= 15%), 1-sigma (13-87%) range including alpha in
+#   [1, 3] and beta_N in [1, 2]. A continuous measurement (a cumulative integral over higher z): the paper quotes these 4 redshifts.
+#   The paper gives no numbers for its two data subsets (with or without the Gaikwad+23 points at z > 5). h = 0.68.
+#   Not the same paper as the Cain2025_* simulation curves (Cain et al. 2025, ApJ 980, 83).
+# z  Ndot_ion[1e50 s^-1 cMpc^-3]  err_lo  err_hi
+2.5  10.04  4.66  2.72
+4  7.05  2.17  1.41
+5  8.7  2.55  1.15
+6  17.67  8.29  5.62

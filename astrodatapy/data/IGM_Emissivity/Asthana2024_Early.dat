@@ -1,0 +1,31 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (c) (red solid): hydrogen-ionizing emissivity per comoving Mpc^3 (no h).
+#   "Early" reionization history: fiducial sources, an emissivity history that reionizes earlier (same forest calibration at
+#   z < 6.2); midpoint z = 7.53 from this curve (Table 1: 7.5).
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_emissivity_Early.csv in the papers folder.
+# z  Ndot[1e50 s^-1 cMpc^-3]
+5  4.3765
+5.1098  4.4238
+5.2553  4.6437
+5.4127  4.8967
+5.5788  5.2728
+5.756  5.5976
+5.9455  5.4815
+6.1488  5.9942
+6.3678  6.6291
+6.6043  6.877
+6.8605  7.2398
+7.1394  7.611
+7.4443  7.4763
+7.7795  7.2275
+8.1501  6.9302
+8.5623  6.6933
+9.0239  6.1327
+9.546  5.4114
+10.141  4.9538
+10.829  4.1307
+11.633  3.3845
+12.589  2.5736
+13  2.3406

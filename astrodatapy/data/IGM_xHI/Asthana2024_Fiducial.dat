@@ -1,0 +1,28 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 3 panel (b) (blue solid): volume-averaged <x_HI>_v at the snapshots.
+#   Fiducial run ("Helium-40"): haloes >= 1e9 Msun/h, Ndot ~ M_halo, 4e4 K black body in 4 frequency bins, H + He;
+#   midpoint z = 6.56 (from this curve; text 6.5).
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig3_xHI_Fiducial.csv in the papers folder.
+# z  x_HI
+4.9712  3.319e-05
+5.1098  3.7046e-05
+5.2567  0.0010804
+5.4127  0.0096905
+5.5788  0.03988
+5.7559  0.09578
+5.9455  0.1642
+6.1489  0.26546
+6.3678  0.40582
+6.6042  0.51986
+6.8605  0.61561
+7.1394  0.69231
+7.4444  0.7544
+7.7796  0.80303
+8.1501  0.84138
+8.5622  0.8743
+9.0241  0.90153
+9.546  0.92497
+10.141  0.94386
+10.5  0.9521

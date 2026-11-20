@@ -1,0 +1,18 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (e) (olive solid): mean free path at 912 A in proper Mpc (no h), z = 5-6.5.
+#   "Extremely Early" reionization history: fiducial sources but ONE frequency bin, hydrogen only; midpoint
+#   z = 9.09 from this curve, where Table 1 says 9.5 (Asthana et al. 2025 shows the same curve).
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_MFP_ExtremelyEarly.csv in the papers folder.
+# z  lambda_mfp[proper Mpc]
+5  15.193
+5.1098  13.662
+5.2567  11.583
+5.4127  9.2083
+5.5788  7.1132
+5.756  5.1946
+5.9455  4.0756
+6.1489  3.5855
+6.3678  2.4488
+6.5  1.9947

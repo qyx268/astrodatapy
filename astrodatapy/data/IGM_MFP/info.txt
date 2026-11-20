@@ -10,18 +10,31 @@
 #   simulation/model curve (not an observation). Method: how the value was obtained.
 # Papers, notes and checks: /g/data/cm25/yq5547/astrodatapy-papers/IGM (not shipped).
 
-#Name               	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type    	Method                       	Bibliographic
-Worseck2014         	xLULimitsyDelta   	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2014MNRAS.445.1745W
-Songaila2010        	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LLS_incidence                	2010ApJ...721.1448S
-Becker2021          	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2021MNRAS.508.1853B
-Zhu2023             	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2023ApJ...955..115Z
-Gaikwad2023         	xLULimitsyLUDeltas	None	1               	1     	-1     	1       	data    	Lya_forest_tau_eff           	2023MNRAS.525.4093G
-Davies2024          	xLULimitsyLUDeltas	None	1               	0.685 	0      	1       	data    	Lya_forest_fluct_UVB         	2024ApJ...965..134D
-Satyavolu2024       	xLULimitsyLUDeltas	None	1               	0.678 	0      	0       	data    	LyC_stack                    	2024MNRAS.533..676S
-Gao2025             	xLULimitsyLUDeltas	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2025ApJ...981L..27G
-Rudie2013           	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	fN_HI_integration            	2013ApJ...769..146R
-Keating2020_Sherwood	xy                	None	1               	1     	-1     	0       	data_sim	RT_post-processing_calibrated	2020MNRAS.491.1736K
-Garaldi2022_THESAN1 	xy                	None	1               	1     	-1     	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
-Cain2024_FlexRT     	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2024MNRAS.531.1951C
-Lewis2022_CoDaIII   	xy                	None	1               	0.6777	0      	0       	data_sim	RHD_simulation               	2022MNRAS.516.3389L
-Qin2025             	xyULLimits        	None	1               	None  	0      	0       	data    	Lya_forest_LF_CMB_inference  	2025PASA...42...49Q
+#Name                         	DataFormat        	Log 	NormalizationOfy	h     	hPowery	Comoving	Type    	Method                       	Bibliographic
+Worseck2014                   	xLULimitsyDelta   	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2014MNRAS.445.1745W
+Songaila2010                  	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LLS_incidence                	2010ApJ...721.1448S
+Becker2021                    	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2021MNRAS.508.1853B
+Zhu2023                       	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	LyC_stack                    	2023ApJ...955..115Z
+Gaikwad2023                   	xLULimitsyLUDeltas	None	1               	1     	-1     	1       	data    	Lya_forest_tau_eff           	2023MNRAS.525.4093G
+Davies2024                    	xLULimitsyLUDeltas	None	1               	0.685 	0      	1       	data    	Lya_forest_fluct_UVB         	2024ApJ...965..134D
+Satyavolu2024                 	xLULimitsyLUDeltas	None	1               	0.678 	0      	0       	data    	LyC_stack                    	2024MNRAS.533..676S
+Gao2025                       	xLULimitsyLUDeltas	None	1               	0.7   	-1     	0       	data    	LyC_stack                    	2025ApJ...981L..27G
+Rudie2013                     	xLULimitsyLUDeltas	None	1               	0.7   	0      	0       	data    	fN_HI_integration            	2013ApJ...769..146R
+Keating2020_Sherwood          	xy                	None	1               	1     	-1     	0       	data_sim	RT_post-processing_calibrated	2020MNRAS.491.1736K
+Garaldi2022_THESAN1           	xy                	None	1               	1     	-1     	0       	data_sim	RHD_simulation               	2022MNRAS.512.4909G
+Cain2024_FlexRT               	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2024MNRAS.531.1951C
+Lewis2022_CoDaIII             	xy                	None	1               	0.6777	0      	0       	data_sim	RHD_simulation               	2022MNRAS.516.3389L
+Qin2025                       	xyULLimits        	None	1               	None  	0      	0       	data    	Lya_forest_LF_CMB_inference  	2025PASA...42...49Q
+Asthana2024_Fiducial          	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2024MNRAS.533.2843A
+Asthana2024_Democratic        	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2024MNRAS.533.2843A
+Asthana2024_Oligarchic        	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2024MNRAS.533.2843A
+Asthana2024_Early             	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2024MNRAS.533.2843A
+Asthana2024_ExtremelyEarly    	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2024MNRAS.533.2843A
+Asthana2025_QSO-assisted      	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2025MNRAS.542.2968A
+Asthana2025_QSO-only          	xy                	None	1               	0.678 	0      	0       	data_sim	RT_post-processing_calibrated	2025MNRAS.542.2968A
+Gangolli2025_NionLUV          	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025JCAP...03..069G
+Gangolli2025_Bright-LAE-driven	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025JCAP...03..069G
+Gangolli2025_Low-v-offset     	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025JCAP...03..069G
+Gangolli2025_Democratic       	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025JCAP...03..069G
+Cain2025_LateStartLateEnd     	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025ApJ...980...83C
+Cain2025_EarlyStartLateEnd    	xy                	None	1               	1     	-1     	1       	data_sim	RT_post-processing_calibrated	2025ApJ...980...83C
