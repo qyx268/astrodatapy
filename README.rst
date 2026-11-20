@@ -324,12 +324,20 @@ lists its datasets, and one file per redshift for each dataset. The
 describes these files, the units and the h conversions, and how to add a
 dataset. Pull requests with new data are welcome.
 
+Contributing and support
+========================
+
+Questions, bug reports and data corrections are welcome as
+`GitHub issues <https://github.com/qyx268/astrodatapy/issues>`__.
+`CONTRIBUTING.md <https://github.com/qyx268/astrodatapy/blob/master/CONTRIBUTING.md>`__
+explains how to report a problem, add or correct a dataset, and run the tests.
+
 License
 =======
 
 * Free software: BSD license
 
-* This project is Copyright (c) Yuxiang Qin and licensed under the terms of the BSD 3-Clause license. See the licenses folder for more information.
+* This project is Copyright (c) Yuxiang Qin and licensed under the terms of the BSD 3-Clause license. See the LICENSE file.
 
 Contributors
 ============
