@@ -79,7 +79,7 @@ constraints.
 black hole and quasar statistics, scaling relations and IGM evolution in one package) and its
 central design choice (store published values with their conventions and convert on request)
 do not fit the fixed-unit structure of an existing collection, so it is developed as a
-separate package. Its IGM features overlap with CoReCon, and the two can be used side by side.
+separate package.
 
 # Software design
 
