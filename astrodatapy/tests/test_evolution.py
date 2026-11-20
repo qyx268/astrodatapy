@@ -69,12 +69,18 @@ def test_igm_conversions():
     emis = _obs('IGM_Emissivity')
     assert np.allclose(emis.loc['Becker2021']['Data'][0, 3:], 1e51 * 10**np.array([0., 0.16, -0.17]))  # log Ndot/1e51
     assert np.isclose(emis.loc['Qin2026_Fiducial']['Data'][-1, 3], 4.5926e50)  # Ndot/1e50 at z = 5.0065
+    assert np.allclose(emis.loc['Cain2025']['Data'][2, 3:], [8.70e50, 9.85e50, 6.15e50])  # z = 5, asymmetric errors
+    assert emis.loc['Cain2025']['DataType'] == 'data' and emis.loc['Cain2025_LateStartLateEnd']['DataType'] == 'data_sim'
+    assert np.isclose(emis.loc['Asthana2024_Fiducial']['Data'][0, 3], 4.3431e50)  # z = 5, read off Fig. 3(c)
+    gangolli = mfp.loc['Gangolli2025_NionLUV']                               # simulation curve, h^-1 cMpc
+    assert np.isclose(gangolli['Data'][0, 3], 81.06 / 0.678 / 5.8007)
     xhi = _obs('IGM_xHI')
     q25 = xhi.loc['Qin2025']
     assert list(q25['ULimit'].nonzero()[0]) == [0, 1, 2, 3, 4] and np.allclose(q25['Data'][0, 3:], 0.005)  # rounds to 0.00
     assert np.allclose(q25['Data'][19, 3:], [0.47, 0.50, 0.48])               # z = 7.60: MAP below the 16th
     assert np.allclose(xhi.loc['Gaikwad2023']['Data'][0, 3:], [2.534e-5, 2.534e-5 + 5.85e-6, 2.534e-5 - 4.44e-6])
     assert xhi.loc['Qin2026_Fiducial']['DataType'] == 'data_sim'
+    assert (xhi.loc['Cain2025_EarlyStartLateEnd']['Data'][:, 3] >= 1e-3).all()  # linear-axis curve, cut at 1e-3
     assert list(xhi.loc['Bolton2007']['LLimit']) == [False] * 4 + [True]   # z = 6: lower limit (Gamma upper limit)
     t0 = _obs('IGM_T0')
     assert np.isclose(t0.loc['Bolton2012']['Data'][0, 3], 10**4.21)
