@@ -1,6 +1,6 @@
 # SIMULATION (model curve), NOT an observation. Cain et al. (2024), MNRAS 531, 1951 (arXiv:2311.13638), Fig. 2 (top middle), "Reference (this work)": lambda_912 in h^-1 COMOVING Mpc (all distances in the paper are comoving).
 #   Reference model: FlexRT ray-tracing radiative transfer (200 cMpc/h) with sub-grid sinks, the emissivity CALIBRATED to
-#   the Bosman+22 mean Lya transmission (an input); h = 0.68.
+#   the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6 (an input); h = 0.68.
 #   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
 #   not from a table: the paper gives no data file. Curve: Cain2024_2311.13638/extracted/Cain2024_Fig2_MFP_Reference.csv in the papers folder.
 # z  lambda_mfp[h^-1 cMpc]
