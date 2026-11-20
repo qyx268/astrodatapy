@@ -156,9 +156,10 @@ between 2018 and July 2026 were produced without generative AI.
 
 We thank Balu Sreedhar, Fatma Shaban, Madeline Marshall, Simon Mutch and Varun Nikam for
 their contributions to the package, and Manodeep Sinha and Emanuele Maria Ventura for issues
-and discussions that improved it.
-<!-- CONFIRM (author): funding (grants, centres such as ASTRO 3D) and computing facilities to acknowledge, and
-     whether any sponsor had a role; JOSS requires financial support to be acknowledged. If any of the people
-     above become co-authors, remove them here. -->
+and discussions that improved it. We gratefully acknowledge the HPC support from OzSTAR and
+Gadi in Australia. YQ is supported by the Australian Research Council (ARC) Discovery Early
+Career Researcher Award (DECRA) through fellowship #DE240101129.
+<!-- CONFIRM (author): if anyone above becomes a co-author (Manodeep Sinha has been invited), move them from here
+     to the author list. -->
 
 # References
