@@ -1,5 +1,7 @@
 # SIMULATION (model curve), NOT an observation. Cain et al. (2021), ApJL 917, L37 (arXiv:2105.10511), Fig. 1 (top right), "Rapid" model (fiducial; "Rapid, ndot ~ L_UV" has
-#   the same emissivity): ray-tracing RT (200 cMpc/h) with sub-grid sinks, the emissivity CHOSEN to match the forest (an input).
+#   the same emissivity): ray-tracing RT (200 cMpc/h) with sub-grid sinks. The emissivity is an INPUT, varied by trial and error
+#   to match the Planck tau_CMB and the mean free path measurements (Becker et al. 2021, z = 5.1 and 6); NOT calibrated to the
+#   Lya forest (Sect. 2 of the paper).
 #   Cosmology not stated in the letter (h = None; the emissivity per comoving volume is not rescaled with h here).
 #   Read from the published vector figure (axis calibrated on the tick marks; CoDa III: raster, pixel-traced),
 #   not from a table: the paper gives no data file. Curve: Cain2021_2105.10511/extracted/Cain2021_Fig1_emissivity_Rapid.csv in the papers folder.
