@@ -64,9 +64,11 @@ pipeline of the SWIFT code [@Schaller2024] (its `velociraptor-comparison-data` r
 These collections serve one code: the data are converted to that code's assumptions in
 advance, or the corrections for $h$ and the IMF are written into the script that reads each
 dataset, and they are not distributed as libraries for other codes. Inference frameworks such
-as 21CMMC [@Greig2015; @Park2019] bundle the few datasets their likelihoods use, and
-compilations such as the quasar luminosity functions of @Shen2020 homogenise one kind of
-measurement. The closest general-purpose tool is CoReCon [@Garaldi2023], a pip-installable
+as 21CMMC [@Greig2015; @Park2019] bundle the few datasets their likelihoods use.
+Compilations of a single observable collect one kind of measurement, such as the quasar
+luminosity functions homogenised by @Shen2020 or the published upper limits on the 21-cm power
+spectrum from reionization and cosmic dawn in `eor_limits` [@eorlimits], which provides them
+as human-readable files with plotting tools. The closest general-purpose tool is CoReCon [@Garaldi2023], a pip-installable
 collection of reionization constraints (ionized fraction, photoionization rate, mean free
 path, IGM temperature, UV luminosity functions and others) that records references and
 limits. CoReCon stores each quantity in one fixed unit, does not convert between Hubble
