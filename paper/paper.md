@@ -77,12 +77,6 @@ relations. Archives such as VizieR [@Ochsenbein2000], accessed with astroquery
 [@Ginsburg2019], serve published catalogues and tables rather than curated, homogenised
 constraints.
 
-`astrodatapy` has been public since May 2018, before CoReCon (November 2019). Its scope (galaxy,
-black hole and quasar statistics, scaling relations and IGM evolution in one package) and its
-central design choice (store published values with their conventions and convert on request)
-do not fit the fixed-unit structure of an existing collection, so it is developed as a
-separate package.
-
 # Software design
 
 The package separates data from code. Each quantity ("feature") is a directory of plain-text
