@@ -1,0 +1,30 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 3 panel (c) (blue solid): hydrogen-ionizing emissivity per comoving Mpc^3 (no h).
+#   Fiducial run ("Helium-40"): haloes >= 1e9 Msun/h, Ndot ~ M_halo, 4e4 K black body in 4 frequency bins, H + He;
+#   midpoint z = 6.56 (from this curve; text 6.5).
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig3_emissivity_Fiducial.csv in the papers folder.
+# z  Ndot[1e50 s^-1 cMpc^-3]
+5  4.3431
+5.1098  4.3335
+5.2567  4.4859
+5.4127  4.8866
+5.5788  5.6419
+5.756  6.9495
+5.9455  6.2807
+6.1489  7.5791
+6.3678  9.702
+6.6042  8.303
+6.8605  7.494
+7.1394  6.6141
+7.4444  5.898
+7.7796  5.1691
+8.1501  4.5221
+8.5623  4.1013
+9.0241  3.6137
+9.546  3.1907
+10.142  2.6548
+10.829  2.1821
+12.589  1.3232
+13  1.1759

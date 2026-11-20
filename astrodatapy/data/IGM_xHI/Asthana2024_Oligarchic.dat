@@ -1,0 +1,27 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (b) (purple dashed): volume-averaged <x_HI>_v at the snapshots.
+#   "Oligarchic" source model: haloes >= 8.5e9 Msun/h, Ndot ~ M_halo; 4 bins, H + He.
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_xHI_Oligarchic.csv in the papers folder.
+# z  x_HI
+4.9712  3.5135e-05
+5.1098  3.8205e-05
+5.2567  0.001886
+5.4127  0.011729
+5.5788  0.037052
+5.756  0.077776
+5.9455  0.13487
+6.1488  0.21153
+6.3677  0.30728
+6.6043  0.40627
+6.8605  0.50091
+7.1394  0.58459
+7.4444  0.65612
+7.7796  0.71674
+8.1501  0.76811
+8.5621  0.81341
+9.0243  0.85293
+9.5462  0.88798
+10.142  0.91751
+10.5  0.93029

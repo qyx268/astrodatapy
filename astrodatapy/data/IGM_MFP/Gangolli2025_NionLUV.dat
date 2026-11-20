@@ -1,0 +1,71 @@
+# SIMULATION (model curve), NOT an observation. Gangolli et al. (2025), JCAP 2025(03), 069 (arXiv:2408.08358), Fig. 2 (green solid): mean free path at 912 A in h^-1 comoving Mpc, z = 4.8-6.5.
+#   "Ndot_ion ~ L_UV" model (fiducial): ionizing output proportional to the galaxy UV luminosity.
+#   FlexRT multi-frequency ray-tracing radiative transfer (200 cMpc/h; haloes from a 3600^3 N-body run) with sub-grid sinks;
+#   the emissivity Ndot(z) is an INPUT, tuned for each model to the mean Lya transmission of Bosman et al. (2022; XQR-30) at
+#   z = 5-6; h = 0.68.
+#   Read from the published RASTER figure (pixel-traced, ~1 px uncertainty; curve hidden under other lines left as gaps);
+#   curve: Gangolli2025_2408.08358/extracted/Gangolli2025_Fig2_MFP_Nion-propto-LUV.csv in the papers folder.
+# z  lambda_mfp[h^-1 comoving Mpc]
+4.8007  81.06
+4.8135  79.97
+4.8317  78.3
+4.8508  76.77
+4.8699  75.03
+4.8881  73.24
+4.9044  71.68
+4.9282  69.19
+4.9419  67.61
+4.951  66.52
+4.9756  64.06
+5.0421  57.03
+5.0533  56.1
+5.0731  53.81
+5.0807  52.73
+5.0853  51.92
+5.0881  51.66
+5.0903  51.4
+5.0924  51.14
+5.329  32
+5.35  30.43
+5.3655  29.45
+5.4174  26.49
+5.4502  24.69
+5.4557  24.34
+5.5413  20.38
+5.5486  20.08
+5.5725  19.23
+5.5837  18.66
+5.7216  14.39
+5.7317  14.19
+5.7499  13.75
+5.7608  13.44
+5.831  11.81
+5.8446  11.54
+5.8628  11.21
+5.8738  11.01
+5.9381  9.62
+5.9576  9.436
+5.9731  9.298
+5.9858  9.054
+5.988  9.008
+6.0358  8.309
+6.0413  8.247
+6.0532  8.032
+6.066  7.882
+6.0833  7.718
+6.1015  7.538
+6.1197  7.361
+6.137  7.18
+6.1543  6.942
+6.1716  6.71
+6.2141  6.227
+6.2308  6.09
+6.2964  5.767
+6.3101  5.662
+6.332  5.474
+6.3474  5.352
+6.3629  5.221
+6.3821  5.061
+6.3939  4.954
+6.4367  4.68
+6.4467  4.635

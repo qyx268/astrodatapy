@@ -1,0 +1,27 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (b) (green dashed): volume-averaged <x_HI>_v at the snapshots.
+#   "Democratic" source model: haloes >= 1e9 Msun/h, the same Ndot for every halo; 4 bins, H + He.
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_xHI_Democratic.csv in the papers folder.
+# z  x_HI
+4.9712  3.6182e-05
+5.1106  4.0614e-05
+5.2567  4.6317e-05
+5.4127  0.0025012
+5.5788  0.012677
+5.7559  0.043885
+5.9455  0.10319
+6.1489  0.20165
+6.3684  0.34742
+6.6042  0.50097
+6.8605  0.62638
+7.1393  0.70246
+7.4443  0.76345
+7.7796  0.81078
+8.1502  0.84763
+8.5621  0.87927
+9.0238  0.90525
+9.546  0.92739
+10.142  0.94513
+10.5  0.95301

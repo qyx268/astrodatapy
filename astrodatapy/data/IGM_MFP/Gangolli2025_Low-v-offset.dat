@@ -1,0 +1,69 @@
+# SIMULATION (model curve), NOT an observation. Gangolli et al. (2025), JCAP 2025(03), 069 (arXiv:2408.08358), Fig. 2 (blue dash-dot): mean free path at 912 A in h^-1 comoving Mpc, z = 4.8-6.5.
+#   "Low-v-offset" model: Ndot ~ L_Lya with f_esc from the Lya velocity offset (Mason+18, Izotov+18).
+#   FlexRT multi-frequency ray-tracing radiative transfer (200 cMpc/h; haloes from a 3600^3 N-body run) with sub-grid sinks;
+#   the emissivity Ndot(z) is an INPUT, tuned for each model to the mean Lya transmission of Bosman et al. (2022; XQR-30) at
+#   z = 5-6; h = 0.68.
+#   Read from the published RASTER figure (pixel-traced, ~1 px uncertainty; curve hidden under other lines left as gaps);
+#   curve: Gangolli2025_2408.08358/extracted/Gangolli2025_Fig2_MFP_Low-v-offset.csv in the papers folder.
+# z  lambda_mfp[h^-1 comoving Mpc]
+4.8034  84.37
+4.8144  83.02
+4.8335  80.9
+4.8517  78.92
+4.8699  77.24
+4.8836  76.35
+4.9127  73.04
+4.9182  73.1
+4.9562  68.52
+4.972  66.8
+4.9884  65.22
+5.0102  62.76
+5.023  61.31
+5.0567  57.65
+5.0931  53.67
+5.0949  53.58
+5.1195  50.93
+5.1277  50.27
+5.2416  38.78
+5.2516  37.94
+5.2771  36.23
+5.3445  31.37
+5.3527  30.87
+5.432  25.57
+5.4666  23.9
+5.4745  23.53
+5.4985  22.5
+5.5085  22.01
+5.5267  21.19
+5.5923  18.4
+5.6011  18.16
+5.6233  17.28
+5.636  16.76
+5.6888  14.83
+5.722  13.88
+5.7353  13.53
+5.7526  13.12
+5.7635  12.94
+5.851  10.93
+5.8583  10.82
+6.0581  7.746
+6.0933  7.276
+6.1279  6.923
+6.1398  6.794
+6.1581  6.626
+6.1753  6.478
+6.1919  6.299
+6.2044  6.181
+6.2673  5.649
+6.2791  5.599
+6.2973  5.493
+6.3137  5.328
+6.3301  5.152
+6.3447  5.033
+6.372  4.833
+6.3775  4.803
+6.4176  4.587
+6.4367  4.479
+6.4549  4.375
+6.4732  4.272
+6.4877  4.193

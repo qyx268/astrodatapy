@@ -1,0 +1,17 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (e) (green dashed): mean free path at 912 A in proper Mpc (no h), z = 5-6.5.
+#   "Democratic" source model: haloes >= 1e9 Msun/h, the same Ndot for every halo; 4 bins, H + He.
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_MFP_Democratic.csv in the papers folder.
+# z  lambda_mfp[proper Mpc]
+5  12.815
+5.1099  11.669
+5.2567  10.023
+5.4127  7.7275
+5.5788  5.8517
+5.756  4.4783
+5.9455  2.9833
+6.1487  1.7505
+6.3679  1.0022
+6.5  0.66016

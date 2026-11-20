@@ -1,0 +1,69 @@
+# SIMULATION (model curve), NOT an observation. Gangolli et al. (2025), JCAP 2025(03), 069 (arXiv:2408.08358), Fig. 2 (purple dashed): mean free path at 912 A in h^-1 comoving Mpc, z = 4.8-6.5.
+#   "Bright-LAE-driven" model: Ndot ~ L_Lya of LAEs with L_Lya >= 10^42.2 erg/s (half of them).
+#   FlexRT multi-frequency ray-tracing radiative transfer (200 cMpc/h; haloes from a 3600^3 N-body run) with sub-grid sinks;
+#   the emissivity Ndot(z) is an INPUT, tuned for each model to the mean Lya transmission of Bosman et al. (2022; XQR-30) at
+#   z = 5-6; h = 0.68.
+#   Read from the published RASTER figure (pixel-traced, ~1 px uncertainty; curve hidden under other lines left as gaps);
+#   curve: Gangolli2025_2408.08358/extracted/Gangolli2025_Fig2_MFP_Bright-LAE-Driven.csv in the papers folder.
+# z  lambda_mfp[h^-1 comoving Mpc]
+4.9492  54.68
+4.9638  53.29
+4.9774  51.98
+5.0154  48.5
+5.0303  47.3
+5.0451  46.2
+5.1423  38.16
+5.155  37.53
+5.1687  36.75
+5.1824  35.99
+5.2079  33.92
+5.2234  33.1
+5.2334  32.47
+5.248  31.64
+5.2753  30.05
+5.289  29.39
+5.3016  28.58
+5.3135  27.95
+5.3518  25.99
+5.365  25.39
+5.4156  22.94
+5.4283  22.34
+5.4465  21.61
+5.4839  20.09
+5.4929  19.68
+5.5067  19.12
+5.5467  17.58
+5.5559  17.29
+5.5708  16.84
+5.6032  15.74
+5.6178  15.43
+5.6715  13.98
+5.6842  13.74
+5.6965  13.47
+5.7116  13.15
+5.7399  12.51
+5.7544  12.18
+5.7648  11.94
+5.7799  11.63
+5.8139  10.9
+5.831  10.61
+5.8461  10.37
+5.9047  9.477
+5.9138  9.369
+5.953  8.85
+5.9633  8.756
+6.0286  7.845
+6.0523  7.574
+6.0596  7.502
+6.086  7.229
+6.1006  7.093
+6.1156  6.949
+6.2477  5.961
+6.2631  5.909
+6.2791  5.858
+6.3137  5.591
+6.352  5.275
+6.3903  4.897
+6.4003  4.833
+6.4795  4.451
+6.4914  4.422

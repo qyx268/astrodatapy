@@ -1,0 +1,28 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (c) (green dashed): hydrogen-ionizing emissivity per comoving Mpc^3 (no h).
+#   "Democratic" source model: haloes >= 1e9 Msun/h, the same Ndot for every halo; 4 bins, H + He.
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_emissivity_Democratic.csv in the papers folder.
+# z  Ndot[1e50 s^-1 cMpc^-3]
+5  4.3677
+5.1098  4.3174
+5.2567  4.3774
+5.4127  4.7977
+5.5788  4.9458
+5.7559  5.471
+5.9455  5.9967
+6.1487  7.5774
+6.3678  9.6587
+6.6042  9.9679
+6.8605  8.8414
+7.1394  6.6141
+7.4448  5.8972
+7.7796  5.1691
+8.1501  4.522
+9.0242  3.6137
+9.5459  3.1907
+10.141  2.655
+10.829  2.1822
+12.588  1.3234
+13  1.1759

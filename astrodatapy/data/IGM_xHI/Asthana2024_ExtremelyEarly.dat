@@ -1,0 +1,28 @@
+# SIMULATION (model curve), NOT an observation. Asthana et al. (2024), MNRAS 533, 2843 (arXiv:2404.06548), Fig. 5 panel (b) (olive solid): volume-averaged <x_HI>_v at the snapshots.
+#   "Extremely Early" reionization history: fiducial sources but ONE frequency bin, hydrogen only; midpoint
+#   z = 9.09 from this curve, where Table 1 says 9.5 (Asthana et al. 2025 shows the same curve).
+#   ATON-HE radiative transfer post-processing the Sherwood-Relics 160 cMpc/h, 2x2048^3 hydro run; the total emissivity is an
+#   INPUT, tuned by hand to the mean Lya transmission of Bosman et al. (2022; XQR-30) at 5 < z < 6.2; h = 0.678.
+#   Read from the published vector figure (native path vertices, axes calibrated on the tick marks);
+#   curve: Asthana2024_2404.06548/extracted/Asthana2024_Fig5_xHI_ExtremelyEarly.csv in the papers folder.
+# z  x_HI
+4.9712  3.0385e-05
+5.11  3.4149e-05
+5.2567  3.9521e-05
+5.4127  0.00021158
+5.5788  0.0049003
+5.7559  0.015488
+5.9455  0.036298
+6.1489  0.07008
+6.3678  0.11813
+6.6046  0.17419
+6.8605  0.23169
+7.1395  0.27867
+7.4444  0.3245
+7.7793  0.36961
+8.1503  0.41344
+8.5622  0.45526
+9.0239  0.49482
+9.5458  0.53385
+10.141  0.59082
+10.5  0.62166
